@@ -1,0 +1,28 @@
+college_code,course_code,degree,course_name,duration_years,total_seats,eligibility_criteria,minimum_pcm_percentage,primary_exam
+IITM,CSE,B.Tech,Computer Science and Engineering,4,87,"Passed Class 12 with PCM, qualified in JEE Main and JEE Advanced (top percentiles)",75.0,JEE_ADVANCED
+IITM,EE,B.Tech,Electrical Engineering,4,110,"Passed Class 12 with PCM, qualified in JEE Main and JEE Advanced",75.0,JEE_ADVANCED
+IITM,MECH,B.Tech,Mechanical Engineering,4,115,"Passed Class 12 with PCM, qualified in JEE Main and JEE Advanced",75.0,JEE_ADVANCED
+NITT,CSE,B.Tech,Computer Science and Engineering,4,120,"Passed Class 12 with PCM >= 75% or top 20 percentile in board, valid JEE Main rank",75.0,JEE_MAIN
+NITT,ECE,B.Tech,Electronics and Communication Engineering,4,110,"Passed Class 12 with PCM >= 75%, valid JEE Main rank",75.0,JEE_MAIN
+NITT,MECH,B.Tech,Mechanical Engineering,4,120,"Passed Class 12 with PCM >= 75%, valid JEE Main rank",75.0,JEE_MAIN
+CEG-0001,CSE,B.E.,Computer Science and Engineering,4,300,"Passed 10+2 with Physics, Chemistry, Mathematics with aggregate >= 45% (40% for reserved categories). TNEA Single Window Counselling",45.0,TNEA
+CEG-0001,IT,B.Tech,Information Technology,4,120,"Passed 10+2 with PCM, TNEA Single Window Counselling based on Class 12 aggregate cutoff out of 200",45.0,TNEA
+CEG-0001,ECE,B.E.,Electronics and Communication Engineering,4,180,"Passed 10+2 with PCM, TNEA Single Window Counselling",45.0,TNEA
+CEG-0001,MECH,B.E.,Mechanical Engineering,4,180,"Passed 10+2 with PCM, TNEA Single Window Counselling",45.0,TNEA
+PSG-1211,CSE,B.E.,Computer Science and Engineering,4,180,"Passed 10+2 with PCM, TNEA Single Window Counselling (Aided & Self-supporting seats)",45.0,TNEA
+PSG-1211,IT,B.Tech,Information Technology,4,120,"Passed 10+2 with PCM, TNEA Single Window Counselling",45.0,TNEA
+PSG-1211,ECE,B.E.,Electronics and Communication Engineering,4,180,"Passed 10+2 with PCM, TNEA Single Window Counselling",45.0,TNEA
+PSG-1211,MECH,B.E.,Mechanical Engineering,4,120,"Passed 10+2 with PCM, TNEA Single Window Counselling",45.0,TNEA
+SSN-1315,CSE,B.E.,Computer Science and Engineering,4,180,"Passed 10+2 with PCM, TNEA Single Window Counselling (Government Quota) or SSN Management Merit",45.0,TNEA
+SSN-1315,AI_DS,B.Tech,Artificial Intelligence and Data Science,4,60,"Passed 10+2 with PCM, TNEA Single Window Counselling",45.0,TNEA
+SSN-1315,IT,B.Tech,Information Technology,4,120,"Passed 10+2 with PCM, TNEA Single Window Counselling",45.0,TNEA
+SSN-1315,ECE,B.E.,Electronics and Communication Engineering,4,120,"Passed 10+2 with PCM, TNEA Single Window Counselling",45.0,TNEA
+TCE-5008,CSE,B.E.,Computer Science and Engineering,4,120,"Passed 10+2 with PCM, TNEA Single Window Counselling",45.0,TNEA
+TCE-5008,ECE,B.E.,Electronics and Communication Engineering,4,120,"Passed 10+2 with PCM, TNEA Single Window Counselling",45.0,TNEA
+TCE-5008,MECH,B.E.,Mechanical Engineering,4,120,"Passed 10+2 with PCM, TNEA Single Window Counselling",45.0,TNEA
+CIT-2007,CSE,B.E.,Computer Science and Engineering,4,120,"Passed 10+2 with PCM, TNEA Single Window Counselling",45.0,TNEA
+CIT-2007,AI_DS,B.Tech,Artificial Intelligence and Data Science,4,60,"Passed 10+2 with PCM, TNEA Single Window Counselling",45.0,TNEA
+CIT-2007,MECH,B.E.,Mechanical Engineering,4,60,"Passed 10+2 with PCM, TNEA Single Window Counselling",45.0,TNEA
+VIT-001,CSE,B.Tech,Computer Science and Engineering,4,600,"Passed 10+2 with minimum 60% aggregate in PCM/PCB, qualified in VITEEE entrance exam",60.0,VITEEE
+VIT-001,ECE,B.Tech,Electronics and Communication Engineering,4,300,"Passed 10+2 with minimum 60% aggregate in PCM, qualified in VITEEE",60.0,VITEEE
+VIT-001,IT,B.Tech,Information Technology,4,240,"Passed 10+2 with minimum 60% aggregate in PCM, qualified in VITEEE",60.0,VITEEE

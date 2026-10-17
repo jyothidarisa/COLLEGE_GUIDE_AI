@@ -1,0 +1,35 @@
+# Indian Institute of Technology Madras (IIT Madras)
+Academic Year: 2024-2025
+Source: https://www.iitm.ac.in/academics/btech-admissions
+Authority: Joint Seat Allocation Authority (JoSAA) & IIT Madras Senate
+
+## 1. Admission Eligibility and Examination Route
+Admission to 4-year B.Tech and 5-year Dual Degree programs at IIT Madras is exclusively through the Joint Entrance Examination (JEE) Advanced, coordinated via JoSAA counselling.
+- Candidates must pass Class 12 (or equivalent) with Physics, Chemistry, and Mathematics.
+- Candidates must secure at least 75% aggregate marks in Class 12 board examination (65% for SC, ST, and PwD candidates) or be within the category-wise top 20 percentile of successful candidates in their respective Class 12 board examination.
+- Candidates cannot gain admission to IIT Madras through state-level exams such as TNEA or solely through JEE Main.
+
+## 2. Cutoff History & Allotment Ranks (2024 & 2023)
+- Computer Science and Engineering (CSE): In 2024 JoSAA Round 6, the opening rank was 1 and closing rank was 148 for General (All India). In 2023, the closing rank was 144. For OBC-NCL candidates, the 2024 closing category rank was 65.
+- Electrical Engineering: General closing rank was 854 in 2024 and 860 in 2023.
+- Mechanical Engineering: General closing rank was 2,350 in 2024.
+
+## 3. Tuition Fees and Living Expenses
+- Annual Tuition Fee: INR 2,00,000 (INR 1,00,000 per semester).
+- Hostel Accommodation: On-campus residence is mandatory for undergraduate students. Annual hostel seat rent and amenities charge is approximately INR 45,000.
+- Mess Charges: Approximate dining charges are INR 40,000 per academic year on a monthly billing system.
+- One-Time Admission and Caution Deposit: INR 10,000 (partially refundable upon course completion).
+- Total Annual Estimated Expense: INR 2,85,000 for non-exempted students.
+
+## 4. Scholarships and Fee Waivers
+- 100% Tuition Fee Exemption: For all SC, ST, and PwD undergraduate students irrespective of family income.
+- Economically Backward Students: 100% tuition waiver for students whose family annual income is less than INR 1,00,000.
+- Partial Remission: 2/3rd (66.6%) of the tuition fee is waived for students whose family annual income is between INR 1,00,000 and INR 5,00,000.
+- Institute Merit-cum-Means (MCM) Scholarship: Up to 25% of admitted students receive a full tuition waiver plus INR 1,000 per month stipend.
+
+## 5. Placement Statistics (2023-2024)
+- Overall undergraduate placement percentage: 81.7%.
+- Median Annual CTC: INR 19.6 LPA.
+- Average Annual CTC: INR 22.0 LPA.
+- Highest Domestic Package: INR 1.31 Crore per annum.
+- Key Recruiters: Google, Microsoft, Texas Instruments, Apple, Qualcomm, Goldman Sachs, Airbus, McKinsey.

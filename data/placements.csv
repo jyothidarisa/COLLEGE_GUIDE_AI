@@ -1,0 +1,9 @@
+college_code,reporting_year,eligible_students,placed_students,placement_percentage,highest_package_lpa,average_package_lpa,median_package_lpa,top_recruiters,source_report_url,verification_date
+IITM,2024,1200,980,81.7,131.0,22.0,19.6,"Microsoft, Google, Texas Instruments, Qualcomm, Apple, Goldman Sachs, Airbus",https://www.iitm.ac.in/placements/annual-report-2024,2024-07-30
+NITT,2024,1150,1012,88.0,52.8,15.7,12.0,"Morgan Stanley, Oracle, Amazon, DE Shaw, Cisco, Tata Motors, L&T",https://www.nitt.edu/placements/reports/2024.pdf,2024-08-01
+CEG-0001,2024,1420,1210,85.2,40.0,9.8,8.5,"Cisco, SAP, Zoho, Caterpillar, Hyundai, TCS, Infosys, Cognizant",https://ceg.annauniv.edu/placement-report-2024,2024-08-10
+PSG-1211,2024,1350,1190,88.1,35.0,9.2,7.5,"Amazon, Qualcomm, Bosch, Titan, Zoho, Deloitte, Larsen & Toubro",https://www.psgtech.edu/placement/statistics2024,2024-08-05
+SSN-1315,2024,1280,1140,89.1,32.0,8.9,7.2,"Amazon, Cognizant, Zoho, Freshworks, Ford, Caterpillar, NatWest",https://www.ssn.edu.in/placements/placement-record-2024,2024-08-15
+TCE-5008,2024,980,820,83.7,28.0,7.8,6.5,"TCS, Infosys, Zoho, Cognizant, Saint-Gobain, TVS Motors, L&T",https://www.tce.edu/placement/report2024,2024-07-28
+CIT-2007,2024,890,730,82.0,25.0,7.4,6.2,"Zoho, Bosch, Robert Bosch, Cognizant, Wipro, Hexaware",https://www.cit.edu.in/placements/2024,2024-07-20
+VIT-001,2024,7800,6850,87.8,102.0,10.2,9.0,"Microsoft, Amazon, PayPal, Cisco, Intel, Morgan Stanley, Wipro, TCS",https://vit.ac.in/placements-overview-2024,2024-08-01

@@ -1,0 +1,30 @@
+# PSG College of Technology, Coimbatore
+Academic Year: 2024-2025
+Source: https://www.psgtech.edu
+Authority: Government Aided Autonomous College, Affiliated to Anna University
+
+## 1. Admission Overview
+Admissions to all undergraduate engineering courses at PSG College of Technology are conducted through the TNEA Single Window Counselling system based on Class 12 cut-off marks (out of 200).
+- PSG offers both Government Aided programs and Self-Supporting programs.
+
+## 2. Cutoffs (TNEA 2024 & 2023)
+- Computer Science and Engineering (CSE):
+  - Aided OC Cutoff: 198.50 (2024), 198.00 (2023).
+  - Self-Supporting OC Cutoff: 197.50 (2024).
+- Information Technology (IT): OC Cutoff 197.50 (2024).
+- Electronics and Communication Engineering (ECE): OC Cutoff 196.50 (2024).
+- Mechanical Engineering (MECH): OC Cutoff 188.00 (2024).
+
+## 3. Fees and Expenses
+- Government Aided Programs Tuition Fee: INR 45,000 to INR 95,000 per year.
+- Self-Supporting Programs Tuition Fee: INR 1,40,000 per year.
+- Hostel Charges: INR 75,000 per year.
+- Mess Charges: INR 45,000 per year.
+- Total Annual Estimate: INR 2,15,000 (Aided) to INR 2,60,000 (Self-Supporting).
+
+## 4. Scholarships and Placements
+- PSG Sons & Charities Merit-cum-Means Scholarships: Financial assistance from INR 25,000 to INR 50,000.
+- Placement Rate: 88.1%.
+- Median CTC: INR 7.5 LPA.
+- Highest CTC: INR 35.0 LPA.
+- Top Recruiters: Amazon, Qualcomm, Bosch, Titan, Zoho, Deloitte, Larsen & Toubro.

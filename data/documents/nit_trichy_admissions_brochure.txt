@@ -1,0 +1,38 @@
+# National Institute of Technology Tiruchirappalli (NIT Trichy)
+Academic Year: 2024-2025
+Source: https://www.nitt.edu/admissions/btech
+Authority: JoSAA / Central Seat Allocation Board (CSAB)
+
+## 1. Admission Eligibility and Examination Route
+Undergraduate engineering admissions to NIT Tiruchirappalli (NIT Trichy) are made strictly on the basis of All India Rank (AIR) in JEE Main through JoSAA and CSAB counselling.
+- 50% of seats are reserved for Home State (Tamil Nadu) candidates.
+- 50% of seats are allocated to Other State candidates across India.
+- Candidates must have scored at least 75% marks in Class 12 board examination (65% for SC/ST/PwD) or be in the top 20 percentile in their respective board.
+
+## 2. Historical Cutoffs
+- Computer Science and Engineering (CSE):
+  - Other State Open Quota: Closing Rank 1,520 (2024), Closing Rank 1,490 (2023).
+  - Home State Open Quota: Closing Rank 4,580 (2024), Closing Rank 4,410 (2023).
+- Electronics and Communication Engineering (ECE):
+  - Other State Open Quota: Closing Rank 4,850 (2024).
+  - Home State Open Quota: Closing Rank 9,820 (2024).
+- Mechanical Engineering:
+  - Other State Open Quota: Closing Rank 12,400 (2024).
+
+## 3. Fee Structure and Hostels
+- Annual Tuition Fee: INR 1,25,000 (INR 62,500 per semester).
+- Hostel Seat Rent and Infrastructure Charges: INR 50,000 per year.
+- Mess Advance / Charges: Approximately INR 42,000 per year.
+- Caution Deposit (Refundable): INR 12,000.
+- Total Annual Estimated Expenditure: INR 2,17,000.
+
+## 4. Fee Concessions & Financial Aid
+- 100% Tuition Fee Remission for SC/ST/PwD students.
+- 100% Tuition Fee Remission for students with annual family income below INR 1,00,000.
+- 66.6% (2/3rd) Tuition Remission for students with family income between INR 1,00,000 and INR 5,00,000.
+
+## 5. Placements (2024)
+- Placement percentage: 88.0%.
+- Median CTC: INR 12.0 LPA.
+- Highest CTC: INR 52.8 LPA.
+- Major Recruiters: DE Shaw, Amazon, Morgan Stanley, Oracle, Cisco, Tata Motors, Larsen & Toubro.

@@ -1,0 +1,38 @@
+# College of Engineering Guindy (CEG), Anna University
+Academic Year: 2024-2025
+Source: https://www.tneaonline.org & https://ceg.annauniv.edu
+Authority: Directorate of Technical Education (DoTE) Tamil Nadu
+
+## 1. Admission Eligibility and Normalization Process
+Admissions to B.E. and B.Tech programs at CEG Anna University are conducted exclusively through Tamil Nadu Engineering Admissions (TNEA) Single Window Centralized Counselling.
+- No entrance exam rank is used; selection is solely based on Class 12 Higher Secondary normalized cut-off marks out of 200.
+- Cutoff Formula: Mathematics score out of 100 + (Physics score out of 100 / 2) + (Chemistry score out of 100 / 2). Total Maximum Cutoff: 200.00.
+- Minimum Eligibility: General Category candidates must have an aggregate of at least 45% in PCM. Backward Class (BC), MBC, SC, and ST candidates must have an aggregate of at least 40%.
+
+## 2. Cutoff History for CEG Chennai
+- Computer Science and Engineering (CSE):
+  - Open Competition (OC): 199.50 (2024), 199.00 (2023).
+  - Backward Class (BC): 199.00 (2024).
+  - Most Backward Class (MBC): 197.50 (2024).
+  - Scheduled Caste (SC): 190.00 (2024).
+- Information Technology (IT): OC Cutoff 198.50 (2024), 198.00 (2023).
+- Electronics and Communication Engineering (ECE): OC Cutoff 198.00 (2024).
+- Mechanical Engineering (MECH): OC Cutoff 193.50 (2024).
+
+## 3. Subsidized Tuition Fees and Accommodation
+- Being a premier state government university, CEG charges heavily subsidized tuition fees:
+  - Annual Tuition Fee: INR 50,000 (INR 25,000 per semester).
+  - Hostel Fee: INR 35,000 per year for university residential hostels.
+  - Mess Charges: Approximately INR 30,000 per year on a dividing system.
+  - Total Annual Cost: Approximately INR 1,15,000.
+
+## 4. Government Scholarships
+- First Graduate Tuition Waiver: INR 25,000 per year tuition waiver for candidates who are the first in their family to graduate.
+- 7.5% Government School Quota: Full fee waiver (tuition, hostel, mess, books) funded entirely by the Government of Tamil Nadu for students from government schools.
+- Post-Matric SC/ST Scholarships: Full reimbursement of tuition and examination fees.
+
+## 5. Placement Highlights
+- Placed Percentage: 85.2%.
+- Median Package: INR 8.5 LPA.
+- Highest Package: INR 40.0 LPA.
+- Top Recruiters: Cisco, SAP Labs, Zoho Corporation, Caterpillar, Hyundai, TCS, Infosys, Cognizant.

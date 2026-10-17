@@ -1,0 +1,9 @@
+college_code,academic_year,annual_tuition_fee,hostel_fee_annual,mess_fee_annual,one_time_caution_deposit,total_annual_estimate,fee_breakdown_notes,source_url,last_verified
+IITM,2024,200000,45000,40000,10000,285000,"Tuition fee 1,00,000 INR per semester. 100% tuition waiver for SC/ST/PH and parents income < 1 lakh/yr. 2/3rd waiver for income between 1-5 lakhs.",https://www.iitm.ac.in/academics/fee-structure,2024-08-01
+NITT,2024,125000,50000,42000,12000,217000,"Tuition fee 62,500 INR per semester for General/OBC. Full waiver for SC/ST and income < 1 lakh.",https://www.nitt.edu/home/academics/fee-structure,2024-07-25
+CEG-0001,2024,50000,35000,30000,5000,115000,"State government subsidized tuition fee of ~25,000 INR per semester for regular seats. Additional exam fees apply.",https://ceg.annauniv.edu/fees,2024-08-15
+PSG-1211,2024,95000,75000,45000,10000,215000,"Aided branch tuition fee is ~45,000 INR/yr. Self-supporting branches (e.g. IT, self-support CSE) are ~1,40,000 INR/yr.",https://www.psgtech.edu/admissions/fees,2024-08-05
+SSN-1315,2024,150000,90000,50000,15000,290000,"Government quota approved tuition fee is ~55,000 + college fees ~95,000 totaling 1,50,000 INR/yr. Air-conditioned hostel extra.",https://www.ssn.edu.in/admissions/fee-structure,2024-08-12
+TCE-5008,2024,85000,55000,35000,8000,175000,"Aided branch tuition fee ~40,000 INR/yr. Self-finance engineering ~90,000 INR/yr. Mess charges on dividing system.",https://www.tce.edu/admissions/fees,2024-07-28
+CIT-2007,2024,85000,60000,38000,8000,183000,"Government aided seats ~40,000 INR/yr. Self-supporting courses ~90,000 INR/yr.",https://www.cit.edu.in/fees,2024-07-20
+VIT-001,2024,198000,105000,65000,15000,368000,"Category 1 B.Tech tuition is 1,98,000 INR/yr. Category 2 is 3,07,000 INR/yr. Hostel fees range from 1,05,000 to 1,80,000 depending on AC/room type.",https://vit.ac.in/admissions/btech/fees,2024-08-02

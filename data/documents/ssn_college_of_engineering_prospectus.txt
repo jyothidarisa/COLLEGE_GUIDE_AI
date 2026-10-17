@@ -1,0 +1,38 @@
+# SSN College of Engineering (Autonomous)
+Academic Year: 2024-2025
+Source: https://www.ssn.edu.in
+Authority: Affiliated to Anna University, Approved by AICTE, Accredited NAAC A++
+
+## 1. Admission Pathways
+SSN College of Engineering offers admission via two official routes:
+1. Government Quota (65% of seats): Allocated through TNEA Single Window Counselling based on Class 12 PCM cutoff mark out of 200.
+2. Management Quota (35% of seats): Allocated on pure merit based on Class 12 PCM marks and an internal aptitude interview. No capitation fee or donation is collected.
+
+## 2. Cutoff History (TNEA Single Window)
+- Computer Science and Engineering (CSE):
+  - OC Cutoff: 197.50 (2024), 197.00 (2023).
+  - BC Cutoff: 196.00 (2024).
+- Artificial Intelligence and Data Science (AI & DS):
+  - OC Cutoff: 196.50 (2024).
+- Information Technology (IT):
+  - OC Cutoff: 196.00 (2024).
+- Electronics and Communication Engineering (ECE):
+  - OC Cutoff: 195.00 (2024).
+
+## 3. Fee Structure and Amenities
+- Annual Tuition and Institutional Fee: INR 1,50,000 per year for Government Quota admitted candidates.
+- Hostel Accommodation: On-campus separate hostels for boys and girls with options for AC and Non-AC rooms. Annual hostel charge is approximately INR 90,000.
+- Mess Fee: INR 50,000 per year (multicuisine vegetarian and non-vegetarian).
+- Total Annual Estimate: INR 2,90,000.
+
+## 4. SSN Trust Scholarships (Over INR 4 Crores Awarded Annually)
+- Merit Scholarships: 100% scholarship for top 25 board exam rankers and TNEA college toppers.
+- Rural Talent Scheme: 25 rural government school students receive 100% free education, accommodation, and stipend every year.
+- Sports Scholarships: Full fee waivers for national and international athletes.
+
+## 5. Placement Record (2023-2024)
+- Placement Rate: 89.1%.
+- Median CTC: INR 7.2 LPA.
+- Average CTC: INR 8.9 LPA.
+- Highest Domestic CTC: INR 32.0 LPA.
+- Top Recruiters: Amazon, Zoho, Cognizant, Freshworks, Ford, Caterpillar, NatWest, Citi.
