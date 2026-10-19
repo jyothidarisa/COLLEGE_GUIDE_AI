@@ -90,7 +90,12 @@ export default function ProfilePage() {
       return;
     }
 
-    if (formData.entrance_exam !== 'TNEA' && score < 1) {
+    if (formData.entrance_exam === 'BITSAT' && (score < 40 || score > 390)) {
+      setError('For BITSAT, score must be between 40 and 390.');
+      return;
+    }
+
+    if (formData.entrance_exam !== 'TNEA' && formData.entrance_exam !== 'BITSAT' && score < 1) {
       setError(`For ${formData.entrance_exam}, rank must be a positive integer.`);
       return;
     }
@@ -330,8 +335,9 @@ export default function ProfilePage() {
                 className="w-full px-3 py-2 rounded-lg border border-sky-300 bg-white text-sm font-bold text-sky-800 focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none"
               >
                 <option value="TNEA">TNEA (Tamil Nadu Engineering Admissions)</option>
-                <option value="JEE_MAIN">JEE Main (JoSAA / CSAB)</option>
+                <option value="JEE_MAIN">JEE Main (JoSAA / CSAB / NITs / IIITs)</option>
                 <option value="JEE_ADVANCED">JEE Advanced (IIT Admissions)</option>
+                <option value="BITSAT">BITSAT (BITS Pilani Admissions)</option>
                 <option value="VITEEE">VITEEE (VIT Deemed University)</option>
               </select>
             </div>
@@ -340,6 +346,8 @@ export default function ProfilePage() {
               <label className="block text-xs font-semibold text-slate-800 mb-1">
                 {formData.entrance_exam === 'TNEA'
                   ? 'Normalized Cutoff Mark (Out of 200) *'
+                  : formData.entrance_exam === 'BITSAT'
+                  ? 'BITSAT Score (Out of 390) *'
                   : 'All India Rank (AIR) *'}
               </label>
               <input
@@ -348,13 +356,21 @@ export default function ProfilePage() {
                 name="rank_or_score"
                 value={formData.rank_or_score}
                 onChange={handleChange}
-                placeholder={formData.entrance_exam === 'TNEA' ? 'e.g. 197.50' : 'e.g. 1450'}
+                placeholder={
+                  formData.entrance_exam === 'TNEA'
+                    ? 'e.g. 197.50'
+                    : formData.entrance_exam === 'BITSAT'
+                    ? 'e.g. 335'
+                    : 'e.g. 1450'
+                }
                 required
                 className="w-full px-3 py-2 rounded-lg border border-sky-300 bg-white text-sm font-bold text-slate-900 focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none"
               />
               <span className="text-[11px] text-sky-700">
                 {formData.entrance_exam === 'TNEA'
                   ? 'Calculate: Maths(100) + Phy(50) + Chem(50)'
+                  : formData.entrance_exam === 'BITSAT'
+                  ? 'Score out of 390 in BITSAT computer test'
                   : 'Enter positive integer rank'}
               </span>
             </div>

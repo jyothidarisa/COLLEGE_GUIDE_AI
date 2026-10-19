@@ -1,0 +1,36 @@
+# National Institute of Technology Karnataka Surathkal (NITK Surathkal)
+Academic Year: 2024-2025
+Source: https://www.nitk.ac.in & https://josaa.nic.in
+Authority: JoSAA / Central Seat Allocation Board (CSAB)
+
+## 1. Admission Eligibility and Routes
+Admissions to 4-year B.Tech programs at NITK Surathkal are conducted exclusively via All India Ranks in JEE Main through JoSAA and CSAB counselling.
+- 50% Home State Quota (Karnataka) and 50% Other State Quota across India.
+- Eligibility requires Class 12 with PCM >= 75% aggregate or top 20 percentile in board exam.
+
+## 2. Historical Cutoffs (JEE Main JoSAA Round 6)
+- Computer Science and Engineering (CSE):
+  - Other State Open Quota: Closing Rank 1,984 (2024), Closing Rank 1,950 (2023).
+  - Home State Open Quota: Closing Rank 3,406 (2024).
+- Information Technology (IT): Other State Closing Rank 3,400 (2024).
+- Electronics and Communication Engineering (ECE): Other State Closing Rank 5,100 (2024).
+- Mechanical Engineering (MECH): Other State Closing Rank 14,200 (2024).
+
+## 3. Fee Structure and Campus Living
+- Annual Tuition Fee: INR 1,25,000 (INR 62,500 per semester).
+- Hostel Rent and Facilities: INR 45,000 per year.
+- Mess Charges: INR 40,000 per year.
+- Caution Deposit: INR 10,000.
+- Total Annual Estimate: INR 2,10,000.
+
+## 4. Fee Remissions and Financial Aid
+- 100% Tuition Fee Remission for SC, ST, and PwD candidates.
+- 100% Tuition Waiver for students with family income under INR 1,00,000.
+- 2/3rd Tuition Remission for family income between INR 1,00,000 and INR 5,00,000.
+
+## 5. Placement Statistics (2024)
+- Placement Rate: 87.1%.
+- Median CTC: INR 12.8 LPA.
+- Average CTC: INR 16.2 LPA.
+- Highest CTC: INR 54.0 LPA.
+- Top Recruiters: Microsoft, Amazon, Cisco, Wells Fargo, Goldman Sachs, Samsung, Morgan Stanley.

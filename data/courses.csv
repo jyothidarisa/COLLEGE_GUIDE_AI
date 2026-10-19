@@ -2,6 +2,21 @@ college_code,course_code,degree,course_name,duration_years,total_seats,eligibili
 IITM,CSE,B.Tech,Computer Science and Engineering,4,87,"Passed Class 12 with PCM, qualified in JEE Main and JEE Advanced (top percentiles)",75.0,JEE_ADVANCED
 IITM,EE,B.Tech,Electrical Engineering,4,110,"Passed Class 12 with PCM, qualified in JEE Main and JEE Advanced",75.0,JEE_ADVANCED
 IITM,MECH,B.Tech,Mechanical Engineering,4,115,"Passed Class 12 with PCM, qualified in JEE Main and JEE Advanced",75.0,JEE_ADVANCED
+IITB,CSE,B.Tech,Computer Science and Engineering,4,171,"Passed Class 12 with PCM >= 75% aggregate, qualified in JEE Main and JEE Advanced",75.0,JEE_ADVANCED
+IITB,EE,B.Tech,Electrical Engineering,4,170,"Passed Class 12 with PCM >= 75% aggregate, qualified in JEE Main and JEE Advanced",75.0,JEE_ADVANCED
+IITB,MECH,B.Tech,Mechanical Engineering,4,175,"Passed Class 12 with PCM >= 75% aggregate, qualified in JEE Main and JEE Advanced",75.0,JEE_ADVANCED
+IITD,CSE,B.Tech,Computer Science and Engineering,4,99,"Passed Class 12 with PCM >= 75% aggregate, qualified in JEE Main and JEE Advanced",75.0,JEE_ADVANCED
+IITD,EE,B.Tech,Electrical Engineering,4,120,"Passed Class 12 with PCM >= 75% aggregate, qualified in JEE Main and JEE Advanced",75.0,JEE_ADVANCED
+IITD,MECH,B.Tech,Mechanical Engineering,4,120,"Passed Class 12 with PCM >= 75% aggregate, qualified in JEE Main and JEE Advanced",75.0,JEE_ADVANCED
+BITS-P,CSE,B.E.,Computer Science and Engineering,4,180,"Passed 10+2 with Physics, Chemistry, and Mathematics with minimum 75% aggregate and 60% in each subject; qualified in BITSAT",75.0,BITSAT
+BITS-P,EEE,B.E.,Electrical and Electronics Engineering,4,140,"Passed 10+2 with PCM with minimum 75% aggregate; qualified in BITSAT",75.0,BITSAT
+BITS-P,MECH,B.E.,Mechanical Engineering,4,130,"Passed 10+2 with PCM with minimum 75% aggregate; qualified in BITSAT",75.0,BITSAT
+IIITH,CSE,B.Tech,Computer Science and Engineering,4,150,"Passed 10+2 with PCM with aggregate >= 60%; qualified in JEE Main (via IIIT-H Portal) or UGEE",60.0,JEE_MAIN
+IIITH,ECE,B.Tech,Electronics and Communication Engineering,4,90,"Passed 10+2 with PCM with aggregate >= 60%; qualified in JEE Main or UGEE",60.0,JEE_MAIN
+NITK,CSE,B.Tech,Computer Science and Engineering,4,115,"Passed Class 12 with PCM >= 75% or top 20 percentile; valid JEE Main All India Rank",75.0,JEE_MAIN
+NITK,IT,B.Tech,Information Technology,4,110,"Passed Class 12 with PCM >= 75%; valid JEE Main All India Rank",75.0,JEE_MAIN
+NITK,ECE,B.Tech,Electronics and Communication Engineering,4,115,"Passed Class 12 with PCM >= 75%; valid JEE Main All India Rank",75.0,JEE_MAIN
+NITK,MECH,B.Tech,Mechanical Engineering,4,115,"Passed Class 12 with PCM >= 75%; valid JEE Main All India Rank",75.0,JEE_MAIN
 NITT,CSE,B.Tech,Computer Science and Engineering,4,120,"Passed Class 12 with PCM >= 75% or top 20 percentile in board, valid JEE Main rank",75.0,JEE_MAIN
 NITT,ECE,B.Tech,Electronics and Communication Engineering,4,110,"Passed Class 12 with PCM >= 75%, valid JEE Main rank",75.0,JEE_MAIN
 NITT,MECH,B.Tech,Mechanical Engineering,4,120,"Passed Class 12 with PCM >= 75%, valid JEE Main rank",75.0,JEE_MAIN

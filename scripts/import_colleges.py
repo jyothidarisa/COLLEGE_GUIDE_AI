@@ -46,6 +46,8 @@ def import_all_data():
                             overview=row.get("overview", "").strip() or None,
                             facilities=row.get("facilities", "").strip() or None,
                             hostel_available=row.get("hostel_available", "True").lower() == "true",
+                            image_url=row.get("image_url", "").strip() or None,
+                            image_source=row.get("image_source", "").strip() or None,
                             data_freshness_year=int(row.get("data_freshness_year", 2024)),
                             last_verified_at=row.get("last_verified_at", "2024-08-15"),
                             verification_status=row.get("verification_status", "Verified Official")
@@ -54,6 +56,10 @@ def import_all_data():
                         db.flush()
                         colleges_map[code] = col.id
                     else:
+                        if row.get("image_url"):
+                            existing.image_url = row["image_url"].strip()
+                        if row.get("image_source"):
+                            existing.image_source = row["image_source"].strip()
                         colleges_map[code] = existing.id
             db.commit()
             print(f"Colleges imported/verified: {len(colleges_map)}")

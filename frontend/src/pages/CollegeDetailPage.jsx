@@ -82,30 +82,45 @@ export default function CollegeDetailPage() {
       </div>
 
       {/* College Header Hero */}
-      <div className="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-          <div>
+      <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+        {/* Campus Photo Banner */}
+        <div className="relative h-56 sm:h-72 w-full bg-slate-900 overflow-hidden">
+          <img
+            src={college.image_url || "https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&w=1200&q=80"}
+            alt={college.name}
+            onError={(e) => {
+              e.currentTarget.onerror = null;
+              e.currentTarget.src = "https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&w=1200&q=80";
+            }}
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/30 to-transparent"></div>
+          <div className="absolute bottom-6 left-6 right-6 text-white">
             <div className="flex flex-wrap items-center gap-2 mb-2">
-              <span className="px-3 py-1 rounded-full text-xs font-bold bg-sky-50 text-sky-700 border border-sky-200">
+              <span className="px-3 py-1 rounded-full text-xs font-bold bg-white/90 text-slate-800 shadow-sm">
                 {college.college_type}
               </span>
-              <span className="px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200 flex items-center space-x-1">
-                <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
+              <span className="px-3 py-1 rounded-full text-xs font-bold bg-emerald-500 text-white shadow-sm flex items-center space-x-1">
+                <ShieldCheck className="w-3.5 h-3.5" />
                 <span>{college.verification_status}</span>
               </span>
               {college.nirf_rank && (
-                <span className="px-3 py-1 rounded-full text-xs font-bold bg-amber-50 text-amber-800 border border-amber-200 flex items-center space-x-1">
-                  <Award className="w-3.5 h-3.5 text-amber-600" />
+                <span className="px-3 py-1 rounded-full text-xs font-bold bg-amber-500 text-white shadow-sm flex items-center space-x-1">
+                  <Award className="w-3.5 h-3.5" />
                   <span>NIRF Rank #{college.nirf_rank}</span>
                 </span>
               )}
             </div>
-
-            <h1 className="text-3xl font-black text-slate-900 leading-tight">
+            <h1 className="text-2xl sm:text-4xl font-black text-white leading-tight">
               {college.name}
             </h1>
+          </div>
+        </div>
 
-            <div className="flex flex-wrap items-center gap-3 text-xs text-slate-500 mt-2">
+        <div className="p-6 sm:p-8 space-y-6">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+            <div>
+              <div className="flex flex-wrap items-center gap-3 text-xs text-slate-500">
               <span className="flex items-center space-x-1">
                 <MapPin className="w-4 h-4 text-slate-400" />
                 <span>{college.city}, {college.state}</span>
@@ -186,6 +201,7 @@ export default function CollegeDetailPage() {
             </div>
           </div>
         )}
+        </div>
       </div>
 
       {/* Navigation Tabs */}

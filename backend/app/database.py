@@ -46,6 +46,19 @@ def get_db():
     finally:
         db.close()
 
+from sqlalchemy import text
+
 def init_db():
     """Initializes tables in database."""
     Base.metadata.create_all(bind=engine)
+    try:
+        with engine.connect() as conn:
+            result = conn.execute(text("PRAGMA table_info(colleges);"))
+            cols = [row[1] for row in result.fetchall()]
+            if cols and "image_url" not in cols:
+                conn.execute(text("ALTER TABLE colleges ADD COLUMN image_url VARCHAR(500);"))
+            if cols and "image_source" not in cols:
+                conn.execute(text("ALTER TABLE colleges ADD COLUMN image_source VARCHAR(255);"))
+            conn.commit()
+    except Exception as e:
+        logger.debug(f"Column migration note: {e}")

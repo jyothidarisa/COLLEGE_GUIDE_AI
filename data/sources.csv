@@ -1,8 +1,18 @@
 college_code,authority_name,source_name,source_type,url,academic_year,last_verified_date,notes
 IITM,Joint Seat Allocation Authority (JoSAA),JoSAA 2024 Opening and Closing Ranks,Counselling Authority,https://josaa.nic.in,2024,2024-09-01,Official JoSAA 2024 Round 1 to 6 Seat Allocation Data
 IITM,Ministry of Education Govt of India,NIRF Engineering Rankings 2024,NIRF,https://www.nirfindia.org/2024/EngineeringRanking.html,2024,2024-08-15,Ranked #1 in Engineering and Overall Category
+IITB,Joint Seat Allocation Authority (JoSAA),JoSAA 2024 Opening and Closing Ranks (IIT Bombay),Counselling Authority,https://josaa.nic.in,2024,2024-09-01,Official JoSAA 2024 Round 1 to 6 Closing Ranks
+IITB,Ministry of Education Govt of India,NIRF Engineering Rankings 2024,NIRF,https://www.nirfindia.org/2024/EngineeringRanking.html,2024,2024-08-15,Ranked #3 in Engineering in India
+IITD,Joint Seat Allocation Authority (JoSAA),JoSAA 2024 Seat Allotment Data (IIT Delhi),Counselling Authority,https://josaa.nic.in,2024,2024-09-01,Official JoSAA Round 1 to 6 Closing Ranks
+IITD,Ministry of Education Govt of India,NIRF Engineering Rankings 2024,NIRF,https://www.nirfindia.org/2024/EngineeringRanking.html,2024,2024-08-15,Ranked #2 in Engineering in India
+BITS-P,BITS Admissions Committee,BITSAT 2024 Cutoff Scores and Information Brochure,Official Portal,https://www.bitsadmission.com,2024,2024-08-25,Official BITSAT Round Iteration Cutoffs
+BITS-P,Ministry of Education Govt of India,NIRF Engineering Rankings 2024,NIRF,https://www.nirfindia.org/2024/EngineeringRanking.html,2024,2024-08-15,Ranked #20 in Engineering in India
+IIITH,IIIT Hyderabad Admissions Portal,UG Admissions 2024 Opening and Closing Ranks,Official Portal,https://ugadmissions.iiit.ac.in,2024,2024-08-20,JEE Main CRL Mode Final Cutoffs
+IIITH,IIIT Hyderabad Placement Office,Audited Placement Report 2023-2024,Placement Report,https://www.iiit.ac.in/placements,2024,2024-08-20,Median salary of Rs 30 LPA
 NITT,Joint Seat Allocation Authority (JoSAA),JoSAA 2024 Cutoff Data,Counselling Authority,https://josaa.nic.in,2024,2024-08-20,Round 1-6 cutoffs for Home State and Other State
 NITT,National Institutional Ranking Framework,NIRF Engineering Rankings 2024,NIRF,https://www.nirfindia.org/2024/EngineeringRanking.html,2024,2024-08-15,Ranked #9 among all Engineering Colleges in India
+NITK,Joint Seat Allocation Authority (JoSAA),JoSAA 2024 Seat Allotment Data (NIT Surathkal),Counselling Authority,https://josaa.nic.in,2024,2024-08-20,Round 1-6 cutoffs for Home State and Other State
+NITK,National Institutional Ranking Framework,NIRF Engineering Rankings 2024,NIRF,https://www.nirfindia.org/2024/EngineeringRanking.html,2024,2024-08-15,Ranked #12 among all Engineering Colleges in India
 CEG-0001,Directorate of Technical Education (DoTE) Tamil Nadu,TNEA 2024 Minimum Cutoff Marks,Counselling Authority,https://www.tneaonline.org,2024,2024-08-25,TNEA Single Window Engineering Admissions
 CEG-0001,Anna University Official Portal,CEG Anna University B.E. Regulations & Fee Schedule,Official Portal,https://ceg.annauniv.edu,2024,2024-08-20,Subsidized Government Fee Structure
 PSG-1211,Directorate of Technical Education Tamil Nadu,TNEA 2024 Round 1-3 Allotment Cutoffs,Counselling Authority,https://www.tneaonline.org,2024,2024-08-10,PSG College of Technology Aided & Self-Support Cutoffs

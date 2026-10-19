@@ -53,6 +53,12 @@ def test_recommendations_endpoint():
     data = res.json()
     assert data["success"] is True
     assert data["total_found"] > 0
+    assert "best_match" in data
+    assert data["best_match"] is not None
+    assert "reach" in data
+    assert "target" in data
+    assert "safer" in data
+    assert "intelligent_alternatives" in data
     assert "better_matched" in data
 
 def test_compare_colleges_endpoint():

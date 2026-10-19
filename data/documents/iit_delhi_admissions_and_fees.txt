@@ -1,0 +1,34 @@
+# Indian Institute of Technology Delhi (IIT Delhi)
+Academic Year: 2024-2025
+Source: https://home.iitd.ac.in/btech-admissions.php
+Authority: Joint Seat Allocation Authority (JoSAA) & IIT Delhi Senate
+
+## 1. Admission Eligibility and Route
+Admissions to 4-year B.Tech programs at IIT Delhi (Hauz Khas, New Delhi) are conducted solely on the basis of All India Rank in JEE Advanced through JoSAA counselling.
+- Eligibility requires passing 10+2 with Physics, Chemistry, and Mathematics with minimum 75% aggregate (65% for SC/ST/PwD).
+
+## 2. Cutoff Trends (JoSAA Round 6 All India Closing Ranks)
+- Computer Science and Engineering (CSE):
+  - 2024 Closing Rank: 116 (Opening Rank: 15).
+  - 2023 Closing Rank: 118 (Opening Rank: 20).
+- Electrical Engineering: Closing Rank 630 (2024).
+- Mechanical Engineering: Closing Rank 1,820 (2024).
+
+## 3. Tuition and Hostel Expenses
+- Annual Tuition Fee: INR 2,00,000 (INR 1,00,000 per semester).
+- Hostel Rent and Utilities: INR 46,000 per year.
+- Mess Charges: Approximately INR 42,000 per year.
+- Total Annual Estimated Expenditure: INR 2,88,000.
+
+## 4. Scholarships and Financial Aid
+- Full Tuition Remission for SC/ST/PwD students.
+- 100% Tuition Waiver for students with family income below INR 1,00,000.
+- 2/3rd Tuition Remission for students with family income between INR 1,00,000 and INR 5,00,000.
+- Institute Merit-cum-Means Scholarships and Alumni Endowment Grants.
+
+## 5. Placement Outcomes (2024)
+- Placement Rate: 85.0%.
+- Median CTC: INR 20.0 LPA.
+- Average CTC: INR 22.8 LPA.
+- Highest Package: INR 1.50 Crore per annum.
+- Top Recruiters: Microsoft, Uber, Intel, DE Shaw, Texas Instruments, Bain & Company, Goldman Sachs.

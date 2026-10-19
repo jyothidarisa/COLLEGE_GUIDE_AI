@@ -1,0 +1,36 @@
+# Birla Institute of Technology and Science Pilani (BITS Pilani)
+Academic Year: 2024-2025
+Source: https://www.bitsadmission.com & https://www.bits-pilani.ac.in
+Authority: Deemed University / Institution of Eminence (IoE)
+
+## 1. Admission Eligibility and Pathway
+Admissions to B.E. programs at BITS Pilani (Pilani, Goa, and Hyderabad campuses) are strictly based on merit in the computer-based entrance examination BITSAT (Birla Institute of Technology and Science Admission Test).
+- CRITICAL ADMISSION NOTICE: BITS Pilani does NOT accept JEE Main or JEE Advanced ranks. Admission is exclusively through BITSAT scores (out of 390).
+- Eligibility: Passed Class 12 from a recognized board with Physics, Chemistry, and Mathematics with a minimum of 75% aggregate in PCM, and at least 60% marks in each of Physics, Chemistry, and Mathematics individually.
+- Board Toppers: Candidates who secure First Rank in any central or state board are given direct admission to the course of their choice without BITSAT.
+
+## 2. BITSAT Cutoff History (Pilani Campus, Score out of 390)
+- Computer Science and Engineering (CSE):
+  - 2024 Final Iteration Cutoff: 331 marks.
+  - 2023 Final Iteration Cutoff: 331 marks.
+- Electrical and Electronics Engineering (EEE): Cutoff 288 marks (2024).
+- Mechanical Engineering (MECH): Cutoff 244 marks (2024).
+
+## 3. Academic Structure and Distinct Advantages
+- Zero Mandatory Attendance: Students have academic freedom to choose lecture hours and study schedules.
+- Practice School (PS-I and PS-II): All students undergo 7 months of full-time paid industrial internship at top global companies, resulting in exceptionally high pre-placement offers (PPOs).
+- World-Class Alumni Network: Strong presence across Silicon Valley, Wall Street, and top Indian startups.
+
+## 4. Fee Structure & High-Value Scholarships
+- Annual Tuition Fee: INR 5,41,000 (INR 2,70,500 per semester).
+- Hostel & Mess Charges: INR 1,10,000 per year.
+- Total Annual Estimate: INR 6,51,000.
+- Merit-cum-Need (MCN) Scholarships: Awarded to ~30% of the student body. Students with family income below INR 12 LPA and good CGPA receive between 25% and 100% tuition fee waivers.
+- Pure Merit Scholarships: Top 1% to 2% students get 50% to 100% tuition waivers irrespective of income.
+
+## 5. Placement Track Record (2024)
+- Placement Rate: 89.1%.
+- Median CTC: INR 18.0 LPA.
+- Average CTC: INR 20.2 LPA.
+- Highest CTC: INR 1.33 Crore per annum.
+- Top Recruiters: Google, Microsoft, Amazon, Schlumberger, Oracle, McKinsey, DE Shaw, Cisco.

@@ -5,6 +5,27 @@ IITM,CSE,2024,JEE_ADVANCED,OBC-NCL,All India,Closing Rank,25,65,1,https://josaa.
 IITM,EE,2024,JEE_ADVANCED,GEN,All India,Closing Rank,250,854,1,https://josaa.nic.in/archive/cutoff2024,Electrical Engg General
 IITM,EE,2023,JEE_ADVANCED,GEN,All India,Closing Rank,240,860,1,https://josaa.nic.in/archive/cutoff2023,Electrical Engg General 2023
 IITM,MECH,2024,JEE_ADVANCED,GEN,All India,Closing Rank,1050,2350,1,https://josaa.nic.in/archive/cutoff2024,Mechanical Engg General
+IITB,CSE,2024,JEE_ADVANCED,GEN,All India,Closing Rank,1,68,1,https://josaa.nic.in/archive/cutoff2024,IIT Bombay CSE JoSAA Closing Rank
+IITB,CSE,2023,JEE_ADVANCED,GEN,All India,Closing Rank,1,67,1,https://josaa.nic.in/archive/cutoff2023,IIT Bombay CSE JoSAA Closing Rank
+IITB,EE,2024,JEE_ADVANCED,GEN,All India,Closing Rank,100,464,1,https://josaa.nic.in/archive/cutoff2024,IIT Bombay EE JoSAA Closing Rank
+IITB,MECH,2024,JEE_ADVANCED,GEN,All India,Closing Rank,500,1794,1,https://josaa.nic.in/archive/cutoff2024,IIT Bombay MECH JoSAA Closing Rank
+IITD,CSE,2024,JEE_ADVANCED,GEN,All India,Closing Rank,15,116,1,https://josaa.nic.in/archive/cutoff2024,IIT Delhi CSE JoSAA Closing Rank
+IITD,CSE,2023,JEE_ADVANCED,GEN,All India,Closing Rank,20,118,1,https://josaa.nic.in/archive/cutoff2023,IIT Delhi CSE JoSAA Closing Rank
+IITD,EE,2024,JEE_ADVANCED,GEN,All India,Closing Rank,200,630,1,https://josaa.nic.in/archive/cutoff2024,IIT Delhi EE JoSAA Closing Rank
+IITD,MECH,2024,JEE_ADVANCED,GEN,All India,Closing Rank,600,1820,1,https://josaa.nic.in/archive/cutoff2024,IIT Delhi MECH JoSAA Closing Rank
+BITS-P,CSE,2024,BITSAT,GEN,All India,Cutoff Mark (out of 390),350,331,1,https://www.bitsadmission.com/cutoff2024,BITS Pilani Pilani Campus B.E. CSE Cutoff
+BITS-P,CSE,2023,BITSAT,GEN,All India,Cutoff Mark (out of 390),345,331,1,https://www.bitsadmission.com/cutoff2023,BITS Pilani B.E. CSE Cutoff 2023
+BITS-P,EEE,2024,BITSAT,GEN,All India,Cutoff Mark (out of 390),310,288,1,https://www.bitsadmission.com/cutoff2024,BITS Pilani EEE Cutoff
+BITS-P,MECH,2024,BITSAT,GEN,All India,Cutoff Mark (out of 390),280,244,1,https://www.bitsadmission.com/cutoff2024,BITS Pilani MECH Cutoff
+IIITH,CSE,2024,JEE_MAIN,GEN,All India,Closing Rank,150,950,1,https://ugadmissions.iiit.ac.in/cutoff2024,IIIT Hyderabad CSE JEE Main Mode Closing CRL
+IIITH,CSE,2023,JEE_MAIN,GEN,All India,Closing Rank,140,936,1,https://ugadmissions.iiit.ac.in/cutoff2023,IIIT Hyderabad CSE Closing Rank 2023
+IIITH,ECE,2024,JEE_MAIN,GEN,All India,Closing Rank,800,2100,1,https://ugadmissions.iiit.ac.in/cutoff2024,IIIT Hyderabad ECE Closing CRL
+NITK,CSE,2024,JEE_MAIN,GEN,Other State,Closing Rank,1100,1984,1,https://josaa.nic.in/archive/cutoff2024,NITK Surathkal CSE Other State Open
+NITK,CSE,2023,JEE_MAIN,GEN,Other State,Closing Rank,1050,1950,1,https://josaa.nic.in/archive/cutoff2023,NITK Surathkal CSE OS Open 2023
+NITK,CSE,2024,JEE_MAIN,GEN,Home State,Closing Rank,1500,3406,1,https://josaa.nic.in/archive/cutoff2024,NITK Surathkal CSE Home State Open
+NITK,IT,2024,JEE_MAIN,GEN,Other State,Closing Rank,2100,3400,1,https://josaa.nic.in/archive/cutoff2024,NITK Surathkal IT Other State Open
+NITK,ECE,2024,JEE_MAIN,GEN,Other State,Closing Rank,3200,5100,1,https://josaa.nic.in/archive/cutoff2024,NITK Surathkal ECE Other State Open
+NITK,MECH,2024,JEE_MAIN,GEN,Other State,Closing Rank,8000,14200,1,https://josaa.nic.in/archive/cutoff2024,NITK Surathkal MECH Other State Open
 NITT,CSE,2024,JEE_MAIN,GEN,Other State,Closing Rank,1100,1520,1,https://josaa.nic.in/archive/cutoff2024,NIT Trichy CSE OS Open
 NITT,CSE,2023,JEE_MAIN,GEN,Other State,Closing Rank,1050,1490,1,https://josaa.nic.in/archive/cutoff2023,NIT Trichy CSE OS Open 2023
 NITT,CSE,2024,JEE_MAIN,GEN,Home State,Closing Rank,1800,4580,1,https://josaa.nic.in/archive/cutoff2024,NIT Trichy CSE HS Open
@@ -23,22 +44,21 @@ CEG-0001,ECE,2024,TNEA,OC,General,Cutoff Mark (out of 200),199.0,198.00,1,https:
 CEG-0001,MECH,2024,TNEA,OC,General,Cutoff Mark (out of 200),197.0,193.50,1,https://www.tneaonline.org/archive2024,CEG MECH Open Competition
 PSG-1211,CSE,2024,TNEA,OC,General,Cutoff Mark (out of 200),199.5,198.50,1,https://www.tneaonline.org/archive2024,PSG Tech CSE OC
 PSG-1211,CSE,2023,TNEA,OC,General,Cutoff Mark (out of 200),199.0,198.00,1,https://www.tneaonline.org/archive2023,PSG Tech CSE OC 2023
-PSG-1211,CSE,2024,TNEA,BC,General,Cutoff Mark (out of 200),198.5,197.50,1,https://www.tneaonline.org/archive2024,PSG Tech CSE BC
 PSG-1211,IT,2024,TNEA,OC,General,Cutoff Mark (out of 200),198.5,197.50,1,https://www.tneaonline.org/archive2024,PSG Tech IT OC
-PSG-1211,ECE,2024,TNEA,OC,General,Cutoff Mark (out of 200),198.0,196.50,1,https://www.tneaonline.org/archive2024,PSG Tech ECE OC
-PSG-1211,MECH,2024,TNEA,OC,General,Cutoff Mark (out of 200),194.0,188.00,1,https://www.tneaonline.org/archive2024,PSG Tech MECH OC
-SSN-1315,CSE,2024,TNEA,OC,General,Cutoff Mark (out of 200),199.0,197.50,1,https://www.tneaonline.org/archive2024,SSN CSE OC Single Window
+PSG-1211,ECE,2024,TNEA,OC,General,Cutoff Mark (out of 200),198.0,197.00,1,https://www.tneaonline.org/archive2024,PSG Tech ECE OC
+PSG-1211,MECH,2024,TNEA,OC,General,Cutoff Mark (out of 200),195.0,192.00,1,https://www.tneaonline.org/archive2024,PSG Tech MECH OC
+SSN-1315,CSE,2024,TNEA,OC,General,Cutoff Mark (out of 200),199.0,197.50,1,https://www.tneaonline.org/archive2024,SSN CSE OC Cutoff
 SSN-1315,CSE,2023,TNEA,OC,General,Cutoff Mark (out of 200),198.5,197.00,1,https://www.tneaonline.org/archive2023,SSN CSE OC 2023
-SSN-1315,CSE,2024,TNEA,BC,General,Cutoff Mark (out of 200),197.5,196.00,1,https://www.tneaonline.org/archive2024,SSN CSE BC
-SSN-1315,AI_DS,2024,TNEA,OC,General,Cutoff Mark (out of 200),198.0,196.50,1,https://www.tneaonline.org/archive2024,SSN AI_DS OC
+SSN-1315,AI_DS,2024,TNEA,OC,General,Cutoff Mark (out of 200),197.5,196.50,1,https://www.tneaonline.org/archive2024,SSN AI_DS OC
 SSN-1315,IT,2024,TNEA,OC,General,Cutoff Mark (out of 200),197.5,196.00,1,https://www.tneaonline.org/archive2024,SSN IT OC
-SSN-1315,ECE,2024,TNEA,OC,General,Cutoff Mark (out of 200),197.0,195.00,1,https://www.tneaonline.org/archive2024,SSN ECE OC
-TCE-5008,CSE,2024,TNEA,OC,General,Cutoff Mark (out of 200),198.0,196.50,1,https://www.tneaonline.org/archive2024,TCE CSE OC
-TCE-5008,CSE,2023,TNEA,OC,General,Cutoff Mark (out of 200),197.5,195.50,1,https://www.tneaonline.org/archive2023,TCE CSE OC 2023
-TCE-5008,ECE,2024,TNEA,OC,General,Cutoff Mark (out of 200),196.0,194.00,1,https://www.tneaonline.org/archive2024,TCE ECE OC
-TCE-5008,MECH,2024,TNEA,OC,General,Cutoff Mark (out of 200),190.0,185.00,1,https://www.tneaonline.org/archive2024,TCE MECH OC
-CIT-2007,CSE,2024,TNEA,OC,General,Cutoff Mark (out of 200),197.5,196.00,1,https://www.tneaonline.org/archive2024,CIT CSE OC
-CIT-2007,AI_DS,2024,TNEA,OC,General,Cutoff Mark (out of 200),196.5,195.00,1,https://www.tneaonline.org/archive2024,CIT AI_DS OC
-CIT-2007,MECH,2024,TNEA,OC,General,Cutoff Mark (out of 200),188.0,182.00,1,https://www.tneaonline.org/archive2024,CIT MECH OC
-VIT-001,CSE,2024,VITEEE,GEN,General,Closing Rank,1,7500,1,https://viteee.vit.ac.in/archive/cutoff2024,VIT Vellore Category 1 Closing Rank
-VIT-001,IT,2024,VITEEE,GEN,General,Closing Rank,5000,12000,1,https://viteee.vit.ac.in/archive/cutoff2024,VIT Vellore Category 1 IT
+SSN-1315,ECE,2024,TNEA,OC,General,Cutoff Mark (out of 200),197.0,195.50,1,https://www.tneaonline.org/archive2024,SSN ECE OC
+TCE-5008,CSE,2024,TNEA,OC,General,Cutoff Mark (out of 200),198.5,196.50,1,https://www.tneaonline.org/archive2024,TCE CSE OC
+TCE-5008,ECE,2024,TNEA,OC,General,Cutoff Mark (out of 200),196.5,194.50,1,https://www.tneaonline.org/archive2024,TCE ECE OC
+TCE-5008,MECH,2024,TNEA,OC,General,Cutoff Mark (out of 200),194.0,188.50,1,https://www.tneaonline.org/archive2024,TCE MECH OC
+CIT-2007,CSE,2024,TNEA,OC,General,Cutoff Mark (out of 200),198.0,196.00,1,https://www.tneaonline.org/archive2024,CIT CSE OC
+CIT-2007,AI_DS,2024,TNEA,OC,General,Cutoff Mark (out of 200),197.0,195.00,1,https://www.tneaonline.org/archive2024,CIT AI_DS OC
+CIT-2007,MECH,2024,TNEA,OC,General,Cutoff Mark (out of 200),193.0,187.00,1,https://www.tneaonline.org/archive2024,CIT MECH OC
+VIT-001,CSE,2024,VITEEE,GEN,All India,Closing Rank,1,7500,1,https://vit.ac.in/admissions/btech/cutoffs,VIT Vellore CSE Category 1 Closing Rank
+VIT-001,CSE,2023,VITEEE,GEN,All India,Closing Rank,1,7200,1,https://vit.ac.in/admissions/btech/cutoffs,VIT Vellore CSE Category 1 Closing Rank 2023
+VIT-001,ECE,2024,VITEEE,GEN,All India,Closing Rank,5000,14500,1,https://vit.ac.in/admissions/btech/cutoffs,VIT Vellore ECE Category 1 Closing Rank
+VIT-001,IT,2024,VITEEE,GEN,All India,Closing Rank,4000,11000,1,https://vit.ac.in/admissions/btech/cutoffs,VIT Vellore IT Category 1 Closing Rank

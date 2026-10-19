@@ -1,0 +1,34 @@
+# International Institute of Information Technology Hyderabad (IIIT Hyderabad)
+Academic Year: 2024-2025
+Source: https://ugadmissions.iiit.ac.in
+Authority: Autonomous / Deemed University
+
+## 1. Admission Modes
+Admissions to 4-year B.Tech in CSE and ECE at IIIT Hyderabad are conducted primarily through:
+1. JEE Main Mode: Based on All India Common Rank List (CRL) in JEE Main. Applications are submitted directly to the IIIT-H UG Admissions portal (NOT through JoSAA).
+2. UGEE Mode: For 5-year Dual Degree programs via Undergraduate Engineering Entrance Examination and interview.
+- Eligibility: Minimum 60% aggregate in Class 12 with PCM.
+
+## 2. Historical Cutoffs (JEE Main CRL Mode)
+- Computer Science and Engineering (CSE):
+  - 2024 Closing Rank: 950 (Opening CRL: 150).
+  - 2023 Closing Rank: 936 (Opening CRL: 140).
+- Electronics and Communication Engineering (ECE):
+  - 2024 Closing Rank: 2,100 (Opening CRL: 800).
+
+## 3. Tuition and Accommodation Expenses
+- Annual Tuition Fee: INR 4,00,000 (INR 2,00,000 per semester).
+- Hostel Fee: INR 45,000 per year (mandatory on-campus accommodation).
+- Mess Charges: INR 48,000 per year.
+- Total Annual Estimate: INR 4,93,000.
+
+## 4. Scholarships and Assistance
+- Pratibha Merit Scholarship: Full tuition waiver for candidates admitted with JEE Main All India CRL below 1,000.
+- Need-based Financial Assistance: Covers up to full tuition through institute alumni foundation.
+
+## 5. Placement Statistics (2024)
+- Placement Percentage: 95.8%.
+- Median CTC: INR 30.0 LPA (among the highest in India).
+- Average CTC: INR 32.0 LPA.
+- Highest International Offer: INR 1.02 Crore per annum.
+- Top Recruiters: Google, Meta, Apple, Microsoft, Uber, Rubrik, Nvidia, Adobe.

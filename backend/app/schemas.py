@@ -54,6 +54,8 @@ class CollegeRecommendationItem(BaseModel):
     nirf_rank: Optional[int] = None
     accreditation: Optional[str] = None
     hostel_available: bool
+    image_url: Optional[str] = None
+    image_source: Optional[str] = None
     
     matched_course: str
     course_name: str
@@ -63,7 +65,7 @@ class CollegeRecommendationItem(BaseModel):
     total_annual_cost: Optional[float] = None
     fee_verified: bool = False
     
-    admission_suitability: str  # "Ambitious", "Better-matched", "Alternative", "Insufficient data"
+    admission_suitability: str  # "Reach", "Target", "Safer", "Ambitious", "Better-matched", "Alternative", "Insufficient data"
     suitability_explanation: str
     historical_cutoff: Optional[Dict[str, Any]] = None
     placement_statistics: Optional[Dict[str, Any]] = None
@@ -71,6 +73,10 @@ class CollegeRecommendationItem(BaseModel):
     match_score: float
     score_breakdown: Dict[str, float]
     
+    is_intelligent_alternative: bool = False
+    alternative_reason: Optional[str] = None
+    admission_route_warning: Optional[str] = None
+
     pros: List[str]
     cons: List[str]
     missing_information: List[str]
@@ -82,10 +88,15 @@ class CollegeRecommendationItem(BaseModel):
 class RecommendationResponse(BaseModel):
     success: bool
     total_found: int
-    ambitious: List[CollegeRecommendationItem]
-    better_matched: List[CollegeRecommendationItem]
-    alternative: List[CollegeRecommendationItem]
-    insufficient_data: List[CollegeRecommendationItem]
+    best_match: Optional[CollegeRecommendationItem] = None
+    intelligent_alternatives: List[CollegeRecommendationItem] = []
+    reach: List[CollegeRecommendationItem] = []
+    target: List[CollegeRecommendationItem] = []
+    safer: List[CollegeRecommendationItem] = []
+    ambitious: List[CollegeRecommendationItem] = []
+    better_matched: List[CollegeRecommendationItem] = []
+    alternative: List[CollegeRecommendationItem] = []
+    insufficient_data: List[CollegeRecommendationItem] = []
     relaxations_suggested: Optional[List[str]] = None
     message: str
 
@@ -164,6 +175,8 @@ class CollegeDetailResponse(BaseModel):
     overview: Optional[str] = None
     facilities: Optional[str] = None
     hostel_available: bool
+    image_url: Optional[str] = None
+    image_source: Optional[str] = None
     data_freshness_year: int
     last_verified_at: Optional[str] = None
     verification_status: str

@@ -1,6 +1,11 @@
 college_code,reporting_year,eligible_students,placed_students,placement_percentage,highest_package_lpa,average_package_lpa,median_package_lpa,top_recruiters,source_report_url,verification_date
 IITM,2024,1200,980,81.7,131.0,22.0,19.6,"Microsoft, Google, Texas Instruments, Qualcomm, Apple, Goldman Sachs, Airbus",https://www.iitm.ac.in/placements/annual-report-2024,2024-07-30
+IITB,2024,1550,1320,85.2,168.0,23.5,21.0,"Google, Microsoft, Qualcomm, Jane Street, Tower Research, Apple, Goldman Sachs",https://www.iitb.ac.in/placement/annual-report-2024,2024-08-15
+IITD,2024,1400,1190,85.0,150.0,22.8,20.0,"Microsoft, Intel, Uber, DE Shaw, Texas Instruments, Bain & Co, Goldman Sachs",https://home.iitd.ac.in/placement-report-2024,2024-08-15
+BITS-P,2024,2300,2050,89.1,133.0,20.2,18.0,"Google, Microsoft, Amazon, Schlumberger, Oracle, McKinsey, DE Shaw, Cisco",https://www.bits-pilani.ac.in/placements/2024-report,2024-08-20
+IIITH,2024,360,345,95.8,102.0,32.0,30.0,"Google, Meta, Apple, Microsoft, Uber, Rubrik, Nvidia, Adobe",https://www.iiit.ac.in/placements/2024,2024-08-20
 NITT,2024,1150,1012,88.0,52.8,15.7,12.0,"Morgan Stanley, Oracle, Amazon, DE Shaw, Cisco, Tata Motors, L&T",https://www.nitt.edu/placements/reports/2024.pdf,2024-08-01
+NITK,2024,1120,975,87.1,54.0,16.2,12.8,"Microsoft, Amazon, Cisco, Wells Fargo, Goldman Sachs, Samsung, Morgan Stanley",https://www.nitk.ac.in/placements-2024,2024-08-15
 CEG-0001,2024,1420,1210,85.2,40.0,9.8,8.5,"Cisco, SAP, Zoho, Caterpillar, Hyundai, TCS, Infosys, Cognizant",https://ceg.annauniv.edu/placement-report-2024,2024-08-10
 PSG-1211,2024,1350,1190,88.1,35.0,9.2,7.5,"Amazon, Qualcomm, Bosch, Titan, Zoho, Deloitte, Larsen & Toubro",https://www.psgtech.edu/placement/statistics2024,2024-08-05
 SSN-1315,2024,1280,1140,89.1,32.0,8.9,7.2,"Amazon, Cognizant, Zoho, Freshworks, Ford, Caterpillar, NatWest",https://www.ssn.edu.in/placements/placement-record-2024,2024-08-15

@@ -14,10 +14,16 @@ DOCS_DIR = BASE_DIR / "data" / "documents"
 
 COLLEGE_MAPPINGS = {
     "iit_madras": ("IITM", "IIT Madras Official Admissions Guide", "Admission_Guidelines", "https://www.iitm.ac.in"),
+    "iit_bombay": ("IITB", "IIT Bombay Official Admissions Guide", "Admission_Guidelines", "https://www.iitb.ac.in"),
+    "iit_delhi": ("IITD", "IIT Delhi Admissions Information Brochure", "Brochure", "https://home.iitd.ac.in"),
+    "bits_pilani": ("BITS-P", "BITS Pilani Admissions & Academic Regulations", "Brochure", "https://www.bitsadmission.com"),
+    "iiit_hyderabad": ("IIITH", "IIIT Hyderabad Admissions & Research Handbook", "Brochure", "https://ugadmissions.iiit.ac.in"),
+    "nit_surathkal": ("NITK", "NITK Surathkal Admissions Brochure", "Brochure", "https://www.nitk.ac.in"),
     "nit_trichy": ("NITT", "NIT Trichy Admissions Information Brochure", "Brochure", "https://www.nitt.edu"),
     "ceg_anna_university": ("CEG-0001", "CEG Anna University TNEA Information Handbook", "Admission_Guidelines", "https://ceg.annauniv.edu"),
     "ssn_college": ("SSN-1315", "SSN College of Engineering Academic & Placement Prospectus", "Brochure", "https://www.ssn.edu.in"),
-    "psg_college": ("PSG-1211", "PSG College of Technology Profile & Fee Guide", "Fee_Structure", "https://www.psgtech.edu")
+    "psg_college": ("PSG-1211", "PSG College of Technology Profile & Fee Guide", "Fee_Structure", "https://www.psgtech.edu"),
+    "vit_vellore": ("VIT-001", "VIT Vellore Information Brochure & Fee Guide", "Fee_Structure", "https://vit.ac.in")
 }
 
 def ingest_all_documents():

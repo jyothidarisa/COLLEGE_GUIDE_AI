@@ -1,0 +1,27 @@
+# Vellore Institute of Technology (VIT Vellore)
+Academic Year: 2024-2025
+Source: https://vit.ac.in & https://viteee.vit.ac.in
+Authority: Institution of Eminence Deemed University
+
+## 1. Admission Route and Eligibility
+Admissions to B.Tech programs at VIT Vellore are conducted solely based on rank in VITEEE (VIT Engineering Entrance Examination).
+- Candidates must secure at least 60% aggregate in Physics, Chemistry, and Mathematics/Biology in Class 12.
+- Fee Categories: Tuition is tiered into Category 1 through Category 5 based on VITEEE rank.
+  - Category 1 Tuition: INR 1,98,000 per year.
+  - Category 2 Tuition: INR 3,07,000 per year.
+  - Category 3-5 Tuition: Up to INR 4,90,000 per year.
+
+## 2. Cutoff Trends (VITEEE Ranks)
+- Computer Science and Engineering (CSE): Category 1 closing rank ~7,500 (2024), ~7,200 (2023).
+- Information Technology (IT): Category 1 closing rank ~11,000.
+- Electronics and Communication Engineering (ECE): Category 1 closing rank ~14,500.
+
+## 3. Living Expenses and Hostels
+- Hostel Charges: INR 1,05,000 (Non-AC) to INR 1,80,000 (AC).
+- Mess Charges: INR 65,000 per year (Special / Non-Veg / Veg options).
+- Total Annual Estimate: INR 3,68,000 for Category 1.
+
+## 4. Scholarships and Placements
+- GV School Development Programme (GVSDP): 100% tuition waiver for central/state board toppers. Top VITEEE rankers (1-50) receive 75% fee waivers.
+- Placements (2024): 87.8% placed. Median CTC: INR 9.0 LPA, Average CTC: INR 10.2 LPA, Highest Package: INR 1.02 Crore.
+- Top Recruiters: Microsoft, Amazon, PayPal, Cisco, Intel, Morgan Stanley, Wipro, TCS.

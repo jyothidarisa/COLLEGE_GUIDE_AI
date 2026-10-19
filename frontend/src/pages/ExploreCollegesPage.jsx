@@ -132,21 +132,34 @@ export default function ExploreCollegesPage() {
             return (
               <div
                 key={col.id}
-                className="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between overflow-hidden"
+                className="group bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between overflow-hidden"
               >
-                <div className="p-5 space-y-4">
-                  {/* Badge Row */}
-                  <div className="flex flex-wrap items-center justify-between gap-2">
-                    <span className="px-2.5 py-0.5 rounded-md bg-slate-100 text-slate-700 text-xs font-bold">
+                {/* Campus Image Header */}
+                <div className="relative h-44 w-full bg-slate-100 overflow-hidden">
+                  <img
+                    src={col.image_url || "https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&w=800&q=80"}
+                    alt={col.name}
+                    onError={(e) => {
+                      e.currentTarget.onerror = null;
+                      e.currentTarget.src = "https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&w=800&q=80";
+                    }}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
+                  <div className="absolute top-3 left-3 flex flex-wrap gap-1.5">
+                    <span className="px-2.5 py-0.5 rounded-md bg-white/90 backdrop-blur-sm text-slate-800 text-xs font-bold shadow-sm">
                       {col.college_type}
                     </span>
                     {col.nirf_rank && (
-                      <span className="px-2 py-0.5 rounded-md bg-amber-50 text-amber-800 text-[11px] font-bold border border-amber-200 flex items-center space-x-1">
-                        <Award className="w-3 h-3 text-amber-600" />
+                      <span className="px-2 py-0.5 rounded-md bg-amber-500 text-white text-[11px] font-bold shadow-sm flex items-center space-x-1">
+                        <Award className="w-3 h-3" />
                         <span>NIRF #{col.nirf_rank}</span>
                       </span>
                     )}
                   </div>
+                </div>
+
+                <div className="p-5 space-y-4">
 
                   <div>
                     <h3 className="text-base font-bold text-slate-900 leading-snug">

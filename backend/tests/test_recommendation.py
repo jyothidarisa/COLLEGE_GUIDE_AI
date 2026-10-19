@@ -74,3 +74,51 @@ def test_unsupported_exam_no_fabricated_colleges(db_session):
     assert res.success is True
     assert res.total_found == 0
     assert res.relaxations_suggested is not None
+
+def test_single_best_match_selection(db_session):
+    profile = StudentProfile(
+        preferred_course="CSE",
+        entrance_exam="TNEA",
+        rank_or_score=198.5,
+        pcm_percentage=96.0,
+        category="OC"
+    )
+    res = recommend_colleges(db_session, profile)
+    assert res.success is True
+    assert res.best_match is not None
+    assert res.best_match.matched_course == "CSE"
+    assert "Primary Recommendation" in res.best_match.suitability_explanation
+    assert len(res.reach) >= 0 or len(res.target) > 0 or len(res.safer) > 0
+
+def test_intelligent_alternatives_for_strong_jee_candidate(db_session):
+    profile = StudentProfile(
+        preferred_course="CSE",
+        entrance_exam="JEE_ADVANCED",
+        rank_or_score=80,
+        pcm_percentage=95.0,
+        category="GEN"
+    )
+    res = recommend_colleges(db_session, profile)
+    assert res.success is True
+    assert res.best_match is not None
+    # For strong JEE Advanced student, intelligent private alternatives should suggest BITS Pilani
+    alt_codes = [a.code for a in res.intelligent_alternatives]
+    assert "BITS-P" in alt_codes
+    bits_alt = next(a for a in res.intelligent_alternatives if a.code == "BITS-P")
+    assert bits_alt.is_intelligent_alternative is True
+    assert "BITSAT" in bits_alt.admission_route_warning
+
+def test_bitsat_exam_recommendation(db_session):
+    profile = StudentProfile(
+        preferred_course="CSE",
+        entrance_exam="BITSAT",
+        rank_or_score=340,
+        pcm_percentage=90.0,
+        category="GEN"
+    )
+    res = recommend_colleges(db_session, profile)
+    assert res.success is True
+    assert res.total_found > 0
+    all_codes = [r.code for r in (res.target + res.reach + res.safer)]
+    assert "BITS-P" in all_codes
+

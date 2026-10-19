@@ -1,0 +1,37 @@
+# Indian Institute of Technology Bombay (IIT Bombay)
+Academic Year: 2024-2025
+Source: https://www.iitb.ac.in/academic/btech
+Authority: Joint Seat Allocation Authority (JoSAA) & IIT Bombay Senate
+
+## 1. Admission Eligibility and Route
+Admissions to 4-year B.Tech and B.S. programs at IIT Bombay in Powai, Mumbai, are conducted exclusively via the Joint Entrance Examination (JEE) Advanced through JoSAA counselling.
+- Candidates must achieve at least 75% marks in Class 12 board examination (65% for SC/ST/PwD) or fall within the top 20 percentile of their board.
+- Admissions are open to Indian nationals and OCI/PIO candidates who qualify in JEE Advanced.
+
+## 2. Cutoff History (JoSAA All India Closing Ranks)
+- Computer Science and Engineering (CSE):
+  - 2024 JoSAA Round 6 Closing Rank: 68 (Opening Rank: 1).
+  - 2023 JoSAA Round 6 Closing Rank: 67 (Opening Rank: 1).
+  - Top 50-60 rankers in India consistently choose IIT Bombay CSE as first preference.
+- Electrical Engineering (EE): Closing Rank 464 (2024).
+- Mechanical Engineering (MECH): Closing Rank 1,794 (2024).
+
+## 3. Fees and Expenses
+- Annual Tuition Fee: INR 2,00,000 (INR 1,00,000 per semester) for General, EWS, and OBC-NCL students.
+- Hostel Charges: INR 48,000 per year.
+- Mess Charges: Approximately INR 44,000 per year.
+- Caution Deposit: INR 12,000 (one-time refundable).
+- Total Annual Estimate: INR 2,92,000.
+
+## 4. Financial Assistance and Fee Waivers
+- Full 100% Tuition Fee Remission for SC/ST/PwD students.
+- 100% Tuition Fee Waiver for economically weaker students with annual family income below INR 1,00,000.
+- 66.6% Tuition Remission for students with family income between INR 1,00,000 and INR 5,00,000.
+- Institute MCM Scholarship: Free tuition + INR 1,000 per month pocket allowance.
+
+## 5. Placement Highlights (2024)
+- Placement Rate: 85.2%.
+- Median CTC: INR 21.0 LPA.
+- Average CTC: INR 23.5 LPA.
+- Highest International Package: INR 1.68 Crore per annum.
+- Key Recruiters: Jane Street, Tower Research, Google, Microsoft, Apple, Qualcomm, Goldman Sachs.

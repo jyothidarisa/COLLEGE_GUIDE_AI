@@ -22,6 +22,8 @@ CREATE TABLE IF NOT EXISTS colleges (
     overview TEXT NULL,
     facilities TEXT NULL,
     hostel_available BOOLEAN DEFAULT TRUE,
+    image_url VARCHAR(500) NULL,
+    image_source VARCHAR(255) NULL,
     data_freshness_year INT DEFAULT 2024,
     last_verified_at VARCHAR(50) NULL,
     verification_status VARCHAR(50) DEFAULT 'Verified Official',

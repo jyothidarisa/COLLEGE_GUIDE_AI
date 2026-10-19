@@ -23,6 +23,8 @@ class College(Base):
     overview = Column(Text, nullable=True)
     facilities = Column(Text, nullable=True)  # Comma-separated or JSON
     hostel_available = Column(Boolean, default=True)
+    image_url = Column(String(500), nullable=True)
+    image_source = Column(String(255), nullable=True)
     data_freshness_year = Column(Integer, default=2024)
     last_verified_at = Column(String(50), nullable=True)
     verification_status = Column(String(50), default="Verified Official")
