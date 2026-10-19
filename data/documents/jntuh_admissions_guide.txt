@@ -1,0 +1,41 @@
+# JNTUH College of Engineering Hyderabad (JNTUH)
+Location: Hyderabad, Telangana
+NIRF Engineering Rank: #94
+Category / College Type: State Public University
+Official Website: https://www.jntuh.ac.in
+
+## 1. Admissions and Eligibility
+- Primary Entrance Exam: TS EAMCET
+- Minimum PCM Eligibility: 45% aggregate (40% for SC/ST)
+- Minimum Qualification: 10+2 with Physics, Chemistry, Mathematics
+- Admission Modes & Counseling: TS EAMCET + TS-EAPCET Counselling; Counseling Authority: TS-EAPCET Counselling
+- Admission Process: TS EAMCET -> Web Options -> Seat Allotment -> Document Verification -> Fee Payment
+- Important Documents Required: 10th & 12th Mark Sheets, TS EAMCET Rank Card, Transfer Certificate, Category Certificate, Photo ID
+
+## 2. Fee Structure and Living Costs
+- CSE / AIML / IT Annual Tuition Fee: ₹180,000
+- ECE Annual Tuition Fee: ₹180,000
+- Mechanical / Civil Annual Tuition Fee: ₹180,000
+- Hostel Accommodation Details: Approx. INR 1,500-3,500 per month (with mess)
+- Room Types Available: Sharing (up to 5 per room); Attached Bathrooms: No
+- Mess & Dining: Mess available (Yes)
+
+## 3. Placements & Career Outcomes
+- Placement Percentage: 72%
+- Highest Package: INR 17 LPA
+- Average Package: INR 5.5 LPA
+- Top Recruiters: TCS, Infosys, Wipro, Tech Mahindra, HCL
+- Internship Assistance: Yes
+
+## 4. Scholarships and Financial Aid
+- Scholarships Available: Yes
+- Scholarship Schemes: Telangana ePASS Scholarship, SC/ST/OBC/BC/EBC Fee Reimbursement
+- Scholarship Details: Telangana state ePASS scheme provides full tuition reimbursement and maintenance allowance for eligible category students.
+
+## 5. Campus Amenities and Connectivity
+- Campus Area: Approx. 100 acres (Kukatpally)
+- Facilities: Library (Yes), Research Labs (Yes), Gym (Yes), Medical (Yes), Sports
+- Nearest Railway Station: Bharat Nagar Railway Station (approx. 7 km)
+- Nearest Bus Stand: Kukatpally Bus Depot (approx. 6 km)
+- Women Safety & Emergency Support: Women Safety Cell (Yes), Medical Support (Yes)
+- Industry Collaborations: TCS, Tech Mahindra, HCL

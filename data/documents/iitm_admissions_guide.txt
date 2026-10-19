@@ -1,0 +1,41 @@
+# Indian Institute of Technology Madras (IITM)
+Location: Chennai, Tamil Nadu
+NIRF Engineering Rank: #1
+Category / College Type: Institute of National Importance
+Official Website: https://www.iitm.ac.in/
+
+## 1. Admissions and Eligibility
+- Primary Entrance Exam: JEE Advanced
+- Minimum PCM Eligibility: 75% overall in Class 12
+- Minimum Qualification: 10+2 with Physics, Chemistry & Mathematics; Qualified in JEE Advanced
+- Admission Modes & Counseling: JEE Advanced, JoSAA Counselling; Counseling Authority: JoSAA
+- Admission Process: JEE Advanced → JoSAA Counselling → Seat Allotment → Document Verification → Fee Payment
+- Important Documents Required: 10th Mark Sheet, 12th Mark Sheet, JEE Scorecard, JoSAA Allotment Letter, Transfer Certificate (TC), Migration Certificate (if applicable), Character Certificate, Category Certificate (if applicable), PwD Certificate (if applicable), Aadhaar Card/Valid Photo ID, Passport-size Photographs, Medical Fitness Certificate
+
+## 2. Fee Structure and Living Costs
+- CSE / AIML / IT Annual Tuition Fee: ₹200,000
+- ECE Annual Tuition Fee: ₹200,000
+- Mechanical / Civil Annual Tuition Fee: ₹200,000
+- Hostel Accommodation Details: 86000
+- Room Types Available: Single, Double, Triple; Attached Bathrooms: no
+- Mess & Dining: Mess available (yes)
+
+## 3. Placements & Career Outcomes
+- Placement Percentage: 95.4%
+- Highest Package: ₹4.3 Crore per annum
+- Average Package: 22 LPA
+- Top Recruiters: Microsoft, Google, Amazon, Qualcomm, Intel, Texas Instruments, Goldman Sachs, Deloitte, EY, Larsen & Toubro (L&T), American Express, Flipkart, Wells Fargo, TVS Motor, Bajaj Auto
+- Internship Assistance: Yes
+
+## 4. Scholarships and Financial Aid
+- Scholarships Available: Yes
+- Scholarship Schemes: Merit Scholarship, Merit-cum-Means (MCM) Scholarship, Institute Free Studentship, SC/ST Scholarship, Scholarships for Economically Weaker Sections (EWS), National Scholarships, Private/Corporate Scholarships, Alumni Scholarships
+- Scholarship Details: Financial assistance through merit-based and need-based scholarships, including tuition fee waivers, stipends, and support based on academic performance, category, and family income.
+
+## 5. Campus Amenities and Connectivity
+- Campus Area: 617 acres
+- Facilities: Library (yes), Research Labs (yes), Gym (yes), Medical (yes), Sports
+- Nearest Railway Station: Guindy Railway Station(4 km)
+- Nearest Bus Stand: Thiruvanmiyur Bus Terminus (3 km)
+- Women Safety & Emergency Support: Women Safety Cell (Internal Complaints Committee (ICC), Women's Forum, 24×7 Campus Security, CCTV Surveillance, Women's Hostel Security, Anti-Sexual Harassment Cell, Emergency Helpline), Medical Support (24×7 Institute Hospital, Ambulance Service, Emergency Medical Care, Specialist Doctors, Pharmacy, Laboratory, X-ray, In-patient Wards, Counselling Services)
+- Industry Collaborations: Microsoft, Google, IBM, Intel, Qualcomm, Samsung, Cisco, Siemens, Bosch, ISRO, DRDO, TCS, Infosys, Wipro, Accenture, L&T, Hyundai, Ashok Leyland

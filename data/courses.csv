@@ -1,43 +1,429 @@
 college_code,course_code,degree,course_name,duration_years,total_seats,eligibility_criteria,minimum_pcm_percentage,primary_exam
-IITM,CSE,B.Tech,Computer Science and Engineering,4,87,"Passed Class 12 with PCM, qualified in JEE Main and JEE Advanced (top percentiles)",75.0,JEE_ADVANCED
-IITM,EE,B.Tech,Electrical Engineering,4,110,"Passed Class 12 with PCM, qualified in JEE Main and JEE Advanced",75.0,JEE_ADVANCED
-IITM,MECH,B.Tech,Mechanical Engineering,4,115,"Passed Class 12 with PCM, qualified in JEE Main and JEE Advanced",75.0,JEE_ADVANCED
-IITB,CSE,B.Tech,Computer Science and Engineering,4,171,"Passed Class 12 with PCM >= 75% aggregate, qualified in JEE Main and JEE Advanced",75.0,JEE_ADVANCED
-IITB,EE,B.Tech,Electrical Engineering,4,170,"Passed Class 12 with PCM >= 75% aggregate, qualified in JEE Main and JEE Advanced",75.0,JEE_ADVANCED
-IITB,MECH,B.Tech,Mechanical Engineering,4,175,"Passed Class 12 with PCM >= 75% aggregate, qualified in JEE Main and JEE Advanced",75.0,JEE_ADVANCED
-IITD,CSE,B.Tech,Computer Science and Engineering,4,99,"Passed Class 12 with PCM >= 75% aggregate, qualified in JEE Main and JEE Advanced",75.0,JEE_ADVANCED
-IITD,EE,B.Tech,Electrical Engineering,4,120,"Passed Class 12 with PCM >= 75% aggregate, qualified in JEE Main and JEE Advanced",75.0,JEE_ADVANCED
-IITD,MECH,B.Tech,Mechanical Engineering,4,120,"Passed Class 12 with PCM >= 75% aggregate, qualified in JEE Main and JEE Advanced",75.0,JEE_ADVANCED
-BITS-P,CSE,B.E.,Computer Science and Engineering,4,180,"Passed 10+2 with Physics, Chemistry, and Mathematics with minimum 75% aggregate and 60% in each subject; qualified in BITSAT",75.0,BITSAT
-BITS-P,EEE,B.E.,Electrical and Electronics Engineering,4,140,"Passed 10+2 with PCM with minimum 75% aggregate; qualified in BITSAT",75.0,BITSAT
-BITS-P,MECH,B.E.,Mechanical Engineering,4,130,"Passed 10+2 with PCM with minimum 75% aggregate; qualified in BITSAT",75.0,BITSAT
-IIITH,CSE,B.Tech,Computer Science and Engineering,4,150,"Passed 10+2 with PCM with aggregate >= 60%; qualified in JEE Main (via IIIT-H Portal) or UGEE",60.0,JEE_MAIN
-IIITH,ECE,B.Tech,Electronics and Communication Engineering,4,90,"Passed 10+2 with PCM with aggregate >= 60%; qualified in JEE Main or UGEE",60.0,JEE_MAIN
-NITK,CSE,B.Tech,Computer Science and Engineering,4,115,"Passed Class 12 with PCM >= 75% or top 20 percentile; valid JEE Main All India Rank",75.0,JEE_MAIN
-NITK,IT,B.Tech,Information Technology,4,110,"Passed Class 12 with PCM >= 75%; valid JEE Main All India Rank",75.0,JEE_MAIN
-NITK,ECE,B.Tech,Electronics and Communication Engineering,4,115,"Passed Class 12 with PCM >= 75%; valid JEE Main All India Rank",75.0,JEE_MAIN
-NITK,MECH,B.Tech,Mechanical Engineering,4,115,"Passed Class 12 with PCM >= 75%; valid JEE Main All India Rank",75.0,JEE_MAIN
-NITT,CSE,B.Tech,Computer Science and Engineering,4,120,"Passed Class 12 with PCM >= 75% or top 20 percentile in board, valid JEE Main rank",75.0,JEE_MAIN
-NITT,ECE,B.Tech,Electronics and Communication Engineering,4,110,"Passed Class 12 with PCM >= 75%, valid JEE Main rank",75.0,JEE_MAIN
-NITT,MECH,B.Tech,Mechanical Engineering,4,120,"Passed Class 12 with PCM >= 75%, valid JEE Main rank",75.0,JEE_MAIN
-CEG-0001,CSE,B.E.,Computer Science and Engineering,4,300,"Passed 10+2 with Physics, Chemistry, Mathematics with aggregate >= 45% (40% for reserved categories). TNEA Single Window Counselling",45.0,TNEA
-CEG-0001,IT,B.Tech,Information Technology,4,120,"Passed 10+2 with PCM, TNEA Single Window Counselling based on Class 12 aggregate cutoff out of 200",45.0,TNEA
-CEG-0001,ECE,B.E.,Electronics and Communication Engineering,4,180,"Passed 10+2 with PCM, TNEA Single Window Counselling",45.0,TNEA
-CEG-0001,MECH,B.E.,Mechanical Engineering,4,180,"Passed 10+2 with PCM, TNEA Single Window Counselling",45.0,TNEA
-PSG-1211,CSE,B.E.,Computer Science and Engineering,4,180,"Passed 10+2 with PCM, TNEA Single Window Counselling (Aided & Self-supporting seats)",45.0,TNEA
-PSG-1211,IT,B.Tech,Information Technology,4,120,"Passed 10+2 with PCM, TNEA Single Window Counselling",45.0,TNEA
-PSG-1211,ECE,B.E.,Electronics and Communication Engineering,4,180,"Passed 10+2 with PCM, TNEA Single Window Counselling",45.0,TNEA
-PSG-1211,MECH,B.E.,Mechanical Engineering,4,120,"Passed 10+2 with PCM, TNEA Single Window Counselling",45.0,TNEA
-SSN-1315,CSE,B.E.,Computer Science and Engineering,4,180,"Passed 10+2 with PCM, TNEA Single Window Counselling (Government Quota) or SSN Management Merit",45.0,TNEA
-SSN-1315,AI_DS,B.Tech,Artificial Intelligence and Data Science,4,60,"Passed 10+2 with PCM, TNEA Single Window Counselling",45.0,TNEA
-SSN-1315,IT,B.Tech,Information Technology,4,120,"Passed 10+2 with PCM, TNEA Single Window Counselling",45.0,TNEA
-SSN-1315,ECE,B.E.,Electronics and Communication Engineering,4,120,"Passed 10+2 with PCM, TNEA Single Window Counselling",45.0,TNEA
-TCE-5008,CSE,B.E.,Computer Science and Engineering,4,120,"Passed 10+2 with PCM, TNEA Single Window Counselling",45.0,TNEA
-TCE-5008,ECE,B.E.,Electronics and Communication Engineering,4,120,"Passed 10+2 with PCM, TNEA Single Window Counselling",45.0,TNEA
-TCE-5008,MECH,B.E.,Mechanical Engineering,4,120,"Passed 10+2 with PCM, TNEA Single Window Counselling",45.0,TNEA
-CIT-2007,CSE,B.E.,Computer Science and Engineering,4,120,"Passed 10+2 with PCM, TNEA Single Window Counselling",45.0,TNEA
-CIT-2007,AI_DS,B.Tech,Artificial Intelligence and Data Science,4,60,"Passed 10+2 with PCM, TNEA Single Window Counselling",45.0,TNEA
-CIT-2007,MECH,B.E.,Mechanical Engineering,4,60,"Passed 10+2 with PCM, TNEA Single Window Counselling",45.0,TNEA
-VIT-001,CSE,B.Tech,Computer Science and Engineering,4,600,"Passed 10+2 with minimum 60% aggregate in PCM/PCB, qualified in VITEEE entrance exam",60.0,VITEEE
-VIT-001,ECE,B.Tech,Electronics and Communication Engineering,4,300,"Passed 10+2 with minimum 60% aggregate in PCM, qualified in VITEEE",60.0,VITEEE
-VIT-001,IT,B.Tech,Information Technology,4,240,"Passed 10+2 with minimum 60% aggregate in PCM, qualified in VITEEE",60.0,VITEEE
+IITM,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry & Mathematics; Qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITM,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; Qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITM,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; Qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITM,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; Qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITM,AERO,B.Tech,Aerospace Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; Qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITM,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; Qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITD,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITD,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITD,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITD,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITD,AERO,B.Tech,Aerospace Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITD,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITB,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITB,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITB,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITB,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITB,AERO,B.Tech,Aerospace Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITB,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITK,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITK,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITK,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITK,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITK,AERO,B.Tech,Aerospace Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITK,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITKGP,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITKGP,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITKGP,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITKGP,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITKGP,AERO,B.Tech,Aerospace Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITKGP,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITR,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITR,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITR,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITR,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITR,AERO,B.Tech,Aerospace Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITR,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITH,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITH,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITH,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITH,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITH,AERO,B.Tech,Aerospace Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITH,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITG,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITG,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITG,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITG,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITG,AERO,B.Tech,Aerospace Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITG,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+NITT,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Main",75.0,JEE_MAIN
+NITT,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Main",75.0,JEE_MAIN
+NITT,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Main",75.0,JEE_MAIN
+NITT,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Main",75.0,JEE_MAIN
+NITT,AERO,B.Tech,Aerospace Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Main",75.0,JEE_MAIN
+NITT,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Main",75.0,JEE_MAIN
+IIT-BHU,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IIT-BHU,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IIT-BHU,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IIT-BHU,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IIT-BHU,AERO,B.Tech,Aerospace Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IIT-BHU,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+BITS-P,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry & Mathematics; minimum 75% aggregate",75.0,BITSAT
+BITS-P,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; minimum 75% aggregate",75.0,BITSAT
+BITS-P,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; minimum 75% aggregate",75.0,BITSAT
+BITS-P,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; minimum 75% aggregate",75.0,BITSAT
+BITS-P,AERO,B.Tech,Aerospace Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; minimum 75% aggregate",75.0,BITSAT
+BITS-P,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; minimum 75% aggregate",75.0,BITSAT
+IITI,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITI,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITI,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITI,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITI,AERO,B.Tech,Aerospace Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITI,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+NITR,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Main",75.0,JEE_MAIN
+NITR,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Main",75.0,JEE_MAIN
+NITR,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Main",75.0,JEE_MAIN
+NITR,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Main",75.0,JEE_MAIN
+NITR,AERO,B.Tech,Aerospace Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Main",75.0,JEE_MAIN
+NITR,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Main",75.0,JEE_MAIN
+SRMIST,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry & Mathematics",60.0,SRMJEEE
+SRMIST,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics",60.0,SRMJEEE
+SRMIST,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics",60.0,SRMJEEE
+SRMIST,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics",60.0,SRMJEEE
+SRMIST,AERO,B.Tech,Aerospace Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics",60.0,SRMJEEE
+SRMIST,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics",60.0,SRMJEEE
+IIT-ISM,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IIT-ISM,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IIT-ISM,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IIT-ISM,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IIT-ISM,AERO,B.Tech,Aerospace Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IIT-ISM,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+VIT-001,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry & Mathematics",60.0,VITEEE
+VIT-001,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics",60.0,VITEEE
+VIT-001,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics",60.0,VITEEE
+VIT-001,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics",60.0,VITEEE
+VIT-001,AERO,B.Tech,Aerospace Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics",60.0,VITEEE
+VIT-001,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics",60.0,VITEEE
+NITK,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Main",75.0,JEE_MAIN
+NITK,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Main",75.0,JEE_MAIN
+NITK,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Main",75.0,JEE_MAIN
+NITK,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Main",75.0,JEE_MAIN
+NITK,AERO,B.Tech,Aerospace Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Main",75.0,JEE_MAIN
+NITK,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Main",75.0,JEE_MAIN
+JU-KOL,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry & Mathematics",60.0,WBJEE
+JU-KOL,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics",60.0,WBJEE
+JU-KOL,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics",60.0,WBJEE
+JU-KOL,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics",60.0,WBJEE
+JU-KOL,AERO,B.Tech,Aerospace Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics",60.0,WBJEE
+JU-KOL,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics",60.0,WBJEE
+IITP,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITP,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITP,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITP,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITP,AERO,B.Tech,Aerospace Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IITP,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+CEG-0001,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry & Mathematics",60.0,TNEA
+CEG-0001,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics",60.0,TNEA
+CEG-0001,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics",60.0,TNEA
+CEG-0001,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics",60.0,TNEA
+CEG-0001,AERO,B.Tech,Aerospace Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics",60.0,TNEA
+CEG-0001,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics",60.0,TNEA
+NITC,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Main",75.0,JEE_MAIN
+NITC,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Main",75.0,JEE_MAIN
+NITC,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Main",75.0,JEE_MAIN
+NITC,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Main",75.0,JEE_MAIN
+NITC,AERO,B.Tech,Aerospace Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Main",75.0,JEE_MAIN
+NITC,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Main",75.0,JEE_MAIN
+SOA-BBSR,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry & Mathematics",50.0,JEE_MAIN
+SOA-BBSR,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics",50.0,JEE_MAIN
+SOA-BBSR,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics",50.0,JEE_MAIN
+SOA-BBSR,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics",50.0,JEE_MAIN
+SOA-BBSR,AERO,B.Tech,Aerospace Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics",50.0,JEE_MAIN
+SOA-BBSR,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics",50.0,JEE_MAIN
+AMRITA-CBE,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry & Mathematics",60.0,JEE_MAIN
+AMRITA-CBE,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics",60.0,JEE_MAIN
+AMRITA-CBE,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics",60.0,JEE_MAIN
+AMRITA-CBE,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics",60.0,JEE_MAIN
+AMRITA-CBE,AERO,B.Tech,Aerospace Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics",60.0,JEE_MAIN
+AMRITA-CBE,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics",60.0,JEE_MAIN
+JMI-DEL,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry and Mathematics; programme-specific criteria apply",60.0,JEE_MAIN
+JMI-DEL,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry and Mathematics; programme-specific criteria apply",60.0,JEE_MAIN
+JMI-DEL,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry and Mathematics; programme-specific criteria apply",60.0,JEE_MAIN
+JMI-DEL,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry and Mathematics; programme-specific criteria apply",60.0,JEE_MAIN
+JMI-DEL,AERO,B.Tech,Aerospace Engineering,4,60,"10+2 with Physics, Chemistry and Mathematics; programme-specific criteria apply",60.0,JEE_MAIN
+JMI-DEL,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry and Mathematics; programme-specific criteria apply",60.0,JEE_MAIN
+IITGN,CSE,B.Tech,Computer Science & Engineering,4,120,10+2 with PCM; JEE Advanced qualification,60.0,JEE_ADVANCED
+IITGN,ECE,B.Tech,Electronics & Communication Engineering,4,60,10+2 with PCM; JEE Advanced qualification,60.0,JEE_ADVANCED
+IITGN,EEE,B.Tech,Electrical & Electronics Engineering,4,60,10+2 with PCM; JEE Advanced qualification,60.0,JEE_ADVANCED
+IITGN,MECH,B.Tech,Mechanical Engineering,4,60,10+2 with PCM; JEE Advanced qualification,60.0,JEE_ADVANCED
+IITGN,AERO,B.Tech,Aerospace Engineering,4,60,10+2 with PCM; JEE Advanced qualification,60.0,JEE_ADVANCED
+IITGN,CIVIL,B.Tech,Civil Engineering,4,60,10+2 with PCM; JEE Advanced qualification,60.0,JEE_ADVANCED
+IIT-MANDI,CSE,B.Tech,Computer Science & Engineering,4,120,10+2 with PCM; JEE Advanced qualification,60.0,JEE_ADVANCED
+IIT-MANDI,ECE,B.Tech,Electronics & Communication Engineering,4,60,10+2 with PCM; JEE Advanced qualification,60.0,JEE_ADVANCED
+IIT-MANDI,EEE,B.Tech,Electrical & Electronics Engineering,4,60,10+2 with PCM; JEE Advanced qualification,60.0,JEE_ADVANCED
+IIT-MANDI,MECH,B.Tech,Mechanical Engineering,4,60,10+2 with PCM; JEE Advanced qualification,60.0,JEE_ADVANCED
+IIT-MANDI,AERO,B.Tech,Aerospace Engineering,4,60,10+2 with PCM; JEE Advanced qualification,60.0,JEE_ADVANCED
+IIT-MANDI,CIVIL,B.Tech,Civil Engineering,4,60,10+2 with PCM; JEE Advanced qualification,60.0,JEE_ADVANCED
+IITJ,CSE,B.Tech,Computer Science & Engineering,4,120,10+2 with PCM; JEE Advanced qualification,60.0,JEE_ADVANCED
+IITJ,ECE,B.Tech,Electronics & Communication Engineering,4,60,10+2 with PCM; JEE Advanced qualification,60.0,JEE_ADVANCED
+IITJ,EEE,B.Tech,Electrical & Electronics Engineering,4,60,10+2 with PCM; JEE Advanced qualification,60.0,JEE_ADVANCED
+IITJ,MECH,B.Tech,Mechanical Engineering,4,60,10+2 with PCM; JEE Advanced qualification,60.0,JEE_ADVANCED
+IITJ,AERO,B.Tech,Aerospace Engineering,4,60,10+2 with PCM; JEE Advanced qualification,60.0,JEE_ADVANCED
+IITJ,CIVIL,B.Tech,Civil Engineering,4,60,10+2 with PCM; JEE Advanced qualification,60.0,JEE_ADVANCED
+NITW,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry and Mathematics; JEE Main qualification",60.0,JEE_MAIN
+NITW,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry and Mathematics; JEE Main qualification",60.0,JEE_MAIN
+NITW,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry and Mathematics; JEE Main qualification",60.0,JEE_MAIN
+NITW,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry and Mathematics; JEE Main qualification",60.0,JEE_MAIN
+NITW,AERO,B.Tech,Aerospace Engineering,4,60,"10+2 with Physics, Chemistry and Mathematics; JEE Main qualification",60.0,JEE_MAIN
+NITW,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry and Mathematics; JEE Main qualification",60.0,JEE_MAIN
+TIET,CSE,B.Tech,Computer Science & Engineering,4,120,10+2 with PCM; programme-specific criteria apply,60.0,JEE_MAIN
+TIET,ECE,B.Tech,Electronics & Communication Engineering,4,60,10+2 with PCM; programme-specific criteria apply,60.0,JEE_MAIN
+TIET,EEE,B.Tech,Electrical & Electronics Engineering,4,60,10+2 with PCM; programme-specific criteria apply,60.0,JEE_MAIN
+TIET,MECH,B.Tech,Mechanical Engineering,4,60,10+2 with PCM; programme-specific criteria apply,60.0,JEE_MAIN
+TIET,AERO,B.Tech,Aerospace Engineering,4,60,10+2 with PCM; programme-specific criteria apply,60.0,JEE_MAIN
+TIET,CIVIL,B.Tech,Civil Engineering,4,60,10+2 with PCM; programme-specific criteria apply,60.0,JEE_MAIN
+DTU,CSE,B.Tech,Computer Science & Engineering,4,120,10+2 with PCM and JEE Main qualification,60.0,JEE_MAIN
+DTU,ECE,B.Tech,Electronics & Communication Engineering,4,60,10+2 with PCM and JEE Main qualification,60.0,JEE_MAIN
+DTU,EEE,B.Tech,Electrical & Electronics Engineering,4,60,10+2 with PCM and JEE Main qualification,60.0,JEE_MAIN
+DTU,MECH,B.Tech,Mechanical Engineering,4,60,10+2 with PCM and JEE Main qualification,60.0,JEE_MAIN
+DTU,AERO,B.Tech,Aerospace Engineering,4,60,10+2 with PCM and JEE Main qualification,60.0,JEE_MAIN
+DTU,CIVIL,B.Tech,Civil Engineering,4,60,10+2 with PCM and JEE Main qualification,60.0,JEE_MAIN
+CU-PUNJAB,CSE,B.Tech,Computer Science & Engineering,4,120,10+2 with required subjects; programme-specific criteria apply,60.0,JEE_MAIN
+CU-PUNJAB,ECE,B.Tech,Electronics & Communication Engineering,4,60,10+2 with required subjects; programme-specific criteria apply,60.0,JEE_MAIN
+CU-PUNJAB,EEE,B.Tech,Electrical & Electronics Engineering,4,60,10+2 with required subjects; programme-specific criteria apply,60.0,JEE_MAIN
+CU-PUNJAB,MECH,B.Tech,Mechanical Engineering,4,60,10+2 with required subjects; programme-specific criteria apply,60.0,JEE_MAIN
+CU-PUNJAB,AERO,B.Tech,Aerospace Engineering,4,60,10+2 with required subjects; programme-specific criteria apply,60.0,JEE_MAIN
+CU-PUNJAB,CIVIL,B.Tech,Civil Engineering,4,60,10+2 with required subjects; programme-specific criteria apply,60.0,JEE_MAIN
+IITRPR,CSE,B.Tech,Computer Science & Engineering,4,120,10+2 with PCM; JEE Advanced qualification,60.0,JEE_ADVANCED
+IITRPR,ECE,B.Tech,Electronics & Communication Engineering,4,60,10+2 with PCM; JEE Advanced qualification,60.0,JEE_ADVANCED
+IITRPR,EEE,B.Tech,Electrical & Electronics Engineering,4,60,10+2 with PCM; JEE Advanced qualification,60.0,JEE_ADVANCED
+IITRPR,MECH,B.Tech,Mechanical Engineering,4,60,10+2 with PCM; JEE Advanced qualification,60.0,JEE_ADVANCED
+IITRPR,AERO,B.Tech,Aerospace Engineering,4,60,10+2 with PCM; JEE Advanced qualification,60.0,JEE_ADVANCED
+IITRPR,CIVIL,B.Tech,Civil Engineering,4,60,10+2 with PCM; JEE Advanced qualification,60.0,JEE_ADVANCED
+KARE,CSE,B.Tech,Computer Science & Engineering,4,120,10+2 with required subjects; programme-specific criteria apply,60.0,TNEA
+KARE,ECE,B.Tech,Electronics & Communication Engineering,4,60,10+2 with required subjects; programme-specific criteria apply,60.0,TNEA
+KARE,EEE,B.Tech,Electrical & Electronics Engineering,4,60,10+2 with required subjects; programme-specific criteria apply,60.0,TNEA
+KARE,MECH,B.Tech,Mechanical Engineering,4,60,10+2 with required subjects; programme-specific criteria apply,60.0,TNEA
+KARE,AERO,B.Tech,Aerospace Engineering,4,60,10+2 with required subjects; programme-specific criteria apply,60.0,TNEA
+KARE,CIVIL,B.Tech,Civil Engineering,4,60,10+2 with required subjects; programme-specific criteria apply,60.0,TNEA
+AMU,CSE,B.Tech,Computer Science & Engineering,4,120,10+2 with PCM for engineering programmes,60.0,JEE_MAIN
+AMU,ECE,B.Tech,Electronics & Communication Engineering,4,60,10+2 with PCM for engineering programmes,60.0,JEE_MAIN
+AMU,EEE,B.Tech,Electrical & Electronics Engineering,4,60,10+2 with PCM for engineering programmes,60.0,JEE_MAIN
+AMU,MECH,B.Tech,Mechanical Engineering,4,60,10+2 with PCM for engineering programmes,60.0,JEE_MAIN
+AMU,AERO,B.Tech,Aerospace Engineering,4,60,10+2 with PCM for engineering programmes,60.0,JEE_MAIN
+AMU,CIVIL,B.Tech,Civil Engineering,4,60,10+2 with PCM for engineering programmes,60.0,JEE_MAIN
+KLEF,CSE,B.Tech,Computer Science & Engineering,4,120,10+2 with PCM; programme-specific criteria apply,60.0,AP_EAPCET
+KLEF,ECE,B.Tech,Electronics & Communication Engineering,4,60,10+2 with PCM; programme-specific criteria apply,60.0,AP_EAPCET
+KLEF,EEE,B.Tech,Electrical & Electronics Engineering,4,60,10+2 with PCM; programme-specific criteria apply,60.0,AP_EAPCET
+KLEF,MECH,B.Tech,Mechanical Engineering,4,60,10+2 with PCM; programme-specific criteria apply,60.0,AP_EAPCET
+KLEF,AERO,B.Tech,Aerospace Engineering,4,60,10+2 with PCM; programme-specific criteria apply,60.0,AP_EAPCET
+KLEF,CIVIL,B.Tech,Civil Engineering,4,60,10+2 with PCM; programme-specific criteria apply,60.0,AP_EAPCET
+KIIT,CSE,B.Tech,Computer Science & Engineering,4,120,10+2 with PCM; programme-specific criteria apply,60.0,JEE_MAIN
+KIIT,ECE,B.Tech,Electronics & Communication Engineering,4,60,10+2 with PCM; programme-specific criteria apply,60.0,JEE_MAIN
+KIIT,EEE,B.Tech,Electrical & Electronics Engineering,4,60,10+2 with PCM; programme-specific criteria apply,60.0,JEE_MAIN
+KIIT,MECH,B.Tech,Mechanical Engineering,4,60,10+2 with PCM; programme-specific criteria apply,60.0,JEE_MAIN
+KIIT,AERO,B.Tech,Aerospace Engineering,4,60,10+2 with PCM; programme-specific criteria apply,60.0,JEE_MAIN
+KIIT,CIVIL,B.Tech,Civil Engineering,4,60,10+2 with PCM; programme-specific criteria apply,60.0,JEE_MAIN
+AMITY,CSE,B.Tech,Computer Science & Engineering,4,120,10+2 with PCM; programme-specific criteria apply,60.0,JEE_MAIN
+AMITY,ECE,B.Tech,Electronics & Communication Engineering,4,60,10+2 with PCM; programme-specific criteria apply,60.0,JEE_MAIN
+AMITY,EEE,B.Tech,Electrical & Electronics Engineering,4,60,10+2 with PCM; programme-specific criteria apply,60.0,JEE_MAIN
+AMITY,MECH,B.Tech,Mechanical Engineering,4,60,10+2 with PCM; programme-specific criteria apply,60.0,JEE_MAIN
+AMITY,AERO,B.Tech,Aerospace Engineering,4,60,10+2 with PCM; programme-specific criteria apply,60.0,JEE_MAIN
+AMITY,CIVIL,B.Tech,Civil Engineering,4,60,10+2 with PCM; programme-specific criteria apply,60.0,JEE_MAIN
+IIITH,CSE,B.Tech,Computer Science & Engineering,4,120,10+2 with Mathematics; route-specific criteria apply,60.0,JEE_MAIN
+IIITH,ECE,B.Tech,Electronics & Communication Engineering,4,60,10+2 with Mathematics; route-specific criteria apply,60.0,JEE_MAIN
+IIITH,EEE,B.Tech,Electrical & Electronics Engineering,4,60,10+2 with Mathematics; route-specific criteria apply,60.0,JEE_MAIN
+IIITH,MECH,B.Tech,Mechanical Engineering,4,60,10+2 with Mathematics; route-specific criteria apply,60.0,JEE_MAIN
+IIITH,AERO,B.Tech,Aerospace Engineering,4,60,10+2 with Mathematics; route-specific criteria apply,60.0,JEE_MAIN
+IIITH,CIVIL,B.Tech,Civil Engineering,4,60,10+2 with Mathematics; route-specific criteria apply,60.0,JEE_MAIN
+IIT-BBS,CSE,B.Tech,Computer Science & Engineering,4,120,10+2 with PCM; JEE Advanced qualification,60.0,JEE_ADVANCED
+IIT-BBS,ECE,B.Tech,Electronics & Communication Engineering,4,60,10+2 with PCM; JEE Advanced qualification,60.0,JEE_ADVANCED
+IIT-BBS,EEE,B.Tech,Electrical & Electronics Engineering,4,60,10+2 with PCM; JEE Advanced qualification,60.0,JEE_ADVANCED
+IIT-BBS,MECH,B.Tech,Mechanical Engineering,4,60,10+2 with PCM; JEE Advanced qualification,60.0,JEE_ADVANCED
+IIT-BBS,AERO,B.Tech,Aerospace Engineering,4,60,10+2 with PCM; JEE Advanced qualification,60.0,JEE_ADVANCED
+IIT-BBS,CIVIL,B.Tech,Civil Engineering,4,60,10+2 with PCM; JEE Advanced qualification,60.0,JEE_ADVANCED
+SASTRA,CSE,B.Tech,Computer Science & Engineering,4,120,60% aggregate in XII with Mathematics and Physics as compulsory subjects (B.Tech.),60.0,TNEA
+SASTRA,ECE,B.Tech,Electronics & Communication Engineering,4,60,60% aggregate in XII with Mathematics and Physics as compulsory subjects (B.Tech.),60.0,TNEA
+SASTRA,EEE,B.Tech,Electrical & Electronics Engineering,4,60,60% aggregate in XII with Mathematics and Physics as compulsory subjects (B.Tech.),60.0,TNEA
+SASTRA,MECH,B.Tech,Mechanical Engineering,4,60,60% aggregate in XII with Mathematics and Physics as compulsory subjects (B.Tech.),60.0,TNEA
+SASTRA,AERO,B.Tech,Aerospace Engineering,4,60,60% aggregate in XII with Mathematics and Physics as compulsory subjects (B.Tech.),60.0,TNEA
+SASTRA,CIVIL,B.Tech,Civil Engineering,4,60,60% aggregate in XII with Mathematics and Physics as compulsory subjects (B.Tech.),60.0,TNEA
+ICT-MUM,CSE,B.Tech,Computer Science & Engineering,4,120,10+2 with PCM; programme-specific criteria apply,60.0,MHT_CET
+ICT-MUM,ECE,B.Tech,Electronics & Communication Engineering,4,60,10+2 with PCM; programme-specific criteria apply,60.0,MHT_CET
+ICT-MUM,EEE,B.Tech,Electrical & Electronics Engineering,4,60,10+2 with PCM; programme-specific criteria apply,60.0,MHT_CET
+ICT-MUM,MECH,B.Tech,Mechanical Engineering,4,60,10+2 with PCM; programme-specific criteria apply,60.0,MHT_CET
+ICT-MUM,AERO,B.Tech,Aerospace Engineering,4,60,10+2 with PCM; programme-specific criteria apply,60.0,MHT_CET
+ICT-MUM,CIVIL,B.Tech,Civil Engineering,4,60,10+2 with PCM; programme-specific criteria apply,60.0,MHT_CET
+MNIT-JPR,CSE,B.Tech,Computer Science & Engineering,4,120,10+2 with PCM; JEE Main qualification,60.0,JEE_MAIN
+MNIT-JPR,ECE,B.Tech,Electronics & Communication Engineering,4,60,10+2 with PCM; JEE Main qualification,60.0,JEE_MAIN
+MNIT-JPR,EEE,B.Tech,Electrical & Electronics Engineering,4,60,10+2 with PCM; JEE Main qualification,60.0,JEE_MAIN
+MNIT-JPR,MECH,B.Tech,Mechanical Engineering,4,60,10+2 with PCM; JEE Main qualification,60.0,JEE_MAIN
+MNIT-JPR,AERO,B.Tech,Aerospace Engineering,4,60,10+2 with PCM; JEE Main qualification,60.0,JEE_MAIN
+MNIT-JPR,CIVIL,B.Tech,Civil Engineering,4,60,10+2 with PCM; JEE Main qualification,60.0,JEE_MAIN
+UPES,CSE,B.Tech,Computer Science & Engineering,4,120,10+2 with PCM; programme-specific criteria apply,60.0,JEE_MAIN
+UPES,ECE,B.Tech,Electronics & Communication Engineering,4,60,10+2 with PCM; programme-specific criteria apply,60.0,JEE_MAIN
+UPES,EEE,B.Tech,Electrical & Electronics Engineering,4,60,10+2 with PCM; programme-specific criteria apply,60.0,JEE_MAIN
+UPES,MECH,B.Tech,Mechanical Engineering,4,60,10+2 with PCM; programme-specific criteria apply,60.0,JEE_MAIN
+UPES,AERO,B.Tech,Aerospace Engineering,4,60,10+2 with PCM; programme-specific criteria apply,60.0,JEE_MAIN
+UPES,CIVIL,B.Tech,Civil Engineering,4,60,10+2 with PCM; programme-specific criteria apply,60.0,JEE_MAIN
+VNIT-NGP,CSE,B.Tech,Computer Science & Engineering,4,120,10+2 with PCM; JEE Main qualification,60.0,JEE_MAIN
+VNIT-NGP,ECE,B.Tech,Electronics & Communication Engineering,4,60,10+2 with PCM; JEE Main qualification,60.0,JEE_MAIN
+VNIT-NGP,EEE,B.Tech,Electrical & Electronics Engineering,4,60,10+2 with PCM; JEE Main qualification,60.0,JEE_MAIN
+VNIT-NGP,MECH,B.Tech,Mechanical Engineering,4,60,10+2 with PCM; JEE Main qualification,60.0,JEE_MAIN
+VNIT-NGP,AERO,B.Tech,Aerospace Engineering,4,60,10+2 with PCM; JEE Main qualification,60.0,JEE_MAIN
+VNIT-NGP,CIVIL,B.Tech,Civil Engineering,4,60,10+2 with PCM; JEE Main qualification,60.0,JEE_MAIN
+SIMATS,CSE,B.Tech,Computer Science & Engineering,4,120,10+2 with PCM; programme-specific criteria apply,60.0,TNEA
+SIMATS,ECE,B.Tech,Electronics & Communication Engineering,4,60,10+2 with PCM; programme-specific criteria apply,60.0,TNEA
+SIMATS,EEE,B.Tech,Electrical & Electronics Engineering,4,60,10+2 with PCM; programme-specific criteria apply,60.0,TNEA
+SIMATS,MECH,B.Tech,Mechanical Engineering,4,60,10+2 with PCM; programme-specific criteria apply,60.0,TNEA
+SIMATS,AERO,B.Tech,Aerospace Engineering,4,60,10+2 with PCM; programme-specific criteria apply,60.0,TNEA
+SIMATS,CIVIL,B.Tech,Civil Engineering,4,60,10+2 with PCM; programme-specific criteria apply,60.0,TNEA
+SIU-PUNE,CSE,B.Tech,Computer Science & Engineering,4,120,10+2 with required subjects; programme-specific criteria apply,60.0,JEE_MAIN
+SIU-PUNE,ECE,B.Tech,Electronics & Communication Engineering,4,60,10+2 with required subjects; programme-specific criteria apply,60.0,JEE_MAIN
+SIU-PUNE,EEE,B.Tech,Electrical & Electronics Engineering,4,60,10+2 with required subjects; programme-specific criteria apply,60.0,JEE_MAIN
+SIU-PUNE,MECH,B.Tech,Mechanical Engineering,4,60,10+2 with required subjects; programme-specific criteria apply,60.0,JEE_MAIN
+SIU-PUNE,AERO,B.Tech,Aerospace Engineering,4,60,10+2 with required subjects; programme-specific criteria apply,60.0,JEE_MAIN
+SIU-PUNE,CIVIL,B.Tech,Civil Engineering,4,60,10+2 with required subjects; programme-specific criteria apply,60.0,JEE_MAIN
+SSN-1315,CSE,B.Tech,Computer Science & Engineering,4,120,10+2 with PCM; TNEA eligibility applies,60.0,TNEA
+SSN-1315,ECE,B.Tech,Electronics & Communication Engineering,4,60,10+2 with PCM; TNEA eligibility applies,60.0,TNEA
+SSN-1315,EEE,B.Tech,Electrical & Electronics Engineering,4,60,10+2 with PCM; TNEA eligibility applies,60.0,TNEA
+SSN-1315,MECH,B.Tech,Mechanical Engineering,4,60,10+2 with PCM; TNEA eligibility applies,60.0,TNEA
+SSN-1315,AERO,B.Tech,Aerospace Engineering,4,60,10+2 with PCM; TNEA eligibility applies,60.0,TNEA
+SSN-1315,CIVIL,B.Tech,Civil Engineering,4,60,10+2 with PCM; TNEA eligibility applies,60.0,TNEA
+LPU,CSE,B.Tech,Computer Science & Engineering,4,120,10+2 with required subjects; programme-specific criteria apply,60.0,JEE_MAIN
+LPU,ECE,B.Tech,Electronics & Communication Engineering,4,60,10+2 with required subjects; programme-specific criteria apply,60.0,JEE_MAIN
+LPU,EEE,B.Tech,Electrical & Electronics Engineering,4,60,10+2 with required subjects; programme-specific criteria apply,60.0,JEE_MAIN
+LPU,MECH,B.Tech,Mechanical Engineering,4,60,10+2 with required subjects; programme-specific criteria apply,60.0,JEE_MAIN
+LPU,AERO,B.Tech,Aerospace Engineering,4,60,10+2 with required subjects; programme-specific criteria apply,60.0,JEE_MAIN
+LPU,CIVIL,B.Tech,Civil Engineering,4,60,10+2 with required subjects; programme-specific criteria apply,60.0,JEE_MAIN
+NIT-DGP,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_MAIN
+NIT-DGP,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_MAIN
+NIT-DGP,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_MAIN
+NIT-DGP,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_MAIN
+NIT-DGP,AERO,B.Tech,Aerospace Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_MAIN
+NIT-DGP,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_MAIN
+NIT-SIL,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_MAIN
+NIT-SIL,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_MAIN
+NIT-SIL,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_MAIN
+NIT-SIL,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_MAIN
+NIT-SIL,AERO,B.Tech,Aerospace Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_MAIN
+NIT-SIL,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced",75.0,JEE_MAIN
+CHRIST-BLR,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry, Mathematics from a recognized board",50.0,JEE_MAIN
+CHRIST-BLR,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics from a recognized board",50.0,JEE_MAIN
+CHRIST-BLR,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics from a recognized board",50.0,JEE_MAIN
+CHRIST-BLR,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics from a recognized board",50.0,JEE_MAIN
+CHRIST-BLR,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics from a recognized board",50.0,JEE_MAIN
+IIT-DH,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry, Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IIT-DH,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IIT-DH,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IIT-DH,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+IIT-DH,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+RGIPT,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry, Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+RGIPT,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+RGIPT,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+RGIPT,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+RGIPT,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics; qualified in JEE Advanced",75.0,JEE_ADVANCED
+SLIET,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry, Mathematics",60.0,JEE_MAIN
+SLIET,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",60.0,JEE_MAIN
+SLIET,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",60.0,JEE_MAIN
+SLIET,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",60.0,JEE_MAIN
+SLIET,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",60.0,JEE_MAIN
+VIGNAN,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry, Mathematics",50.0,AP_EAPCET
+VIGNAN,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",50.0,AP_EAPCET
+VIGNAN,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",50.0,AP_EAPCET
+VIGNAN,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",50.0,AP_EAPCET
+VIGNAN,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",50.0,AP_EAPCET
+MANIT-BPL,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+MANIT-BPL,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+MANIT-BPL,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+MANIT-BPL,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+MANIT-BPL,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+NIT-JSR,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+NIT-JSR,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+NIT-JSR,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+NIT-JSR,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+NIT-JSR,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+NIT-MEGH,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+NIT-MEGH,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+NIT-MEGH,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+NIT-MEGH,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+NIT-MEGH,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+JAIN-BLR,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics and Mathematics, plus Chemistry/Biology/CS",45.0,JEE_MAIN
+JAIN-BLR,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics and Mathematics, plus Chemistry/Biology/CS",45.0,JEE_MAIN
+JAIN-BLR,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics and Mathematics, plus Chemistry/Biology/CS",45.0,JEE_MAIN
+JAIN-BLR,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics and Mathematics, plus Chemistry/Biology/CS",45.0,JEE_MAIN
+JAIN-BLR,AERO,B.Tech,Aerospace Engineering,4,60,"10+2 with Physics and Mathematics, plus Chemistry/Biology/CS",45.0,JEE_MAIN
+JAIN-BLR,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics and Mathematics, plus Chemistry/Biology/CS",45.0,JEE_MAIN
+NIT-KKR,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+NIT-KKR,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+NIT-KKR,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+NIT-KKR,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+NIT-KKR,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+NIT-RPR,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+NIT-RPR,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+NIT-RPR,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+NIT-RPR,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+NIT-RPR,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+VELTECH,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry, Mathematics",50.0,TNEA
+VELTECH,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",50.0,TNEA
+VELTECH,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",50.0,TNEA
+VELTECH,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",50.0,TNEA
+VELTECH,AERO,B.Tech,Aerospace Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",50.0,TNEA
+VELTECH,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",50.0,TNEA
+AUCE-VIZAG,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry, Mathematics",45.0,AP_EAPCET
+AUCE-VIZAG,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",45.0,AP_EAPCET
+AUCE-VIZAG,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",45.0,AP_EAPCET
+AUCE-VIZAG,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",45.0,AP_EAPCET
+AUCE-VIZAG,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",45.0,AP_EAPCET
+CHITKARA,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry, Mathematics",55.0,JEE_MAIN
+CHITKARA,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",55.0,JEE_MAIN
+CHITKARA,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",55.0,JEE_MAIN
+CHITKARA,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",55.0,JEE_MAIN
+CHITKARA,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",55.0,JEE_MAIN
+COEP,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry, Mathematics",50.0,MHT_CET
+COEP,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",50.0,MHT_CET
+COEP,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",50.0,MHT_CET
+COEP,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",50.0,MHT_CET
+COEP,AERO,B.Tech,Aerospace Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",50.0,MHT_CET
+COEP,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",50.0,MHT_CET
+SRU,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry, Mathematics",55.0,TS_EAMCET
+SRU,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",55.0,TS_EAMCET
+SRU,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",55.0,TS_EAMCET
+SRU,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",55.0,TS_EAMCET
+SRU,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",55.0,TS_EAMCET
+DIAT-PUNE,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry, Mathematics (B.Tech); BE/B.Tech with 55% (M.Tech)",75.0,JEE_MAIN
+DIAT-PUNE,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics (B.Tech); BE/B.Tech with 55% (M.Tech)",75.0,JEE_MAIN
+DIAT-PUNE,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics (B.Tech); BE/B.Tech with 55% (M.Tech)",75.0,JEE_MAIN
+DIAT-PUNE,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics (B.Tech); BE/B.Tech with 55% (M.Tech)",75.0,JEE_MAIN
+DIAT-PUNE,AERO,B.Tech,Aerospace Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics (B.Tech); BE/B.Tech with 55% (M.Tech)",75.0,JEE_MAIN
+DIAT-PUNE,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics (B.Tech); BE/B.Tech with 55% (M.Tech)",75.0,JEE_MAIN
+UIET-PU,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry, Mathematics",60.0,JEE_MAIN
+UIET-PU,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",60.0,JEE_MAIN
+UIET-PU,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",60.0,JEE_MAIN
+UIET-PU,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",60.0,JEE_MAIN
+UIET-PU,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",60.0,JEE_MAIN
+JNTUH,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry, Mathematics",45.0,TS_EAMCET
+JNTUH,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",45.0,TS_EAMCET
+JNTUH,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",45.0,TS_EAMCET
+JNTUH,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",45.0,TS_EAMCET
+JNTUH,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",45.0,TS_EAMCET
+CGU-BBSR,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry, Mathematics",45.0,JEE_MAIN
+CGU-BBSR,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",45.0,JEE_MAIN
+CGU-BBSR,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",45.0,JEE_MAIN
+CGU-BBSR,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",45.0,JEE_MAIN
+CGU-BBSR,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",45.0,JEE_MAIN
+IIITM-GWL,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+IIITM-GWL,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+IIITM-GWL,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+IIITM-GWL,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+NIT-HMR,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+NIT-HMR,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+NIT-HMR,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+NIT-HMR,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+NIT-HMR,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+PDEU,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics and Mathematics, plus Chemistry/Biology/CS/Vocational",45.0,JEE_MAIN
+PDEU,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics and Mathematics, plus Chemistry/Biology/CS/Vocational",45.0,JEE_MAIN
+PDEU,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics and Mathematics, plus Chemistry/Biology/CS/Vocational",45.0,JEE_MAIN
+PDEU,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics and Mathematics, plus Chemistry/Biology/CS/Vocational",45.0,JEE_MAIN
+PDEU,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics and Mathematics, plus Chemistry/Biology/CS/Vocational",45.0,JEE_MAIN
+NIT-PY,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+NIT-PY,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+NIT-PY,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+NIT-PY,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+NIT-PY,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",75.0,JEE_MAIN
+SKCET,CSE,B.Tech,Computer Science & Engineering,4,120,"10+2 with Physics, Chemistry, Mathematics",45.0,TNEA
+SKCET,ECE,B.Tech,Electronics & Communication Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",45.0,TNEA
+SKCET,EEE,B.Tech,Electrical & Electronics Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",45.0,TNEA
+SKCET,MECH,B.Tech,Mechanical Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",45.0,TNEA
+SKCET,CIVIL,B.Tech,Civil Engineering,4,60,"10+2 with Physics, Chemistry, Mathematics",45.0,TNEA

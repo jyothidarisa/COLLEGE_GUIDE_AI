@@ -1,0 +1,41 @@
+# National Institute of Technology Meghalaya (NIT-MEGH)
+Location: Shillong, Meghalaya
+NIRF Engineering Rank: #83
+Category / College Type: Institute of National Importance
+Official Website: https://www.nitm.ac.in
+
+## 1. Admissions and Eligibility
+- Primary Entrance Exam: JEE Main
+- Minimum PCM Eligibility: 75% (65% SC/ST/PwD)
+- Minimum Qualification: 10+2 with Physics, Chemistry, Mathematics
+- Admission Modes & Counseling: JEE Main + JoSAA/CSAB Counselling; Counseling Authority: JoSAA/CSAB Special Round
+- Admission Process: JEE Main -> JoSAA Registration -> Choice Filling -> Seat Allotment -> Reporting
+- Important Documents Required: 10th & 12th Mark Sheets, JEE Main Scorecard, JoSAA Allotment Letter, Category Certificate, Photo ID
+
+## 2. Fee Structure and Living Costs
+- CSE / AIML / IT Annual Tuition Fee: ₹149,250
+- ECE Annual Tuition Fee: ₹149,250
+- Mechanical / Civil Annual Tuition Fee: ₹149,250
+- Hostel Accommodation Details: Approx. INR 74,000-79,500 per year (hostel + mess + transport)
+- Room Types Available: Single, Double, Triple, Quadruple Sharing; Attached Bathrooms: No
+- Mess & Dining: Mess available (Yes)
+
+## 3. Placements & Career Outcomes
+- Placement Percentage: 78%
+- Highest Package: INR 32 LPA
+- Average Package: INR 10.4 LPA
+- Top Recruiters: TCS, Infosys, Wipro, Amazon, Bosch
+- Internship Assistance: Yes
+
+## 4. Scholarships and Financial Aid
+- Scholarships Available: Yes
+- Scholarship Schemes: SC/ST Fee Waiver, Merit-cum-Means Scholarship, North-East Scholarship
+- Scholarship Details: 100% tuition waiver for SC/ST/PwD, income-based remission, and state-specific scholarships for North-East students.
+
+## 5. Campus Amenities and Connectivity
+- Campus Area: Temporary campus in Shillong (permanent campus under development at Sohra/Cherrapunji)
+- Facilities: Library (Yes), Research Labs (Yes), Gym (Yes), Medical (Yes), Sports
+- Nearest Railway Station: Guwahati Railway Station (approx. 100 km)
+- Nearest Bus Stand: Shillong Bus Stand (approx. 5 km)
+- Women Safety & Emergency Support: Women Safety Cell (Yes), Medical Support (Yes)
+- Industry Collaborations: Bosch, TCS, regional IT/ITES companies

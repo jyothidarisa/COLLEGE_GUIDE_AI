@@ -1,0 +1,41 @@
+# Anna University (CEG-0001)
+Location: Chennai, Tamil Nadu
+NIRF Engineering Rank: #20
+Category / College Type: State University (Public)
+Official Website: https://www.annauniv.edu/
+
+## 1. Admissions and Eligibility
+- Primary Entrance Exam: Class 12 Marks-based (No entrance exam)
+- Minimum PCM Eligibility: Merit based on Class 12 marks
+- Minimum Qualification: 10+2 with Physics, Chemistry & Mathematics
+- Admission Modes & Counseling: TNEA Counselling (Tamil Nadu Engineering Admissions); Counseling Authority: TNEA Counselling
+- Admission Process: TNEA Application → Merit List → Counselling → Seat Allotment → Fee Payment
+- Important Documents Required: 10th & 12th Mark Sheets, Community Certificate, Transfer Certificate, Aadhaar Card, Passport-size Photos
+
+## 2. Fee Structure and Living Costs
+- CSE / AIML / IT Annual Tuition Fee: ₹30,000
+- ECE Annual Tuition Fee: ₹30,000
+- Mechanical / Civil Annual Tuition Fee: ₹30,000
+- Hostel Accommodation Details: 25000
+- Room Types Available: Single, Double, Triple; Attached Bathrooms: no
+- Mess & Dining: Mess available (yes)
+
+## 3. Placements & Career Outcomes
+- Placement Percentage: 58%
+- Highest Package: ₹40-53 Lakhs
+- Average Package: 8.54 LPA (median 7.5 LPA)
+- Top Recruiters: Amazon, Cisco, DE Shaw, Ola, Samsung R&D, Tiger Analytics, TCS, Bosch, Ford, Walmart Labs
+- Internship Assistance: Yes
+
+## 4. Scholarships and Financial Aid
+- Scholarships Available: Yes
+- Scholarship Schemes: State Government Scholarship, SC/ST/OBC Fee Reimbursement, First Graduate Scholarship, EWS Scholarship
+- Scholarship Details: Tamil Nadu government fee reimbursement schemes and merit/need-based scholarships for eligible categories
+
+## 5. Campus Amenities and Connectivity
+- Campus Area: 185 acres
+- Facilities: Library (yes), Research Labs (yes), Gym (yes), Medical (yes), Sports
+- Nearest Railway Station: Guindy Railway Station (1 km)
+- Nearest Bus Stand: CMBT Koyambedu (10 km)
+- Women Safety & Emergency Support: Women Safety Cell (Internal Complaints Committee (ICC), 24×7 Campus Security, CCTV Surveillance, Women's Hostel Security, Anti-Sexual Harassment Cell, Emergency Helpline), Medical Support (24×7 Campus/Institute Hospital, Ambulance Service, Emergency Medical Care, Resident Doctors, Pharmacy, Counselling Services)
+- Industry Collaborations: Microsoft, IBM, Intel, Samsung, Cisco, TCS, Infosys, Wipro, L&T, Bosch

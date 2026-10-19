@@ -1,0 +1,41 @@
+# Vellore Institute of Technology (VIT-001)
+Location: Vellore, Tamil Nadu
+NIRF Engineering Rank: #16
+Category / College Type: Deemed University (Private)
+Official Website: https://vit.ac.in/
+
+## 1. Admissions and Eligibility
+- Primary Entrance Exam: VITEEE / JEE Main
+- Minimum PCM Eligibility: 60% overall in Class 12
+- Minimum Qualification: 10+2 with Physics, Chemistry & Mathematics
+- Admission Modes & Counseling: VITEEE, JEE Main Score, Direct Admission; Counseling Authority: VIT Admission Cell
+- Admission Process: VITEEE / JEE Main Score → Counselling → Seat Allotment → Fee Payment
+- Important Documents Required: 10th & 12th Mark Sheets, Entrance Scorecard, Transfer Certificate, Aadhaar Card, Passport-size Photos, Medical Fitness Certificate
+
+## 2. Fee Structure and Living Costs
+- CSE / AIML / IT Annual Tuition Fee: ₹245,000
+- ECE Annual Tuition Fee: ₹245,000
+- Mechanical / Civil Annual Tuition Fee: ₹230,000
+- Hostel Accommodation Details: 130000
+- Room Types Available: Double, Triple, Four-sharing; Attached Bathrooms: yes
+- Mess & Dining: Mess available (yes)
+
+## 3. Placements & Career Outcomes
+- Placement Percentage: 99%
+- Highest Package: ₹1 Crore per annum
+- Average Package: 7.62-9.9 LPA (median 6 LPA)
+- Top Recruiters: Microsoft, Amazon, DE Shaw & Co., Morgan Stanley, PayPal, Oracle, TCS, Infosys, Dell, Cisco
+- Internship Assistance: Yes
+
+## 4. Scholarships and Financial Aid
+- Scholarships Available: Yes
+- Scholarship Schemes: Merit Scholarship, VITEEE Rank-based Scholarship, Sports Scholarship, Sibling Discount
+- Scholarship Details: Tuition fee waivers of 10-75% for top VITEEE/JEE rank holders and sports achievers
+
+## 5. Campus Amenities and Connectivity
+- Campus Area: 360 acres
+- Facilities: Library (yes), Research Labs (yes), Gym (yes), Medical (yes), Sports
+- Nearest Railway Station: Katpadi Railway Station (5 km)
+- Nearest Bus Stand: Vellore Bus Stand (7 km)
+- Women Safety & Emergency Support: Women Safety Cell (Internal Complaints Committee (ICC), 24×7 Campus Security, CCTV Surveillance, Women's Hostel Security, Anti-Sexual Harassment Cell, Emergency Helpline), Medical Support (24×7 Campus/Institute Hospital, Ambulance Service, Emergency Medical Care, Resident Doctors, Pharmacy, Counselling Services)
+- Industry Collaborations: Microsoft, IBM, Intel, Samsung, Cisco, TCS, Infosys, Wipro, L&T, Bosch

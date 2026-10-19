@@ -62,9 +62,9 @@ def test_jee_main_nitt_recommendation(db_session):
     assert "NITT" in codes
 
 def test_unsupported_exam_no_fabricated_colleges(db_session):
-    # Searching for exam with no verified college should return 0 colleges without fabricating data
+    # Searching for course/exam with no verified college should return 0 colleges without fabricating data
     profile = StudentProfile(
-        preferred_course="CIVIL",
+        preferred_course="NAVAL_ARCHITECTURE",
         entrance_exam="JEE_ADVANCED",
         rank_or_score=5000,
         pcm_percentage=75.0,

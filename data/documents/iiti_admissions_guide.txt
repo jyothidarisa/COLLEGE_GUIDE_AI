@@ -1,0 +1,41 @@
+# Indian Institute of Technology Indore (IITI)
+Location: Indore, Madhya Pradesh
+NIRF Engineering Rank: #12
+Category / College Type: Institute of National Importance
+Official Website: https://www.iiti.ac.in/
+
+## 1. Admissions and Eligibility
+- Primary Entrance Exam: JEE Advanced
+- Minimum PCM Eligibility: 75% overall in Class 12 (65% for SC/ST/PwD)
+- Minimum Qualification: 10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced
+- Admission Modes & Counseling: JEE Advanced, JoSAA Counselling; Counseling Authority: JoSAA
+- Admission Process: JEE Advanced → JoSAA Counselling → Seat Allotment → Document Verification → Fee Payment
+- Important Documents Required: 10th & 12th Mark Sheets, JEE Advanced Scorecard, JoSAA Allotment Letter, Transfer Certificate, Migration Certificate, Category/PwD Certificate (if applicable), Aadhaar Card, Passport-size Photos, Medical Fitness Certificate
+
+## 2. Fee Structure and Living Costs
+- CSE / AIML / IT Annual Tuition Fee: ₹210,000
+- ECE Annual Tuition Fee: ₹210,000
+- Mechanical / Civil Annual Tuition Fee: ₹210,000
+- Hostel Accommodation Details: 55000
+- Room Types Available: Single, Double, Triple; Attached Bathrooms: Partial
+- Mess & Dining: Mess available (yes)
+
+## 3. Placements & Career Outcomes
+- Placement Percentage: 85%
+- Highest Package: ₹1.37 Crore per annum
+- Average Package: 27 LPA (median 18-19.5 LPA, NIRF)
+- Top Recruiters: Google, Microsoft, Amazon, Goldman Sachs, DE Shaw, Oracle, Flipkart, Morgan Stanley, Media.net
+- Internship Assistance: Yes
+
+## 4. Scholarships and Financial Aid
+- Scholarships Available: Yes
+- Scholarship Schemes: Merit Scholarship, Merit-cum-Means (MCM) Scholarship, Institute Free Studentship, SC/ST/OBC Scholarship, EWS Scholarship, National Scholarships
+- Scholarship Details: Tuition fee waivers and stipends based on merit, category and family income; MCM scholarship of Rs 1000-2000/month for eligible students
+
+## 5. Campus Amenities and Connectivity
+- Campus Area: 515 acres
+- Facilities: Library (yes), Research Labs (yes), Gym (yes), Medical (yes), Sports
+- Nearest Railway Station: Indore Junction (25 km)
+- Nearest Bus Stand: Indore Bus Stand (26 km)
+- Women Safety & Emergency Support: Women Safety Cell (Internal Complaints Committee (ICC), 24×7 Campus Security, CCTV Surveillance, Women's Hostel Security, Anti-Sexual Harassment Cell, Emergency Helpline), Medical Support (24×7 Campus/Institute Hospital, Ambulance Service, Emergency Medical Care, Resident Doctors, Pharmacy, Counselling Services)
+- Industry Collaborations: Microsoft, IBM, Intel, Samsung, Cisco, TCS, Infosys, Wipro, L&T, Bosch

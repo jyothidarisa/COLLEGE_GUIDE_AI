@@ -22,7 +22,10 @@ def validate_student_profile(profile: StudentProfile) -> Tuple[bool, Optional[st
     Validates profile fields according to the chosen entrance exam route.
     """
     exam = profile.entrance_exam.upper()
-    valid_exams = ["TNEA", "JEE_MAIN", "JEE_ADVANCED", "BITSAT", "VITEEE"]
+    valid_exams = [
+        "TNEA", "JEE_MAIN", "JEE_ADVANCED", "BITSAT", "VITEEE",
+        "MHT_CET", "WBJEE", "AP_EAPCET", "TS_EAMCET", "SRMJEEE", "COMEDK"
+    ]
     if exam not in valid_exams:
         return False, f"Unsupported entrance exam '{profile.entrance_exam}'. Supported exams: {', '.join(valid_exams)}."
     
@@ -36,8 +39,13 @@ def validate_student_profile(profile: StudentProfile) -> Tuple[bool, Optional[st
         if profile.rank_or_score < 40 or profile.rank_or_score > 390:
             return False, "For BITSAT, score must be between 40 and 390."
 
-    # JEE Main, JEE Advanced, and VITEEE use All India Ranks (positive integers)
-    if exam in ["JEE_MAIN", "JEE_ADVANCED", "VITEEE"]:
+    # MHT-CET score is either percentile (0-100) or state rank (>= 1)
+    if exam == "MHT_CET":
+        if profile.rank_or_score < 0:
+            return False, "For MHT-CET, percentile or rank must be non-negative."
+
+    # Rank-based exams use positive integer ranks >= 1
+    if exam in ["JEE_MAIN", "JEE_ADVANCED", "VITEEE", "WBJEE", "AP_EAPCET", "TS_EAMCET", "SRMJEEE", "COMEDK"]:
         if profile.rank_or_score < 1:
             return False, f"For {exam}, rank must be a positive integer >= 1."
             
@@ -81,8 +89,8 @@ def evaluate_admission_suitability(
     
     exam = exam_route.upper()
     
-    if exam in ["TNEA", "BITSAT"]:
-        # Higher score is better in TNEA (out of 200) and BITSAT (out of 390)
+    if exam in ["TNEA", "BITSAT"] or (exam == "MHT_CET" and user_score_or_rank <= 100.0):
+        # Higher score/percentile is better in TNEA (out of 200), BITSAT (out of 390), and MHT-CET (percentile)
         diff = user_score_or_rank - cutoff_val
         alt_threshold = 8.0 if exam == "BITSAT" else 1.5
         bm_min = -12.0 if exam == "BITSAT" else -0.5

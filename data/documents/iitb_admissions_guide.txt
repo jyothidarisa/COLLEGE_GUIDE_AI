@@ -1,0 +1,41 @@
+# Indian Institute of Technology Bombay (IITB)
+Location: Mumbai, Maharashtra
+NIRF Engineering Rank: #3
+Category / College Type: Institute of National Importance
+Official Website: https://www.iitb.ac.in/
+
+## 1. Admissions and Eligibility
+- Primary Entrance Exam: JEE Advanced
+- Minimum PCM Eligibility: 75% overall in Class 12 (65% for SC/ST/PwD)
+- Minimum Qualification: 10+2 with Physics, Chemistry & Mathematics; qualified in JEE Advanced
+- Admission Modes & Counseling: JEE Advanced, JoSAA Counselling; Counseling Authority: JoSAA
+- Admission Process: JEE Advanced → JoSAA Counselling → Seat Allotment → Document Verification → Fee Payment
+- Important Documents Required: 10th & 12th Mark Sheets, JEE Advanced Scorecard, JoSAA Allotment Letter, Transfer Certificate, Migration Certificate, Category/PwD Certificate (if applicable), Aadhaar Card, Passport-size Photos, Medical Fitness Certificate
+
+## 2. Fee Structure and Living Costs
+- CSE / AIML / IT Annual Tuition Fee: ₹220,000
+- ECE Annual Tuition Fee: ₹220,000
+- Mechanical / Civil Annual Tuition Fee: ₹220,000
+- Hostel Accommodation Details: 90000
+- Room Types Available: Single, Double, Triple; Attached Bathrooms: Partial
+- Mess & Dining: Mess available (yes)
+
+## 3. Placements & Career Outcomes
+- Placement Percentage: 83%
+- Highest Package: ₹2.2 Crore per annum (varies widely by source, ₹1.3–3.67 Cr reported)
+- Average Package: 23.5 LPA (median ~17.9-19.6 LPA, NIRF 2025)
+- Top Recruiters: Google, Microsoft, Amazon, JP Morgan Chase, Goldman Sachs, Intel, Apple, Qualcomm, Texas Instruments, DE Shaw
+- Internship Assistance: Yes
+
+## 4. Scholarships and Financial Aid
+- Scholarships Available: Yes
+- Scholarship Schemes: Merit Scholarship, Merit-cum-Means (MCM) Scholarship, Institute Free Studentship, SC/ST/OBC Scholarship, EWS Scholarship, National Scholarships
+- Scholarship Details: Tuition fee waivers and stipends based on merit, category and family income; MCM scholarship of Rs 1000-2000/month for eligible students
+
+## 5. Campus Amenities and Connectivity
+- Campus Area: 550 acres
+- Facilities: Library (yes), Research Labs (yes), Gym (yes), Medical (yes), Sports
+- Nearest Railway Station: Kanjurmarg Railway Station (4 km)
+- Nearest Bus Stand: Powai Bus Depot (1 km)
+- Women Safety & Emergency Support: Women Safety Cell (Internal Complaints Committee (ICC), 24×7 Campus Security, CCTV Surveillance, Women's Hostel Security, Anti-Sexual Harassment Cell, Emergency Helpline), Medical Support (24×7 Campus/Institute Hospital, Ambulance Service, Emergency Medical Care, Resident Doctors, Pharmacy, Counselling Services)
+- Industry Collaborations: Microsoft, IBM, Intel, Samsung, Cisco, TCS, Infosys, Wipro, L&T, Bosch

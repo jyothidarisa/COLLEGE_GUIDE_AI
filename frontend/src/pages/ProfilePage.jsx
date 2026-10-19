@@ -95,7 +95,12 @@ export default function ProfilePage() {
       return;
     }
 
-    if (formData.entrance_exam !== 'TNEA' && formData.entrance_exam !== 'BITSAT' && score < 1) {
+    if (formData.entrance_exam === 'MHT_CET' && (score < 0 || score > 100)) {
+      setError('For MHT-CET, percentile must be between 0.0 and 100.0.');
+      return;
+    }
+
+    if (!['TNEA', 'BITSAT', 'MHT_CET'].includes(formData.entrance_exam) && score < 1) {
       setError(`For ${formData.entrance_exam}, rank must be a positive integer.`);
       return;
     }
@@ -339,6 +344,11 @@ export default function ProfilePage() {
                 <option value="JEE_ADVANCED">JEE Advanced (IIT Admissions)</option>
                 <option value="BITSAT">BITSAT (BITS Pilani Admissions)</option>
                 <option value="VITEEE">VITEEE (VIT Deemed University)</option>
+                <option value="MHT_CET">MHT-CET (Maharashtra State Admissions)</option>
+                <option value="WBJEE">WBJEE (West Bengal Joint Entrance)</option>
+                <option value="AP_EAPCET">AP EAPCET (Andhra Pradesh Admissions)</option>
+                <option value="TS_EAMCET">TS EAMCET (Telangana State Admissions)</option>
+                <option value="SRMJEEE">SRMJEEE (SRM Engineering Entrance)</option>
               </select>
             </div>
 
@@ -348,7 +358,9 @@ export default function ProfilePage() {
                   ? 'Normalized Cutoff Mark (Out of 200) *'
                   : formData.entrance_exam === 'BITSAT'
                   ? 'BITSAT Score (Out of 390) *'
-                  : 'All India Rank (AIR) *'}
+                  : formData.entrance_exam === 'MHT_CET'
+                  ? 'MHT-CET Percentile (0 to 100) *'
+                  : 'All India / State Rank *'}
               </label>
               <input
                 type="number"
