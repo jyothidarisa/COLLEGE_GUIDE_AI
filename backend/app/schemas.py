@@ -8,14 +8,14 @@ class StudentProfile(BaseModel):
     state: Optional[str] = Field(None, description="Student's home state")
     preferred_city: Optional[str] = Field(None, description="Preferred college city")
     preferred_degree: str = Field("B.Tech", description="Target degree, e.g. B.Tech or B.E.")
-    preferred_course: str = Field(..., description="Target specialization: CSE, ECE, MECH, IT, AI_DS, EEE, CIVIL")
+    preferred_course: Optional[str] = Field("Computer Science and Engineering", description="Target specialization: CSE, ECE, MECH, IT, AI_DS, EEE, CIVIL")
     
     class10_percentage: Optional[float] = Field(None, ge=0, le=100)
     class12_percentage: Optional[float] = Field(None, ge=0, le=100)
     pcm_percentage: Optional[float] = Field(None, ge=0, le=100, description="Physics, Chemistry, Math %")
     
-    entrance_exam: str = Field(..., description="TNEA, JEE_MAIN, or JEE_ADVANCED")
-    rank_or_score: float = Field(..., description="TNEA cutoff mark (out of 200) or JEE rank")
+    entrance_exam: Optional[str] = Field("JEE_MAIN", description="TNEA, JEE_MAIN, or JEE_ADVANCED")
+    rank_or_score: Optional[float] = Field(15000.0, description="TNEA cutoff mark (out of 200) or JEE rank")
     admission_year: int = Field(2024, description="Target admission year")
     category: str = Field("OC", description="Reservation category: OC, BC, MBC, SC, ST, GEN, OBC-NCL, EWS")
     quota: str = Field("General", description="General, Home State, Other State, All India")
