@@ -1,0 +1,107 @@
+[
+  {
+    "id": "H01",
+    "category": "admissions",
+    "query": "What are the prerequisite board exams to enter BTech at VIT?",
+    "expected_intent": "admission_eligibility",
+    "expected_source_keywords": ["Vellore", "VITEEE", "Eligibility"]
+  },
+  {
+    "id": "H02",
+    "category": "admissions",
+    "query": "Can international or NRI candidates take seats in Anna University?",
+    "expected_intent": "admission_eligibility",
+    "expected_source_keywords": ["Anna University", "Eligibility", "Admissions"]
+  },
+  {
+    "id": "H03",
+    "category": "admissions",
+    "query": "Is 60 aggregate in schooling acceptable for technical degrees at COEP?",
+    "expected_intent": "admission_eligibility",
+    "expected_source_keywords": ["COEP", "Eligibility", "PCM"]
+  },
+  {
+    "id": "H04",
+    "category": "admissions",
+    "query": "Explain the document verification stage during JoSAA seat allocation",
+    "expected_intent": "admission_procedure",
+    "expected_source_keywords": ["JoSAA", "Verification", "Admissions"]
+  },
+  {
+    "id": "H05",
+    "category": "cutoffs",
+    "query": "What was the final entry score accepted for Computer Engineering at NIT Calicut?",
+    "expected_intent": "cutoff_and_rank",
+    "expected_source_keywords": ["Calicut", "Computer Science", "Cutoff"]
+  },
+  {
+    "id": "H06",
+    "category": "cutoffs",
+    "query": "Where did admissions stop for General boys in IIT Kharagpur Aerospace?",
+    "expected_intent": "cutoff_and_rank",
+    "expected_source_keywords": ["Kharagpur", "Cutoff", "Closing"]
+  },
+  {
+    "id": "H07",
+    "category": "cutoffs",
+    "query": "What score was needed on the MHT CET merit list for VJTI Mumbai?",
+    "expected_intent": "cutoff_and_rank",
+    "expected_source_keywords": ["Cutoff", "MHT CET", "Rank"]
+  },
+  {
+    "id": "H08",
+    "category": "cutoffs",
+    "query": "Did the last seat in electrical engineering at DTU fill around 8000 merit?",
+    "expected_intent": "cutoff_and_rank",
+    "expected_source_keywords": ["Delhi Technological", "Cutoff", "Rank"]
+  },
+  {
+    "id": "H09",
+    "category": "fees",
+    "query": "What is the per-term expenditure for electronics engineering at Thapar?",
+    "expected_intent": "fees_and_budget",
+    "expected_source_keywords": ["Thapar", "Fee", "Tuition"]
+  },
+  {
+    "id": "H10",
+    "category": "fees",
+    "query": "Break down the annual cost of studying at Delhi Technological University",
+    "expected_intent": "fees_and_budget",
+    "expected_source_keywords": ["Delhi Technological", "Fee", "Cost", "Tuition"]
+  },
+  {
+    "id": "H11",
+    "category": "fees",
+    "query": "How costly is the tuition and mess bill at SRM Kattankulathur?",
+    "expected_intent": "fees_and_budget",
+    "expected_source_keywords": ["SRM", "Fee", "Tuition"]
+  },
+  {
+    "id": "H12",
+    "category": "fees",
+    "query": "Will my four-year bachelors stay under 500000 rupees at Jadavpur?",
+    "expected_intent": "fees_and_budget",
+    "expected_source_keywords": ["Jadavpur", "Fee", "Affordable"]
+  },
+  {
+    "id": "H13",
+    "category": "out_of_scope",
+    "query": "What are the health benefits of drinking green tea daily?",
+    "expected_intent": "out_of_scope",
+    "expected_source_keywords": []
+  },
+  {
+    "id": "H14",
+    "category": "out_of_scope",
+    "query": "Who directed the movie Interstellar and when was it released?",
+    "expected_intent": "out_of_scope",
+    "expected_source_keywords": []
+  },
+  {
+    "id": "H15",
+    "category": "out_of_scope",
+    "query": "Can you explain the rules of professional tennis scoring?",
+    "expected_intent": "out_of_scope",
+    "expected_source_keywords": []
+  }
+]

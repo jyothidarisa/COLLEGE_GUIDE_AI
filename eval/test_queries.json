@@ -1,0 +1,212 @@
+[
+  {
+    "id": "Q01",
+    "category": "admissions",
+    "query": "What is the eligibility criteria for admission to NIT Trichy?",
+    "expected_intent": "admission_eligibility",
+    "expected_source_keywords": ["Tiruchirappalli", "75%", "JEE Main"]
+  },
+  {
+    "id": "Q02",
+    "category": "admissions",
+    "query": "Can I get admission to BITS Pilani without taking BITSAT?",
+    "expected_intent": "admission_eligibility",
+    "expected_source_keywords": ["Pilani", "BITSAT", "Direct"]
+  },
+  {
+    "id": "Q03",
+    "category": "admissions",
+    "query": "What are the admission requirements and entrance exams for IIT Madras?",
+    "expected_intent": "admission_eligibility",
+    "expected_source_keywords": ["Madras", "JEE Advanced"]
+  },
+  {
+    "id": "Q04",
+    "category": "admissions",
+    "query": "What is the minimum 12th percentage needed for admission to DTU?",
+    "expected_intent": "admission_eligibility",
+    "expected_source_keywords": ["Delhi Technological", "60%", "Class 12"]
+  },
+  {
+    "id": "Q05",
+    "category": "admissions",
+    "query": "What is the step by step admission procedure for TNEA Anna University counselling?",
+    "expected_intent": "admission_procedure",
+    "expected_source_keywords": ["Anna University", "TNEA"]
+  },
+  {
+    "id": "Q06",
+    "category": "fees",
+    "query": "What is the annual tuition fee for BTech at BITS Pilani?",
+    "expected_intent": "fees_and_budget",
+    "expected_source_keywords": ["Pilani", "Tuition", "Fee"]
+  },
+  {
+    "id": "Q07",
+    "category": "fees",
+    "query": "How much is the semester fee at NIT Surathkal?",
+    "expected_intent": "fees_and_budget",
+    "expected_source_keywords": ["Surathkal", "Fee", "Tuition"]
+  },
+  {
+    "id": "Q08",
+    "category": "fees",
+    "query": "What are the total college fees and living expenses at COEP Pune?",
+    "expected_intent": "fees_and_budget",
+    "expected_source_keywords": ["COEP", "Fee", "Tuition"]
+  },
+  {
+    "id": "Q09",
+    "category": "fees",
+    "query": "What is the fee structure for engineering at VIT Vellore?",
+    "expected_intent": "fees_and_budget",
+    "expected_source_keywords": ["Vellore", "Fee", "Tuition"]
+  },
+  {
+    "id": "Q10",
+    "category": "fees",
+    "query": "What is the annual tuition fee for btech at IIT Madras?",
+    "expected_intent": "fees_and_budget",
+    "expected_source_keywords": ["Madras", "Fee", "Tuition"]
+  },
+  {
+    "id": "Q11",
+    "category": "placements",
+    "query": "What is the median package and placement rate at IIT Madras?",
+    "expected_intent": "placement_information",
+    "expected_source_keywords": ["Madras", "Median", "Placement"]
+  },
+  {
+    "id": "Q12",
+    "category": "placements",
+    "query": "Which companies recruit from NIT Trichy and what is the highest salary?",
+    "expected_intent": "placement_information",
+    "expected_source_keywords": ["Tiruchirappalli", "Recruiters", "Placement"]
+  },
+  {
+    "id": "Q13",
+    "category": "placements",
+    "query": "Tell me about the placement statistics for computer science at BITS Pilani",
+    "expected_intent": "placement_information",
+    "expected_source_keywords": ["Pilani", "Placement", "Package"]
+  },
+  {
+    "id": "Q14",
+    "category": "placements",
+    "query": "What is the average and median placement package at DTU?",
+    "expected_intent": "placement_information",
+    "expected_source_keywords": ["Delhi Technological", "Placement", "Median"]
+  },
+  {
+    "id": "Q15",
+    "category": "placements",
+    "query": "How are the campus placements at VIT Vellore?",
+    "expected_intent": "placement_information",
+    "expected_source_keywords": ["Vellore", "Placement", "Recruiters"]
+  },
+  {
+    "id": "Q16",
+    "category": "cutoffs",
+    "query": "What was the previous closing cutoff for CSE at NIT Trichy?",
+    "expected_intent": "cutoff_and_rank",
+    "expected_source_keywords": ["Tiruchirappalli", "Computer Science", "Cutoff"]
+  },
+  {
+    "id": "Q17",
+    "category": "cutoffs",
+    "query": "What cutoff rank is needed in JEE Advanced for IIT Madras?",
+    "expected_intent": "cutoff_and_rank",
+    "expected_source_keywords": ["Madras", "Cutoff", "Rank"]
+  },
+  {
+    "id": "Q18",
+    "category": "cutoffs",
+    "query": "What was the previous year closing cutoff rank for COEP Pune?",
+    "expected_intent": "cutoff_and_rank",
+    "expected_source_keywords": ["COEP", "Cutoff", "MHT CET"]
+  },
+  {
+    "id": "Q19",
+    "category": "cutoffs",
+    "query": "What score or cutoff rank is required for BITS Pilani CSE?",
+    "expected_intent": "cutoff_and_rank",
+    "expected_source_keywords": ["Pilani", "BITSAT", "Cutoff"]
+  },
+  {
+    "id": "Q20",
+    "category": "cutoffs",
+    "query": "What is the closing rank for engineering at NIT Surathkal?",
+    "expected_intent": "cutoff_and_rank",
+    "expected_source_keywords": ["Surathkal", "Cutoff", "Rank"]
+  },
+  {
+    "id": "Q21",
+    "category": "hostels",
+    "query": "Are hostel facilities and mess available at NIT Trichy?",
+    "expected_intent": "hostel_and_facilities",
+    "expected_source_keywords": ["Tiruchirappalli", "Hostel", "Mess"]
+  },
+  {
+    "id": "Q22",
+    "category": "hostels",
+    "query": "Tell me about the campus accommodation and hostel life at BITS Pilani",
+    "expected_intent": "hostel_and_facilities",
+    "expected_source_keywords": ["Pilani", "Hostel", "Campus"]
+  },
+  {
+    "id": "Q23",
+    "category": "hostels",
+    "query": "What are the hostel room charges and amenities at IIT Madras?",
+    "expected_intent": "hostel_and_facilities",
+    "expected_source_keywords": ["Madras", "Hostel", "Dining"]
+  },
+  {
+    "id": "Q24",
+    "category": "comparisons",
+    "query": "Compare IIT Madras and BITS Pilani in terms of campus and reputation",
+    "expected_intent": "college_comparison",
+    "expected_source_keywords": ["Madras", "Pilani"]
+  },
+  {
+    "id": "Q25",
+    "category": "comparisons",
+    "query": "Which is better between NIT Trichy and NIT Surathkal?",
+    "expected_intent": "college_comparison",
+    "expected_source_keywords": ["Tiruchirappalli", "Surathkal"]
+  },
+  {
+    "id": "Q26",
+    "category": "out_of_scope",
+    "query": "What is the capital of Australia?",
+    "expected_intent": "out_of_scope",
+    "expected_source_keywords": []
+  },
+  {
+    "id": "Q27",
+    "category": "out_of_scope",
+    "query": "Who won the ICC cricket world cup in 2023?",
+    "expected_intent": "out_of_scope",
+    "expected_source_keywords": []
+  },
+  {
+    "id": "Q28",
+    "category": "out_of_scope",
+    "query": "Can you write a python script to reverse a linked list?",
+    "expected_intent": "out_of_scope",
+    "expected_source_keywords": []
+  },
+  {
+    "id": "Q29",
+    "category": "out_of_scope",
+    "query": "How do I bake chocolate chip cookies at home?",
+    "expected_intent": "out_of_scope",
+    "expected_source_keywords": []
+  },
+  {
+    "id": "Q30",
+    "category": "out_of_scope",
+    "query": "What will the weather be like in Mumbai tomorrow?",
+    "expected_intent": "out_of_scope",
+    "expected_source_keywords": []
+  }
+]

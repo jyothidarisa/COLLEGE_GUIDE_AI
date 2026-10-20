@@ -1,0 +1,142 @@
+[
+  {
+    "id": "S01",
+    "category": "admissions",
+    "query": "What are the rules regarding admission for students from vocational higher secondary streams?",
+    "expected_intent": "admission_eligibility",
+    "expected_source_keywords": ["Eligibility", "Admissions"]
+  },
+  {
+    "id": "S02",
+    "category": "admissions",
+    "query": "Can a candidate who wrote 12th exams in private mode take admission in central universities?",
+    "expected_intent": "admission_eligibility",
+    "expected_source_keywords": ["Eligibility", "Admissions"]
+  },
+  {
+    "id": "S03",
+    "category": "admissions",
+    "query": "Are there any physical fitness medical standards specified for marine engineering courses?",
+    "expected_intent": "admission_eligibility",
+    "expected_source_keywords": ["Eligibility", "Medical"]
+  },
+  {
+    "id": "S04",
+    "category": "admissions",
+    "query": "What is the procedure for updating caste category certificates after counselling registration begins?",
+    "expected_intent": "admission_procedure",
+    "expected_source_keywords": ["Counselling", "Certificate", "Verification"]
+  },
+  {
+    "id": "S05",
+    "category": "cutoffs",
+    "query": "What was the final accepted merit standing for Mechanical Engineering at Jadavpur University?",
+    "expected_intent": "cutoff_and_rank",
+    "expected_source_keywords": ["Jadavpur", "Mechanical", "Cutoff"]
+  },
+  {
+    "id": "S06",
+    "category": "cutoffs",
+    "query": "Where did admissions close for Other State students in Civil Engineering at VNIT Nagpur?",
+    "expected_intent": "cutoff_and_rank",
+    "expected_source_keywords": ["VNIT", "Civil", "Closing", "Cutoff"]
+  },
+  {
+    "id": "S07",
+    "category": "cutoffs",
+    "query": "What rank did the last student admitted into Electronics at Thapar Institute hold?",
+    "expected_intent": "cutoff_and_rank",
+    "expected_source_keywords": ["Thapar", "Cutoff", "Rank"]
+  },
+  {
+    "id": "S08",
+    "category": "cutoffs",
+    "query": "Did the seats in Aerospace Engineering at DIAT Pune close within top 5000 rank?",
+    "expected_intent": "cutoff_and_rank",
+    "expected_source_keywords": ["DIAT", "Aerospace", "Cutoff"]
+  },
+  {
+    "id": "S09",
+    "category": "fees",
+    "query": "What is the complete 4-year tuition expenditure for Data Science at Amrita Coimbatore?",
+    "expected_intent": "fees_and_budget",
+    "expected_source_keywords": ["Amrita", "Tuition", "Fee"]
+  },
+  {
+    "id": "S10",
+    "category": "fees",
+    "query": "How much does a student spend on university hostel accommodation annually at COEP?",
+    "expected_intent": "fees_and_budget",
+    "expected_source_keywords": ["COEP", "Hostel", "Fee", "Living"]
+  },
+  {
+    "id": "S11",
+    "category": "fees",
+    "query": "What are the semester laboratory and academic fees charged at Anna University CEG campus?",
+    "expected_intent": "fees_and_budget",
+    "expected_source_keywords": ["Anna University", "Fee", "Tuition"]
+  },
+  {
+    "id": "S12",
+    "category": "placements",
+    "query": "What was the audited median CTC package reported for engineering graduates at DTU?",
+    "expected_intent": "placement_information",
+    "expected_source_keywords": ["Delhi Technological", "Median", "Placement"]
+  },
+  {
+    "id": "S13",
+    "category": "placements",
+    "query": "Which prominent technology corporations hire interns from NIT Surathkal campus drives?",
+    "expected_intent": "placement_information",
+    "expected_source_keywords": ["Surathkal", "Recruiters", "Placement"]
+  },
+  {
+    "id": "S14",
+    "category": "placements",
+    "query": "What percentage of computer science students at BITS Pilani secured on-campus job offers?",
+    "expected_intent": "placement_information",
+    "expected_source_keywords": ["Pilani", "Placement", "Offers"]
+  },
+  {
+    "id": "S15",
+    "category": "hostels",
+    "query": "Are air-conditioned hostel rooms and international student dining facilities provided at VIT Vellore?",
+    "expected_intent": "hostel_and_facilities",
+    "expected_source_keywords": ["Vellore", "Hostel", "Dining"]
+  },
+  {
+    "id": "S16",
+    "category": "hostels",
+    "query": "What sports grounds, gymnasium, and library facilities are accessible to students at NIT Trichy?",
+    "expected_intent": "hostel_and_facilities",
+    "expected_source_keywords": ["Tiruchirappalli", "Campus", "Facilities"]
+  },
+  {
+    "id": "S17",
+    "category": "comparisons",
+    "query": "Compare the tuition expense and median placement outcomes between COEP Pune and VNIT Nagpur",
+    "expected_intent": "college_comparison",
+    "expected_source_keywords": ["COEP", "VNIT"]
+  },
+  {
+    "id": "S18",
+    "category": "comparisons",
+    "query": "Which institution has stronger industry connections in software: DTU or BITS Pilani?",
+    "expected_intent": "college_comparison",
+    "expected_source_keywords": ["Delhi Technological", "Pilani"]
+  },
+  {
+    "id": "S19",
+    "category": "out_of_scope",
+    "query": "What causes solar flares to erupt from the sun's surface and how do they affect satellites?",
+    "expected_intent": "out_of_scope",
+    "expected_source_keywords": []
+  },
+  {
+    "id": "S20",
+    "category": "out_of_scope",
+    "query": "Can you provide a simple recipe for baking homemade blueberry muffins from scratch?",
+    "expected_intent": "out_of_scope",
+    "expected_source_keywords": []
+  }
+]

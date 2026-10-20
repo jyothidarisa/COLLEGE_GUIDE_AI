@@ -1,0 +1,107 @@
+[
+  {
+    "id": "F01",
+    "category": "admissions",
+    "query": "What are the age restrictions for writing national engineering tests?",
+    "expected_intent": "admission_eligibility",
+    "expected_source_keywords": ["Age", "Eligibility", "Admissions"]
+  },
+  {
+    "id": "F02",
+    "category": "admissions",
+    "query": "Is a diploma holder eligible to join the second year of engineering at PSG Tech?",
+    "expected_intent": "admission_eligibility",
+    "expected_source_keywords": ["Lateral", "Eligibility", "Diploma"]
+  },
+  {
+    "id": "F03",
+    "category": "admissions",
+    "query": "Can students from non-math background enter biotechnology programs at VIT?",
+    "expected_intent": "admission_eligibility",
+    "expected_source_keywords": ["Vellore", "Biotechnology", "Eligibility"]
+  },
+  {
+    "id": "F04",
+    "category": "admissions",
+    "query": "What documents must a candidate present at the reporting center for CSAB?",
+    "expected_intent": "admission_procedure",
+    "expected_source_keywords": ["CSAB", "Documents", "Reporting"]
+  },
+  {
+    "id": "F05",
+    "category": "cutoffs",
+    "query": "What was the final qualifying threshold for AI at IIIT Hyderabad?",
+    "expected_intent": "cutoff_and_rank",
+    "expected_source_keywords": ["Cutoff", "Closing", "Rank"]
+  },
+  {
+    "id": "F06",
+    "category": "cutoffs",
+    "query": "How strict was the cutoff score for Chemical Engineering at IIT Bombay last season?",
+    "expected_intent": "cutoff_and_rank",
+    "expected_source_keywords": ["Bombay", "Cutoff", "Chemical"]
+  },
+  {
+    "id": "F07",
+    "category": "cutoffs",
+    "query": "What merit standing was required to get into electrical at RV College?",
+    "expected_intent": "cutoff_and_rank",
+    "expected_source_keywords": ["Cutoff", "Merit", "Rank"]
+  },
+  {
+    "id": "F08",
+    "category": "cutoffs",
+    "query": "Did computer science seats at NIT Rourkela shut before rank 4000?",
+    "expected_intent": "cutoff_and_rank",
+    "expected_source_keywords": ["Rourkela", "Computer Science", "Cutoff"]
+  },
+  {
+    "id": "F09",
+    "category": "fees",
+    "query": "What is the complete term billing for aerospace at Amrita Vishwa Vidyapeetham?",
+    "expected_intent": "fees_and_budget",
+    "expected_source_keywords": ["Amrita", "Fee", "Tuition"]
+  },
+  {
+    "id": "F10",
+    "category": "fees",
+    "query": "Can an applicant complete BTech at Jamia Millia Islamia within 150000 rupees?",
+    "expected_intent": "fees_and_budget",
+    "expected_source_keywords": ["Jamia", "Fee", "Tuition"]
+  },
+  {
+    "id": "F11",
+    "category": "fees",
+    "query": "How much does one year of university residence and dining cost at BITS?",
+    "expected_intent": "fees_and_budget",
+    "expected_source_keywords": ["Pilani", "Hostel", "Living", "Fee"]
+  },
+  {
+    "id": "F12",
+    "category": "fees",
+    "query": "Are there any semester tuition concessions for single girl children at DTU?",
+    "expected_intent": "fees_and_budget",
+    "expected_source_keywords": ["Delhi Technological", "Waiver", "Fee", "Concession"]
+  },
+  {
+    "id": "F13",
+    "category": "out_of_scope",
+    "query": "How does the James Webb Space Telescope detect infrared light from distant galaxies?",
+    "expected_intent": "out_of_scope",
+    "expected_source_keywords": []
+  },
+  {
+    "id": "F14",
+    "category": "out_of_scope",
+    "query": "How many moons does Jupiter have according to recent astronomical surveys?",
+    "expected_intent": "out_of_scope",
+    "expected_source_keywords": []
+  },
+  {
+    "id": "F15",
+    "category": "out_of_scope",
+    "query": "Can you summarize the major plot points of Shakespeare's Macbeth?",
+    "expected_intent": "out_of_scope",
+    "expected_source_keywords": []
+  }
+]

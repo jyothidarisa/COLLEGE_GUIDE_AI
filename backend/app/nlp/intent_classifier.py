@@ -251,7 +251,7 @@ DEFAULT_TRAINING_DATA: List[Tuple[str, str]] = [
     ("tell me a joke", "out_of_scope"),
     ("who is the prime minister of india?", "out_of_scope"),
     ("how to bake chocolate cookies", "out_of_scope"),
-    ("what is the distance to the moon?", "out_of_scope")
+    ("what is the distance to the moon?", "out_of_scope"),
 ]
 
 
@@ -263,7 +263,7 @@ class AdmissionIntentClassifier:
     3. Targeted Domain Guards (Priority keyword filters)
     """
 
-    def __init__(self, confidence_threshold: float = 0.25):
+    def __init__(self, confidence_threshold: float = 0.18):
         self.confidence_threshold = confidence_threshold
         self.embedding_model = get_embedding_model()
         self.vectorizer = TfidfVectorizer(
@@ -349,6 +349,20 @@ class AdmissionIntentClassifier:
         # 5. College recommendations
         if any(k in q_lower for k in ["suggest college", "recommend college", "which college can i get", "colleges for 20k", "best college for my rank", "options for my rank"]):
             return IntentResult("college_recommendation", 0.95, {"college_recommendation": 0.95}, False, "Priority recommendation intent guard matched.")
+
+        # 6. Out-of-scope domain guards (strictly unrelated queries)
+        has_prog_code = any(w in q_lower for w in ["write", "code", "program", "script"])
+        has_prog_ds = any(w in q_lower for w in ["binary tree", "linked list"])
+        if (has_prog_code and has_prog_ds) or any(k in q_lower for k in ["python script", "write a code", "write a function", "who won", "weather in", "bake chocolate"]):
+            return IntentResult("out_of_scope", 0.98, {"out_of_scope": 0.98}, False, "Priority out-of-scope domain guard matched.")
+
+        # 7. Admission eligibility requirements (narrowed to exclude cutoffs, fees, and hostels)
+        if any(k in q_lower for k in ["eligibility criteria", "admission requirements", "without taking bitsat", "minimum 12th percentage", "minimum marks needed in 12th", "minimum pcm percentage", "12th percentage needed for admission", "class 12 percentage requirement"]) and not any(k in q_lower for k in ["cutoff", "closing rank", "opening rank", "fee", "scholarship", "hostel", "package", "placement"]):
+            return IntentResult("admission_eligibility", 0.95, {"admission_eligibility": 0.95}, False, "Priority admission eligibility guard matched.")
+
+        # 8. Admission procedure & counselling (narrowed to exclude fees and hostels)
+        if any(k in q_lower for k in ["how to register for josaa", "how to apply for tnea", "how to apply for counselling", "counselling procedure", "step by step admission procedure", "admission procedure for"]) and not any(k in q_lower for k in ["cutoff", "closing rank", "opening rank", "fee", "waiver", "scholarship", "hostel", "mess", "package", "placement"]):
+            return IntentResult("admission_procedure", 0.95, {"admission_procedure": 0.95}, False, "Priority admission procedure guard matched.")
 
         # --- Hybrid Model Prediction ---
         # 1. TF-IDF Probabilities

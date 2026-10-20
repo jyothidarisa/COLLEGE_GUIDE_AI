@@ -1,0 +1,101 @@
+[
+  {
+    "threshold": 0.15,
+    "accuracy": 96.67,
+    "correct_count": 29,
+    "total": 30,
+    "oos_total": 5,
+    "oos_false_accepts": 0,
+    "oos_false_accept_rate": 0.0
+  },
+  {
+    "threshold": 0.16,
+    "accuracy": 96.67,
+    "correct_count": 29,
+    "total": 30,
+    "oos_total": 5,
+    "oos_false_accepts": 0,
+    "oos_false_accept_rate": 0.0
+  },
+  {
+    "threshold": 0.17,
+    "accuracy": 96.67,
+    "correct_count": 29,
+    "total": 30,
+    "oos_total": 5,
+    "oos_false_accepts": 0,
+    "oos_false_accept_rate": 0.0
+  },
+  {
+    "threshold": 0.18,
+    "accuracy": 93.33,
+    "correct_count": 28,
+    "total": 30,
+    "oos_total": 5,
+    "oos_false_accepts": 0,
+    "oos_false_accept_rate": 0.0
+  },
+  {
+    "threshold": 0.19,
+    "accuracy": 93.33,
+    "correct_count": 28,
+    "total": 30,
+    "oos_total": 5,
+    "oos_false_accepts": 0,
+    "oos_false_accept_rate": 0.0
+  },
+  {
+    "threshold": 0.2,
+    "accuracy": 93.33,
+    "correct_count": 28,
+    "total": 30,
+    "oos_total": 5,
+    "oos_false_accepts": 0,
+    "oos_false_accept_rate": 0.0
+  },
+  {
+    "threshold": 0.21,
+    "accuracy": 90.0,
+    "correct_count": 27,
+    "total": 30,
+    "oos_total": 5,
+    "oos_false_accepts": 0,
+    "oos_false_accept_rate": 0.0
+  },
+  {
+    "threshold": 0.22,
+    "accuracy": 90.0,
+    "correct_count": 27,
+    "total": 30,
+    "oos_total": 5,
+    "oos_false_accepts": 0,
+    "oos_false_accept_rate": 0.0
+  },
+  {
+    "threshold": 0.23,
+    "accuracy": 80.0,
+    "correct_count": 24,
+    "total": 30,
+    "oos_total": 5,
+    "oos_false_accepts": 0,
+    "oos_false_accept_rate": 0.0
+  },
+  {
+    "threshold": 0.24,
+    "accuracy": 76.67,
+    "correct_count": 23,
+    "total": 30,
+    "oos_total": 5,
+    "oos_false_accepts": 0,
+    "oos_false_accept_rate": 0.0
+  },
+  {
+    "threshold": 0.25,
+    "accuracy": 70.0,
+    "correct_count": 21,
+    "total": 30,
+    "oos_total": 5,
+    "oos_false_accepts": 0,
+    "oos_false_accept_rate": 0.0
+  }
+]

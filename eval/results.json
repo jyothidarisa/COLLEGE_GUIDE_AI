@@ -1,0 +1,978 @@
+{
+  "timestamp": 1792492211.902891,
+  "test_set": {
+    "dataset_name": "Original Test Set (30 queries)",
+    "total_queries": 30,
+    "intent_accuracy": 96.67,
+    "domain_retrieval_hit_rate": 100.0,
+    "domain_retrieval_query_count": 25,
+    "fallback_rate": 100.0,
+    "average_latency_ms": 118.9,
+    "details": [
+      {
+        "id": "Q01",
+        "category": "admissions",
+        "query": "What is the eligibility criteria for admission to NIT Trichy?",
+        "expected_intent": "admission_eligibility",
+        "predicted_intent": "admission_eligibility",
+        "intent_confidence": 0.95,
+        "intent_match": true,
+        "expected_keywords": [
+          "tiruchirappalli",
+          "75%",
+          "jee main"
+        ],
+        "matched_keywords": [
+          "tiruchirappalli"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 5,
+        "is_fallback": true,
+        "latency_ms": 183.18
+      },
+      {
+        "id": "Q02",
+        "category": "admissions",
+        "query": "Can I get admission to BITS Pilani without taking BITSAT?",
+        "expected_intent": "admission_eligibility",
+        "predicted_intent": "admission_eligibility",
+        "intent_confidence": 0.95,
+        "intent_match": true,
+        "expected_keywords": [
+          "pilani",
+          "bitsat",
+          "direct"
+        ],
+        "matched_keywords": [
+          "pilani",
+          "bitsat",
+          "direct"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 3,
+        "is_fallback": true,
+        "latency_ms": 98.55
+      },
+      {
+        "id": "Q03",
+        "category": "admissions",
+        "query": "What are the admission requirements and entrance exams for IIT Madras?",
+        "expected_intent": "admission_eligibility",
+        "predicted_intent": "admission_eligibility",
+        "intent_confidence": 0.95,
+        "intent_match": true,
+        "expected_keywords": [
+          "madras",
+          "jee advanced"
+        ],
+        "matched_keywords": [
+          "madras",
+          "jee advanced"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 1,
+        "is_fallback": true,
+        "latency_ms": 96.67
+      },
+      {
+        "id": "Q04",
+        "category": "admissions",
+        "query": "What is the minimum 12th percentage needed for admission to DTU?",
+        "expected_intent": "admission_eligibility",
+        "predicted_intent": "admission_eligibility",
+        "intent_confidence": 0.95,
+        "intent_match": true,
+        "expected_keywords": [
+          "delhi technological",
+          "60%",
+          "class 12"
+        ],
+        "matched_keywords": [
+          "delhi technological",
+          "class 12"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 3,
+        "is_fallback": true,
+        "latency_ms": 101.88
+      },
+      {
+        "id": "Q05",
+        "category": "admissions",
+        "query": "What is the step by step admission procedure for TNEA Anna University counselling?",
+        "expected_intent": "admission_procedure",
+        "predicted_intent": "admission_procedure",
+        "intent_confidence": 0.95,
+        "intent_match": true,
+        "expected_keywords": [
+          "anna university",
+          "tnea"
+        ],
+        "matched_keywords": [
+          "anna university",
+          "tnea"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 2,
+        "is_fallback": true,
+        "latency_ms": 96.82
+      },
+      {
+        "id": "Q06",
+        "category": "fees",
+        "query": "What is the annual tuition fee for BTech at BITS Pilani?",
+        "expected_intent": "fees_and_budget",
+        "predicted_intent": "fees_and_budget",
+        "intent_confidence": 0.3789,
+        "intent_match": true,
+        "expected_keywords": [
+          "pilani",
+          "tuition",
+          "fee"
+        ],
+        "matched_keywords": [
+          "pilani",
+          "tuition",
+          "fee"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 5,
+        "is_fallback": true,
+        "latency_ms": 124.29
+      },
+      {
+        "id": "Q07",
+        "category": "fees",
+        "query": "How much is the semester fee at NIT Surathkal?",
+        "expected_intent": "fees_and_budget",
+        "predicted_intent": "fees_and_budget",
+        "intent_confidence": 0.2926,
+        "intent_match": true,
+        "expected_keywords": [
+          "surathkal",
+          "fee",
+          "tuition"
+        ],
+        "matched_keywords": [
+          "surathkal",
+          "fee",
+          "tuition"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 1,
+        "is_fallback": true,
+        "latency_ms": 141.07
+      },
+      {
+        "id": "Q08",
+        "category": "fees",
+        "query": "What are the total college fees and living expenses at COEP Pune?",
+        "expected_intent": "fees_and_budget",
+        "predicted_intent": "fees_and_budget",
+        "intent_confidence": 0.3963,
+        "intent_match": true,
+        "expected_keywords": [
+          "coep",
+          "fee",
+          "tuition"
+        ],
+        "matched_keywords": [
+          "coep",
+          "fee",
+          "tuition"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 3,
+        "is_fallback": true,
+        "latency_ms": 128.87
+      },
+      {
+        "id": "Q09",
+        "category": "fees",
+        "query": "What is the fee structure for engineering at VIT Vellore?",
+        "expected_intent": "fees_and_budget",
+        "predicted_intent": "fees_and_budget",
+        "intent_confidence": 0.2056,
+        "intent_match": true,
+        "expected_keywords": [
+          "vellore",
+          "fee",
+          "tuition"
+        ],
+        "matched_keywords": [
+          "vellore",
+          "fee",
+          "tuition"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 3,
+        "is_fallback": true,
+        "latency_ms": 133.88
+      },
+      {
+        "id": "Q10",
+        "category": "fees",
+        "query": "What is the annual tuition fee for btech at IIT Madras?",
+        "expected_intent": "fees_and_budget",
+        "predicted_intent": "fees_and_budget",
+        "intent_confidence": 0.2752,
+        "intent_match": true,
+        "expected_keywords": [
+          "madras",
+          "fee",
+          "tuition"
+        ],
+        "matched_keywords": [
+          "madras",
+          "fee",
+          "tuition"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 3,
+        "is_fallback": true,
+        "latency_ms": 129.61
+      },
+      {
+        "id": "Q11",
+        "category": "placements",
+        "query": "What is the median package and placement rate at IIT Madras?",
+        "expected_intent": "placement_information",
+        "predicted_intent": "placement_information",
+        "intent_confidence": 0.95,
+        "intent_match": true,
+        "expected_keywords": [
+          "madras",
+          "median",
+          "placement"
+        ],
+        "matched_keywords": [
+          "madras",
+          "median",
+          "placement"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 4,
+        "is_fallback": true,
+        "latency_ms": 110.88
+      },
+      {
+        "id": "Q12",
+        "category": "placements",
+        "query": "Which companies recruit from NIT Trichy and what is the highest salary?",
+        "expected_intent": "placement_information",
+        "predicted_intent": "placement_information",
+        "intent_confidence": 0.2763,
+        "intent_match": true,
+        "expected_keywords": [
+          "tiruchirappalli",
+          "recruiters",
+          "placement"
+        ],
+        "matched_keywords": [
+          "tiruchirappalli",
+          "recruiters",
+          "placement"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 2,
+        "is_fallback": true,
+        "latency_ms": 132.88
+      },
+      {
+        "id": "Q13",
+        "category": "placements",
+        "query": "Tell me about the placement statistics for computer science at BITS Pilani",
+        "expected_intent": "placement_information",
+        "predicted_intent": "placement_information",
+        "intent_confidence": 0.95,
+        "intent_match": true,
+        "expected_keywords": [
+          "pilani",
+          "placement",
+          "package"
+        ],
+        "matched_keywords": [
+          "placement",
+          "package"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 4,
+        "is_fallback": true,
+        "latency_ms": 120.13
+      },
+      {
+        "id": "Q14",
+        "category": "placements",
+        "query": "What is the average and median placement package at DTU?",
+        "expected_intent": "placement_information",
+        "predicted_intent": "placement_information",
+        "intent_confidence": 0.95,
+        "intent_match": true,
+        "expected_keywords": [
+          "delhi technological",
+          "placement",
+          "median"
+        ],
+        "matched_keywords": [
+          "delhi technological",
+          "placement",
+          "median"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 3,
+        "is_fallback": true,
+        "latency_ms": 103.94
+      },
+      {
+        "id": "Q15",
+        "category": "placements",
+        "query": "How are the campus placements at VIT Vellore?",
+        "expected_intent": "placement_information",
+        "predicted_intent": "clarification_request",
+        "intent_confidence": 0.1793,
+        "intent_match": false,
+        "expected_keywords": [
+          "vellore",
+          "placement",
+          "recruiters"
+        ],
+        "matched_keywords": [
+          "vellore",
+          "placement",
+          "recruiters"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 5,
+        "is_fallback": true,
+        "latency_ms": 126.12
+      },
+      {
+        "id": "Q16",
+        "category": "cutoffs",
+        "query": "What was the previous closing cutoff for CSE at NIT Trichy?",
+        "expected_intent": "cutoff_and_rank",
+        "predicted_intent": "cutoff_and_rank",
+        "intent_confidence": 0.4165,
+        "intent_match": true,
+        "expected_keywords": [
+          "tiruchirappalli",
+          "computer science",
+          "cutoff"
+        ],
+        "matched_keywords": [
+          "tiruchirappalli",
+          "computer science",
+          "cutoff"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 2,
+        "is_fallback": true,
+        "latency_ms": 122.79
+      },
+      {
+        "id": "Q17",
+        "category": "cutoffs",
+        "query": "What cutoff rank is needed in JEE Advanced for IIT Madras?",
+        "expected_intent": "cutoff_and_rank",
+        "predicted_intent": "cutoff_and_rank",
+        "intent_confidence": 0.2292,
+        "intent_match": true,
+        "expected_keywords": [
+          "madras",
+          "cutoff",
+          "rank"
+        ],
+        "matched_keywords": [
+          "madras",
+          "cutoff",
+          "rank"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 5,
+        "is_fallback": true,
+        "latency_ms": 119.79
+      },
+      {
+        "id": "Q18",
+        "category": "cutoffs",
+        "query": "What was the previous year closing cutoff rank for COEP Pune?",
+        "expected_intent": "cutoff_and_rank",
+        "predicted_intent": "cutoff_and_rank",
+        "intent_confidence": 0.4585,
+        "intent_match": true,
+        "expected_keywords": [
+          "coep",
+          "cutoff",
+          "mht cet"
+        ],
+        "matched_keywords": [
+          "coep",
+          "cutoff",
+          "mht cet"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 5,
+        "is_fallback": true,
+        "latency_ms": 117.87
+      },
+      {
+        "id": "Q19",
+        "category": "cutoffs",
+        "query": "What score or cutoff rank is required for BITS Pilani CSE?",
+        "expected_intent": "cutoff_and_rank",
+        "predicted_intent": "cutoff_and_rank",
+        "intent_confidence": 0.32,
+        "intent_match": true,
+        "expected_keywords": [
+          "pilani",
+          "bitsat",
+          "cutoff"
+        ],
+        "matched_keywords": [
+          "pilani",
+          "bitsat",
+          "cutoff"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 5,
+        "is_fallback": true,
+        "latency_ms": 126.35
+      },
+      {
+        "id": "Q20",
+        "category": "cutoffs",
+        "query": "What is the closing rank for engineering at NIT Surathkal?",
+        "expected_intent": "cutoff_and_rank",
+        "predicted_intent": "cutoff_and_rank",
+        "intent_confidence": 0.95,
+        "intent_match": true,
+        "expected_keywords": [
+          "surathkal",
+          "cutoff",
+          "rank"
+        ],
+        "matched_keywords": [
+          "surathkal",
+          "cutoff",
+          "rank"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 5,
+        "is_fallback": true,
+        "latency_ms": 97.04
+      },
+      {
+        "id": "Q21",
+        "category": "hostels",
+        "query": "Are hostel facilities and mess available at NIT Trichy?",
+        "expected_intent": "hostel_and_facilities",
+        "predicted_intent": "hostel_and_facilities",
+        "intent_confidence": 0.4186,
+        "intent_match": true,
+        "expected_keywords": [
+          "tiruchirappalli",
+          "hostel",
+          "mess"
+        ],
+        "matched_keywords": [
+          "tiruchirappalli",
+          "hostel",
+          "mess"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 5,
+        "is_fallback": true,
+        "latency_ms": 120.38
+      },
+      {
+        "id": "Q22",
+        "category": "hostels",
+        "query": "Tell me about the campus accommodation and hostel life at BITS Pilani",
+        "expected_intent": "hostel_and_facilities",
+        "predicted_intent": "hostel_and_facilities",
+        "intent_confidence": 0.3077,
+        "intent_match": true,
+        "expected_keywords": [
+          "pilani",
+          "hostel",
+          "campus"
+        ],
+        "matched_keywords": [
+          "pilani",
+          "hostel",
+          "campus"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 5,
+        "is_fallback": true,
+        "latency_ms": 134.72
+      },
+      {
+        "id": "Q23",
+        "category": "hostels",
+        "query": "What are the hostel room charges and amenities at IIT Madras?",
+        "expected_intent": "hostel_and_facilities",
+        "predicted_intent": "hostel_and_facilities",
+        "intent_confidence": 0.2452,
+        "intent_match": true,
+        "expected_keywords": [
+          "madras",
+          "hostel",
+          "dining"
+        ],
+        "matched_keywords": [
+          "madras",
+          "hostel",
+          "dining"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 2,
+        "is_fallback": true,
+        "latency_ms": 130.06
+      },
+      {
+        "id": "Q24",
+        "category": "comparisons",
+        "query": "Compare IIT Madras and BITS Pilani in terms of campus and reputation",
+        "expected_intent": "college_comparison",
+        "predicted_intent": "college_comparison",
+        "intent_confidence": 0.95,
+        "intent_match": true,
+        "expected_keywords": [
+          "madras",
+          "pilani"
+        ],
+        "matched_keywords": [
+          "pilani"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 2,
+        "is_fallback": true,
+        "latency_ms": 92.28
+      },
+      {
+        "id": "Q25",
+        "category": "comparisons",
+        "query": "Which is better between NIT Trichy and NIT Surathkal?",
+        "expected_intent": "college_comparison",
+        "predicted_intent": "college_comparison",
+        "intent_confidence": 0.445,
+        "intent_match": true,
+        "expected_keywords": [
+          "tiruchirappalli",
+          "surathkal"
+        ],
+        "matched_keywords": [
+          "surathkal",
+          "tiruchirappalli"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 3,
+        "is_fallback": true,
+        "latency_ms": 123.83
+      },
+      {
+        "id": "Q26",
+        "category": "out_of_scope",
+        "query": "What is the capital of Australia?",
+        "expected_intent": "out_of_scope",
+        "predicted_intent": "out_of_scope",
+        "intent_confidence": 0.3315,
+        "intent_match": true,
+        "expected_keywords": [],
+        "matched_keywords": [],
+        "retrieval_hit": null,
+        "evidence_count": 0,
+        "is_fallback": true,
+        "latency_ms": 130.59
+      },
+      {
+        "id": "Q27",
+        "category": "out_of_scope",
+        "query": "Who won the ICC cricket world cup in 2023?",
+        "expected_intent": "out_of_scope",
+        "predicted_intent": "out_of_scope",
+        "intent_confidence": 0.98,
+        "intent_match": true,
+        "expected_keywords": [],
+        "matched_keywords": [],
+        "retrieval_hit": null,
+        "evidence_count": 5,
+        "is_fallback": true,
+        "latency_ms": 107.5
+      },
+      {
+        "id": "Q28",
+        "category": "out_of_scope",
+        "query": "Can you write a python script to reverse a linked list?",
+        "expected_intent": "out_of_scope",
+        "predicted_intent": "out_of_scope",
+        "intent_confidence": 0.98,
+        "intent_match": true,
+        "expected_keywords": [],
+        "matched_keywords": [],
+        "retrieval_hit": null,
+        "evidence_count": 0,
+        "is_fallback": true,
+        "latency_ms": 101.27
+      },
+      {
+        "id": "Q29",
+        "category": "out_of_scope",
+        "query": "How do I bake chocolate chip cookies at home?",
+        "expected_intent": "out_of_scope",
+        "predicted_intent": "out_of_scope",
+        "intent_confidence": 0.98,
+        "intent_match": true,
+        "expected_keywords": [],
+        "matched_keywords": [],
+        "retrieval_hit": null,
+        "evidence_count": 0,
+        "is_fallback": true,
+        "latency_ms": 95.48
+      },
+      {
+        "id": "Q30",
+        "category": "out_of_scope",
+        "query": "What will the weather be like in Mumbai tomorrow?",
+        "expected_intent": "out_of_scope",
+        "predicted_intent": "out_of_scope",
+        "intent_confidence": 0.3476,
+        "intent_match": true,
+        "expected_keywords": [],
+        "matched_keywords": [],
+        "retrieval_hit": null,
+        "evidence_count": 5,
+        "is_fallback": true,
+        "latency_ms": 118.41
+      }
+    ]
+  },
+  "heldout_set": {
+    "dataset_name": "Held-Out Test Set (15 queries)",
+    "total_queries": 15,
+    "intent_accuracy": 46.67,
+    "domain_retrieval_hit_rate": 100.0,
+    "domain_retrieval_query_count": 12,
+    "fallback_rate": 100.0,
+    "average_latency_ms": 126.15,
+    "details": [
+      {
+        "id": "H01",
+        "category": "admissions",
+        "query": "What are the prerequisite board exams to enter BTech at VIT?",
+        "expected_intent": "admission_eligibility",
+        "predicted_intent": "admission_eligibility",
+        "intent_confidence": 0.2157,
+        "intent_match": true,
+        "expected_keywords": [
+          "vellore",
+          "viteee",
+          "eligibility"
+        ],
+        "matched_keywords": [
+          "vellore",
+          "viteee",
+          "eligibility"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 1,
+        "is_fallback": true,
+        "latency_ms": 123.05
+      },
+      {
+        "id": "H02",
+        "category": "admissions",
+        "query": "Can international or NRI candidates take seats in Anna University?",
+        "expected_intent": "admission_eligibility",
+        "predicted_intent": "clarification_request",
+        "intent_confidence": 0.123,
+        "intent_match": false,
+        "expected_keywords": [
+          "anna university",
+          "eligibility",
+          "admissions"
+        ],
+        "matched_keywords": [
+          "anna university",
+          "admissions"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 1,
+        "is_fallback": true,
+        "latency_ms": 125.53
+      },
+      {
+        "id": "H03",
+        "category": "admissions",
+        "query": "Is 60 aggregate in schooling acceptable for technical degrees at COEP?",
+        "expected_intent": "admission_eligibility",
+        "predicted_intent": "admission_eligibility",
+        "intent_confidence": 0.1847,
+        "intent_match": true,
+        "expected_keywords": [
+          "coep",
+          "eligibility",
+          "pcm"
+        ],
+        "matched_keywords": [
+          "coep",
+          "eligibility",
+          "pcm"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 2,
+        "is_fallback": true,
+        "latency_ms": 122.43
+      },
+      {
+        "id": "H04",
+        "category": "admissions",
+        "query": "Explain the document verification stage during JoSAA seat allocation",
+        "expected_intent": "admission_procedure",
+        "predicted_intent": "admission_procedure",
+        "intent_confidence": 0.4961,
+        "intent_match": true,
+        "expected_keywords": [
+          "josaa",
+          "verification",
+          "admissions"
+        ],
+        "matched_keywords": [
+          "josaa",
+          "admissions",
+          "verification"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 5,
+        "is_fallback": true,
+        "latency_ms": 142.39
+      },
+      {
+        "id": "H05",
+        "category": "cutoffs",
+        "query": "What was the final entry score accepted for Computer Engineering at NIT Calicut?",
+        "expected_intent": "cutoff_and_rank",
+        "predicted_intent": "cutoff_and_rank",
+        "intent_confidence": 0.2428,
+        "intent_match": true,
+        "expected_keywords": [
+          "calicut",
+          "computer science",
+          "cutoff"
+        ],
+        "matched_keywords": [
+          "calicut",
+          "computer science",
+          "cutoff"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 4,
+        "is_fallback": true,
+        "latency_ms": 129.6
+      },
+      {
+        "id": "H06",
+        "category": "cutoffs",
+        "query": "Where did admissions stop for General boys in IIT Kharagpur Aerospace?",
+        "expected_intent": "cutoff_and_rank",
+        "predicted_intent": "clarification_request",
+        "intent_confidence": 0.1146,
+        "intent_match": false,
+        "expected_keywords": [
+          "kharagpur",
+          "cutoff",
+          "closing"
+        ],
+        "matched_keywords": [
+          "kharagpur"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 3,
+        "is_fallback": true,
+        "latency_ms": 117.35
+      },
+      {
+        "id": "H07",
+        "category": "cutoffs",
+        "query": "What score was needed on the MHT CET merit list for VJTI Mumbai?",
+        "expected_intent": "cutoff_and_rank",
+        "predicted_intent": "clarification_request",
+        "intent_confidence": 0.1533,
+        "intent_match": false,
+        "expected_keywords": [
+          "cutoff",
+          "mht cet",
+          "rank"
+        ],
+        "matched_keywords": [
+          "rank",
+          "cutoff"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 5,
+        "is_fallback": true,
+        "latency_ms": 129.81
+      },
+      {
+        "id": "H08",
+        "category": "cutoffs",
+        "query": "Did the last seat in electrical engineering at DTU fill around 8000 merit?",
+        "expected_intent": "cutoff_and_rank",
+        "predicted_intent": "clarification_request",
+        "intent_confidence": 0.1386,
+        "intent_match": false,
+        "expected_keywords": [
+          "delhi technological",
+          "cutoff",
+          "rank"
+        ],
+        "matched_keywords": [
+          "delhi technological",
+          "rank"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 1,
+        "is_fallback": true,
+        "latency_ms": 122.04
+      },
+      {
+        "id": "H09",
+        "category": "fees",
+        "query": "What is the per-term expenditure for electronics engineering at Thapar?",
+        "expected_intent": "fees_and_budget",
+        "predicted_intent": "clarification_request",
+        "intent_confidence": 0.1564,
+        "intent_match": false,
+        "expected_keywords": [
+          "thapar",
+          "fee",
+          "tuition"
+        ],
+        "matched_keywords": [
+          "thapar",
+          "fee",
+          "tuition"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 3,
+        "is_fallback": true,
+        "latency_ms": 122.48
+      },
+      {
+        "id": "H10",
+        "category": "fees",
+        "query": "Break down the annual cost of studying at Delhi Technological University",
+        "expected_intent": "fees_and_budget",
+        "predicted_intent": "fees_and_budget",
+        "intent_confidence": 0.3097,
+        "intent_match": true,
+        "expected_keywords": [
+          "delhi technological",
+          "fee",
+          "cost",
+          "tuition"
+        ],
+        "matched_keywords": [
+          "delhi technological",
+          "fee",
+          "cost",
+          "tuition"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 5,
+        "is_fallback": true,
+        "latency_ms": 117.95
+      },
+      {
+        "id": "H11",
+        "category": "fees",
+        "query": "How costly is the tuition and mess bill at SRM Kattankulathur?",
+        "expected_intent": "fees_and_budget",
+        "predicted_intent": "fees_and_budget",
+        "intent_confidence": 0.3235,
+        "intent_match": true,
+        "expected_keywords": [
+          "srm",
+          "fee",
+          "tuition"
+        ],
+        "matched_keywords": [
+          "srm",
+          "fee",
+          "tuition"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 3,
+        "is_fallback": true,
+        "latency_ms": 127.19
+      },
+      {
+        "id": "H12",
+        "category": "fees",
+        "query": "Will my four-year bachelors stay under 500000 rupees at Jadavpur?",
+        "expected_intent": "fees_and_budget",
+        "predicted_intent": "fees_and_budget",
+        "intent_confidence": 0.1856,
+        "intent_match": true,
+        "expected_keywords": [
+          "jadavpur",
+          "fee",
+          "affordable"
+        ],
+        "matched_keywords": [
+          "jadavpur"
+        ],
+        "retrieval_hit": true,
+        "evidence_count": 1,
+        "is_fallback": true,
+        "latency_ms": 125.7
+      },
+      {
+        "id": "H13",
+        "category": "out_of_scope",
+        "query": "What are the health benefits of drinking green tea daily?",
+        "expected_intent": "out_of_scope",
+        "predicted_intent": "clarification_request",
+        "intent_confidence": 0.1076,
+        "intent_match": false,
+        "expected_keywords": [],
+        "matched_keywords": [],
+        "retrieval_hit": null,
+        "evidence_count": 0,
+        "is_fallback": true,
+        "latency_ms": 127.73
+      },
+      {
+        "id": "H14",
+        "category": "out_of_scope",
+        "query": "Who directed the movie Interstellar and when was it released?",
+        "expected_intent": "out_of_scope",
+        "predicted_intent": "clarification_request",
+        "intent_confidence": 0.1539,
+        "intent_match": false,
+        "expected_keywords": [],
+        "matched_keywords": [],
+        "retrieval_hit": null,
+        "evidence_count": 0,
+        "is_fallback": true,
+        "latency_ms": 137.63
+      },
+      {
+        "id": "H15",
+        "category": "out_of_scope",
+        "query": "Can you explain the rules of professional tennis scoring?",
+        "expected_intent": "out_of_scope",
+        "predicted_intent": "clarification_request",
+        "intent_confidence": 0.1942,
+        "intent_match": false,
+        "expected_keywords": [],
+        "matched_keywords": [],
+        "retrieval_hit": null,
+        "evidence_count": 0,
+        "is_fallback": true,
+        "latency_ms": 121.35
+      }
+    ]
+  }
+}
