@@ -1,0 +1,142 @@
+[
+  {
+    "id": "A01",
+    "query": "What entrance exam is required for BTech admission at NIT Trichy?",
+    "expected_answer_keywords": ["JEE Main", "JoSAA", "CSAB"],
+    "expected_document_keywords": ["Tiruchirappalli", "Admissions and Eligibility"],
+    "requires_grounding": true
+  },
+  {
+    "id": "A02",
+    "query": "What is the minimum PCM aggregate percentage required for admission to IIT Madras?",
+    "expected_answer_keywords": ["75%", "top 20 percentile", "Class 12"],
+    "expected_document_keywords": ["Madras", "Admissions and Eligibility"],
+    "requires_grounding": true
+  },
+  {
+    "id": "A03",
+    "query": "What is the annual tuition fee for BTech at BITS Pilani?",
+    "expected_answer_keywords": ["Lakh", "5", "tuition", "semester"],
+    "expected_document_keywords": ["Pilani", "Fee Structure"],
+    "requires_grounding": true
+  },
+  {
+    "id": "A04",
+    "query": "What entrance exam does Anna University CEG use for engineering admissions?",
+    "expected_answer_keywords": ["TNEA", "Class 12", "cutoff out of 200"],
+    "expected_document_keywords": ["Anna University", "Admissions and Eligibility"],
+    "requires_grounding": true
+  },
+  {
+    "id": "A05",
+    "query": "What is the audited median package reported for graduates at IIT Madras?",
+    "expected_answer_keywords": ["17", "18", "19", "LPA", "median"],
+    "expected_document_keywords": ["Madras", "Placements"],
+    "requires_grounding": true
+  },
+  {
+    "id": "A06",
+    "query": "Are hostel accommodation and dining facilities provided at NIT Surathkal?",
+    "expected_answer_keywords": ["hostel", "mess", "dining", "available"],
+    "expected_document_keywords": ["Surathkal", "Hostels"],
+    "requires_grounding": true
+  },
+  {
+    "id": "A07",
+    "query": "What is the primary entrance examination accepted by Vellore Institute of Technology?",
+    "expected_answer_keywords": ["VITEEE"],
+    "expected_document_keywords": ["Vellore", "Admissions and Eligibility"],
+    "requires_grounding": true
+  },
+  {
+    "id": "A08",
+    "query": "What state entrance exam is accepted by COEP Pune for engineering admissions?",
+    "expected_answer_keywords": ["MHT CET", "MHT-CET", "JEE Main"],
+    "expected_document_keywords": ["COEP", "Admissions and Eligibility"],
+    "requires_grounding": true
+  },
+  {
+    "id": "A09",
+    "query": "What is the median salary package reported at Delhi Technological University?",
+    "expected_answer_keywords": ["13", "14", "15", "LPA", "median"],
+    "expected_document_keywords": ["Delhi Technological", "Placements"],
+    "requires_grounding": true
+  },
+  {
+    "id": "A10",
+    "query": "What is the annual tuition fee at Jadavpur University?",
+    "expected_answer_keywords": ["10,000", "15,000", "subsidized", "low fee", "per year"],
+    "expected_document_keywords": ["Jadavpur", "Fee Structure"],
+    "requires_grounding": true
+  },
+  {
+    "id": "A11",
+    "query": "What entrance exam is required for BTech admission into NIT Warangal?",
+    "expected_answer_keywords": ["JEE Main", "JoSAA"],
+    "expected_document_keywords": ["Warangal", "Admissions and Eligibility"],
+    "requires_grounding": true
+  },
+  {
+    "id": "A12",
+    "query": "What was the median placement package for engineering graduates at BITS Pilani?",
+    "expected_answer_keywords": ["16", "17", "18", "LPA", "median"],
+    "expected_document_keywords": ["Pilani", "Placements"],
+    "requires_grounding": true
+  },
+  {
+    "id": "A13",
+    "query": "What entrance examination is required for Indian Institute of Technology Bombay?",
+    "expected_answer_keywords": ["JEE Advanced"],
+    "expected_document_keywords": ["Bombay", "Admissions and Eligibility"],
+    "requires_grounding": true
+  },
+  {
+    "id": "A14",
+    "query": "Does BITS Pilani offer direct admission without BITSAT to board examination rank toppers?",
+    "expected_answer_keywords": ["direct admission", "first rank", "board topper"],
+    "expected_document_keywords": ["Pilani", "Admissions and Eligibility"],
+    "requires_grounding": true
+  },
+  {
+    "id": "A15",
+    "query": "What is the minimum Class 12 PCM percentage required for admission into DTU?",
+    "expected_answer_keywords": ["60%", "Class 12", "PCM"],
+    "expected_document_keywords": ["Delhi Technological", "Admissions and Eligibility"],
+    "requires_grounding": true
+  },
+  {
+    "id": "A16",
+    "query": "How is the fee structure organized at VIT Vellore across categories?",
+    "expected_answer_keywords": ["Category 1", "Category", "slab", "tuition"],
+    "expected_document_keywords": ["Vellore", "Fee Structure"],
+    "requires_grounding": true
+  },
+  {
+    "id": "A17",
+    "query": "What is a closing rank in engineering entrance counselling?",
+    "expected_answer_keywords": ["last rank", "cutoff", "admitted", "counselling round"],
+    "expected_document_keywords": ["JoSAA", "Cutoff"],
+    "requires_grounding": false
+  },
+  {
+    "id": "A18",
+    "query": "What is the difference between average and median salary in college placements?",
+    "expected_answer_keywords": ["median", "average", "middle salary", "outliers"],
+    "expected_document_keywords": ["NIRF", "Placements"],
+    "requires_grounding": false
+  },
+  {
+    "id": "A19",
+    "query": "What are the hostel room types and mess facilities available at IIT Madras?",
+    "expected_answer_keywords": ["hostel", "room", "mess", "dining", "amenities"],
+    "expected_document_keywords": ["Madras", "Hostels"],
+    "requires_grounding": true
+  },
+  {
+    "id": "A20",
+    "query": "What is the annual tuition fee for btech at IIT Madras?",
+    "expected_answer_keywords": ["2,00,000", "2 Lakh", "waiver", "tuition"],
+    "expected_document_keywords": ["Madras", "Fee Structure"],
+    "requires_grounding": true
+  }
+]

@@ -1,0 +1,167 @@
+[
+  {
+    "id": "P01",
+    "student_name": "Karthik R",
+    "entrance_exam": "JEE_MAIN",
+    "rank_or_score": 8000,
+    "category": "OBC-NCL",
+    "state": "Tamil Nadu",
+    "preferred_course": "CSE",
+    "max_tuition_budget": 200000,
+    "location_preference": "Any"
+  },
+  {
+    "id": "P02",
+    "student_name": "Ananya Sharma",
+    "entrance_exam": "JEE_MAIN",
+    "rank_or_score": 2500,
+    "category": "GEN",
+    "state": "Delhi",
+    "preferred_course": "CSE",
+    "max_tuition_budget": 250000,
+    "location_preference": "Delhi"
+  },
+  {
+    "id": "P03",
+    "student_name": "Rohan Deshmukh",
+    "entrance_exam": "MHT_CET",
+    "rank_or_score": 98.5,
+    "category": "GEN",
+    "state": "Maharashtra",
+    "preferred_course": "MECH",
+    "max_tuition_budget": 120000,
+    "location_preference": "Maharashtra"
+  },
+  {
+    "id": "P04",
+    "student_name": "Sneha Patel",
+    "entrance_exam": "JEE_MAIN",
+    "rank_or_score": 14000,
+    "category": "GEN",
+    "state": "Gujarat",
+    "preferred_course": "ECE",
+    "max_tuition_budget": 180000,
+    "location_preference": "Any"
+  },
+  {
+    "id": "P05",
+    "student_name": "Arun Kumar",
+    "entrance_exam": "TNEA",
+    "rank_or_score": 196.5,
+    "category": "OC",
+    "state": "Tamil Nadu",
+    "preferred_course": "CSE",
+    "max_tuition_budget": 60000,
+    "location_preference": "Tamil Nadu"
+  },
+  {
+    "id": "P06",
+    "student_name": "Pooja Verma",
+    "entrance_exam": "JEE_MAIN",
+    "rank_or_score": 35000,
+    "category": "OBC-NCL",
+    "state": "Uttar Pradesh",
+    "preferred_course": "CIVIL",
+    "max_tuition_budget": 150000,
+    "location_preference": "Any"
+  },
+  {
+    "id": "P07",
+    "student_name": "Venkatesh Iyer",
+    "entrance_exam": "BITSAT",
+    "rank_or_score": 320,
+    "category": "GEN",
+    "state": "Karnataka",
+    "preferred_course": "CSE",
+    "max_tuition_budget": 600000,
+    "location_preference": "Any"
+  },
+  {
+    "id": "P08",
+    "student_name": "Meera Nair",
+    "entrance_exam": "JEE_MAIN",
+    "rank_or_score": 5500,
+    "category": "GEN",
+    "state": "Kerala",
+    "preferred_course": "EEE",
+    "max_tuition_budget": 200000,
+    "location_preference": "South India"
+  },
+  {
+    "id": "P09",
+    "student_name": "Amitav Roy",
+    "entrance_exam": "WBJEE",
+    "rank_or_score": 450,
+    "category": "GEN",
+    "state": "West Bengal",
+    "preferred_course": "CSE",
+    "max_tuition_budget": 40000,
+    "location_preference": "West Bengal"
+  },
+  {
+    "id": "P10",
+    "student_name": "Divya Reddy",
+    "entrance_exam": "AP_EAPCET",
+    "rank_or_score": 1200,
+    "category": "OC",
+    "state": "Andhra Pradesh",
+    "preferred_course": "ECE",
+    "max_tuition_budget": 100000,
+    "location_preference": "Andhra Pradesh"
+  },
+  {
+    "id": "P11",
+    "student_name": "Farhan Akhtar",
+    "entrance_exam": "JEE_MAIN",
+    "rank_or_score": 18000,
+    "category": "GEN",
+    "state": "Delhi",
+    "preferred_course": "MECH",
+    "max_tuition_budget": 220000,
+    "location_preference": "Delhi"
+  },
+  {
+    "id": "P12",
+    "student_name": "Priyanka Sen",
+    "entrance_exam": "JEE_MAIN",
+    "rank_or_score": 9500,
+    "category": "GEN",
+    "state": "West Bengal",
+    "preferred_course": "AERO",
+    "max_tuition_budget": 180000,
+    "location_preference": "Any"
+  },
+  {
+    "id": "P13",
+    "student_name": "Siddharth Joshi",
+    "entrance_exam": "MHT_CET",
+    "rank_or_score": 99.2,
+    "category": "GEN",
+    "state": "Maharashtra",
+    "preferred_course": "CSE",
+    "max_tuition_budget": 140000,
+    "location_preference": "Maharashtra"
+  },
+  {
+    "id": "P14",
+    "student_name": "Deepak Choudhary",
+    "entrance_exam": "JEE_MAIN",
+    "rank_or_score": 45000,
+    "category": "OBC-NCL",
+    "state": "Rajasthan",
+    "preferred_course": "CIVIL",
+    "max_tuition_budget": 160000,
+    "location_preference": "Any"
+  },
+  {
+    "id": "P15",
+    "student_name": "Lakshmi Narayanan",
+    "entrance_exam": "TNEA",
+    "rank_or_score": 188.0,
+    "category": "BC",
+    "state": "Tamil Nadu",
+    "preferred_course": "ECE",
+    "max_tuition_budget": 85000,
+    "location_preference": "Tamil Nadu"
+  }
+]

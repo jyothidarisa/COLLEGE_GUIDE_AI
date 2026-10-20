@@ -1,0 +1,245 @@
+[
+  {
+    "id": "ST01",
+    "query": "hi",
+    "conversation_history": [],
+    "expected_is_smalltalk": true,
+    "expected_category": "greeting",
+    "expected_stripped_query": null,
+    "description": "Short informal greeting variant"
+  },
+  {
+    "id": "ST02",
+    "query": "Hello!",
+    "conversation_history": [],
+    "expected_is_smalltalk": true,
+    "expected_category": "greeting",
+    "expected_stripped_query": null,
+    "description": "Standard greeting with punctuation"
+  },
+  {
+    "id": "ST03",
+    "query": "Good morning",
+    "conversation_history": [],
+    "expected_is_smalltalk": true,
+    "expected_category": "greeting",
+    "expected_stripped_query": null,
+    "description": "Time-based formal greeting"
+  },
+  {
+    "id": "ST04",
+    "query": "heyy there",
+    "conversation_history": [],
+    "expected_is_smalltalk": true,
+    "expected_category": "greeting",
+    "expected_stripped_query": null,
+    "description": "Elongated greeting typo with filler"
+  },
+  {
+    "id": "ST05",
+    "query": "namaste",
+    "conversation_history": [],
+    "expected_is_smalltalk": true,
+    "expected_category": "greeting",
+    "expected_stripped_query": null,
+    "description": "Indian cultural greeting"
+  },
+  {
+    "id": "ST06",
+    "query": "How are you doing today?",
+    "conversation_history": [],
+    "expected_is_smalltalk": true,
+    "expected_category": "how_are_you",
+    "expected_stripped_query": null,
+    "description": "Social inquiry on well-being"
+  },
+  {
+    "id": "ST07",
+    "query": "Who are you?",
+    "conversation_history": [],
+    "expected_is_smalltalk": true,
+    "expected_category": "identity",
+    "expected_stripped_query": null,
+    "description": "Identity inquiry"
+  },
+  {
+    "id": "ST08",
+    "query": "What can you do?",
+    "conversation_history": [],
+    "expected_is_smalltalk": true,
+    "expected_category": "identity",
+    "expected_stripped_query": null,
+    "description": "Capability and help inquiry"
+  },
+  {
+    "id": "ST09",
+    "query": "thanks a lot!",
+    "conversation_history": [],
+    "expected_is_smalltalk": true,
+    "expected_category": "thanks",
+    "expected_stripped_query": null,
+    "description": "Appreciation statement"
+  },
+  {
+    "id": "ST10",
+    "query": "thx",
+    "conversation_history": [],
+    "expected_is_smalltalk": true,
+    "expected_category": "thanks",
+    "expected_stripped_query": null,
+    "description": "Shorthand thanks slang"
+  },
+  {
+    "id": "ST11",
+    "query": "bye bye",
+    "conversation_history": [],
+    "expected_is_smalltalk": true,
+    "expected_category": "goodbye",
+    "expected_stripped_query": null,
+    "description": "Informal farewell"
+  },
+  {
+    "id": "ST12",
+    "query": "see you later",
+    "conversation_history": [],
+    "expected_is_smalltalk": true,
+    "expected_category": "goodbye",
+    "expected_stripped_query": null,
+    "description": "Conversational parting phrase"
+  },
+  {
+    "id": "ST13",
+    "query": "got it",
+    "conversation_history": [],
+    "expected_is_smalltalk": true,
+    "expected_category": "acknowledgement",
+    "expected_stripped_query": null,
+    "description": "Standalone acknowledgement without prior bot question"
+  },
+  {
+    "id": "ST14",
+    "query": "ok",
+    "conversation_history": [],
+    "expected_is_smalltalk": true,
+    "expected_category": "acknowledgement",
+    "expected_stripped_query": null,
+    "description": "Standalone 'ok' with no prior context"
+  },
+  {
+    "id": "ST15",
+    "query": "you are awesome",
+    "conversation_history": [],
+    "expected_is_smalltalk": true,
+    "expected_category": "compliment",
+    "expected_stripped_query": null,
+    "description": "Positive feedback / praise"
+  },
+  {
+    "id": "ST16",
+    "query": "this is useless",
+    "conversation_history": [],
+    "expected_is_smalltalk": true,
+    "expected_category": "complaint",
+    "expected_stripped_query": null,
+    "description": "Negative user feedback / dissatisfaction"
+  },
+  {
+    "id": "ST17",
+    "query": "shut up",
+    "conversation_history": [],
+    "expected_is_smalltalk": true,
+    "expected_category": "rude",
+    "expected_stripped_query": null,
+    "description": "Rude dismissal command"
+  },
+  {
+    "id": "ST18",
+    "query": "hi, what is the fee at Amrita?",
+    "conversation_history": [],
+    "expected_is_smalltalk": false,
+    "expected_category": null,
+    "expected_stripped_query": "what is the fee at Amrita?",
+    "description": "Greeting prefix followed by real factual fee question"
+  },
+  {
+    "id": "ST19",
+    "query": "hello, can you compare NIT Trichy and NIT Surathkal?",
+    "conversation_history": [],
+    "expected_is_smalltalk": false,
+    "expected_category": null,
+    "expected_stripped_query": "can you compare NIT Trichy and NIT Surathkal?",
+    "description": "Greeting prefix followed by real college comparison request"
+  },
+  {
+    "id": "ST20",
+    "query": "good morning, what rank is needed for CSE at IIT Madras?",
+    "conversation_history": [],
+    "expected_is_smalltalk": false,
+    "expected_category": null,
+    "expected_stripped_query": "what rank is needed for CSE at IIT Madras?",
+    "description": "Greeting prefix followed by real cutoff inquiry"
+  },
+  {
+    "id": "ST21",
+    "query": "ok",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "Can I get NIT Trichy?"
+      },
+      {
+        "role": "assistant",
+        "content": "What is your entrance exam rank and reservation category?"
+      }
+    ],
+    "expected_is_smalltalk": false,
+    "expected_category": null,
+    "expected_stripped_query": null,
+    "description": "Mid-conversation 'ok' responding to a bot clarifying question"
+  },
+  {
+    "id": "ST22",
+    "query": "yes",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "Suggest colleges in Karnataka with budget 2 lakhs."
+      },
+      {
+        "role": "assistant",
+        "content": "Do you require on-campus hostel accommodation?"
+      }
+    ],
+    "expected_is_smalltalk": false,
+    "expected_category": null,
+    "expected_stripped_query": null,
+    "description": "Mid-conversation 'yes' answering a bot question"
+  },
+  {
+    "id": "ST23",
+    "query": "which college is best",
+    "conversation_history": [],
+    "expected_is_smalltalk": false,
+    "expected_category": null,
+    "expected_stripped_query": null,
+    "description": "Tricky query: broad admission comparison question, NOT small talk"
+  },
+  {
+    "id": "ST24",
+    "query": "this",
+    "conversation_history": [],
+    "expected_is_smalltalk": false,
+    "expected_category": null,
+    "expected_stripped_query": null,
+    "description": "Tricky query: single deictic word, NOT a small-talk greeting"
+  },
+  {
+    "id": "ST25",
+    "query": "hire me",
+    "conversation_history": [],
+    "expected_is_smalltalk": false,
+    "expected_category": null,
+    "expected_stripped_query": null,
+    "description": "Tricky query: out-of-scope non-admission command, NOT small talk"
+  }
+]

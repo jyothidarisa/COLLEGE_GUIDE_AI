@@ -74,6 +74,11 @@ DEFAULT_TRAINING_DATA: List[Tuple[str, str]] = [
     ("what colleges are safe options for me?", "college_recommendation"),
     ("suggest universities matching my score", "college_recommendation"),
     ("show colleges that match my entrance rank", "college_recommendation"),
+    ("can you suggest institutes that align with my academic performance profile?", "college_recommendation"),
+    ("which technical universities should i place on my preferred choice list?", "college_recommendation"),
+    ("give me a balanced selection of aspirational and realistic college choices", "college_recommendation"),
+    ("help me assemble a shortlist of engineering institutions for my score", "college_recommendation"),
+    ("what colleges fit best for someone wanting a strong campus culture and high placements?", "college_recommendation"),
 
     # 2. college_search
     ("tell me about iit madras", "college_search"),
@@ -91,6 +96,11 @@ DEFAULT_TRAINING_DATA: List[Tuple[str, str]] = [
     ("tell me more about amrita vishwa vidyapeetham", "college_search"),
     ("describe dtu delhi technological university", "college_search"),
     ("search college code for ceg", "college_search"),
+    ("can you give me an overview of the departments at national institute of technology tiruchirappalli?", "college_search"),
+    ("tell me about the history and background of birla institute of technology and science pilani", "college_search"),
+    ("campus profile and accreditations of delhi technological university", "college_search"),
+    ("show me the academic ranking and infrastructure details of college of engineering pune", "college_search"),
+    ("is ssn college affiliated with anna university or an autonomous institution?", "college_search"),
 
     # 3. college_comparison
     ("compare iit madras and bits pilani", "college_comparison"),
@@ -107,6 +117,11 @@ DEFAULT_TRAINING_DATA: List[Tuple[str, str]] = [
     ("which one to pick between vit and srm?", "college_comparison"),
     ("head to head comparison of iit kanpur and iit kharagpur", "college_comparison"),
     ("how do these two colleges compare?", "college_comparison"),
+    ("how do the academic rigor and peer groups differ between iit madras and bits pilani?", "college_comparison"),
+    ("evaluating coep technological university against vnit nagpur for undergraduate studies", "college_comparison"),
+    ("which environment offers better research facilities: national institute of technology surathkal or nit calicut?", "college_comparison"),
+    ("contrasting the campus infrastructure of vit vellore with srm kattankulathur", "college_comparison"),
+    ("which of these two institutions has a stronger alumni network in the technology industry?", "college_comparison"),
 
     # 4. admission_eligibility
     ("am i eligible for btech with 55% in pcm?", "admission_eligibility"),
@@ -120,6 +135,16 @@ DEFAULT_TRAINING_DATA: List[Tuple[str, str]] = [
     ("what are the mandatory subjects for btech eligibility?", "admission_eligibility"),
     ("pcm percentage requirement for general category in bits", "admission_eligibility"),
     ("am i qualified to write jee advanced?", "admission_eligibility"),
+    ("does a gap year after intermediate disqualify me from jee?", "admission_eligibility"),
+    ("can i write engineering entrance exams if i passed 12th through nios?", "admission_eligibility"),
+    ("is clearing compartment examination in chemistry valid for btech entry?", "admission_eligibility"),
+    ("what concessions exist in minimum qualifying standards for disabled candidates?", "admission_eligibility"),
+    ("mandatory subject combinations needed in senior secondary for software engineering", "admission_eligibility"),
+    ("state domicile certificate requirements to claim resident quota", "admission_eligibility"),
+    ("can a student from commerce background switch to engineering studies?", "admission_eligibility"),
+    ("minimum attendance threshold needed in class 12 to sit for board finals", "admission_eligibility"),
+    ("conversion formula for letter grades and cgpa into percentage for btech", "admission_eligibility"),
+    ("how many consecutive attempts are permitted in national engineering entrance?", "admission_eligibility"),
 
     # 5. cutoff_and_rank
     ("what is a closing rank?", "cutoff_and_rank"),
@@ -137,6 +162,16 @@ DEFAULT_TRAINING_DATA: List[Tuple[str, str]] = [
     ("what rank is needed for computer science in top nits?", "cutoff_and_rank"),
     ("cutoff marks out of 200 for tnea anna university", "cutoff_and_rank"),
     ("will i get admission with 1500 rank?", "cutoff_and_rank"),
+    ("how much do opening and closing ranks shift between round one and round three?", "cutoff_and_rank"),
+    ("difference in competitive rank brackets between home state and all india pools", "cutoff_and_rank"),
+    ("what rank range should i target in entrance exams for mechanical engineering?", "cutoff_and_rank"),
+    ("historical rank movements in special spot rounds for vacant engineering seats", "cutoff_and_rank"),
+    ("by how many ranks does the cutoff usually drop in the second round of choice filling?", "cutoff_and_rank"),
+    ("general category closing metrics for electronics compared to computer science", "cutoff_and_rank"),
+    ("what entrance exam rank spread is typical for chemical engineering programs?", "cutoff_and_rank"),
+    ("rank variation between male and female supernumerary seat allocations", "cutoff_and_rank"),
+    ("how do category ranks translate to crl merit numbers during seat distribution?", "cutoff_and_rank"),
+    ("historical trend of cutoff ranks loosening across consecutive counselling sessions", "cutoff_and_rank"),
 
     # 6. fees_and_budget
     ("what are the annual tuition fees at bits pilani?", "fees_and_budget"),
@@ -154,6 +189,16 @@ DEFAULT_TRAINING_DATA: List[Tuple[str, str]] = [
     ("hostel mess charges per annum", "fees_and_budget"),
     ("colleges with fee under 1 lakh per year", "fees_and_budget"),
     ("can i afford this college with 2 lakh budget?", "fees_and_budget"),
+    ("what is the refund deduction policy if a student withdraws admission before classes start?", "fees_and_budget"),
+    ("refundable institute security deposit and library caution money guidelines", "fees_and_budget"),
+    ("breakup of semester exam registration fees and grade card processing charges", "fees_and_budget"),
+    ("penalty fees charged for delayed semester tuition dues submission", "fees_and_budget"),
+    ("is it possible to pay annual university charges in quarterly installments?", "fees_and_budget"),
+    ("approximate semester textbook and laboratory consumable expenses for engineering", "fees_and_budget"),
+    ("seat acceptance advance fee needed during seat allotment confirmation", "fees_and_budget"),
+    ("difference in institutional fee structure between day scholars and boarders", "fees_and_budget"),
+    ("bank challan and online payment options for semester fee remittance", "fees_and_budget"),
+    ("additional laboratory surcharge and computer maintenance fund charges", "fees_and_budget"),
 
     # 7. branch_selection
     ("should i choose cse or ece?", "branch_selection"),
@@ -166,6 +211,11 @@ DEFAULT_TRAINING_DATA: List[Tuple[str, str]] = [
     ("which branch is best for software companies?", "branch_selection"),
     ("difference between information technology and computer science", "branch_selection"),
     ("which specialization to pick in btech?", "branch_selection"),
+    ("what are the primary distinctions in coursework between electrical engineering and instrumentation?", "branch_selection"),
+    ("is choosing chemical engineering a good path if i want to pursue materials science later?", "branch_selection"),
+    ("what career trajectories are available for graduates in civil and environmental engineering?", "branch_selection"),
+    ("how much coding and math is involved in an artificial intelligence and data science degree?", "branch_selection"),
+    ("should a student prioritize a preferred engineering discipline over an elite institute brand?", "branch_selection"),
 
     # 8. placement_information
     ("what is the difference between average and median package?", "placement_information"),
@@ -180,6 +230,11 @@ DEFAULT_TRAINING_DATA: List[Tuple[str, str]] = [
     ("top recruiters offering high ctc packages", "placement_information"),
     ("how are placements for ece branch in nits?", "placement_information"),
     ("audited placement records of jadavpur university", "placement_information"),
+    ("what proportion of graduating students receive core engineering job offers versus it roles?", "placement_information"),
+    ("do international consulting and finance firms recruit from government engineering campuses?", "placement_information"),
+    ("how do pre-placement offers through summer internships influence final recruitment statistics?", "placement_information"),
+    ("what is the standard salary distribution across different academic departments in engineering?", "placement_information"),
+    ("which major manufacturing and automotive organizations hire from campus recruitment drives?", "placement_information"),
 
     # 9. scholarship_information
     ("what scholarships are available for economically weaker students?", "scholarship_information"),
@@ -190,6 +245,11 @@ DEFAULT_TRAINING_DATA: List[Tuple[str, str]] = [
     ("scholarships for sc st students in engineering", "scholarship_information"),
     ("central sector scholarship scheme eligibility", "scholarship_information"),
     ("fee concession for students with family income below 1 lakh", "scholarship_information"),
+    ("are there corporate endowed scholarships available for meritorious engineering scholars?", "scholarship_information"),
+    ("what are the guidelines to qualify for state government post-matric educational stipends?", "scholarship_information"),
+    ("how does a student apply for alumni-funded financial assistance programs?", "scholarship_information"),
+    ("criteria for retaining a merit-based tuition scholarship across all four academic years", "scholarship_information"),
+    ("financial grant programs specifically designated for students from rural backgrounds", "scholarship_information"),
 
     # 10. hostel_and_facilities
     ("are hostel facilities available for first year students?", "hostel_and_facilities"),
@@ -198,6 +258,11 @@ DEFAULT_TRAINING_DATA: List[Tuple[str, str]] = [
     ("what sports and lab amenities does coep provide?", "hostel_and_facilities"),
     ("room types single sharing double sharing in iit hostel", "hostel_and_facilities"),
     ("wifi and laundry facilities in campus", "hostel_and_facilities"),
+    ("are laundry services, reading rooms, and indoor recreational areas provided in student hostels?", "hostel_and_facilities"),
+    ("what are the campus health center facilities and emergency medical arrangements for residents?", "hostel_and_facilities"),
+    ("is campus high-speed ethernet connectivity available inside individual hostel rooms?", "hostel_and_facilities"),
+    ("what dining menu options exist for students with specific dietary preferences in the mess?", "hostel_and_facilities"),
+    ("campus gym, swimming pool, and athletic sports facilities operating hours for undergraduates", "hostel_and_facilities"),
 
     # 11. location_search
     ("engineering colleges in tamil nadu", "location_search"),
@@ -207,6 +272,11 @@ DEFAULT_TRAINING_DATA: List[Tuple[str, str]] = [
     ("government colleges in maharashtra", "location_search"),
     ("engineering colleges in hyderabad with good placements", "location_search"),
     ("show colleges in north india", "location_search"),
+    ("which reputable engineering institutions are located within the national capital region?", "location_search"),
+    ("colleges offering btech programs situated in coastal karnataka or south india", "location_search"),
+    ("are there good government technical universities situated in western maharashtra?", "location_search"),
+    ("colleges located close to major industrial technology corridors in southern states", "location_search"),
+    ("technical institutes situated in peaceful suburban campus settings away from city centers", "location_search"),
 
     # 12. admission_procedure
     ("how to register for josaa counselling 2024?", "admission_procedure"),
@@ -215,6 +285,11 @@ DEFAULT_TRAINING_DATA: List[Tuple[str, str]] = [
     ("what is csab special round and when does it happen?", "admission_procedure"),
     ("how to freeze or float seats in seat allotment?", "admission_procedure"),
     ("counselling schedule and key dates", "admission_procedure"),
+    ("how does the mock seat allotment round help candidates calibrate their choices in counselling?", "admission_procedure"),
+    ("what are the implications of choosing the float option versus slide in seat allocation rounds?", "admission_procedure"),
+    ("procedure for surrendering an allocated engineering seat and claiming the counselling refund", "admission_procedure"),
+    ("protocol for physical reporting and identity verification at the allotted institution", "admission_procedure"),
+    ("guidelines for participating in the special vacancy filling rounds after central counselling", "admission_procedure"),
 
     # 13. follow_up
     ("what about placements?", "follow_up"),
@@ -224,6 +299,11 @@ DEFAULT_TRAINING_DATA: List[Tuple[str, str]] = [
     ("any other options?", "follow_up"),
     ("what about the second one?", "follow_up"),
     ("show me other branches there", "follow_up"),
+    ("could you expand further on the placement statistics for that same college?", "follow_up"),
+    ("what about the hostel and accommodation arrangements at that place?", "follow_up"),
+    ("how does the tuition expense compare for the third college you suggested?", "follow_up"),
+    ("tell me about the other engineering disciplines offered on that same campus", "follow_up"),
+    ("can you give me more details regarding the first option you mentioned?", "follow_up"),
 
     # 14. greeting_and_casual
     ("hello", "greeting_and_casual"),
@@ -235,6 +315,11 @@ DEFAULT_TRAINING_DATA: List[Tuple[str, str]] = [
     ("thank you so much", "greeting_and_casual"),
     ("thanks for the help", "greeting_and_casual"),
     ("bye", "greeting_and_casual"),
+    ("good afternoon, i hope you are having a productive day", "greeting_and_casual"),
+    ("hello assistant, i would appreciate some guidance today", "greeting_and_casual"),
+    ("thank you very much for clarifying those details for me", "greeting_and_casual"),
+    ("appreciate the quick help and detailed explanation", "greeting_and_casual"),
+    ("have a wonderful evening ahead", "greeting_and_casual"),
 
     # 15. clarification_request
     ("why did you recommend this college?", "clarification_request"),
@@ -243,6 +328,11 @@ DEFAULT_TRAINING_DATA: List[Tuple[str, str]] = [
     ("what does percentile mean?", "clarification_request"),
     ("can you explain what you meant?", "clarification_request"),
     ("i did not understand your previous answer", "clarification_request"),
+    ("could you explain the criteria behind placing that college in the target band?", "clarification_request"),
+    ("i did not quite follow how the rank comparison was calculated in your reply", "clarification_request"),
+    ("what factors determine whether an option is classified as reach or safe?", "clarification_request"),
+    ("could you clarify what you meant by quota-specific closing parameters?", "clarification_request"),
+    ("can you rephrase your explanation about seat matrices in simpler terms?", "clarification_request"),
 
     # 16. out_of_scope
     ("what is the weather in mumbai today?", "out_of_scope"),
@@ -252,6 +342,16 @@ DEFAULT_TRAINING_DATA: List[Tuple[str, str]] = [
     ("who is the prime minister of india?", "out_of_scope"),
     ("how to bake chocolate cookies", "out_of_scope"),
     ("what is the distance to the moon?", "out_of_scope"),
+    ("how do tectonic plate movements cause volcanic eruptions?", "out_of_scope"),
+    ("what are the primary ingredients needed to bake artisan sourdough bread?", "out_of_scope"),
+    ("who was the architect behind the design of the eiffel tower?", "out_of_scope"),
+    ("what causes ocean tides and how do lunar cycles influence them?", "out_of_scope"),
+    ("basic troubleshooting steps when a vehicle engine overheats", "out_of_scope"),
+    ("how does inflation affect consumer purchasing power in macroeconomics?", "out_of_scope"),
+    ("origin and etymology of common idioms in the english language", "out_of_scope"),
+    ("why do deciduous trees shed their leaves before the winter season?", "out_of_scope"),
+    ("what is the process of extracting essential oils from lavender flowers?", "out_of_scope"),
+    ("how does a mechanical watch escapement regulate timekeeping?", "out_of_scope"),
 ]
 
 
@@ -397,7 +497,14 @@ class AdmissionIntentClassifier:
         final_intent = top_intent
         explanation = f"Hybrid classified as '{top_intent}' with {top_confidence:.1%} confidence."
 
-        if is_fallback:
+        # Specialized Out-of-Scope Fallback Handling:
+        # If the raw hybrid prediction is out_of_scope with confidence >= 0.08 (above random 0.0625),
+        # preserve out_of_scope so non-college queries trigger safety fallback rather than clarification.
+        if top_intent == "out_of_scope" and top_confidence >= 0.08:
+            is_fallback = False
+            final_intent = "out_of_scope"
+            explanation = f"Raw top intent is 'out_of_scope' with {top_confidence:.1%} confidence (>= 8.0% OOS threshold); preserved as out_of_scope."
+        elif is_fallback:
             final_intent = "clarification_request"
             explanation = f"Confidence {top_confidence:.1%} below threshold {self.confidence_threshold:.1%}; routed to fallback clarification."
 
