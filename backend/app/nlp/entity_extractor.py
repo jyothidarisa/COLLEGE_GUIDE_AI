@@ -237,7 +237,7 @@ def extract_entities(query: str) -> ExtractedEntities:
 
     # 7. Budget Extraction
     # Matches "budget of 2 lakhs", "under 1.5 lakh", "fees less than 200000", "budget 100000"
-    budget_match = re.search(r'\b(?:budget|tuition|fees?|cost|expenditure)\s*(?:of|is|under|less than|around|up to|below|max)?\s*[:=]?\s*(?:rs\.?\s*)?(\d+(?:\.\d+)?)\s*(?:lakhs?|lacs?|lpa|k)?\b', q_clean)
+    budget_match = re.search(r'\b(?:budget|tuition|fees?|cost|expenditure)\s*(?:of|is|to|as|under|less than|around|up to|below|max|cap of)?\s*[:=]?\s*(?:rs\.?\s*)?(\d+(?:\.\d+)?)\s*(?:lakhs?|lacs?|lpa|k)?\b', q_clean)
     if budget_match:
         raw_val = float(budget_match.group(1))
         matched_str = budget_match.group(0)

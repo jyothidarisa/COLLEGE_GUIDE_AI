@@ -93,7 +93,7 @@ class SLMModelRunner:
         start_time = time.time()
 
         # The SLM produces structured, concise, evidence-grounded answers
-        reply, citations, suggestions = fallback_evidence_answering(
+        reply, citations, is_fallback, suggestions = fallback_evidence_answering(
             query=query,
             evidence_list=evidence_list,
             student_profile=student_profile
@@ -112,7 +112,7 @@ class SLMModelRunner:
             token_count_estimated=len(reply.split()),
             faithfulness_score=faithfulness,
             constraint_satisfied=satisfied,
-            is_fallback=True,
+            is_fallback=is_fallback,
             suggested_follow_ups=suggestions
         )
 

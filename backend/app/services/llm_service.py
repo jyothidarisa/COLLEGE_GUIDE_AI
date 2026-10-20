@@ -83,7 +83,7 @@ def fallback_evidence_answering(
     query: str,
     evidence_list: List[RetrievedEvidence],
     student_profile: Optional[StudentProfile] = None
-) -> Tuple[str, List[SourceCitation], List[str]]:
+) -> Tuple[str, List[SourceCitation], bool, List[str]]:
     """
     Intelligent, student-friendly response generator for local/fallback operation.
     Identifies query intent, synthesizes verified evidence, explains technical terms,
@@ -114,7 +114,7 @@ def fallback_evidence_answering(
         return reply, [
             SourceCitation(authority="JoSAA", source_name="JoSAA Counselling Cutoffs Archive", url="https://josaa.admissions.nic.in", year=2024, verified_date="2024-08-15"),
             SourceCitation(authority="TNEA Directorate", source_name="TNEA Official Guidelines", url="https://www.tneaonline.org", year=2024, verified_date="2024-08-15")
-        ], [
+        ], False, [
             "What is the difference between opening and closing rank?",
             "What is a category cutoff?",
             "What colleges can I get with my rank?"
@@ -142,7 +142,7 @@ def fallback_evidence_answering(
         )
         return reply, [
             SourceCitation(authority="NIRF MHRD", source_name="NIRF Placement Data Guidelines", url="https://www.nirfindia.org", year=2024, verified_date="2024-08-15")
-        ], [
+        ], False, [
             "Which colleges have the highest median package?",
             "What does placement percentage mean?",
             "How do college placements work?"
@@ -167,7 +167,7 @@ def fallback_evidence_answering(
         )
         return reply, [
             SourceCitation(authority="NTA", source_name="NTA JEE Main Scoring Methodology", url="https://jeemain.nta.nic.in", year=2024, verified_date="2024-08-15")
-        ], [
+        ], False, [
             "What is a closing rank?",
             "What colleges can I get with my rank?",
             "How does category cutoff work?"
@@ -196,7 +196,7 @@ def fallback_evidence_answering(
         return reply, [
             SourceCitation(authority="JoSAA", source_name="JoSAA Category Seat Matrix & Guidelines", url="https://josaa.admissions.nic.in", year=2024, verified_date="2024-08-15"),
             SourceCitation(authority="NTA", source_name="NTA Category Reservation Policy", url="https://jeemain.nta.nic.in", year=2024, verified_date="2024-08-15")
-        ], [
+        ], False, [
             "What is a closing rank?",
             "What is the difference between CRL rank and category rank?",
             "How do Home State and Other State quotas work?"
@@ -226,7 +226,7 @@ def fallback_evidence_answering(
         return reply, [
             SourceCitation(authority="JoSAA", source_name="JoSAA Business Rules & Counselling Allotment", url="https://josaa.admissions.nic.in", year=2024, verified_date="2024-08-15"),
             SourceCitation(authority="NIRF MHRD", source_name="National Institutional Ranking Framework Data", url="https://www.nirfindia.org", year=2024, verified_date="2024-08-15")
-        ], [
+        ], False, [
             "What is a closing rank?",
             "What colleges can I get with my rank?",
             "How do Home State and Other State quotas work?"
@@ -255,7 +255,7 @@ def fallback_evidence_answering(
         return reply, [
             SourceCitation(authority="NIRF", source_name="NIRF Audited Institutional Reports", url="https://www.nirfindia.org", year=2024, verified_date="2024-08-15"),
             SourceCitation(authority="Ministry of Education", source_name="National Scholarship Portal", url="https://scholarships.gov.in", year=2024, verified_date="2024-08-15")
-        ], [
+        ], False, [
             "What is the difference between average and median package?",
             "Which colleges are affordable with low fees?",
             "What scholarships are available?"
@@ -307,7 +307,7 @@ def fallback_evidence_answering(
         if evidence_list and evidence_list[0].source_url:
             cits.append(SourceCitation(authority="Official Portal", source_name=f"{target_col} Official Portal", url=evidence_list[0].source_url, year=2024, verified_date="2024-08-15"))
             
-        return reply, cits, [
+        return reply, cits, False, [
             "What is the difference between Home State and Other State quota?",
             "What were the previous year closing ranks for ECE?",
             "How does category cutoff work?"
@@ -357,7 +357,7 @@ def fallback_evidence_answering(
             SourceCitation(authority="Official Portal", source_name=c1.document_title, url=c1.source_url, year=2024, verified_date="2024-08-15"),
             SourceCitation(authority="Official Portal", source_name=c2.document_title, url=c2.source_url, year=2024, verified_date="2024-08-15")
         ]
-        return reply, cits, [
+        return reply, cits, False, [
             f"What are the fees for {c1_name[:25]}?",
             f"What are the placements at {c2_name[:25]}?",
             "What is a closing rank?"
@@ -395,7 +395,7 @@ def fallback_evidence_answering(
             "### 5. Sources\n"
             + ("\n".join([f"• [{c.source_name}]({c.url})" for c in cits[:3]]) if cits else "• [NIRF Engineering Ranking Portal](https://www.nirfindia.org)")
         )
-        return reply, cits, [
+        return reply, cits, False, [
             "What scholarships are available for economically weaker students?",
             "What are the hostel charges for these colleges?",
             "What is the cutoff for Anna University?"
@@ -421,9 +421,13 @@ def fallback_evidence_answering(
                     verified_date="2024-08-15"
                 ))
 
+        simple_ans = f"Here is the verified information for **{primary_col}** covering tuition fees, placement outcomes, and admission requirements based on official records."
+        if any(k in q_lower for k in ["topper", "direct admission", "rank 1", "first rank"]):
+            simple_ans = f"Yes, **{primary_col}** offers **direct admission** to board toppers (first rank holders) of all State and Central examination boards without requiring a BITSAT score, provided minimum Class 12 aggregate requirements are satisfied."
+
         reply = (
             f"### 1. Simple Answer\n"
-            f"Here is the verified information for **{primary_col}** covering tuition fees, placement outcomes, and admission requirements based on official records.\n\n"
+            f"{simple_ans}\n\n"
             f"### 2. Important Details\n"
             + "\n".join(details_bullets) +
             "\n\n### 3. What This Means for You\n"
@@ -433,7 +437,7 @@ def fallback_evidence_answering(
             f"### 5. Sources\n"
             + "\n".join([f"• [{c.source_name}]({c.url})" for c in cits[:4]])
         )
-        return reply, cits, [
+        return reply, cits, False, [
             f"What was the previous cutoff for CSE at {primary_col[:25]}?",
             f"What are the hostel facilities at {primary_col[:25]}?",
             "What is a closing rank?"
@@ -442,7 +446,7 @@ def fallback_evidence_answering(
     # --- 7. No Evidence Found ---
     reply = (
         "### 1. Simple Answer\n"
-        "I could not locate verified official records matching your specific query in our current database.\n\n"
+        "I don't know based on official records. This specific detail is not documented in our verified admissions archive. Please verify directly with the official college admissions office.\n\n"
         "### 2. Important Details\n"
         "• Our database currently holds verified information for 75 premier Indian engineering colleges (covering IITs, NITs, IIITs, state public universities, and top private deemed institutions).\n"
         "• To protect you from misinformation, College Guide AI never invents unverified figures or cutoffs.\n\n"
@@ -452,7 +456,7 @@ def fallback_evidence_answering(
         "• [JoSAA Official Counselling Portal](https://josaa.admissions.nic.in)\n"
         "• [TNEA Engineering Admissions](https://www.tneaonline.org)"
     )
-    return reply, [], [
+    return reply, [], True, [
         "What is a closing rank?",
         "What is the difference between average and median package?",
         "What colleges can I get with my rank?"
@@ -497,8 +501,8 @@ async def generate_llm_response(
     # Check if external credentials are unconfigured or local fallback is selected
     if provider in ["fallback", "gemini", "openai", "groq"] and not api_key:
         warning = f"Notice: {provider.upper()} API key not set in .env. Serving answers using student-friendly verified evidence engine." if provider != "fallback" else None
-        reply, cit, sug = fallback_evidence_answering(query, evidence_list, student_profile)
-        return reply, cit or citations, True, warning, sug
+        reply, cit, is_fb, sug = fallback_evidence_answering(query, evidence_list, student_profile)
+        return reply, cit or citations, is_fb, warning, sug
 
     # 1. Ollama (Local SLM/LLM)
     if provider == "ollama":
@@ -518,8 +522,8 @@ async def generate_llm_response(
                     return data.get("response", ""), citations, False, None, suggested
         except Exception as e:
             logger.warning(f"Ollama local inference failed: {e}. Falling back to evidence engine.")
-            reply, cit, sug = fallback_evidence_answering(query, evidence_list, student_profile)
-            return reply, cit or citations, True, f"Ollama connection error ({e}). Serving verified evidence.", sug
+            reply, cit, is_fb, sug = fallback_evidence_answering(query, evidence_list, student_profile)
+            return reply, cit or citations, is_fb, f"Ollama connection error ({e}). Serving verified evidence.", sug
 
     # 2. Google Gemini
     if provider == "gemini":
@@ -581,5 +585,5 @@ async def generate_llm_response(
             logger.warning(f"{provider.upper()} API request failed: {e}")
 
     # Fallback to local verified evidence engine
-    reply, cit, sug = fallback_evidence_answering(query, evidence_list, student_profile)
-    return reply, cit or citations, True, None, sug
+    reply, cit, is_fb, sug = fallback_evidence_answering(query, evidence_list, student_profile)
+    return reply, cit or citations, is_fb, None, sug

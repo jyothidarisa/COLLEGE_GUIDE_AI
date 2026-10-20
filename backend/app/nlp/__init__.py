@@ -10,6 +10,7 @@ from app.nlp.representation import get_representation_service, TextRepresentatio
 from app.nlp.reranker import get_evidence_reranker, HybridEvidenceReranker
 from app.nlp.model_interface import SLMModelRunner, LLMModelRunner, ModelOutput, ModelComparisonEvaluator
 from app.nlp.pipeline import get_nlp_pipeline, NLPPipeline, NLPAnalysisBundle
+from app.nlp.smalltalk import handle_smalltalk, SmallTalkResult
 
 __all__ = [
     "preprocess_query",
@@ -33,5 +34,7 @@ __all__ = [
     "ModelComparisonEvaluator",
     "get_nlp_pipeline",
     "NLPPipeline",
-    "NLPAnalysisBundle"
+    "NLPAnalysisBundle",
+    "handle_smalltalk",
+    "SmallTalkResult"
 ]

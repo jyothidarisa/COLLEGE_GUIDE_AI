@@ -19,7 +19,7 @@ from typing import Optional, List, Dict, Any
 from sqlalchemy.orm import Session
 from app.schemas import ChatRequest, ChatResponse, RetrievedEvidence
 from app.services.retriever import hybrid_retrieve
-from app.nlp import get_nlp_pipeline
+from app.nlp import get_nlp_pipeline, handle_smalltalk
 
 logger = logging.getLogger(__name__)
 
@@ -32,16 +32,38 @@ async def answer_student_query(
     Transforms raw student messages into grounded, context-aware,
     consistent answers using verified database facts and official documents.
     """
+    # 0. Rule-based Small-Talk Handler (Runs BEFORE intent classifier and retrieval)
+    st_res = handle_smalltalk(
+        query=chat_request.message,
+        conversation_history=chat_request.conversation_history
+    )
+    if st_res.is_smalltalk:
+        return ChatResponse(
+            reply=st_res.reply,
+            citations=[],
+            evidence_used=[],
+            is_fallback=False,
+            warning=None,
+            suggested_follow_ups=st_res.suggestions,
+            intent="small_talk",
+            intent_confidence=1.0,
+            rewritten_query=None,
+            extracted_entities={},
+            model_used="Rule Engine"
+        )
+
+    effective_query = st_res.cleaned_query or chat_request.message
+
     nlp = get_nlp_pipeline()
 
     # 1. Complete NLP Pipeline Analysis (Preprocessing, Intent, NER, Context, Rewriting)
     nlp_bundle = nlp.process(
-        query=chat_request.message,
+        query=effective_query,
         session_id=chat_request.session_id,
         conversation_history=chat_request.conversation_history
     )
 
-    query_for_retrieval = nlp_bundle.rewritten_query or chat_request.message
+    query_for_retrieval = nlp_bundle.rewritten_query or effective_query
 
     # 2. Target college resolution
     selected_col_id = None

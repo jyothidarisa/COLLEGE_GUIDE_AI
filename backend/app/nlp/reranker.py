@@ -62,6 +62,8 @@ class HybridEvidenceReranker:
                 score += 0.15
             elif "cutoff" in intent and ("cutoff" in doc_title or "closing" in snippet or "rank" in snippet):
                 score += 0.15
+            elif ("admission" in intent or "eligibility" in intent) and ("admission" in doc_title or "eligibility" in doc_title or "eligibility" in snippet):
+                score += 0.18
             elif "placement" in intent and ("placement" in doc_title or "salary" in snippet or "package" in snippet):
                 score += 0.15
             elif "hostel" in intent and ("hostel" in snippet or "living" in snippet):
@@ -74,6 +76,12 @@ class HybridEvidenceReranker:
                 branch_code = entities.preferred_branch.lower()
                 if branch_code in snippet or (entities.branch_name_full and entities.branch_name_full.lower() in snippet):
                     score += 0.10
+
+            # 4. Query term lexical overlap bonus
+            query_words = [w for w in q_lower.split() if len(w) > 3 and w not in ["what", "does", "offer", "about", "with", "from", "this", "that"]]
+            if query_words:
+                term_matches = sum(1 for w in query_words if w in snippet or w in doc_title)
+                score += min(0.20, term_matches * 0.05)
 
             scored_items.append((score, ev))
 
