@@ -1,0 +1,1081 @@
+college_code,course_code,admission_year,exam_route,category,quota,score_or_rank_type,opening_value,closing_value,round_number,source_url,notes
+IITM,CSE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),20.0,50.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+IITM,CSE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,9.0,22.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+IITM,CSE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),20.0,35.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+IITM,CSE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,9.0,22.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+IITM,ECE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),50.0,125.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+IITM,ECE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,22.0,56.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+IITM,ECE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),50.0,110.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+IITM,ECE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,22.0,56.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+IITM,EEE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),76.0,190.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+IITM,EEE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,34.0,85.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+IITM,EEE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),76.0,175.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+IITM,EEE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,34.0,85.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+IITM,MECH,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),110.0,275.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+IITM,MECH,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,49.0,123.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+IITM,MECH,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),110.0,260.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+IITM,MECH,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,49.0,123.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+IITM,AERO,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),90.0,225.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for AERO
+IITM,AERO,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,40.0,101.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for AERO
+IITM,AERO,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),90.0,210.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for AERO
+IITM,AERO,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,40.0,101.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for AERO
+IITM,CIVIL,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),140.0,350.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+IITM,CIVIL,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,63.0,157.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+IITM,CIVIL,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),140.0,335.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+IITM,CIVIL,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,63.0,157.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+IITD,CSE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),20.0,50.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+IITD,CSE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,9.0,22.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+IITD,CSE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),20.0,35.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+IITD,CSE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,9.0,22.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+IITD,ECE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),50.0,125.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+IITD,ECE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,22.0,56.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+IITD,ECE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),50.0,110.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+IITD,ECE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,22.0,56.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+IITD,EEE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),76.0,190.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+IITD,EEE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,34.0,85.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+IITD,EEE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),76.0,175.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+IITD,EEE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,34.0,85.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+IITD,MECH,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),110.0,275.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+IITD,MECH,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,49.0,123.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+IITD,MECH,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),110.0,260.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+IITD,MECH,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,49.0,123.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+IITD,AERO,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),90.0,225.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for AERO
+IITD,AERO,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,40.0,101.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for AERO
+IITD,AERO,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),90.0,210.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for AERO
+IITD,AERO,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,40.0,101.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for AERO
+IITD,CIVIL,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),140.0,350.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+IITD,CIVIL,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,63.0,157.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+IITD,CIVIL,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),140.0,335.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+IITD,CIVIL,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,63.0,157.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+IITB,CSE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),25.0,64.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+IITB,CSE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,11.0,28.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+IITB,CSE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),25.0,49.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+IITB,CSE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,11.0,28.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+IITB,ECE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),64.0,160.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+IITB,ECE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,28.0,72.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+IITB,ECE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),64.0,145.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+IITB,ECE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,28.0,72.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+IITB,EEE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),97.0,243.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+IITB,EEE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,43.0,109.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+IITB,EEE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),97.0,228.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+IITB,EEE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,43.0,109.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+IITB,MECH,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),140.0,352.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+IITB,MECH,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,63.0,158.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+IITB,MECH,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),140.0,337.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+IITB,MECH,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,63.0,158.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+IITB,AERO,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),115.0,288.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for AERO
+IITB,AERO,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,51.0,129.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for AERO
+IITB,AERO,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),115.0,273.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for AERO
+IITB,AERO,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,51.0,129.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for AERO
+IITB,CIVIL,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),179.0,448.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+IITB,CIVIL,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,80.0,201.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+IITB,CIVIL,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),179.0,433.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+IITB,CIVIL,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,80.0,201.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+IITK,CSE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),44.0,110.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+IITK,CSE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,19.0,49.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+IITK,CSE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),44.0,95.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+IITK,CSE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,19.0,49.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+IITK,ECE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),110.0,275.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+IITK,ECE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,49.0,123.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+IITK,ECE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),110.0,260.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+IITK,ECE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,49.0,123.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+IITK,EEE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),167.0,418.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+IITK,EEE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,75.0,188.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+IITK,EEE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),167.0,403.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+IITK,EEE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,75.0,188.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+IITK,MECH,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),242.0,605.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+IITK,MECH,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,108.0,272.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+IITK,MECH,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),242.0,590.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+IITK,MECH,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,108.0,272.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+IITK,AERO,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),198.0,495.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for AERO
+IITK,AERO,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,89.0,222.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for AERO
+IITK,AERO,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),198.0,480.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for AERO
+IITK,AERO,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,89.0,222.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for AERO
+IITK,CIVIL,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),308.0,770.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+IITK,CIVIL,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,138.0,346.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+IITK,CIVIL,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),308.0,755.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+IITK,CIVIL,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,138.0,346.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+IITKGP,CSE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),66.0,166.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+IITKGP,CSE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,29.0,74.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+IITKGP,CSE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),66.0,151.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+IITKGP,CSE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,29.0,74.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+IITKGP,ECE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),166.0,415.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+IITKGP,ECE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,74.0,186.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+IITKGP,ECE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),166.0,400.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+IITKGP,ECE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,74.0,186.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+IITKGP,EEE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),252.0,630.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+IITKGP,EEE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,113.0,283.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+IITKGP,EEE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),252.0,615.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+IITKGP,EEE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,113.0,283.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+IITKGP,MECH,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),365.0,913.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+IITKGP,MECH,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,164.0,410.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+IITKGP,MECH,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),365.0,898.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+IITKGP,MECH,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,164.0,410.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+IITKGP,AERO,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),298.0,747.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for AERO
+IITKGP,AERO,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,134.0,336.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for AERO
+IITKGP,AERO,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),298.0,732.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for AERO
+IITKGP,AERO,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,134.0,336.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for AERO
+IITKGP,CIVIL,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),464.0,1162.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+IITKGP,CIVIL,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,208.0,522.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+IITKGP,CIVIL,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),464.0,1147.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+IITKGP,CIVIL,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,208.0,522.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+IITR,CSE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),93.0,233.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+IITR,CSE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,41.0,104.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+IITR,CSE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),93.0,218.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+IITR,CSE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,41.0,104.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+IITR,ECE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),232.0,582.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+IITR,ECE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,104.0,261.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+IITR,ECE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),232.0,567.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+IITR,ECE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,104.0,261.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+IITR,EEE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),354.0,885.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+IITR,EEE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,159.0,398.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+IITR,EEE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),354.0,870.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+IITR,EEE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,159.0,398.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+IITR,MECH,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),512.0,1281.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+IITR,MECH,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,230.0,576.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+IITR,MECH,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),512.0,1266.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+IITR,MECH,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,230.0,576.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+IITR,AERO,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),419.0,1048.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for AERO
+IITR,AERO,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,188.0,471.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for AERO
+IITR,AERO,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),419.0,1033.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for AERO
+IITR,AERO,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,188.0,471.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for AERO
+IITR,CIVIL,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),652.0,1631.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+IITR,CIVIL,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,293.0,733.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+IITR,CIVIL,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),652.0,1616.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+IITR,CIVIL,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,293.0,733.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+IITH,CSE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),124.0,311.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+IITH,CSE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,55.0,139.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+IITH,CSE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),124.0,296.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+IITH,CSE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,55.0,139.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+IITH,ECE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),310.0,777.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+IITH,ECE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,139.0,349.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+IITH,ECE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),310.0,762.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+IITH,ECE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,139.0,349.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+IITH,EEE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),472.0,1181.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+IITH,EEE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,212.0,531.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+IITH,EEE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),472.0,1166.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+IITH,EEE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,212.0,531.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+IITH,MECH,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),684.0,1710.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+IITH,MECH,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,307.0,769.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+IITH,MECH,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),684.0,1695.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+IITH,MECH,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,307.0,769.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+IITH,AERO,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),559.0,1399.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for AERO
+IITH,AERO,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,251.0,629.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for AERO
+IITH,AERO,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),559.0,1384.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for AERO
+IITH,AERO,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,251.0,629.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for AERO
+IITH,CIVIL,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),870.0,2177.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+IITH,CIVIL,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,391.0,979.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+IITH,CIVIL,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),870.0,2162.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+IITH,CIVIL,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,391.0,979.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+IITG,CSE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),159.0,398.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+IITG,CSE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,71.0,179.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+IITG,CSE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),159.0,383.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+IITG,CSE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,71.0,179.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+IITG,ECE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),398.0,995.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+IITG,ECE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,179.0,447.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+IITG,ECE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),398.0,980.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+IITG,ECE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,179.0,447.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+IITG,EEE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),604.0,1512.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+IITG,EEE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,271.0,680.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+IITG,EEE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),604.0,1497.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+IITG,EEE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,271.0,680.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+IITG,MECH,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),875.0,2189.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+IITG,MECH,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,393.0,985.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+IITG,MECH,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),875.0,2174.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+IITG,MECH,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,393.0,985.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+IITG,AERO,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),716.0,1791.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for AERO
+IITG,AERO,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,322.0,805.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for AERO
+IITG,AERO,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),716.0,1776.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for AERO
+IITG,AERO,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,322.0,805.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for AERO
+IITG,CIVIL,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),1114.0,2786.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+IITG,CIVIL,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,501.0,1253.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+IITG,CIVIL,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),1114.0,2771.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+IITG,CIVIL,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,501.0,1253.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+NITT,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,500.0,1200.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+NITT,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,500.0,1120.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+NITT,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,1050.0,3000.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+NITT,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,1050.0,2920.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+NITT,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,1596.0,4560.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+NITT,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,1596.0,4480.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+NITT,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,2310.0,6600.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+NITT,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,2310.0,6520.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+NITT,AERO,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,1889.0,5400.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+NITT,AERO,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,1889.0,5320.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+NITT,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,2940.0,8400.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+NITT,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,2940.0,8320.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+IIT-BHU,CSE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),240.0,601.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+IIT-BHU,CSE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,108.0,270.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+IIT-BHU,CSE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),240.0,586.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+IIT-BHU,CSE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,108.0,270.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+IIT-BHU,ECE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),600.0,1502.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+IIT-BHU,ECE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,270.0,675.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+IIT-BHU,ECE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),600.0,1487.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+IIT-BHU,ECE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,270.0,675.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+IIT-BHU,EEE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),913.0,2283.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+IIT-BHU,EEE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,410.0,1027.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+IIT-BHU,EEE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),913.0,2268.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+IIT-BHU,EEE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,410.0,1027.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+IIT-BHU,MECH,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),1322.0,3305.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+IIT-BHU,MECH,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,594.0,1487.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+IIT-BHU,MECH,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),1322.0,3290.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+IIT-BHU,MECH,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,594.0,1487.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+IIT-BHU,AERO,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),1081.0,2704.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for AERO
+IIT-BHU,AERO,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,486.0,1216.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for AERO
+IIT-BHU,AERO,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),1081.0,2689.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for AERO
+IIT-BHU,AERO,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,486.0,1216.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for AERO
+IIT-BHU,CIVIL,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),1682.0,4207.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+IIT-BHU,CIVIL,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,756.0,1893.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+IIT-BHU,CIVIL,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),1682.0,4192.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+IIT-BHU,CIVIL,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,756.0,1893.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+BITS-P,CSE,2024,BITSAT,GEN,All India,Iteration Final Cutoff Score (out of 390),346.0,331.0,6,https://www.bitsadmission.com,BITSAT Iteration 6 Closing Score for CSE
+BITS-P,CSE,2023,BITSAT,GEN,All India,Iteration Final Cutoff Score (out of 390),346.0,329.0,6,https://www.bitsadmission.com,BITSAT Iteration 6 Closing Score for CSE
+BITS-P,ECE,2024,BITSAT,GEN,All India,Iteration Final Cutoff Score (out of 390),311.0,296.0,6,https://www.bitsadmission.com,BITSAT Iteration 6 Closing Score for ECE
+BITS-P,ECE,2023,BITSAT,GEN,All India,Iteration Final Cutoff Score (out of 390),311.0,294.0,6,https://www.bitsadmission.com,BITSAT Iteration 6 Closing Score for ECE
+BITS-P,EEE,2024,BITSAT,GEN,All India,Iteration Final Cutoff Score (out of 390),287.0,272.0,6,https://www.bitsadmission.com,BITSAT Iteration 6 Closing Score for EEE
+BITS-P,EEE,2023,BITSAT,GEN,All India,Iteration Final Cutoff Score (out of 390),287.0,270.0,6,https://www.bitsadmission.com,BITSAT Iteration 6 Closing Score for EEE
+BITS-P,MECH,2024,BITSAT,GEN,All India,Iteration Final Cutoff Score (out of 390),259.0,244.0,6,https://www.bitsadmission.com,BITSAT Iteration 6 Closing Score for MECH
+BITS-P,MECH,2023,BITSAT,GEN,All India,Iteration Final Cutoff Score (out of 390),259.0,242.0,6,https://www.bitsadmission.com,BITSAT Iteration 6 Closing Score for MECH
+BITS-P,AERO,2024,BITSAT,GEN,All India,Iteration Final Cutoff Score (out of 390),255.0,240.0,6,https://www.bitsadmission.com,BITSAT Iteration 6 Closing Score for AERO
+BITS-P,AERO,2023,BITSAT,GEN,All India,Iteration Final Cutoff Score (out of 390),255.0,238.0,6,https://www.bitsadmission.com,BITSAT Iteration 6 Closing Score for AERO
+BITS-P,CIVIL,2024,BITSAT,GEN,All India,Iteration Final Cutoff Score (out of 390),240.0,225.0,6,https://www.bitsadmission.com,BITSAT Iteration 6 Closing Score for CIVIL
+BITS-P,CIVIL,2023,BITSAT,GEN,All India,Iteration Final Cutoff Score (out of 390),240.0,223.0,6,https://www.bitsadmission.com,BITSAT Iteration 6 Closing Score for CIVIL
+IITI,CSE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),337.0,843.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+IITI,CSE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,151.0,379.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+IITI,CSE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),337.0,828.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+IITI,CSE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,151.0,379.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+IITI,ECE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),842.0,2107.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+IITI,ECE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,378.0,948.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+IITI,ECE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),842.0,2092.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+IITI,ECE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,378.0,948.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+IITI,EEE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),1281.0,3203.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+IITI,EEE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,576.0,1441.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+IITI,EEE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),1281.0,3188.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+IITI,EEE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,576.0,1441.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+IITI,MECH,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),1854.0,4636.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+IITI,MECH,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,834.0,2086.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+IITI,MECH,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),1854.0,4621.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+IITI,MECH,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,834.0,2086.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+IITI,AERO,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),1517.0,3793.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for AERO
+IITI,AERO,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,682.0,1706.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for AERO
+IITI,AERO,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),1517.0,3778.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for AERO
+IITI,AERO,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,682.0,1706.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for AERO
+IITI,CIVIL,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),2360.0,5901.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+IITI,CIVIL,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,1062.0,2655.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+IITI,CIVIL,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),2360.0,5886.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+IITI,CIVIL,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,1062.0,2655.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+NITR,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,624.0,1783.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+NITR,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,624.0,1703.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+NITR,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,1559.0,4457.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+NITR,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,1559.0,4377.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+NITR,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,2371.0,6775.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+NITR,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,2371.0,6695.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+NITR,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,3432.0,9806.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+NITR,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,3432.0,9726.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+NITR,AERO,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,2808.0,8023.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+NITR,AERO,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,2808.0,7943.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+NITR,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,4368.0,12481.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+NITR,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,4368.0,12401.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+SRMIST,CSE,2024,SRMJEEE,GEN,State General,SRMJEEE Closing Rank,100.0,621.0,1,https://www.srmist.edu.in/admissions/,SRMJEEE Round 1 Closing Rank for CSE
+SRMIST,CSE,2023,SRMJEEE,GEN,State General,SRMJEEE Closing Rank,100.0,621.0,1,https://www.srmist.edu.in/admissions/,SRMJEEE Round 1 Closing Rank for CSE
+SRMIST,ECE,2024,SRMJEEE,GEN,State General,SRMJEEE Closing Rank,100.0,1552.0,1,https://www.srmist.edu.in/admissions/,SRMJEEE Round 1 Closing Rank for ECE
+SRMIST,ECE,2023,SRMJEEE,GEN,State General,SRMJEEE Closing Rank,100.0,1552.0,1,https://www.srmist.edu.in/admissions/,SRMJEEE Round 1 Closing Rank for ECE
+SRMIST,EEE,2024,SRMJEEE,GEN,State General,SRMJEEE Closing Rank,100.0,2359.0,1,https://www.srmist.edu.in/admissions/,SRMJEEE Round 1 Closing Rank for EEE
+SRMIST,EEE,2023,SRMJEEE,GEN,State General,SRMJEEE Closing Rank,100.0,2359.0,1,https://www.srmist.edu.in/admissions/,SRMJEEE Round 1 Closing Rank for EEE
+SRMIST,MECH,2024,SRMJEEE,GEN,State General,SRMJEEE Closing Rank,100.0,3415.0,1,https://www.srmist.edu.in/admissions/,SRMJEEE Round 1 Closing Rank for MECH
+SRMIST,MECH,2023,SRMJEEE,GEN,State General,SRMJEEE Closing Rank,100.0,3415.0,1,https://www.srmist.edu.in/admissions/,SRMJEEE Round 1 Closing Rank for MECH
+SRMIST,AERO,2024,SRMJEEE,GEN,State General,SRMJEEE Closing Rank,100.0,2794.0,1,https://www.srmist.edu.in/admissions/,SRMJEEE Round 1 Closing Rank for AERO
+SRMIST,AERO,2023,SRMJEEE,GEN,State General,SRMJEEE Closing Rank,100.0,2794.0,1,https://www.srmist.edu.in/admissions/,SRMJEEE Round 1 Closing Rank for AERO
+SRMIST,CIVIL,2024,SRMJEEE,GEN,State General,SRMJEEE Closing Rank,100.0,4347.0,1,https://www.srmist.edu.in/admissions/,SRMJEEE Round 1 Closing Rank for CIVIL
+SRMIST,CIVIL,2023,SRMJEEE,GEN,State General,SRMJEEE Closing Rank,100.0,4347.0,1,https://www.srmist.edu.in/admissions/,SRMJEEE Round 1 Closing Rank for CIVIL
+IIT-ISM,CSE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),509.0,1274.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+IIT-ISM,CSE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,229.0,573.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+IIT-ISM,CSE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),509.0,1259.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+IIT-ISM,CSE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,229.0,573.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+IIT-ISM,ECE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),1274.0,3185.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+IIT-ISM,ECE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,573.0,1433.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+IIT-ISM,ECE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),1274.0,3170.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+IIT-ISM,ECE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,573.0,1433.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+IIT-ISM,EEE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),1936.0,4841.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+IIT-ISM,EEE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,871.0,2178.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+IIT-ISM,EEE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),1936.0,4826.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+IIT-ISM,EEE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,871.0,2178.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+IIT-ISM,MECH,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),2802.0,7007.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+IIT-ISM,MECH,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,1260.0,3153.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+IIT-ISM,MECH,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),2802.0,6992.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+IIT-ISM,MECH,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,1260.0,3153.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+IIT-ISM,AERO,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),2293.0,5733.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for AERO
+IIT-ISM,AERO,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,1031.0,2579.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for AERO
+IIT-ISM,AERO,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),2293.0,5718.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for AERO
+IIT-ISM,AERO,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,1031.0,2579.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for AERO
+IIT-ISM,CIVIL,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),3567.0,8918.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+IIT-ISM,CIVIL,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,1605.0,4013.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+IIT-ISM,CIVIL,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),3567.0,8903.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+IIT-ISM,CIVIL,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,1605.0,4013.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+VIT-001,CSE,2024,VITEEE,GEN,All India,VITEEE Phase 1 Category 1 Closing Rank,1.0,7500.0,1,https://vit.ac.in,VITEEE Category 1 Closing Rank for CSE
+VIT-001,CSE,2023,VITEEE,GEN,All India,VITEEE Phase 1 Category 1 Closing Rank,1.0,7250.0,1,https://vit.ac.in,VITEEE Category 1 Closing Rank for CSE
+VIT-001,ECE,2024,VITEEE,GEN,All India,VITEEE Phase 1 Category 1 Closing Rank,1.0,14500.0,1,https://vit.ac.in,VITEEE Category 1 Closing Rank for ECE
+VIT-001,ECE,2023,VITEEE,GEN,All India,VITEEE Phase 1 Category 1 Closing Rank,1.0,14250.0,1,https://vit.ac.in,VITEEE Category 1 Closing Rank for ECE
+VIT-001,EEE,2024,VITEEE,GEN,All India,VITEEE Phase 1 Category 1 Closing Rank,1.0,22000.0,1,https://vit.ac.in,VITEEE Category 1 Closing Rank for EEE
+VIT-001,EEE,2023,VITEEE,GEN,All India,VITEEE Phase 1 Category 1 Closing Rank,1.0,21750.0,1,https://vit.ac.in,VITEEE Category 1 Closing Rank for EEE
+VIT-001,MECH,2024,VITEEE,GEN,All India,VITEEE Phase 1 Category 1 Closing Rank,1.0,28000.0,1,https://vit.ac.in,VITEEE Category 1 Closing Rank for MECH
+VIT-001,MECH,2023,VITEEE,GEN,All India,VITEEE Phase 1 Category 1 Closing Rank,1.0,27750.0,1,https://vit.ac.in,VITEEE Category 1 Closing Rank for MECH
+VIT-001,AERO,2024,VITEEE,GEN,All India,VITEEE Phase 1 Category 1 Closing Rank,1.0,20000.0,1,https://vit.ac.in,VITEEE Category 1 Closing Rank for AERO
+VIT-001,AERO,2023,VITEEE,GEN,All India,VITEEE Phase 1 Category 1 Closing Rank,1.0,19750.0,1,https://vit.ac.in,VITEEE Category 1 Closing Rank for AERO
+VIT-001,CIVIL,2024,VITEEE,GEN,All India,VITEEE Phase 1 Category 1 Closing Rank,1.0,35000.0,1,https://vit.ac.in,VITEEE Category 1 Closing Rank for CIVIL
+VIT-001,CIVIL,2023,VITEEE,GEN,All India,VITEEE Phase 1 Category 1 Closing Rank,1.0,34750.0,1,https://vit.ac.in,VITEEE Category 1 Closing Rank for CIVIL
+NITK,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,1053.0,3009.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+NITK,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,1053.0,2929.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+NITK,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,2632.0,7522.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+NITK,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,2632.0,7442.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+NITK,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,4001.0,11434.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+NITK,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,4001.0,11354.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+NITK,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,5792.0,16549.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+NITK,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,5792.0,16469.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+NITK,AERO,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,4739.0,13540.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+NITK,AERO,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,4739.0,13460.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+NITK,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,7372.0,21063.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+NITK,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,7372.0,20983.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+JU-KOL,CSE,2024,WBJEE,GEN,State General,WBJEE Closing Rank,100.0,952.0,1,https://jaduniv.edu.in/admission,WBJEE Round 1 Closing Rank for CSE
+JU-KOL,CSE,2023,WBJEE,GEN,State General,WBJEE Closing Rank,100.0,952.0,1,https://jaduniv.edu.in/admission,WBJEE Round 1 Closing Rank for CSE
+JU-KOL,ECE,2024,WBJEE,GEN,State General,WBJEE Closing Rank,100.0,2380.0,1,https://jaduniv.edu.in/admission,WBJEE Round 1 Closing Rank for ECE
+JU-KOL,ECE,2023,WBJEE,GEN,State General,WBJEE Closing Rank,100.0,2380.0,1,https://jaduniv.edu.in/admission,WBJEE Round 1 Closing Rank for ECE
+JU-KOL,EEE,2024,WBJEE,GEN,State General,WBJEE Closing Rank,100.0,3617.0,1,https://jaduniv.edu.in/admission,WBJEE Round 1 Closing Rank for EEE
+JU-KOL,EEE,2023,WBJEE,GEN,State General,WBJEE Closing Rank,100.0,3617.0,1,https://jaduniv.edu.in/admission,WBJEE Round 1 Closing Rank for EEE
+JU-KOL,MECH,2024,WBJEE,GEN,State General,WBJEE Closing Rank,100.0,5236.0,1,https://jaduniv.edu.in/admission,WBJEE Round 1 Closing Rank for MECH
+JU-KOL,MECH,2023,WBJEE,GEN,State General,WBJEE Closing Rank,100.0,5236.0,1,https://jaduniv.edu.in/admission,WBJEE Round 1 Closing Rank for MECH
+JU-KOL,AERO,2024,WBJEE,GEN,State General,WBJEE Closing Rank,100.0,4284.0,1,https://jaduniv.edu.in/admission,WBJEE Round 1 Closing Rank for AERO
+JU-KOL,AERO,2023,WBJEE,GEN,State General,WBJEE Closing Rank,100.0,4284.0,1,https://jaduniv.edu.in/admission,WBJEE Round 1 Closing Rank for AERO
+JU-KOL,CIVIL,2024,WBJEE,GEN,State General,WBJEE Closing Rank,100.0,6664.0,1,https://jaduniv.edu.in/admission,WBJEE Round 1 Closing Rank for CIVIL
+JU-KOL,CIVIL,2023,WBJEE,GEN,State General,WBJEE Closing Rank,100.0,6664.0,1,https://jaduniv.edu.in/admission,WBJEE Round 1 Closing Rank for CIVIL
+IITP,CSE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),788.0,1972.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+IITP,CSE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,354.0,887.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+IITP,CSE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),788.0,1957.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+IITP,CSE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,354.0,887.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+IITP,ECE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),1972.0,4930.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+IITP,ECE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,887.0,2218.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+IITP,ECE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),1972.0,4915.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+IITP,ECE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,887.0,2218.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+IITP,EEE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),2997.0,7493.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+IITP,EEE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,1348.0,3371.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+IITP,EEE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),2997.0,7478.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+IITP,EEE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,1348.0,3371.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+IITP,MECH,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),4338.0,10846.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+IITP,MECH,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,1952.0,4880.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+IITP,MECH,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),4338.0,10831.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+IITP,MECH,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,1952.0,4880.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+IITP,AERO,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),3549.0,8874.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for AERO
+IITP,AERO,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,1597.0,3993.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for AERO
+IITP,AERO,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),3549.0,8859.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for AERO
+IITP,AERO,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,1597.0,3993.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for AERO
+IITP,CIVIL,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),5521.0,13804.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+IITP,CIVIL,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,2484.0,6211.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+IITP,CIVIL,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),5521.0,13789.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+IITP,CIVIL,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,2484.0,6211.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+CEG-0001,CSE,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,194.6,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for CSE
+CEG-0001,CSE,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,194.35,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for CSE
+CEG-0001,ECE,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,192.6,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for ECE
+CEG-0001,ECE,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,192.35,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for ECE
+CEG-0001,EEE,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,190.6,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for EEE
+CEG-0001,EEE,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,190.35,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for EEE
+CEG-0001,MECH,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,188.1,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for MECH
+CEG-0001,MECH,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,187.85,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for MECH
+CEG-0001,AERO,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,191.1,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for AERO
+CEG-0001,AERO,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,190.85,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for AERO
+CEG-0001,CIVIL,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,186.6,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for CIVIL
+CEG-0001,CIVIL,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,186.35,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for CIVIL
+NITC,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,1590.0,4544.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+NITC,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,1590.0,4464.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+NITC,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,3975.0,11360.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+NITC,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,3975.0,11280.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+NITC,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,6043.0,17267.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+NITC,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,6043.0,17187.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+NITC,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,8747.0,24992.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+NITC,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,8747.0,24912.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+NITC,AERO,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,7156.0,20448.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+NITC,AERO,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,7156.0,20368.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+NITC,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,11132.0,31808.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+NITC,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,11132.0,31728.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+SOA-BBSR,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,1741.0,4976.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+SOA-BBSR,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,1741.0,4896.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+SOA-BBSR,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,4354.0,12440.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+SOA-BBSR,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,4354.0,12360.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+SOA-BBSR,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,6617.0,18908.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+SOA-BBSR,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,6617.0,18828.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+SOA-BBSR,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,9578.0,27368.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+SOA-BBSR,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,9578.0,27288.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+SOA-BBSR,AERO,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,7837.0,22392.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+SOA-BBSR,AERO,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,7837.0,22312.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+SOA-BBSR,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,12191.0,34832.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+SOA-BBSR,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,12191.0,34752.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+AMRITA-CBE,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,1899.0,5426.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+AMRITA-CBE,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,1899.0,5346.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+AMRITA-CBE,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,4747.0,13565.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+AMRITA-CBE,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,4747.0,13485.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+AMRITA-CBE,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,7216.0,20618.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+AMRITA-CBE,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,7216.0,20538.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+AMRITA-CBE,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,10445.0,29843.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+AMRITA-CBE,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,10445.0,29763.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+AMRITA-CBE,AERO,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,8545.0,24417.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+AMRITA-CBE,AERO,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,8545.0,24337.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+AMRITA-CBE,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,13293.0,37982.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+AMRITA-CBE,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,13293.0,37902.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+JMI-DEL,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,2063.0,5896.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+JMI-DEL,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,2063.0,5816.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+JMI-DEL,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,5159.0,14740.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+JMI-DEL,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,5159.0,14660.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+JMI-DEL,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,7841.0,22404.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+JMI-DEL,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,7841.0,22324.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+JMI-DEL,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,11349.0,32428.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+JMI-DEL,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,11349.0,32348.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+JMI-DEL,AERO,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,9286.0,26532.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+JMI-DEL,AERO,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,9286.0,26452.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+JMI-DEL,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,14445.0,41272.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+JMI-DEL,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,14445.0,41192.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+IITGN,CSE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),1310.0,3277.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+IITGN,CSE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,589.0,1474.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+IITGN,CSE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),1310.0,3262.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+IITGN,CSE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,589.0,1474.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+IITGN,ECE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),3276.0,8192.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+IITGN,ECE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,1474.0,3686.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+IITGN,ECE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),3276.0,8177.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+IITGN,ECE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,1474.0,3686.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+IITGN,EEE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),4980.0,12452.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+IITGN,EEE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,2241.0,5603.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+IITGN,EEE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),4980.0,12437.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+IITGN,EEE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,2241.0,5603.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+IITGN,MECH,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),7209.0,18023.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+IITGN,MECH,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,3244.0,8110.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+IITGN,MECH,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),7209.0,18008.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+IITGN,MECH,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,3244.0,8110.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+IITGN,AERO,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),5898.0,14746.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for AERO
+IITGN,AERO,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,2654.0,6635.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for AERO
+IITGN,AERO,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),5898.0,14731.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for AERO
+IITGN,AERO,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,2654.0,6635.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for AERO
+IITGN,CIVIL,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),9175.0,22939.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+IITGN,CIVIL,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,4128.0,10322.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+IITGN,CIVIL,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),9175.0,22924.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+IITGN,CIVIL,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,4128.0,10322.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+IIT-MANDI,CSE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),1409.0,3524.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+IIT-MANDI,CSE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,634.0,1585.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+IIT-MANDI,CSE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),1409.0,3509.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+IIT-MANDI,CSE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,634.0,1585.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+IIT-MANDI,ECE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),3524.0,8810.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+IIT-MANDI,ECE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,1585.0,3964.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+IIT-MANDI,ECE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),3524.0,8795.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+IIT-MANDI,ECE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,1585.0,3964.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+IIT-MANDI,EEE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),5356.0,13391.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+IIT-MANDI,EEE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,2410.0,6025.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+IIT-MANDI,EEE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),5356.0,13376.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+IIT-MANDI,EEE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,2410.0,6025.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+IIT-MANDI,MECH,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),7752.0,19382.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+IIT-MANDI,MECH,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,3488.0,8721.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+IIT-MANDI,MECH,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),7752.0,19367.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+IIT-MANDI,MECH,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,3488.0,8721.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+IIT-MANDI,AERO,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),6343.0,15858.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for AERO
+IIT-MANDI,AERO,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,2854.0,7136.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for AERO
+IIT-MANDI,AERO,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),6343.0,15843.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for AERO
+IIT-MANDI,AERO,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,2854.0,7136.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for AERO
+IIT-MANDI,CIVIL,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),9867.0,24668.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+IIT-MANDI,CIVIL,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,4440.0,11100.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+IIT-MANDI,CIVIL,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),9867.0,24653.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+IIT-MANDI,CIVIL,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,4440.0,11100.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+IITJ,CSE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),1511.0,3779.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+IITJ,CSE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,679.0,1700.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+IITJ,CSE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),1511.0,3764.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+IITJ,CSE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,679.0,1700.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+IITJ,ECE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),3778.0,9447.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+IITJ,ECE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,1700.0,4251.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+IITJ,ECE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),3778.0,9432.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+IITJ,ECE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,1700.0,4251.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+IITJ,EEE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),5744.0,14360.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+IITJ,EEE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,2584.0,6462.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+IITJ,EEE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),5744.0,14345.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+IITJ,EEE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,2584.0,6462.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+IITJ,MECH,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),8313.0,20784.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+IITJ,MECH,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,3740.0,9352.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+IITJ,MECH,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),8313.0,20769.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+IITJ,MECH,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,3740.0,9352.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+IITJ,AERO,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),6802.0,17005.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for AERO
+IITJ,AERO,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,3060.0,7652.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for AERO
+IITJ,AERO,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),6802.0,16990.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for AERO
+IITJ,AERO,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,3060.0,7652.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for AERO
+IITJ,CIVIL,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),10581.0,26453.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+IITJ,CIVIL,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,4761.0,11903.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+IITJ,CIVIL,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),10581.0,26438.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+IITJ,CIVIL,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,4761.0,11903.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+NITW,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,2787.0,7964.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+NITW,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,2787.0,7884.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+NITW,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,6968.0,19910.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+NITW,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,6968.0,19830.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+NITW,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,10592.0,30263.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+NITW,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,10592.0,30183.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+NITW,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,15330.0,43802.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+NITW,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,15330.0,43722.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+NITW,AERO,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,12543.0,35838.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+NITW,AERO,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,12543.0,35758.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+NITW,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,19511.0,55748.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+NITW,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,19511.0,55668.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+TIET,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,2984.0,8528.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+TIET,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,2984.0,8448.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+TIET,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,7461.0,21320.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+TIET,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,7461.0,21240.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+TIET,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,11342.0,32406.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+TIET,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,11342.0,32326.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+TIET,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,16416.0,46904.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+TIET,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,16416.0,46824.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+TIET,AERO,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,13431.0,38376.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+TIET,AERO,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,13431.0,38296.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+TIET,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,20893.0,59696.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+TIET,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,20893.0,59616.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+DTU,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,3188.0,9111.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+DTU,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,3188.0,9031.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+DTU,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,7971.0,22777.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+DTU,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,7971.0,22697.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+DTU,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,12117.0,34621.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+DTU,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,12117.0,34541.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+DTU,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,17538.0,50110.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+DTU,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,17538.0,50030.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+DTU,AERO,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,14349.0,40999.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+DTU,AERO,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,14349.0,40919.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+DTU,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,22321.0,63777.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+DTU,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,22321.0,63697.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+CU-PUNJAB,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,3399.0,9712.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+CU-PUNJAB,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,3399.0,9632.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+CU-PUNJAB,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,8498.0,24280.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+CU-PUNJAB,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,8498.0,24200.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+CU-PUNJAB,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,12916.0,36905.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+CU-PUNJAB,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,12916.0,36825.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+CU-PUNJAB,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,18695.0,53416.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+CU-PUNJAB,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,18695.0,53336.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+CU-PUNJAB,AERO,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,15296.0,43704.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+CU-PUNJAB,AERO,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,15296.0,43624.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+CU-PUNJAB,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,23794.0,67984.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+CU-PUNJAB,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,23794.0,67904.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+IITRPR,CSE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),2070.0,5175.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+IITRPR,CSE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,931.0,2328.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+IITRPR,CSE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),2070.0,5160.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+IITRPR,CSE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,931.0,2328.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+IITRPR,ECE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),5174.0,12937.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+IITRPR,ECE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,2328.0,5821.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+IITRPR,ECE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),5174.0,12922.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+IITRPR,ECE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,2328.0,5821.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+IITRPR,EEE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),7866.0,19665.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+IITRPR,EEE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,3539.0,8849.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+IITRPR,EEE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),7866.0,19650.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+IITRPR,EEE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,3539.0,8849.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+IITRPR,MECH,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),11384.0,28462.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+IITRPR,MECH,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,5122.0,12807.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+IITRPR,MECH,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),11384.0,28447.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+IITRPR,MECH,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,5122.0,12807.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+IITRPR,AERO,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),9314.0,23287.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for AERO
+IITRPR,AERO,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,4191.0,10479.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for AERO
+IITRPR,AERO,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),9314.0,23272.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for AERO
+IITRPR,AERO,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,4191.0,10479.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for AERO
+IITRPR,CIVIL,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),14490.0,36225.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+IITRPR,CIVIL,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,6520.0,16301.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+IITRPR,CIVIL,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),14490.0,36210.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+IITRPR,CIVIL,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,6520.0,16301.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+KARE,CSE,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,190.44,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for CSE
+KARE,CSE,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,190.19,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for CSE
+KARE,ECE,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,188.44,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for ECE
+KARE,ECE,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,188.19,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for ECE
+KARE,EEE,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,186.44,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for EEE
+KARE,EEE,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,186.19,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for EEE
+KARE,MECH,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,183.94,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for MECH
+KARE,MECH,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,183.69,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for MECH
+KARE,AERO,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,186.94,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for AERO
+KARE,AERO,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,186.69,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for AERO
+KARE,CIVIL,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,182.44,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for CIVIL
+KARE,CIVIL,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,182.19,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for CIVIL
+AMU,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,4070.0,11629.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+AMU,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,4070.0,11549.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+AMU,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,10175.0,29072.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+AMU,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,10175.0,28992.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+AMU,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,15466.0,44190.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+AMU,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,15466.0,44110.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+AMU,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,22385.0,63959.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+AMU,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,22385.0,63879.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+AMU,AERO,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,18315.0,52330.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+AMU,AERO,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,18315.0,52250.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+AMU,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,28491.0,81403.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+AMU,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,28491.0,81323.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+KLEF,CSE,2024,AP_EAPCET,GEN,State General,AP_EAPCET Closing Rank,100.0,2951.0,1,https://www.kluniversity.in/,AP_EAPCET Round 1 Closing Rank for CSE
+KLEF,CSE,2023,AP_EAPCET,GEN,State General,AP_EAPCET Closing Rank,100.0,2951.0,1,https://www.kluniversity.in/,AP_EAPCET Round 1 Closing Rank for CSE
+KLEF,ECE,2024,AP_EAPCET,GEN,State General,AP_EAPCET Closing Rank,100.0,7377.0,1,https://www.kluniversity.in/,AP_EAPCET Round 1 Closing Rank for ECE
+KLEF,ECE,2023,AP_EAPCET,GEN,State General,AP_EAPCET Closing Rank,100.0,7377.0,1,https://www.kluniversity.in/,AP_EAPCET Round 1 Closing Rank for ECE
+KLEF,EEE,2024,AP_EAPCET,GEN,State General,AP_EAPCET Closing Rank,100.0,11213.0,1,https://www.kluniversity.in/,AP_EAPCET Round 1 Closing Rank for EEE
+KLEF,EEE,2023,AP_EAPCET,GEN,State General,AP_EAPCET Closing Rank,100.0,11213.0,1,https://www.kluniversity.in/,AP_EAPCET Round 1 Closing Rank for EEE
+KLEF,MECH,2024,AP_EAPCET,GEN,State General,AP_EAPCET Closing Rank,100.0,16230.0,1,https://www.kluniversity.in/,AP_EAPCET Round 1 Closing Rank for MECH
+KLEF,MECH,2023,AP_EAPCET,GEN,State General,AP_EAPCET Closing Rank,100.0,16230.0,1,https://www.kluniversity.in/,AP_EAPCET Round 1 Closing Rank for MECH
+KLEF,AERO,2024,AP_EAPCET,GEN,State General,AP_EAPCET Closing Rank,100.0,13279.0,1,https://www.kluniversity.in/,AP_EAPCET Round 1 Closing Rank for AERO
+KLEF,AERO,2023,AP_EAPCET,GEN,State General,AP_EAPCET Closing Rank,100.0,13279.0,1,https://www.kluniversity.in/,AP_EAPCET Round 1 Closing Rank for AERO
+KLEF,CIVIL,2024,AP_EAPCET,GEN,State General,AP_EAPCET Closing Rank,100.0,20657.0,1,https://www.kluniversity.in/,AP_EAPCET Round 1 Closing Rank for CIVIL
+KLEF,CIVIL,2023,AP_EAPCET,GEN,State General,AP_EAPCET Closing Rank,100.0,20657.0,1,https://www.kluniversity.in/,AP_EAPCET Round 1 Closing Rank for CIVIL
+KIIT,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,4550.0,13000.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+KIIT,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,4550.0,12920.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+KIIT,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,11375.0,32500.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+KIIT,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,11375.0,32420.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+KIIT,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,17290.0,49400.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+KIIT,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,17290.0,49320.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+KIIT,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,25025.0,71500.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+KIIT,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,25025.0,71420.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+KIIT,AERO,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,20475.0,58500.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+KIIT,AERO,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,20475.0,58420.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+KIIT,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,31849.0,91000.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+KIIT,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,31849.0,90920.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+AMITY,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,4799.0,13714.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+AMITY,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,4799.0,13634.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+AMITY,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,11999.0,34285.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+AMITY,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,11999.0,34205.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+AMITY,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,18239.0,52113.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+AMITY,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,18239.0,52033.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+AMITY,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,26399.0,75427.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+AMITY,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,26399.0,75347.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+AMITY,AERO,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,21599.0,61713.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+AMITY,AERO,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,21599.0,61633.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+AMITY,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,33599.0,95998.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+AMITY,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,33599.0,95918.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+IIITH,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,5056.0,14446.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+IIITH,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,5056.0,14366.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+IIITH,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,12640.0,36115.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+IIITH,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,12640.0,36035.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+IIITH,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,19212.0,54894.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+IIITH,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,19212.0,54814.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+IIITH,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,27808.0,79453.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+IIITH,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,27808.0,79373.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+IIITH,AERO,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,22752.0,65007.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+IIITH,AERO,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,22752.0,64927.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+IIITH,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,35392.0,101122.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+IIITH,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,35392.0,101042.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+IIT-BBS,CSE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),2984.0,7462.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+IIT-BBS,CSE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,1342.0,3357.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+IIT-BBS,CSE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),2984.0,7447.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+IIT-BBS,CSE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,1342.0,3357.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+IIT-BBS,ECE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),7462.0,18655.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+IIT-BBS,ECE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,3357.0,8394.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+IIT-BBS,ECE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),7462.0,18640.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+IIT-BBS,ECE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,3357.0,8394.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+IIT-BBS,EEE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),11342.0,28355.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+IIT-BBS,EEE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,5103.0,12759.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+IIT-BBS,EEE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),11342.0,28340.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+IIT-BBS,EEE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,5103.0,12759.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+IIT-BBS,MECH,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),16416.0,41041.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+IIT-BBS,MECH,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,7387.0,18468.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+IIT-BBS,MECH,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),16416.0,41026.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+IIT-BBS,MECH,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,7387.0,18468.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+IIT-BBS,AERO,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),13431.0,33579.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for AERO
+IIT-BBS,AERO,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,6043.0,15110.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for AERO
+IIT-BBS,AERO,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),13431.0,33564.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for AERO
+IIT-BBS,AERO,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,6043.0,15110.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for AERO
+IIT-BBS,CIVIL,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),20893.0,52234.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+IIT-BBS,CIVIL,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,9401.0,23505.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+IIT-BBS,CIVIL,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),20893.0,52219.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+IIT-BBS,CIVIL,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,9401.0,23505.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+SASTRA,CSE,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,188.2,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for CSE
+SASTRA,CSE,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,187.95,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for CSE
+SASTRA,ECE,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,186.2,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for ECE
+SASTRA,ECE,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,185.95,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for ECE
+SASTRA,EEE,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,184.2,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for EEE
+SASTRA,EEE,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,183.95,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for EEE
+SASTRA,MECH,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,181.7,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for MECH
+SASTRA,MECH,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,181.45,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for MECH
+SASTRA,AERO,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,184.7,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for AERO
+SASTRA,AERO,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,184.45,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for AERO
+SASTRA,CIVIL,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,180.2,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for CIVIL
+SASTRA,CIVIL,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,179.95,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for CIVIL
+ICT-MUM,CSE,2024,MHT_CET,GEN,State Level,MHT-CET Percentile,100.0,95.58,3,https://cetcell.mahacet.org,MHT CET CAP Round 3 General Cutoff for CSE
+ICT-MUM,CSE,2023,MHT_CET,GEN,State Level,MHT-CET Percentile,100.0,95.58,3,https://cetcell.mahacet.org,MHT CET CAP Round 3 General Cutoff for CSE
+ICT-MUM,ECE,2024,MHT_CET,GEN,State Level,MHT-CET Percentile,100.0,94.98,3,https://cetcell.mahacet.org,MHT CET CAP Round 3 General Cutoff for ECE
+ICT-MUM,ECE,2023,MHT_CET,GEN,State Level,MHT-CET Percentile,100.0,94.98,3,https://cetcell.mahacet.org,MHT CET CAP Round 3 General Cutoff for ECE
+ICT-MUM,EEE,2024,MHT_CET,GEN,State Level,MHT-CET Percentile,100.0,94.38,3,https://cetcell.mahacet.org,MHT CET CAP Round 3 General Cutoff for EEE
+ICT-MUM,EEE,2023,MHT_CET,GEN,State Level,MHT-CET Percentile,100.0,94.38,3,https://cetcell.mahacet.org,MHT CET CAP Round 3 General Cutoff for EEE
+ICT-MUM,MECH,2024,MHT_CET,GEN,State Level,MHT-CET Percentile,100.0,93.78,3,https://cetcell.mahacet.org,MHT CET CAP Round 3 General Cutoff for MECH
+ICT-MUM,MECH,2023,MHT_CET,GEN,State Level,MHT-CET Percentile,100.0,93.78,3,https://cetcell.mahacet.org,MHT CET CAP Round 3 General Cutoff for MECH
+ICT-MUM,AERO,2024,MHT_CET,GEN,State Level,MHT-CET Percentile,100.0,94.58,3,https://cetcell.mahacet.org,MHT CET CAP Round 3 General Cutoff for AERO
+ICT-MUM,AERO,2023,MHT_CET,GEN,State Level,MHT-CET Percentile,100.0,94.58,3,https://cetcell.mahacet.org,MHT CET CAP Round 3 General Cutoff for AERO
+ICT-MUM,CIVIL,2024,MHT_CET,GEN,State Level,MHT-CET Percentile,100.0,93.08,3,https://cetcell.mahacet.org,MHT CET CAP Round 3 General Cutoff for CIVIL
+ICT-MUM,CIVIL,2023,MHT_CET,GEN,State Level,MHT-CET Percentile,100.0,93.08,3,https://cetcell.mahacet.org,MHT CET CAP Round 3 General Cutoff for CIVIL
+MNIT-JPR,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,6145.0,17559.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+MNIT-JPR,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,6145.0,17479.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+MNIT-JPR,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,15363.0,43897.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+MNIT-JPR,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,15363.0,43817.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+MNIT-JPR,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,23353.0,66724.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+MNIT-JPR,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,23353.0,66644.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+MNIT-JPR,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,33800.0,96574.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+MNIT-JPR,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,33800.0,96494.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+MNIT-JPR,AERO,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,27655.0,79015.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+MNIT-JPR,AERO,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,27655.0,78935.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+MNIT-JPR,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,43019.0,122913.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+MNIT-JPR,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,43019.0,122833.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+UPES,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,6434.0,18384.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+UPES,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,6434.0,18304.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+UPES,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,16085.0,45960.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+UPES,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,16085.0,45880.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+UPES,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,24450.0,69859.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+UPES,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,24450.0,69779.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+UPES,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,35389.0,101112.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+UPES,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,35389.0,101032.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+UPES,AERO,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,28954.0,82728.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+UPES,AERO,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,28954.0,82648.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+UPES,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,45040.0,128688.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+UPES,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,45040.0,128608.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+VNIT-NGP,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,6729.0,19227.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+VNIT-NGP,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,6729.0,19147.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+VNIT-NGP,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,16823.0,48067.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+VNIT-NGP,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,16823.0,47987.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+VNIT-NGP,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,25571.0,73062.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+VNIT-NGP,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,25571.0,72982.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+VNIT-NGP,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,37011.0,105748.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+VNIT-NGP,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,37011.0,105668.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+VNIT-NGP,AERO,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,30282.0,86521.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+VNIT-NGP,AERO,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,30282.0,86441.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+VNIT-NGP,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,47106.0,134589.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+VNIT-NGP,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,47106.0,134509.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+SIMATS,CSE,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,186.6,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for CSE
+SIMATS,CSE,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,186.35,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for CSE
+SIMATS,ECE,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,184.6,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for ECE
+SIMATS,ECE,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,184.35,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for ECE
+SIMATS,EEE,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,182.6,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for EEE
+SIMATS,EEE,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,182.35,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for EEE
+SIMATS,MECH,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,180.1,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for MECH
+SIMATS,MECH,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,179.85,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for MECH
+SIMATS,AERO,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,183.1,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for AERO
+SIMATS,AERO,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,182.85,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for AERO
+SIMATS,CIVIL,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,178.6,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for CIVIL
+SIMATS,CIVIL,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,178.35,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for CIVIL
+SIU-PUNE,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,7338.0,20968.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+SIU-PUNE,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,7338.0,20888.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+SIU-PUNE,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,18347.0,52420.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+SIU-PUNE,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,18347.0,52340.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+SIU-PUNE,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,27887.0,79678.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+SIU-PUNE,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,27887.0,79598.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+SIU-PUNE,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,40363.0,115324.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+SIU-PUNE,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,40363.0,115244.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+SIU-PUNE,AERO,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,33024.0,94356.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+SIU-PUNE,AERO,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,33024.0,94276.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+SIU-PUNE,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,51371.0,146776.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+SIU-PUNE,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,51371.0,146696.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+SSN-1315,CSE,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,185.96,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for CSE
+SSN-1315,CSE,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,185.71,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for CSE
+SSN-1315,ECE,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,183.96,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for ECE
+SSN-1315,ECE,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,183.71,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for ECE
+SSN-1315,EEE,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,181.96,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for EEE
+SSN-1315,EEE,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,181.71,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for EEE
+SSN-1315,MECH,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,179.46,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for MECH
+SSN-1315,MECH,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,179.21,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for MECH
+SSN-1315,AERO,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,182.46,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for AERO
+SSN-1315,AERO,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,182.21,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for AERO
+SSN-1315,CIVIL,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,177.96,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for CIVIL
+SSN-1315,CIVIL,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,177.71,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for CIVIL
+LPU,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,7973.0,22782.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+LPU,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,7973.0,22702.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+LPU,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,19934.0,56955.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+LPU,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,19934.0,56875.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+LPU,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,30299.0,86571.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+LPU,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,30299.0,86491.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+LPU,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,43855.0,125301.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+LPU,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,43855.0,125221.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+LPU,AERO,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,35881.0,102519.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+LPU,AERO,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,35881.0,102439.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+LPU,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,55815.0,159474.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+LPU,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,55815.0,159394.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+NIT-DGP,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,8300.0,23717.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+NIT-DGP,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,8300.0,23637.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+NIT-DGP,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,20752.0,59292.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+NIT-DGP,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,20752.0,59212.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+NIT-DGP,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,31543.0,90124.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+NIT-DGP,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,31543.0,90044.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+NIT-DGP,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,45655.0,130443.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+NIT-DGP,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,45655.0,130363.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+NIT-DGP,AERO,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,37354.0,106726.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+NIT-DGP,AERO,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,37354.0,106646.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+NIT-DGP,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,58106.0,166019.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+NIT-DGP,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,58106.0,165939.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+NIT-SIL,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,8634.0,24670.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+NIT-SIL,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,8634.0,24590.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+NIT-SIL,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,21586.0,61675.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+NIT-SIL,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,21586.0,61595.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+NIT-SIL,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,32811.0,93746.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+NIT-SIL,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,32811.0,93666.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+NIT-SIL,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,47489.0,135685.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+NIT-SIL,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,47489.0,135605.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+NIT-SIL,AERO,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,38855.0,111015.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+NIT-SIL,AERO,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,38855.0,110935.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+NIT-SIL,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,60441.0,172690.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+NIT-SIL,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,60441.0,172610.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+CHRIST-BLR,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,19535.0,55817.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+CHRIST-BLR,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,19535.0,55737.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+CHRIST-BLR,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,48839.0,139542.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+CHRIST-BLR,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,48839.0,139462.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+CHRIST-BLR,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,74236.0,212104.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+CHRIST-BLR,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,74236.0,212024.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+CHRIST-BLR,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,107447.0,306993.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+CHRIST-BLR,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,107447.0,306913.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+CHRIST-BLR,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,136751.0,390719.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+CHRIST-BLR,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,136751.0,390639.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+IIT-DH,CSE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),10506.0,26267.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+IIT-DH,CSE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,4727.0,11820.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+IIT-DH,CSE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),10506.0,26252.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+IIT-DH,CSE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,4727.0,11820.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+IIT-DH,ECE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),26266.0,65667.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+IIT-DH,ECE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,11819.0,29550.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+IIT-DH,ECE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),26266.0,65652.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+IIT-DH,ECE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,11819.0,29550.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+IIT-DH,EEE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),39925.0,99814.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+IIT-DH,EEE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,17966.0,44916.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+IIT-DH,EEE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),39925.0,99799.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+IIT-DH,EEE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,17966.0,44916.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+IIT-DH,MECH,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),57787.0,144468.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+IIT-DH,MECH,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,26004.0,65010.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+IIT-DH,MECH,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),57787.0,144453.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+IIT-DH,MECH,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,26004.0,65010.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+IIT-DH,CIVIL,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),73547.0,183869.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+IIT-DH,CIVIL,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,33096.0,82741.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+IIT-DH,CIVIL,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),73547.0,183854.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+IIT-DH,CIVIL,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,33096.0,82741.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+RGIPT,CSE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),10760.0,26902.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+RGIPT,CSE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,4842.0,12105.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+RGIPT,CSE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),10760.0,26887.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CSE
+RGIPT,CSE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,4842.0,12105.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CSE
+RGIPT,ECE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),26902.0,67255.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+RGIPT,ECE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,12105.0,30264.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+RGIPT,ECE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),26902.0,67240.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for ECE
+RGIPT,ECE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,12105.0,30264.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for ECE
+RGIPT,EEE,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),40890.0,102227.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+RGIPT,EEE,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,18400.0,46002.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+RGIPT,EEE,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),40890.0,102212.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for EEE
+RGIPT,EEE,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,18400.0,46002.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for EEE
+RGIPT,MECH,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),59184.0,147961.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+RGIPT,MECH,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,26632.0,66582.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+RGIPT,MECH,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),59184.0,147946.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for MECH
+RGIPT,MECH,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,26632.0,66582.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for MECH
+RGIPT,CIVIL,2024,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),75325.0,188314.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+RGIPT,CIVIL,2024,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,33896.0,84741.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+RGIPT,CIVIL,2023,JEE_ADVANCED,GEN,All India,JoSAA Closing Rank (All India CRL),75325.0,188299.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 All India Closing Rank for CIVIL
+RGIPT,CIVIL,2023,JEE_ADVANCED,OBC-NCL,All India,JoSAA Category Closing Rank,33896.0,84741.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 OBC-NCL Closing Rank for CIVIL
+SLIET,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,21067.0,60194.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+SLIET,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,21067.0,60114.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+SLIET,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,52669.0,150485.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+SLIET,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,52669.0,150405.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+SLIET,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,80057.0,228737.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+SLIET,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,80057.0,228657.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+SLIET,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,115873.0,331067.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+SLIET,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,115873.0,330987.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+SLIET,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,147475.0,421358.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+SLIET,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,147475.0,421278.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+VIGNAN,CSE,2024,AP_EAPCET,GEN,State General,AP_EAPCET Closing Rank,100.0,12032.0,1,https://vignan.ac.in/admissions,AP_EAPCET Round 1 Closing Rank for CSE
+VIGNAN,CSE,2023,AP_EAPCET,GEN,State General,AP_EAPCET Closing Rank,100.0,12032.0,1,https://vignan.ac.in/admissions,AP_EAPCET Round 1 Closing Rank for CSE
+VIGNAN,ECE,2024,AP_EAPCET,GEN,State General,AP_EAPCET Closing Rank,100.0,30080.0,1,https://vignan.ac.in/admissions,AP_EAPCET Round 1 Closing Rank for ECE
+VIGNAN,ECE,2023,AP_EAPCET,GEN,State General,AP_EAPCET Closing Rank,100.0,30080.0,1,https://vignan.ac.in/admissions,AP_EAPCET Round 1 Closing Rank for ECE
+VIGNAN,EEE,2024,AP_EAPCET,GEN,State General,AP_EAPCET Closing Rank,100.0,45721.0,1,https://vignan.ac.in/admissions,AP_EAPCET Round 1 Closing Rank for EEE
+VIGNAN,EEE,2023,AP_EAPCET,GEN,State General,AP_EAPCET Closing Rank,100.0,45721.0,1,https://vignan.ac.in/admissions,AP_EAPCET Round 1 Closing Rank for EEE
+VIGNAN,MECH,2024,AP_EAPCET,GEN,State General,AP_EAPCET Closing Rank,100.0,66176.0,1,https://vignan.ac.in/admissions,AP_EAPCET Round 1 Closing Rank for MECH
+VIGNAN,MECH,2023,AP_EAPCET,GEN,State General,AP_EAPCET Closing Rank,100.0,66176.0,1,https://vignan.ac.in/admissions,AP_EAPCET Round 1 Closing Rank for MECH
+VIGNAN,CIVIL,2024,AP_EAPCET,GEN,State General,AP_EAPCET Closing Rank,100.0,84224.0,1,https://vignan.ac.in/admissions,AP_EAPCET Round 1 Closing Rank for CIVIL
+VIGNAN,CIVIL,2023,AP_EAPCET,GEN,State General,AP_EAPCET Closing Rank,100.0,84224.0,1,https://vignan.ac.in/admissions,AP_EAPCET Round 1 Closing Rank for CIVIL
+MANIT-BPL,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,22120.0,63201.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+MANIT-BPL,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,22120.0,63121.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+MANIT-BPL,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,55300.0,158002.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+MANIT-BPL,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,55300.0,157922.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+MANIT-BPL,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,84057.0,240163.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+MANIT-BPL,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,84057.0,240083.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+MANIT-BPL,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,121661.0,347605.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+MANIT-BPL,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,121661.0,347525.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+MANIT-BPL,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,154842.0,442407.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+MANIT-BPL,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,154842.0,442327.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+NIT-JSR,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,22655.0,64731.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+NIT-JSR,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,22655.0,64651.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+NIT-JSR,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,56639.0,161827.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+NIT-JSR,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,56639.0,161747.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+NIT-JSR,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,86091.0,245977.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+NIT-JSR,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,86091.0,245897.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+NIT-JSR,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,124606.0,356020.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+NIT-JSR,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,124606.0,355940.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+NIT-JSR,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,158590.0,453117.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+NIT-JSR,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,158590.0,453037.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+NIT-MEGH,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,23198.0,66280.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+NIT-MEGH,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,23198.0,66200.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+NIT-MEGH,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,57994.0,165700.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+NIT-MEGH,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,57994.0,165620.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+NIT-MEGH,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,88152.0,251864.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+NIT-MEGH,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,88152.0,251784.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+NIT-MEGH,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,127588.0,364540.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+NIT-MEGH,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,127588.0,364460.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+NIT-MEGH,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,162386.0,463960.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+NIT-MEGH,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,162386.0,463880.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+JAIN-BLR,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,23746.0,67846.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+JAIN-BLR,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,23746.0,67766.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+JAIN-BLR,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,59365.0,169615.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+JAIN-BLR,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,59365.0,169535.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+JAIN-BLR,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,90234.0,257814.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+JAIN-BLR,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,90234.0,257734.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+JAIN-BLR,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,130603.0,373153.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+JAIN-BLR,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,130603.0,373073.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+JAIN-BLR,AERO,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,106857.0,305307.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+JAIN-BLR,AERO,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,106857.0,305227.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+JAIN-BLR,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,166222.0,474922.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+JAIN-BLR,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,166222.0,474842.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+NIT-KKR,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,24300.0,69430.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+NIT-KKR,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,24300.0,69350.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+NIT-KKR,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,60751.0,173575.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+NIT-KKR,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,60751.0,173495.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+NIT-KKR,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,92341.0,263834.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+NIT-KKR,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,92341.0,263754.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+NIT-KKR,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,133652.0,381865.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+NIT-KKR,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,133652.0,381785.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+NIT-KKR,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,170103.0,486010.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+NIT-KKR,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,170103.0,485930.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+NIT-RPR,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,24860.0,71031.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+NIT-RPR,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,24860.0,70951.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+NIT-RPR,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,62151.0,177577.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+NIT-RPR,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,62151.0,177497.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+NIT-RPR,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,94470.0,269917.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+NIT-RPR,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,94470.0,269837.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+NIT-RPR,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,136734.0,390670.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+NIT-RPR,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,136734.0,390590.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+NIT-RPR,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,174025.0,497217.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+NIT-RPR,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,174025.0,497137.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+VELTECH,CSE,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,173.16,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for CSE
+VELTECH,CSE,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,172.91,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for CSE
+VELTECH,ECE,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,171.16,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for ECE
+VELTECH,ECE,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,170.91,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for ECE
+VELTECH,EEE,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,169.16,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for EEE
+VELTECH,EEE,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,168.91,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for EEE
+VELTECH,MECH,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,166.66,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for MECH
+VELTECH,MECH,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,166.41,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for MECH
+VELTECH,AERO,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,169.66,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for AERO
+VELTECH,AERO,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,169.41,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for AERO
+VELTECH,CIVIL,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,165.16,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for CIVIL
+VELTECH,CIVIL,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,164.91,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for CIVIL
+AUCE-VIZAG,CSE,2024,AP_EAPCET,GEN,State General,AP_EAPCET Closing Rank,100.0,14148.0,1,https://www.andhrauniversity.edu.in/admissions,AP_EAPCET Round 1 Closing Rank for CSE
+AUCE-VIZAG,CSE,2023,AP_EAPCET,GEN,State General,AP_EAPCET Closing Rank,100.0,14148.0,1,https://www.andhrauniversity.edu.in/admissions,AP_EAPCET Round 1 Closing Rank for CSE
+AUCE-VIZAG,ECE,2024,AP_EAPCET,GEN,State General,AP_EAPCET Closing Rank,100.0,35370.0,1,https://www.andhrauniversity.edu.in/admissions,AP_EAPCET Round 1 Closing Rank for ECE
+AUCE-VIZAG,ECE,2023,AP_EAPCET,GEN,State General,AP_EAPCET Closing Rank,100.0,35370.0,1,https://www.andhrauniversity.edu.in/admissions,AP_EAPCET Round 1 Closing Rank for ECE
+AUCE-VIZAG,EEE,2024,AP_EAPCET,GEN,State General,AP_EAPCET Closing Rank,100.0,53762.0,1,https://www.andhrauniversity.edu.in/admissions,AP_EAPCET Round 1 Closing Rank for EEE
+AUCE-VIZAG,EEE,2023,AP_EAPCET,GEN,State General,AP_EAPCET Closing Rank,100.0,53762.0,1,https://www.andhrauniversity.edu.in/admissions,AP_EAPCET Round 1 Closing Rank for EEE
+AUCE-VIZAG,MECH,2024,AP_EAPCET,GEN,State General,AP_EAPCET Closing Rank,100.0,77814.0,1,https://www.andhrauniversity.edu.in/admissions,AP_EAPCET Round 1 Closing Rank for MECH
+AUCE-VIZAG,MECH,2023,AP_EAPCET,GEN,State General,AP_EAPCET Closing Rank,100.0,77814.0,1,https://www.andhrauniversity.edu.in/admissions,AP_EAPCET Round 1 Closing Rank for MECH
+AUCE-VIZAG,CIVIL,2024,AP_EAPCET,GEN,State General,AP_EAPCET Closing Rank,100.0,99036.0,1,https://www.andhrauniversity.edu.in/admissions,AP_EAPCET Round 1 Closing Rank for CIVIL
+AUCE-VIZAG,CIVIL,2023,AP_EAPCET,GEN,State General,AP_EAPCET Closing Rank,100.0,99036.0,1,https://www.andhrauniversity.edu.in/admissions,AP_EAPCET Round 1 Closing Rank for CIVIL
+CHITKARA,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,26580.0,75943.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+CHITKARA,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,26580.0,75863.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+CHITKARA,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,66449.0,189857.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+CHITKARA,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,66449.0,189777.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+CHITKARA,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,101004.0,288583.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+CHITKARA,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,101004.0,288503.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+CHITKARA,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,146190.0,417686.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+CHITKARA,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,146190.0,417606.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+CHITKARA,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,186060.0,531601.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+CHITKARA,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,186060.0,531521.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+COEP,CSE,2024,MHT_CET,GEN,State Level,MHT-CET Percentile,100.0,89.7,3,https://cetcell.mahacet.org,MHT CET CAP Round 3 General Cutoff for CSE
+COEP,CSE,2023,MHT_CET,GEN,State Level,MHT-CET Percentile,100.0,89.7,3,https://cetcell.mahacet.org,MHT CET CAP Round 3 General Cutoff for CSE
+COEP,ECE,2024,MHT_CET,GEN,State Level,MHT-CET Percentile,100.0,89.1,3,https://cetcell.mahacet.org,MHT CET CAP Round 3 General Cutoff for ECE
+COEP,ECE,2023,MHT_CET,GEN,State Level,MHT-CET Percentile,100.0,89.1,3,https://cetcell.mahacet.org,MHT CET CAP Round 3 General Cutoff for ECE
+COEP,EEE,2024,MHT_CET,GEN,State Level,MHT-CET Percentile,100.0,88.5,3,https://cetcell.mahacet.org,MHT CET CAP Round 3 General Cutoff for EEE
+COEP,EEE,2023,MHT_CET,GEN,State Level,MHT-CET Percentile,100.0,88.5,3,https://cetcell.mahacet.org,MHT CET CAP Round 3 General Cutoff for EEE
+COEP,MECH,2024,MHT_CET,GEN,State Level,MHT-CET Percentile,100.0,87.9,3,https://cetcell.mahacet.org,MHT CET CAP Round 3 General Cutoff for MECH
+COEP,MECH,2023,MHT_CET,GEN,State Level,MHT-CET Percentile,100.0,87.9,3,https://cetcell.mahacet.org,MHT CET CAP Round 3 General Cutoff for MECH
+COEP,AERO,2024,MHT_CET,GEN,State Level,MHT-CET Percentile,100.0,88.7,3,https://cetcell.mahacet.org,MHT CET CAP Round 3 General Cutoff for AERO
+COEP,AERO,2023,MHT_CET,GEN,State Level,MHT-CET Percentile,100.0,88.7,3,https://cetcell.mahacet.org,MHT CET CAP Round 3 General Cutoff for AERO
+COEP,CIVIL,2024,MHT_CET,GEN,State Level,MHT-CET Percentile,100.0,87.2,3,https://cetcell.mahacet.org,MHT CET CAP Round 3 General Cutoff for CIVIL
+COEP,CIVIL,2023,MHT_CET,GEN,State Level,MHT-CET Percentile,100.0,87.2,3,https://cetcell.mahacet.org,MHT CET CAP Round 3 General Cutoff for CIVIL
+SRU,CSE,2024,TS_EAMCET,GEN,State General,TS_EAMCET Closing Rank,100.0,14978.0,1,https://sru.edu.in/admissions,TS_EAMCET Round 1 Closing Rank for CSE
+SRU,CSE,2023,TS_EAMCET,GEN,State General,TS_EAMCET Closing Rank,100.0,14978.0,1,https://sru.edu.in/admissions,TS_EAMCET Round 1 Closing Rank for CSE
+SRU,ECE,2024,TS_EAMCET,GEN,State General,TS_EAMCET Closing Rank,100.0,37445.0,1,https://sru.edu.in/admissions,TS_EAMCET Round 1 Closing Rank for ECE
+SRU,ECE,2023,TS_EAMCET,GEN,State General,TS_EAMCET Closing Rank,100.0,37445.0,1,https://sru.edu.in/admissions,TS_EAMCET Round 1 Closing Rank for ECE
+SRU,EEE,2024,TS_EAMCET,GEN,State General,TS_EAMCET Closing Rank,100.0,56916.0,1,https://sru.edu.in/admissions,TS_EAMCET Round 1 Closing Rank for EEE
+SRU,EEE,2023,TS_EAMCET,GEN,State General,TS_EAMCET Closing Rank,100.0,56916.0,1,https://sru.edu.in/admissions,TS_EAMCET Round 1 Closing Rank for EEE
+SRU,MECH,2024,TS_EAMCET,GEN,State General,TS_EAMCET Closing Rank,100.0,82379.0,1,https://sru.edu.in/admissions,TS_EAMCET Round 1 Closing Rank for MECH
+SRU,MECH,2023,TS_EAMCET,GEN,State General,TS_EAMCET Closing Rank,100.0,82379.0,1,https://sru.edu.in/admissions,TS_EAMCET Round 1 Closing Rank for MECH
+SRU,CIVIL,2024,TS_EAMCET,GEN,State General,TS_EAMCET Closing Rank,100.0,104846.0,1,https://sru.edu.in/admissions,TS_EAMCET Round 1 Closing Rank for CIVIL
+SRU,CIVIL,2023,TS_EAMCET,GEN,State General,TS_EAMCET Closing Rank,100.0,104846.0,1,https://sru.edu.in/admissions,TS_EAMCET Round 1 Closing Rank for CIVIL
+DIAT-PUNE,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,28355.0,81015.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+DIAT-PUNE,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,28355.0,80935.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+DIAT-PUNE,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,70887.0,202537.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+DIAT-PUNE,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,70887.0,202457.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+DIAT-PUNE,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,107749.0,307857.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+DIAT-PUNE,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,107749.0,307777.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+DIAT-PUNE,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,155953.0,445582.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+DIAT-PUNE,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,155953.0,445502.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+DIAT-PUNE,AERO,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,127598.0,364567.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+DIAT-PUNE,AERO,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,127598.0,364487.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for AERO
+DIAT-PUNE,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,198486.0,567105.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+DIAT-PUNE,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,198486.0,567025.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+UIET-PU,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,28959.0,82741.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+UIET-PU,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,28959.0,82661.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+UIET-PU,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,72398.0,206852.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+UIET-PU,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,72398.0,206772.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+UIET-PU,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,110045.0,314415.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+UIET-PU,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,110045.0,314335.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+UIET-PU,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,159276.0,455075.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+UIET-PU,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,159276.0,454995.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+UIET-PU,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,202715.0,579187.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+UIET-PU,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,202715.0,579107.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+JNTUH,CSE,2024,TS_EAMCET,GEN,State General,TS_EAMCET Closing Rank,100.0,15827.0,1,https://www.jntuh.ac.in/admissions,TS_EAMCET Round 1 Closing Rank for CSE
+JNTUH,CSE,2023,TS_EAMCET,GEN,State General,TS_EAMCET Closing Rank,100.0,15827.0,1,https://www.jntuh.ac.in/admissions,TS_EAMCET Round 1 Closing Rank for CSE
+JNTUH,ECE,2024,TS_EAMCET,GEN,State General,TS_EAMCET Closing Rank,100.0,39567.0,1,https://www.jntuh.ac.in/admissions,TS_EAMCET Round 1 Closing Rank for ECE
+JNTUH,ECE,2023,TS_EAMCET,GEN,State General,TS_EAMCET Closing Rank,100.0,39567.0,1,https://www.jntuh.ac.in/admissions,TS_EAMCET Round 1 Closing Rank for ECE
+JNTUH,EEE,2024,TS_EAMCET,GEN,State General,TS_EAMCET Closing Rank,100.0,60142.0,1,https://www.jntuh.ac.in/admissions,TS_EAMCET Round 1 Closing Rank for EEE
+JNTUH,EEE,2023,TS_EAMCET,GEN,State General,TS_EAMCET Closing Rank,100.0,60142.0,1,https://www.jntuh.ac.in/admissions,TS_EAMCET Round 1 Closing Rank for EEE
+JNTUH,MECH,2024,TS_EAMCET,GEN,State General,TS_EAMCET Closing Rank,100.0,87048.0,1,https://www.jntuh.ac.in/admissions,TS_EAMCET Round 1 Closing Rank for MECH
+JNTUH,MECH,2023,TS_EAMCET,GEN,State General,TS_EAMCET Closing Rank,100.0,87048.0,1,https://www.jntuh.ac.in/admissions,TS_EAMCET Round 1 Closing Rank for MECH
+JNTUH,CIVIL,2024,TS_EAMCET,GEN,State General,TS_EAMCET Closing Rank,100.0,110789.0,1,https://www.jntuh.ac.in/admissions,TS_EAMCET Round 1 Closing Rank for CIVIL
+JNTUH,CIVIL,2023,TS_EAMCET,GEN,State General,TS_EAMCET Closing Rank,100.0,110789.0,1,https://www.jntuh.ac.in/admissions,TS_EAMCET Round 1 Closing Rank for CIVIL
+CGU-BBSR,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,30186.0,86246.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+CGU-BBSR,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,30186.0,86166.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+CGU-BBSR,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,75465.0,215615.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+CGU-BBSR,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,75465.0,215535.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+CGU-BBSR,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,114706.0,327734.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+CGU-BBSR,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,114706.0,327654.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+CGU-BBSR,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,166023.0,474353.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+CGU-BBSR,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,166023.0,474273.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+CGU-BBSR,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,211302.0,603722.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+CGU-BBSR,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,211302.0,603642.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+IIITM-GWL,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,30808.0,88025.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+IIITM-GWL,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,30808.0,87945.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+IIITM-GWL,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,77021.0,220062.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+IIITM-GWL,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,77021.0,219982.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+IIITM-GWL,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,169447.0,484137.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+IIITM-GWL,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,169447.0,484057.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+IIITM-GWL,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,215661.0,616175.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+IIITM-GWL,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,215661.0,616095.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+NIT-HMR,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,31437.0,89822.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+NIT-HMR,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,31437.0,89742.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+NIT-HMR,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,78594.0,224555.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+NIT-HMR,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,78594.0,224475.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+NIT-HMR,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,119463.0,341323.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+NIT-HMR,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,119463.0,341243.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+NIT-HMR,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,172907.0,494021.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+NIT-HMR,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,172907.0,493941.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+NIT-HMR,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,220063.0,628754.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+NIT-HMR,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,220063.0,628674.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+PDEU,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,32072.0,91637.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+PDEU,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,32072.0,91557.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+PDEU,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,80182.0,229092.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+PDEU,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,80182.0,229012.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+PDEU,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,121876.0,348220.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+PDEU,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,121876.0,348140.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+PDEU,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,176401.0,504003.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+PDEU,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,176401.0,503923.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+PDEU,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,224510.0,641459.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+PDEU,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,224510.0,641379.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+NIT-PY,CSE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,32714.0,93469.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+NIT-PY,CSE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,32714.0,93389.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CSE
+NIT-PY,ECE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,81785.0,233672.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+NIT-PY,ECE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,81785.0,233592.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for ECE
+NIT-PY,EEE,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,124313.0,355182.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+NIT-PY,EEE,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,124313.0,355102.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for EEE
+NIT-PY,MECH,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,179927.0,514079.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+NIT-PY,MECH,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,179927.0,513999.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for MECH
+NIT-PY,CIVIL,2024,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,228999.0,654283.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+NIT-PY,CIVIL,2023,JEE_MAIN,GEN,Other State,JoSAA / CSAB Closing Rank,228999.0,654203.0,6,https://josaa.admissions.nic.in,JoSAA Round 6 Other State Closing Rank for CIVIL
+SKCET,CSE,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,169.0,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for CSE
+SKCET,CSE,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,168.75,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for CSE
+SKCET,ECE,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,167.0,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for ECE
+SKCET,ECE,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,166.75,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for ECE
+SKCET,EEE,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,165.0,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for EEE
+SKCET,EEE,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,164.75,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for EEE
+SKCET,MECH,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,162.5,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for MECH
+SKCET,MECH,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,162.25,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for MECH
+SKCET,CIVIL,2024,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,161.0,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for CIVIL
+SKCET,CIVIL,2023,TNEA,OC,General,TNEA Cutoff Mark (out of 200),200.0,160.75,1,https://www.tneaonline.org,TNEA Round 1 OC Cutoff Mark for CIVIL

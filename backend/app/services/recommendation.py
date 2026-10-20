@@ -651,9 +651,40 @@ def recommend_colleges(db: Session, profile: StudentProfile) -> RecommendationRe
 
     relaxations = []
     if total_found == 0:
-        relaxations.append("Consider relaxing your tuition or total budget cap.")
-        relaxations.append("Consider widening your preferred city or location preference.")
-        relaxations.append("Note: Mandatory Class 12 PCM eligibility criteria cannot be relaxed.")
+        # 1. Check if budget was the bottleneck
+        if profile.max_tuition_budget is not None:
+            col_ids = list(matched_college_ids.keys())
+            lowest_fee_rec = db.query(FeeDetail, College).join(
+                College, FeeDetail.college_id == College.id
+            ).filter(FeeDetail.college_id.in_(col_ids)).order_by(FeeDetail.annual_tuition_fee.asc()).first()
+            if lowest_fee_rec and lowest_fee_rec[0].annual_tuition_fee > profile.max_tuition_budget:
+                relaxations.append(
+                    f"Your annual tuition budget cap (₹{profile.max_tuition_budget:,.0f}) is below the minimum verified tuition "
+                    f"for {target_course_code} (₹{lowest_fee_rec[0].annual_tuition_fee:,.0f}/yr at {lowest_fee_rec[1].name}). "
+                    f"Consider raising your budget to ₹{lowest_fee_rec[0].annual_tuition_fee:,.0f} or above."
+                )
+
+        # 2. Check if PCM eligibility was the bottleneck
+        if profile.pcm_percentage is not None:
+            pcm_reqs = [c.minimum_pcm_percentage for c in matching_courses if c.minimum_pcm_percentage is not None]
+            if pcm_reqs and all(profile.pcm_percentage < p for p in pcm_reqs):
+                min_pcm = min(pcm_reqs)
+                relaxations.append(
+                    f"Your Class 12 PCM percentage ({profile.pcm_percentage}%) is below the minimum required eligibility "
+                    f"threshold (minimum {min_pcm}% PCM required) for verified {target_course_code} programs."
+                )
+
+        # 3. Check if college type filter was the bottleneck
+        if profile.preferred_college_type and profile.preferred_college_type != "All":
+            relaxations.append(
+                f"No institutions matching college type '{profile.preferred_college_type}' offer {target_course_code} under {target_exam}. "
+                "Consider setting College Type to 'All' to review public and autonomous options."
+            )
+
+        if not relaxations:
+            relaxations.append("Consider relaxing your tuition or total budget cap.")
+            relaxations.append("Consider widening your preferred city or location preference.")
+            relaxations.append("Note: Mandatory Class 12 PCM eligibility criteria cannot be relaxed.")
 
     return RecommendationResponse(
         success=True,

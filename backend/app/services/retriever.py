@@ -338,9 +338,27 @@ def retrieve_vector_evidence(
             with open(meta_file, "r", encoding="utf-8") as f:
                 metadata = json.load(f)
 
+            # Detect topic intent to prioritize relevant sections
+            q_lower_v = query_text.lower()
+            topic_priorities = []
+            if any(w in q_lower_v for w in ["hostel", "room", "mess", "food", "dining", "accommodation"]):
+                topic_priorities.append("hostels")
+            if any(w in q_lower_v for w in ["scholarship", "financial aid", "waiver", "studentship"]):
+                topic_priorities.append("scholarships")
+            if any(w in q_lower_v for w in ["fee", "tuition", "cost", "charge", "expense"]):
+                topic_priorities.append("fees")
+            if any(w in q_lower_v for w in ["placement", "recruiter", "package", "salary", "ctc"]):
+                topic_priorities.append("placements")
+            if any(w in q_lower_v for w in ["admission", "eligibility", "entrance", "exam", "josaa", "tnea", "cutoff"]):
+                topic_priorities.append("admissions")
+            if any(w in q_lower_v for w in ["campus", "railway", "station", "bus", "library", "gym", "connectivity", "safety"]):
+                topic_priorities.append("campus")
+
             q_emb = model.encode([query_text], convert_to_numpy=True, normalize_embeddings=True)
-            search_k = min(top_k * 3, index.ntotal)
+            search_k = min(top_k * 5, index.ntotal)
             distances, indices = index.search(q_emb.astype("float32"), search_k)
+
+            seen_snippets = set()
 
             for dist, idx in zip(distances[0], indices[0]):
                 if idx < 0 or idx >= len(metadata):
@@ -352,21 +370,44 @@ def retrieve_vector_evidence(
                 if target_ids and chunk_col_id not in target_ids:
                     continue
 
-                col_name = None
-                if chunk_col_id:
+                # Relevance threshold filter
+                base_score = float(dist)
+                if base_score < 0.28:
+                    continue
+
+                # Topic-based boost
+                chunk_topics = meta.get("topic_tags", [])
+                boost = 0.0
+                if any(t in chunk_topics for t in topic_priorities):
+                    boost += 0.12
+
+                final_score = round(min(0.99, base_score + boost), 3)
+
+                # Deduplicate near-identical snippets
+                snip_sig = meta["text"][:80].strip()
+                if snip_sig in seen_snippets:
+                    continue
+                seen_snippets.add(snip_sig)
+
+                col_name = meta.get("college_name")
+                if not col_name and chunk_col_id:
                     col = db.query(College).filter(College.id == chunk_col_id).first()
                     if col:
                         col_name = col.name
 
+                sec_heading = meta.get("section_heading", "")
+                base_title = meta.get("title", "Official College Document")
+                full_title = f"{base_title} ({sec_heading})" if sec_heading and sec_heading not in base_title else base_title
+
                 results.append(RetrievedEvidence(
                     chunk_id=meta.get("chunk_id", idx),
                     college_name=col_name,
-                    document_title=meta.get("title", "Official College Document"),
+                    document_title=full_title,
                     source_url=meta.get("source_url", ""),
                     page_number=meta.get("page_number", 1),
-                    academic_year=2024,
-                    snippet=meta["text"][:600],
-                    relevance_score=round(float(dist), 3)
+                    academic_year=meta.get("academic_year", 2024),
+                    snippet=meta["text"][:700],
+                    relevance_score=final_score
                 ))
                 if len(results) >= top_k:
                     break

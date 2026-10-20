@@ -83,6 +83,9 @@ class CollegeRecommendationItem(BaseModel):
     sources: List[SourceCitation]
     data_freshness_year: int
     verification_status: str
+    admission_guarantee_disclaimer: str = (
+        "Admission is not guaranteed. Previous-year cutoffs serve as historical reference points and fluctuate annually based on seat availability and applicant competition."
+    )
 
 
 class RecommendationResponse(BaseModel):

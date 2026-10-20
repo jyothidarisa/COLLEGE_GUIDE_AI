@@ -1,0 +1,76 @@
+college_code,academic_year,annual_tuition_fee,hostel_fee_annual,mess_fee_annual,one_time_caution_deposit,total_annual_estimate,fee_breakdown_notes,source_url,last_verified
+IITM,2024,200000.0,86000.0,40000.0,10000.0,326000.0,"Tuition fee: ₹200,000/year. 86000. Room Types: Single, Double, Triple.",https://ugadmissions.iitm.ac.in/?utm_source=chatgpt.com,2024-08-15
+IITD,2024,220000.0,85000.0,40000.0,10000.0,345000.0,"Tuition fee: ₹220,000/year. 85000. Room Types: Single, Double, Triple.",https://home.iitd.ac.in/admissions.php,2024-08-15
+IITB,2024,220000.0,90000.0,40000.0,10000.0,350000.0,"Tuition fee: ₹220,000/year. 90000. Room Types: Single, Double, Triple.",https://www.iitb.ac.in/en/education/admission,2024-08-15
+IITK,2024,220000.0,80000.0,40000.0,10000.0,340000.0,"Tuition fee: ₹220,000/year. 80000. Room Types: Single, Double, Triple.",https://www.iitk.ac.in/doaa/,2024-08-15
+IITKGP,2024,210000.0,75000.0,40000.0,10000.0,325000.0,"Tuition fee: ₹210,000/year. 75000. Room Types: Single, Double, Triple.",https://www.iitkgp.ac.in/admission,2024-08-15
+IITR,2024,210000.0,70000.0,40000.0,10000.0,320000.0,"Tuition fee: ₹210,000/year. 70000. Room Types: Single, Double, Triple.",https://www.iitr.ac.in/Admission,2024-08-15
+IITH,2024,215000.0,65000.0,40000.0,10000.0,320000.0,"Tuition fee: ₹215,000/year. 65000. Room Types: Single, Double, Triple.",https://iith.ac.in/academics/admissions/,2024-08-15
+IITG,2024,210000.0,70000.0,40000.0,10000.0,320000.0,"Tuition fee: ₹210,000/year. 70000. Room Types: Single, Double, Triple.",https://www.iitg.ac.in/admission/,2024-08-15
+NITT,2024,160000.0,45000.0,40000.0,10000.0,245000.0,"Tuition fee: ₹160,000/year. 45000. Room Types: Single, Double, Triple.",https://www.nitt.edu/home/academics/admission/,2024-08-15
+IIT-BHU,2024,210000.0,55000.0,40000.0,10000.0,305000.0,"Tuition fee: ₹210,000/year. 55000. Room Types: Single, Double, Triple.",https://iitbhu.ac.in/admission,2024-08-15
+BITS-P,2024,232500.0,120000.0,40000.0,10000.0,392500.0,"Tuition fee: ₹232,500/year. 120000. Room Types: Double, Triple.",https://www.bits-pilani.ac.in/admission/,2024-08-15
+IITI,2024,210000.0,55000.0,40000.0,10000.0,305000.0,"Tuition fee: ₹210,000/year. 55000. Room Types: Single, Double, Triple.",https://www.iiti.ac.in/page/admission,2024-08-15
+NITR,2024,155000.0,40000.0,40000.0,10000.0,235000.0,"Tuition fee: ₹155,000/year. 40000. Room Types: Single, Double, Triple.",https://www.nitrkl.ac.in/Admissions,2024-08-15
+SRMIST,2024,285000.0,140000.0,40000.0,10000.0,465000.0,"Tuition fee: ₹285,000/year. 140000. Room Types: Double, Triple, Four-sharing.",https://www.srmist.edu.in/admissions/,2024-08-15
+IIT-ISM,2024,205000.0,50000.0,40000.0,10000.0,295000.0,"Tuition fee: ₹205,000/year. 50000. Room Types: Single, Double, Triple.",https://www.iitism.ac.in/Admission,2024-08-15
+VIT-001,2024,245000.0,130000.0,40000.0,10000.0,415000.0,"Tuition fee: ₹245,000/year. 130000. Room Types: Double, Triple, Four-sharing.",https://vit.ac.in/admission,2024-08-15
+NITK,2024,160000.0,42000.0,40000.0,10000.0,242000.0,"Tuition fee: ₹160,000/year. 42000. Room Types: Single, Double, Triple.",https://www.nitk.ac.in/admission,2024-08-15
+JU-KOL,2024,15000.0,20000.0,40000.0,10000.0,75000.0,"Tuition fee: ₹15,000/year. 20000. Room Types: Single, Double, Triple.",https://jaduniv.edu.in/admission,2024-08-15
+IITP,2024,200000.0,48000.0,40000.0,10000.0,288000.0,"Tuition fee: ₹200,000/year. 48000. Room Types: Single, Double, Triple.",https://www.iitp.ac.in/admission,2024-08-15
+CEG-0001,2024,30000.0,25000.0,40000.0,10000.0,95000.0,"Tuition fee: ₹30,000/year. 25000. Room Types: Single, Double, Triple.",https://www.tneaonline.org/,2024-08-15
+NITC,2024,155000.0,38000.0,40000.0,10000.0,233000.0,"Tuition fee: ₹155,000/year. 38000. Room Types: Single, Double, Triple.",https://www.nitc.ac.in/index.php/admissions,2024-08-15
+SOA-BBSR,2024,170000.0,70000.0,40000.0,10000.0,280000.0,"Tuition fee: ₹170,000/year. 70000. Room Types: Double, Triple.",https://www.soa.ac.in/admission,2024-08-15
+AMRITA-CBE,2024,275000.0,115000.0,40000.0,10000.0,430000.0,"Tuition fee: ₹275,000/year. 115000. Room Types: Double, Triple.",https://www.amrita.edu/admission/,2024-08-15
+JMI-DEL,2024,150000.0,40000.0,40000.0,10000.0,230000.0,"Tuition fee: ₹150,000/year. 40000. Room Types: Hostel accommodation; room types per JMI hostel rules/prospectus.",https://jmi.ac.in/,2024-08-15
+IITGN,2024,100000.0,45000.0,40000.0,10000.0,185000.0,"Tuition fee: ₹100,000/year. 45000. Room Types: Single, double and shared rooms.",https://iitgn.ac.in/admissions/btech,2024-08-15
+IIT-MANDI,2024,101000.0,37234.0,40000.0,10000.0,178234.0,"Tuition fee: ₹101,000/year. 37234. Room Types: Hostel accommodation in North and South campus.",https://iitmandi.ac.in/,2024-08-15
+IITJ,2024,100000.0,50000.0,40000.0,10000.0,190000.0,"Tuition fee: ₹100,000/year. 50000. Room Types: Single and double occupancy; first-year students are double occupancy.",https://iitj.ac.in/,2024-08-15
+NITW,2024,45000.0,46000.0,40000.0,10000.0,131000.0,"Tuition fee: ₹45,000/year. 46000. Room Types: Single, double and shared rooms.",https://www.nitw.ac.in/,2024-08-15
+TIET,2024,195000.0,90000.0,40000.0,10000.0,325000.0,"Tuition fee: ₹195,000/year. 90000. Room Types: Single, double and shared rooms.",https://www.thapar.edu/,2024-08-15
+DTU,2024,108000.0,75000.0,40000.0,10000.0,223000.0,"Tuition fee: ₹108,000/year. 75000. Room Types: Single, double and shared rooms.",https://dtu.ac.in/,2024-08-15
+CU-PUNJAB,2024,292000.0,150000.0,40000.0,10000.0,482000.0,"Tuition fee: ₹292,000/year. 150000. Room Types: AC and non-AC 1/2/3/4/5-seater options published by CU.",https://www.cuchd.in/,2024-08-15
+IITRPR,2024,100000.0,50000.0,40000.0,10000.0,190000.0,"Tuition fee: ₹100,000/year. 50000. Room Types: Multiple residential hostels; capacities published by IIT Ropar.",https://www.iitrpr.ac.in/,2024-08-15
+KARE,2024,195000.0,85000.0,40000.0,10000.0,320000.0,"Tuition fee: ₹195,000/year. 85000. Room Types: 2/4/5 bed; AC and non-AC options.",https://www.kalasalingam.ac.in/,2024-08-15
+AMU,2024,30000.0,40000.0,40000.0,10000.0,110000.0,"Tuition fee: ₹30,000/year. 40000. Room Types: Single, double and shared rooms.",https://www.amu.ac.in/,2024-08-15
+KLEF,2024,295000.0,75000.0,40000.0,10000.0,410000.0,"Tuition fee: ₹295,000/year. 75000. Room Types: Single, double and shared rooms.",https://www.kluniversity.in/,2024-08-15
+KIIT,2024,220000.0,32000.0,40000.0,10000.0,292000.0,"Tuition fee: ₹220,000/year. 32000. Room Types: Non-AC 3-bed, Non-AC 2-bed, AC 3-bed, AC 2-bed.",https://kiit.ac.in/,2024-08-15
+AMITY,2024,219000.0,195000.0,40000.0,10000.0,454000.0,"Tuition fee: ₹219,000/year. 195000. Room Types: AC apartment-style single occupancy.",https://www.amity.edu/noida/,2024-08-15
+IIITH,2024,125000.0,60000.0,40000.0,10000.0,225000.0,"Tuition fee: ₹125,000/year. 60000. Room Types: Single, double and shared rooms.",https://www.iiit.ac.in/,2024-08-15
+IIT-BBS,2024,100000.0,50000.0,40000.0,10000.0,190000.0,"Tuition fee: ₹100,000/year. 50000. Room Types: Single, double and shared rooms.",https://www.iitbbs.ac.in/,2024-08-15
+SASTRA,2024,85000.0,65000.0,40000.0,10000.0,190000.0,"Tuition fee: ₹85,000/year. 5000. Room Types: Single, 2-in-1, 3-in-1, 4-in-1, 5-in-1, 6-in-1; bath-attached options.",https://www.sastra.edu/,2024-08-15
+ICT-MUM,2024,75000.0,50000.0,40000.0,10000.0,165000.0,"Tuition fee: ₹75,000/year. 50000. Room Types: Single, double and shared rooms.",https://www.ictmumbai.edu.in/,2024-08-15
+MNIT-JPR,2024,62500.0,60000.0,40000.0,10000.0,162500.0,"Tuition fee: ₹62,500/year. 60000. Room Types: Single, double and shared rooms.",https://mnit.ac.in/,2024-08-15
+UPES,2024,258300.0,195810.0,40000.0,10000.0,494110.0,"Tuition fee: ₹258,300/year. 195810. Room Types: Single, double and shared rooms.",https://www.upes.ac.in/,2024-08-15
+VNIT-NGP,2024,100000.0,60000.0,40000.0,10000.0,200000.0,"Tuition fee: ₹100,000/year. 60000. Room Types: Residential hostels; 10 boys' and 2 girls' hostels reported on official Hostel Section page.",https://vnit.ac.in/,2024-08-15
+SIMATS,2024,150000.0,100000.0,40000.0,10000.0,290000.0,"Tuition fee: ₹150,000/year. 100000. Room Types: Single attached AC/non-AC; 2-in-1, 4-in-1, 5-in-1, 8-in-1, 10-in-1, dormitory options.",https://www.saveetha.ac.in/,2024-08-15
+SIU-PUNE,2024,200000.0,168900.0,40000.0,10000.0,408900.0,"Tuition fee: ₹200,000/year. 168900. Room Types: Single, double and shared rooms.",https://www.siu.edu.in/,2024-08-15
+SSN-1315,2024,120000.0,96000.0,40000.0,10000.0,256000.0,"Tuition fee: ₹120,000/year. 96000. Room Types: Spacious campus accommodation; separate boys' and girls' hostels.",https://www.ssn.edu.in/,2024-08-15
+LPU,2024,320000.0,93000.0,40000.0,10000.0,453000.0,"Tuition fee: ₹320,000/year. 93000. Room Types: Single, double and shared rooms.",https://www.lpu.in/,2024-08-15
+NIT-DGP,2024,205000.0,60000.0,40000.0,10000.0,305000.0,"Tuition fee: ₹205,000/year. 60000. Room Types: Single, Double, Triple.",https://iitgn.ac.in/admissions,2024-08-15
+NIT-SIL,2024,205000.0,60000.0,40000.0,10000.0,305000.0,"Tuition fee: ₹205,000/year. 60000. Room Types: Single, Double, Triple.",https://iitgn.ac.in/admissions,2024-08-15
+CHRIST-BLR,2024,300000.0,90000.0,40000.0,10000.0,430000.0,"Tuition fee: ₹300,000/year. INR 60,000-1,20,000 per year depending on room type. Room Types: Double, Triple Sharing.",https://christuniversity.in/admq,2024-08-15
+IIT-DH,2024,200000.0,22250.0,40000.0,10000.0,262250.0,"Tuition fee: ₹200,000/year. Hostel seat rent INR 1,000/sem, establishment INR 2,500/sem, mess advance approx. INR 20,000-24,500/sem. Room Types: Double occupancy (1st year), Single (from 2nd year).",https://iitdh.ac.in/academics/admissions,2024-08-15
+RGIPT,2024,225000.0,16000.0,40000.0,10000.0,281000.0,"Tuition fee: ₹225,000/year. Hostel Establishment INR 8,000/sem + Seat Rent INR 8,000/sem (approx. INR 16,000/sem). Room Types: Single, Double Sharing.",https://www.rgipt.ac.in/admission,2024-08-15
+SLIET,2024,400000.0,30000.0,40000.0,10000.0,470000.0,"Tuition fee: ₹400,000/year. Approx. INR 25,000-35,000 per year including mess. Room Types: Single, Double, Triple Sharing.",https://sliet.ac.in/admission,2024-08-15
+VIGNAN,2024,280000.0,105000.0,40000.0,10000.0,425000.0,"Tuition fee: ₹280,000/year. Approx. INR 90,000-1,20,000 per year including mess. Room Types: Double, Triple Sharing.",https://vignan.ac.in/admissions,2024-08-15
+MANIT-BPL,2024,156250.0,36000.0,40000.0,10000.0,232250.0,"Tuition fee: ₹156,250/year. Approx. INR 36,000 per year (hostel + mess). Room Types: Double, Triple Sharing.",https://www.manit.ac.in/admission,2024-08-15
+NIT-JSR,2024,156250.0,31250.0,40000.0,10000.0,227500.0,"Tuition fee: ₹156,250/year. Approx. INR 35,000-55,000 per year (hostel + mess); mess advance INR 17,000-18,000/sem. Room Types: Triple (1st year), Double/Single (senior years).",https://www.nitjsr.ac.in/admission,2024-08-15
+NIT-MEGH,2024,149250.0,76750.0,40000.0,10000.0,266000.0,"Tuition fee: ₹149,250/year. Approx. INR 74,000-79,500 per year (hostel + mess + transport). Room Types: Single, Double, Triple, Quadruple Sharing.",https://www.nitm.ac.in/admission,2024-08-15
+JAIN-BLR,2024,325000.0,200000.0,40000.0,10000.0,565000.0,"Tuition fee: ₹325,000/year. Approx. INR 1,80,000-2,20,000 per year. Room Types: Double, Triple Sharing.",https://jainuniversity.ac.in/admissions,2024-08-15
+NIT-KKR,2024,156250.0,21000.0,40000.0,10000.0,217250.0,"Tuition fee: ₹156,250/year. Approx. INR 8,400-21,000 per semester. Room Types: Single, Double, Triple Sharing.",https://www.nitkkr.ac.in/admission,2024-08-15
+NIT-RPR,2024,125000.0,44250.0,40000.0,10000.0,209250.0,"Tuition fee: ₹125,000/year. Approx. INR 43,000-45,500 per year (with mess). Room Types: Double, Triple Sharing.",https://www.nitrr.ac.in/admission,2024-08-15
+VELTECH,2024,265000.0,152500.0,40000.0,10000.0,457500.0,"Tuition fee: ₹265,000/year. Approx. INR 1,05,000-2,00,000 per year. Room Types: Double, Triple Sharing.",https://www.veltech.edu.in/admission,2024-08-15
+AUCE-VIZAG,2024,200000.0,32650.0,40000.0,10000.0,272650.0,"Tuition fee: ₹200,000/year. Approx. INR 31,450-33,850 per year. Room Types: Double Sharing.",https://www.andhrauniversity.edu.in/admissions,2024-08-15
+CHITKARA,2024,475000.0,142500.0,40000.0,10000.0,657500.0,"Tuition fee: ₹475,000/year. Approx. INR 1,10,000-1,75,000 per semester (varies by branch/room type). Room Types: Double, Triple Sharing.",https://www.chitkara.edu.in/admissions,2024-08-15
+COEP,2024,156464.0,37500.0,40000.0,10000.0,233964.0,"Tuition fee: ₹156,464/year. Approx. INR 30,000-45,000 per year. Room Types: Triple, Quadruple Sharing.",https://www.coeptech.ac.in/admission,2024-08-15
+SRU,2024,175000.0,107500.0,40000.0,10000.0,322500.0,"Tuition fee: ₹175,000/year. Approx. INR 85,000-1,30,000 per year including mess. Room Types: AC/Non-AC Single, Double, Triple Sharing.",https://sru.edu.in/admissions,2024-08-15
+DIAT-PUNE,2024,270000.0,65000.0,40000.0,10000.0,375000.0,"Tuition fee: ₹270,000/year. Approx. INR 2,60,000-3,90,000 for full programme duration. Room Types: Single, Double Sharing.",https://www.diat.ac.in/admission,2024-08-15
+UIET-PU,2024,336800.0,65000.0,40000.0,10000.0,441800.0,"Tuition fee: ₹336,800/year. Approx. INR 12,000-14,000 per year. Room Types: Single, Double Sharing.",https://uiet.puchd.ac.in/admission,2024-08-15
+JNTUH,2024,180000.0,65000.0,40000.0,10000.0,285000.0,"Tuition fee: ₹180,000/year. Approx. INR 1,500-3,500 per month (with mess). Room Types: Sharing (up to 5 per room).",https://www.jntuh.ac.in/admissions,2024-08-15
+CGU-BBSR,2024,225000.0,97500.0,40000.0,10000.0,362500.0,"Tuition fee: ₹225,000/year. Approx. INR 35,000-1,60,000 per year (excl. mess). Room Types: AC/Non-AC Double, Triple Sharing.",https://cgu-odisha.ac.in/admission,2024-08-15
+IIITM-GWL,2024,158000.0,37000.0,40000.0,10000.0,235000.0,"Tuition fee: ₹158,000/year. Approx. INR 37,000 per year. Room Types: Shared (1st year), Single/Double based on CGPA (senior years).",https://www.iiitm.ac.in/admission,2024-08-15
+NIT-HMR,2024,156250.0,40000.0,40000.0,10000.0,236250.0,"Tuition fee: ₹156,250/year. Approx. INR 40,000 per semester (hostel + mess). Room Types: Single, Double, Triple Sharing.",https://nith.ac.in/admission,2024-08-15
+PDEU,2024,300000.0,60333.33,40000.0,10000.0,400333.33,"Tuition fee: ₹300,000/year. Approx. INR 85,000 per year + mess fee INR 44,000-52,000 per year. Room Types: AC Double, Triple Sharing.",https://www.pdpu.ac.in/admission,2024-08-15
+NIT-PY,2024,137000.0,16500.0,40000.0,10000.0,193500.0,"Tuition fee: ₹137,000/year. Approx. INR 15,000-18,000 per semester. Room Types: Double, Triple Sharing.",https://www.nitpy.ac.in/admission,2024-08-15
+SKCET,2024,200000.0,90000.0,40000.0,10000.0,330000.0,"Tuition fee: ₹200,000/year. Approx. INR 80,000-1,00,000 per year including mess. Room Types: Double, Triple Sharing.",https://www.skcet.ac.in/admission,2024-08-15
