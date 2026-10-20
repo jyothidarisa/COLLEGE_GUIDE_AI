@@ -44,12 +44,21 @@ export const api = {
   },
 
   // Chatbot / RAG
-  sendMessage: async (message, studentProfile = null, selectedCollegeIds = [], conversationHistory = []) => {
+  sendMessage: async (
+    message,
+    studentProfile = null,
+    selectedCollegeIds = [],
+    conversationHistory = [],
+    sessionId = null,
+    modelType = 'slm'
+  ) => {
     const res = await client.post('/api/chat', {
       message,
       student_profile: studentProfile,
       selected_college_ids: selectedCollegeIds,
       conversation_history: conversationHistory,
+      session_id: sessionId,
+      model_type: modelType,
     });
     return res.data;
   },

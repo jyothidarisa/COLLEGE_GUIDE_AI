@@ -212,6 +212,8 @@ class ChatRequest(BaseModel):
     student_profile: Optional[StudentProfile] = None
     selected_college_ids: Optional[List[int]] = None
     conversation_history: Optional[List[ChatMessage]] = []
+    session_id: Optional[str] = None
+    model_type: Optional[str] = "llm"  # "slm" or "llm"
 
 
 class RetrievedEvidence(BaseModel):
@@ -232,6 +234,11 @@ class ChatResponse(BaseModel):
     is_fallback: bool = False
     warning: Optional[str] = None
     suggested_follow_ups: List[str] = []
+    intent: Optional[str] = None
+    intent_confidence: Optional[float] = None
+    rewritten_query: Optional[str] = None
+    extracted_entities: Optional[Dict[str, Any]] = None
+    model_used: Optional[str] = None
 
 
 # --- Document & Sources Schemas ---

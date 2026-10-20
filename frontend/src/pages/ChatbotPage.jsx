@@ -18,6 +18,11 @@ import api from '../services/api';
 export default function ChatbotPage() {
   const { studentProfile, compareList } = useApp();
 
+  const [sessionId, setSessionId] = useState(
+    () => 'sess_' + Math.random().toString(36).substring(2, 9)
+  );
+  const [modelType, setModelType] = useState('slm');
+
   const [messages, setMessages] = useState([
     {
       role: 'assistant',
@@ -74,7 +79,9 @@ I answer questions strictly using verified university brochures, fee schedules, 
         text,
         studentProfile,
         selectedCollegeIds,
-        historyPayload
+        historyPayload,
+        sessionId,
+        modelType
       );
 
       setMessages((prev) => [
@@ -87,6 +94,10 @@ I answer questions strictly using verified university brochures, fee schedules, 
           is_fallback: res.is_fallback,
           warning: res.warning,
           suggested_follow_ups: res.suggested_follow_ups || [],
+          intent: res.intent,
+          intent_confidence: res.intent_confidence,
+          rewritten_query: res.rewritten_query,
+          model_used: res.model_used,
         },
       ]);
     } catch (err) {
@@ -105,6 +116,7 @@ I answer questions strictly using verified university brochures, fee schedules, 
   };
 
   const handleClearChat = () => {
+    setSessionId('sess_' + Math.random().toString(36).substring(2, 9));
     setMessages([
       {
         role: 'assistant',
@@ -138,13 +150,41 @@ I answer questions strictly using verified university brochures, fee schedules, 
           </div>
         </div>
 
-        <button
-          onClick={handleClearChat}
-          className="px-3 py-1.5 rounded-lg border border-slate-200 text-xs font-semibold text-slate-600 hover:bg-slate-50 flex items-center space-x-1"
-        >
-          <RotateCcw className="w-3.5 h-3.5" />
-          <span>Reset Chat</span>
-        </button>
+        <div className="flex items-center space-x-2">
+          {/* SLM / LLM Selector */}
+          <div className="flex items-center bg-slate-100 p-0.5 rounded-lg border border-slate-200 text-xs font-semibold">
+            <button
+              onClick={() => setModelType('slm')}
+              title="Small Language Model: Fast, deterministic, sub-second latency"
+              className={`px-2.5 py-1 rounded-md transition-all ${
+                modelType === 'slm'
+                  ? 'bg-white text-sky-700 shadow-xs font-bold'
+                  : 'text-slate-500 hover:text-slate-800'
+              }`}
+            >
+              SLM (Fast)
+            </button>
+            <button
+              onClick={() => setModelType('llm')}
+              title="Large Language Model: Nuanced conversational reasoning"
+              className={`px-2.5 py-1 rounded-md transition-all ${
+                modelType === 'llm'
+                  ? 'bg-white text-indigo-700 shadow-xs font-bold'
+                  : 'text-slate-500 hover:text-slate-800'
+              }`}
+            >
+              LLM (Detailed)
+            </button>
+          </div>
+
+          <button
+            onClick={handleClearChat}
+            className="px-3 py-1.5 rounded-lg border border-slate-200 text-xs font-semibold text-slate-600 hover:bg-slate-50 flex items-center space-x-1"
+          >
+            <RotateCcw className="w-3.5 h-3.5" />
+            <span>Reset</span>
+          </button>
+        </div>
       </div>
 
       {/* Chat Messages Container */}
@@ -180,6 +220,25 @@ I answer questions strictly using verified university brochures, fee schedules, 
                 <div className="whitespace-pre-line prose prose-sm max-w-none">
                   {msg.content}
                 </div>
+
+                {/* NLP Metadata Pill */}
+                {msg.role === 'assistant' && msg.intent && (
+                  <div className="flex flex-wrap items-center gap-1.5 pt-1 text-[10px] text-slate-500 border-t border-slate-200/50">
+                    <span className="px-1.5 py-0.5 rounded bg-slate-200/80 text-slate-700 font-mono font-semibold">
+                      {msg.model_used?.toUpperCase() || 'SLM'}
+                    </span>
+                    <span>•</span>
+                    <span className="px-1.5 py-0.5 rounded bg-sky-50 text-sky-700 font-semibold border border-sky-100">
+                      Intent: {msg.intent.replace(/_/g, ' ')}
+                      {msg.intent_confidence ? ` (${Math.round(msg.intent_confidence * 100)}%)` : ''}
+                    </span>
+                    {msg.rewritten_query && (
+                      <span className="italic text-slate-500 truncate max-w-xs" title={msg.rewritten_query}>
+                        &bull; Context resolved: &ldquo;{msg.rewritten_query}&rdquo;
+                      </span>
+                    )}
+                  </div>
+                )}
 
                 {/* Warning notice if in fallback mode */}
                 {msg.warning && (

@@ -122,6 +122,33 @@ def detect_colleges_in_query(db: Session, query_text: str) -> List[College]:
     return detected
 
 
+def query_mentions_unknown_institution(query_text: str, detected_colleges: List[College]) -> bool:
+    """
+    Detects if the query asks about a specific named college or institution
+    that is absent from the verified database (e.g. 'Atlantis Institute', 'Hogwarts University').
+    """
+    if detected_colleges:
+        return False
+    q_lower = query_text.lower()
+    patterns = [
+        r'\b(?:at|for|in|of|about)\s+([a-z\s]+?\s*(?:institute|university|college|academy|campus|school))\b',
+        r'\b([a-z\s]+?\s*(?:institute|university|college|academy)\s+of\s+[a-z\s]+)\b'
+    ]
+    for p in patterns:
+        m = re.search(p, q_lower)
+        if m:
+            matched_name = m.group(1).strip()
+            generic = [
+                "engineering college", "good college", "this college", "that college",
+                "government college", "private college", "reach college", "target college",
+                "safer college", "top college", "best college", "which college", "any college",
+                "btech college", "engineering colleges", "target colleges", "reach colleges"
+            ]
+            if len(matched_name.split()) >= 2 and matched_name not in generic:
+                return True
+    return False
+
+
 def retrieve_structured_evidence(
     db: Session,
     query_text: str,
@@ -142,6 +169,10 @@ def retrieve_structured_evidence(
             target_colleges = [col]
     else:
         target_colleges = detect_colleges_in_query(db, query_text)
+
+    # If the user specifically queried a named institution that is NOT in the database, return empty
+    if not target_colleges and query_mentions_unknown_institution(query_text, target_colleges):
+        return []
 
     target_ids = [c.id for c in target_colleges]
 
@@ -296,6 +327,8 @@ def retrieve_vector_evidence(
         target_ids = {college_id}
     else:
         detected = detect_colleges_in_query(db, query_text)
+        if not detected and query_mentions_unknown_institution(query_text, detected):
+            return []
         target_ids = {c.id for c in detected} if detected else set()
 
     if model is not None and faiss is not None and os.path.exists(index_file) and os.path.exists(meta_file):
