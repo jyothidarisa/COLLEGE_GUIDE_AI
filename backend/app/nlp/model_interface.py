@@ -78,7 +78,7 @@ class SLMModelRunner:
     factual grounding, low latency, and deterministic constraint obedience.
     """
 
-    def __init__(self, model_name: str = "SLM-Compact-0.5B-Local"):
+    def __init__(self, model_name: str = "Local SLM (Deterministic)"):
         self.model_name = model_name
         self.model_type = "slm"
 
@@ -88,23 +88,27 @@ class SLMModelRunner:
         evidence_list: List[RetrievedEvidence],
         student_profile: Optional[StudentProfile] = None,
         context: Optional[SessionContext] = None,
-        conversation_history: Optional[List[ChatMessage]] = None
+        conversation_history: Optional[List[ChatMessage]] = None,
+        mode: str = "slm",
+        warning: Optional[str] = None
     ) -> ModelOutput:
         start_time = time.time()
 
-        # The SLM produces structured, concise, evidence-grounded answers
+        # SLM produces figures-first, deterministic answers from top chunks
         reply, citations, is_fallback, suggestions = fallback_evidence_answering(
             query=query,
             evidence_list=evidence_list,
-            student_profile=student_profile
+            student_profile=student_profile,
+            mode=mode
         )
 
         latency = (time.time() - start_time) * 1000.0
         faithfulness = calculate_faithfulness(reply, evidence_list)
         satisfied = check_constraint_satisfaction(reply, context or SessionContext(session_id="eval"))
 
+        badge = self.model_name if mode != "slm_fallback" else "Local SLM (Fallback)"
         return ModelOutput(
-            model_name=self.model_name,
+            model_name=badge,
             model_type=self.model_type,
             reply=reply,
             citations=citations,
@@ -113,6 +117,7 @@ class SLMModelRunner:
             faithfulness_score=faithfulness,
             constraint_satisfied=satisfied,
             is_fallback=is_fallback,
+            warning=warning,
             suggested_follow_ups=suggestions
         )
 
@@ -139,7 +144,7 @@ class LLMModelRunner:
         from app.services.llm_service import generate_llm_response
         start_time = time.time()
 
-        reply, citations, is_fallback, warning, suggestions = await generate_llm_response(
+        reply, citations, is_fallback, warning, suggestions, actual_model = await generate_llm_response(
             query=query,
             evidence_list=evidence_list,
             student_profile=student_profile,
@@ -151,7 +156,7 @@ class LLMModelRunner:
         satisfied = check_constraint_satisfaction(reply, context or SessionContext(session_id="eval"))
 
         return ModelOutput(
-            model_name=self.model_name,
+            model_name=actual_model,
             model_type=self.model_type,
             reply=reply,
             citations=citations,
@@ -173,17 +178,18 @@ class LLMModelRunner:
         conversation_history: Optional[List[ChatMessage]] = None
     ) -> ModelOutput:
         start_time = time.time()
-        reply, citations, suggestions = fallback_evidence_answering(
+        reply, citations, is_fallback, suggestions = fallback_evidence_answering(
             query=query,
             evidence_list=evidence_list,
-            student_profile=student_profile
+            student_profile=student_profile,
+            mode="llm"
         )
         latency = (time.time() - start_time) * 1000.0
         faithfulness = calculate_faithfulness(reply, evidence_list)
         satisfied = check_constraint_satisfaction(reply, context or SessionContext(session_id="eval"))
 
         return ModelOutput(
-            model_name=f"{self.model_name} (Evidence Engine)",
+            model_name="Local SLM (Fallback)",
             model_type=self.model_type,
             reply=reply,
             citations=citations,

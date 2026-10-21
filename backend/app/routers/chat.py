@@ -6,6 +6,7 @@ from app.schemas import ChatRequest, ChatResponse
 from app.services.rag import answer_student_query
 from app.nlp import get_nlp_pipeline, get_intent_classifier, get_representation_service
 from app.nlp.model_interface import ModelComparisonEvaluator
+from app.config import settings
 
 router = APIRouter(tags=["AI Chatbot"])
 
@@ -19,6 +20,26 @@ async def chat_endpoint(req: ChatRequest, db: Session = Depends(get_db)):
     if not req.message.strip():
         raise HTTPException(status_code=400, detail="Chat message cannot be empty.")
     return await answer_student_query(db, req)
+
+
+@router.get("/chat/config", summary="Inspect LLM Provider configuration and availability")
+def chat_config():
+    """Returns active LLM capability status. Disables LLM mode if no API key is set."""
+    api_key = (settings.LLM_API_KEY or "").strip()
+    provider = (settings.LLM_PROVIDER or "fallback").lower()
+    enabled = bool(api_key) and provider not in ["fallback"]
+    if provider == "ollama":
+        enabled = True
+    return {
+        "llm_enabled": enabled,
+        "llm_provider": provider,
+        "llm_model": settings.LLM_MODEL_NAME,
+        "message": (
+            f"Active LLM: {settings.LLM_MODEL_NAME} ({provider.upper()})"
+            if enabled
+            else "LLM mode disabled (no LLM_API_KEY configured in .env). Operating in Local SLM mode."
+        )
+    }
 
 
 @router.get("/chat/nlp-status", summary="Inspect NLP Pipeline and Intent Classifier metrics")

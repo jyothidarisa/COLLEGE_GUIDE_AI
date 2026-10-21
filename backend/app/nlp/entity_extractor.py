@@ -68,6 +68,17 @@ FUZZY_NAME_GUARD = {
 
 # Complete 75-college canonical registry merged from database and retriever
 COLLEGE_ALIAS_REGISTRY: Dict[str, Dict[str, Any]] = {
+    "PSG": {
+        "name": "PSG College of Technology",
+        "college_type": "State Aided Autonomous",
+        "aliases": [
+            "psg tech",
+            "psg",
+            "psg college of technology",
+            "psg coimbatore",
+            "psg college"
+        ]
+    },
     "IITM": {
         "name": "Indian Institute of Technology Madras",
         "college_type": "Institute of National Importance",

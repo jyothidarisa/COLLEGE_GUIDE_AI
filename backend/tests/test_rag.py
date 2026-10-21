@@ -29,7 +29,7 @@ def test_sql_cutoff_evidence_retrieval(db_session):
 def test_fallback_answering_no_hallucinations(db_session):
     # Testing that offline evidence-grounded answerer produces citations from real records
     evidence = hybrid_retrieve(db_session, "What are the hostel charges and fees for CEG?", top_k=3)
-    reply, citations, suggested = fallback_evidence_answering("What are the fees for CEG?", evidence)
+    reply, citations, is_fallback, suggested = fallback_evidence_answering("What are the fees for CEG?", evidence)
     assert len(reply) > 50
     assert len(citations) > 0
     # URLs must be official, not invented

@@ -10,6 +10,7 @@ import CollegeDetailPage from './pages/CollegeDetailPage';
 import ComparePage from './pages/ComparePage';
 import ChatbotPage from './pages/ChatbotPage';
 import SourcesPage from './pages/SourcesPage';
+import FloatingChatWidget from './components/FloatingChatWidget';
 
 export default function App() {
   return (
@@ -29,6 +30,7 @@ export default function App() {
           </Routes>
         </main>
         <Footer />
+        <FloatingChatWidget />
       </div>
     </Router>
   );

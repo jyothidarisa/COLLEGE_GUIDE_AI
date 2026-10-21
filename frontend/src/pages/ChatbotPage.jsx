@@ -17,25 +17,17 @@ import api from '../services/api';
 import MarkdownRenderer from '../components/MarkdownRenderer';
 
 export default function ChatbotPage() {
-  const { studentProfile, compareList } = useApp();
-
-  const [sessionId, setSessionId] = useState(
-    () => 'sess_' + Math.random().toString(36).substring(2, 9)
-  );
-  const [modelType, setModelType] = useState('slm');
-
-  const [messages, setMessages] = useState([
-    {
-      role: 'assistant',
-      content: `Hello! I am **College Guide AI**, your admissions assistant for Indian engineering admissions (B.Tech / B.E.). 
-
-I answer questions strictly using verified university brochures, fee schedules, and historical cutoffs in our database.
-
-**What would you like to explore today?**`,
-      citations: [],
-      evidence_used: [],
-    },
-  ]);
+  const { 
+    studentProfile, 
+    compareList,
+    sessionId,
+    setSessionId,
+    modelType,
+    setModelType,
+    messages,
+    setMessages,
+    llmConfig
+  } = useApp();
 
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
@@ -166,11 +158,18 @@ I answer questions strictly using verified university brochures, fee schedules, 
               SLM (Fast)
             </button>
             <button
-              onClick={() => setModelType('llm')}
-              title="Large Language Model: Nuanced conversational reasoning"
+              onClick={() => {
+                if (llmConfig?.llm_enabled) {
+                  setModelType('llm');
+                }
+              }}
+              disabled={!llmConfig?.llm_enabled}
+              title={!llmConfig?.llm_enabled ? llmConfig?.message : "Large Language Model: Nuanced conversational reasoning"}
               className={`px-2.5 py-1 rounded-md transition-all ${
                 modelType === 'llm'
                   ? 'bg-white text-indigo-700 shadow-xs font-bold'
+                  : !llmConfig?.llm_enabled
+                  ? 'text-slate-300 cursor-not-allowed'
                   : 'text-slate-500 hover:text-slate-800'
               }`}
             >

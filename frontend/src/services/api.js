@@ -44,6 +44,11 @@ export const api = {
   },
 
   // Chatbot / RAG
+  getChatConfig: async () => {
+    const res = await client.get('/api/chat/config');
+    return res.data;
+  },
+
   sendMessage: async (
     message,
     studentProfile = null,

@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
+import api from '../services/api';
 
 const AppContext = createContext();
 
@@ -14,6 +15,37 @@ export const AppProvider = ({ children }) => {
 
   const [recommendations, setRecommendations] = useState(null);
   const [compareList, setCompareList] = useState([]);
+
+  // Shared Chatbot State across Floating Widget and /chat Page
+  const [sessionId, setSessionId] = useState(
+    () => 'sess_' + Math.random().toString(36).substring(2, 9)
+  );
+  const [modelType, setModelType] = useState('slm');
+  const [messages, setMessages] = useState([
+    {
+      role: 'assistant',
+      content: `Hello! I am **College Guide AI**, your admissions assistant for Indian engineering admissions (B.Tech / B.E.). \n\nI answer questions strictly using verified university brochures, fee schedules, and historical cutoffs in our database.\n\n**What would you like to explore today?**`,
+      citations: [],
+      evidence_used: [],
+    },
+  ]);
+  const [llmConfig, setLlmConfig] = useState({
+    llm_enabled: false,
+    llm_provider: 'fallback',
+    llm_model: 'gemini-1.5-flash',
+    message: 'LLM mode disabled (no API key configured). Operating in Local SLM mode.'
+  });
+
+  useEffect(() => {
+    api.getChatConfig()
+      .then((cfg) => {
+        setLlmConfig(cfg);
+        if (!cfg.llm_enabled) {
+          setModelType('slm');
+        }
+      })
+      .catch(() => {});
+  }, []);
 
   useEffect(() => {
     if (studentProfile) {
@@ -58,6 +90,14 @@ export const AppProvider = ({ children }) => {
         removeFromCompare,
         clearCompare,
         clearProfile,
+        sessionId,
+        setSessionId,
+        modelType,
+        setModelType,
+        messages,
+        setMessages,
+        llmConfig,
+        setLlmConfig
       }}
     >
       {children}

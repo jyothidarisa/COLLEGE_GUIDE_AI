@@ -179,7 +179,7 @@ class ConversationStateManager:
             r"\bfee structure\?\b",
             r"\bwhat about tuition\b"
         ])
-        if is_fee_followup:
+        if is_fee_followup and not entities.colleges_mentioned:
             if ctx.discussed_colleges:
                 target_col = ctx.discussed_colleges[-1]["name"]
                 rewritten = f"What are the annual tuition fees and living expenses at {target_col}?"
@@ -196,10 +196,10 @@ class ConversationStateManager:
             r"\bwhat is the package\b",
             r"\bmedian package\?\b"
         ])
-        if is_placement_followup:
+        if is_placement_followup and not entities.colleges_mentioned:
             if ctx.discussed_colleges:
                 target_col = ctx.discussed_colleges[-1]["name"]
-                rewritten = f"What are the placement statistics and median package at {target_col}?"
+                rewritten = f"What are the placement statistics at {target_col}?"
                 applied_mods.append(f"Resolved follow-up placement question for: {target_col}")
 
         # Pattern 3: Comparative follow-up ("which one has lower fees?", "which one is better?", "which has better placement?")

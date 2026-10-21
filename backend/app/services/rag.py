@@ -15,11 +15,13 @@ Coordinates:
 """
 
 import logging
+import re
 from typing import Optional, List, Dict, Any
 from sqlalchemy.orm import Session
 from app.schemas import ChatRequest, ChatResponse, RetrievedEvidence
 from app.services.retriever import hybrid_retrieve
 from app.nlp import get_nlp_pipeline, handle_smalltalk
+from app.config import settings
 
 logger = logging.getLogger(__name__)
 
@@ -93,16 +95,51 @@ async def answer_student_query(
 
     query_for_retrieval = nlp_bundle.rewritten_query or effective_query
 
-    # 2. Target college resolution
+    # 2. Target college resolution: only when a single college ID is passed (e.g. from /colleges/:id)
     selected_col_id = None
     if chat_request.selected_college_ids and len(chat_request.selected_college_ids) == 1:
         selected_col_id = chat_request.selected_college_ids[0]
 
-    # 3. Hybrid Retrieval (SQL facts + FAISS document chunks)
+    # Page-context rewrite: only on /colleges/:id, and only for pronouns or college-specific intents.
+    # Do not append "at <college>" to generic questions.
+    college_intents = {
+        "college_search",
+        "cutoff_inquiry",
+        "fee_inquiry",
+        "placement_information",
+        "hostel_inquiry",
+        "scholarship_information",
+        "eligibility_check"
+    }
+
+    if selected_col_id and not nlp_bundle.target_colleges:
+        from app.models import College
+        page_college = db.query(College).filter(College.id == selected_col_id).first()
+        if page_college:
+            pronoun_pat = re.compile(r'\b(it|its|this college|the college|here)\b', re.IGNORECASE)
+            has_pronoun = bool(pronoun_pat.search(query_for_retrieval))
+            is_college_intent = nlp_bundle.intent in college_intents
+
+            if has_pronoun:
+                query_for_retrieval = pronoun_pat.sub(page_college.name, query_for_retrieval)
+                nlp_bundle.target_colleges = [page_college.name]
+            elif is_college_intent:
+                query_for_retrieval = f"{query_for_retrieval} at {page_college.name}"
+                nlp_bundle.target_colleges = [page_college.name]
+
+    # For comparisons, expand short acronym queries (e.g. "Compare CEG and SSN") with resolved college names
+    if len(nlp_bundle.target_colleges) >= 2 and any(k in query_for_retrieval.lower() for k in ["compare", "vs", "versus", "difference"]):
+        query_for_retrieval = f"Compare {nlp_bundle.target_colleges[0]} and {nlp_bundle.target_colleges[1]}"
+
+    # 3. Hybrid Retrieval: SLM uses top 3 chunks (or top 6 if comparing multiple colleges), LLM uses top 8 chunks
+    requested_mode = (chat_request.model_type or "slm").lower()
+    is_multi_college = len(nlp_bundle.target_colleges) >= 2
+    top_k = (6 if is_multi_college else 3) if requested_mode == "slm" else 8
+
     raw_evidence = hybrid_retrieve(
         db,
         query_text=query_for_retrieval,
-        top_k=8,
+        top_k=top_k,
         college_id=selected_col_id
     )
 
@@ -116,19 +153,26 @@ async def answer_student_query(
     )
 
     # 5. Model Execution: SLM vs. LLM
-    model_type = (chat_request.model_type or "llm").lower()
-    if model_type == "slm":
+    api_key = (settings.LLM_API_KEY or "").strip()
+    provider = (settings.LLM_PROVIDER or "fallback").lower()
+    llm_configured = bool(api_key) or provider == "ollama"
+
+    if requested_mode == "slm" or not llm_configured:
+        is_fallback_llm = (requested_mode == "llm" and not llm_configured)
+        warning_msg = "Notice: LLM API key not configured in .env. Response generated using deterministic Local SLM." if is_fallback_llm else None
         model_out = nlp.slm_runner.generate(
             query=query_for_retrieval,
-            evidence_list=reranked_evidence,
+            evidence_list=reranked_evidence[:3],
             student_profile=chat_request.student_profile,
             context=nlp_bundle.session_context,
-            conversation_history=chat_request.conversation_history
+            conversation_history=chat_request.conversation_history,
+            mode="slm" if not is_fallback_llm else "slm_fallback",
+            warning=warning_msg
         )
     else:
         model_out = await nlp.llm_runner.generate_async(
             query=query_for_retrieval,
-            evidence_list=reranked_evidence,
+            evidence_list=reranked_evidence[:8],
             student_profile=chat_request.student_profile,
             context=nlp_bundle.session_context,
             conversation_history=chat_request.conversation_history
