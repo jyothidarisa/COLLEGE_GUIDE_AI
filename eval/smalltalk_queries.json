@@ -241,5 +241,140 @@
     "expected_category": null,
     "expected_stripped_query": null,
     "description": "Tricky query: out-of-scope non-admission command, NOT small talk"
+  },
+  {
+    "id": "ST26",
+    "query": "hi, how are you",
+    "conversation_history": [],
+    "expected_is_smalltalk": true,
+    "expected_category": "how_are_you",
+    "expected_stripped_query": null,
+    "description": "Greeting prefix followed by small-talk question"
+  },
+  {
+    "id": "ST27",
+    "query": "hello how are you",
+    "conversation_history": [],
+    "expected_is_smalltalk": true,
+    "expected_category": "how_are_you",
+    "expected_stripped_query": null,
+    "description": "Greeting followed by conversational check-in"
+  },
+  {
+    "id": "ST28",
+    "query": "hey who are you",
+    "conversation_history": [],
+    "expected_is_smalltalk": true,
+    "expected_category": "identity",
+    "expected_stripped_query": null,
+    "description": "Greeting prefix followed by identity inquiry"
+  },
+  {
+    "id": "ST29",
+    "query": "hi what can you do",
+    "conversation_history": [],
+    "expected_is_smalltalk": true,
+    "expected_category": "identity",
+    "expected_stripped_query": null,
+    "description": "Greeting prefix followed by capability inquiry"
+  },
+  {
+    "id": "ST30",
+    "query": "hello thanks",
+    "conversation_history": [],
+    "expected_is_smalltalk": true,
+    "expected_category": "thanks",
+    "expected_stripped_query": null,
+    "description": "Greeting prefix followed by thank you"
+  },
+  {
+    "id": "ST31",
+    "query": "hii",
+    "conversation_history": [],
+    "expected_is_smalltalk": true,
+    "expected_category": "greeting",
+    "expected_stripped_query": null,
+    "description": "Informal elongated greeting variant"
+  },
+  {
+    "id": "ST32",
+    "query": "gm",
+    "conversation_history": [],
+    "expected_is_smalltalk": true,
+    "expected_category": "greeting",
+    "expected_stripped_query": null,
+    "description": "Common chat shorthand for good morning"
+  },
+  {
+    "id": "ST33",
+    "query": "tq",
+    "conversation_history": [],
+    "expected_is_smalltalk": true,
+    "expected_category": "thanks",
+    "expected_stripped_query": null,
+    "description": "Shorthand slang for thank you"
+  },
+  {
+    "id": "ST34",
+    "query": "thank you so much",
+    "conversation_history": [],
+    "expected_is_smalltalk": true,
+    "expected_category": "thanks",
+    "expected_stripped_query": null,
+    "description": "Heartfelt gratitude phrase"
+  },
+  {
+    "id": "ST35",
+    "query": "bye",
+    "conversation_history": [],
+    "expected_is_smalltalk": true,
+    "expected_category": "goodbye",
+    "expected_stripped_query": null,
+    "description": "Single-word goodbye departure"
+  },
+  {
+    "id": "ST36",
+    "query": "alright",
+    "conversation_history": [],
+    "expected_is_smalltalk": true,
+    "expected_category": "acknowledgement",
+    "expected_stripped_query": null,
+    "description": "Single-word acknowledgement"
+  },
+  {
+    "id": "ST37",
+    "query": "great job",
+    "conversation_history": [],
+    "expected_is_smalltalk": true,
+    "expected_category": "compliment",
+    "expected_stripped_query": null,
+    "description": "Bot compliment phrase"
+  },
+  {
+    "id": "ST38",
+    "query": "terrible",
+    "conversation_history": [],
+    "expected_is_smalltalk": true,
+    "expected_category": "complaint",
+    "expected_stripped_query": null,
+    "description": "Single-word dissatisfaction complaint"
+  },
+  {
+    "id": "ST39",
+    "query": "hi, what are the cutoffs for CSE at NIT Trichy?",
+    "conversation_history": [],
+    "expected_is_smalltalk": false,
+    "expected_category": null,
+    "expected_stripped_query": "what are the cutoffs for CSE at NIT Trichy?",
+    "description": "Greeting stripped leaving real admissions query"
+  },
+  {
+    "id": "ST40",
+    "query": "hey, tell me the fees for Amrita",
+    "conversation_history": [],
+    "expected_is_smalltalk": false,
+    "expected_category": null,
+    "expected_stripped_query": "tell me the fees for Amrita",
+    "description": "Greeting prefix stripped leaving college fee query"
   }
 ]

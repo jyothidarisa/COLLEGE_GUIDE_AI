@@ -7,6 +7,7 @@ without invoking the language model or FAISS vector search.
 """
 
 import re
+import random
 from typing import Optional, List, Dict, Any
 from dataclasses import dataclass, field
 
@@ -132,20 +133,52 @@ def handle_smalltalk(query: str, conversation_history: Optional[List[Any]] = Non
     if not query:
         return SmallTalkResult(is_smalltalk=False, cleaned_query="")
 
-    # 1. Check if greeting prefix + real question
+    # 1. Check if greeting prefix + real question or secondary small-talk
     m = GREETING_PREFIX_RE.match(query.strip())
     if m:
         remaining = query.strip()[m.end():].strip()
         rem_norm = normalize_text(remaining)
-        # Check if remaining text contains actual inquiry / question
-        if rem_norm and rem_norm not in GREETING_PATTERNS and (
-            len(rem_norm.split()) >= 2 or
-            any(k in rem_norm for k in ["cutoff", "fee", "rank", "college", "placement", "compare", "admissions", "btech", "course"])
-        ):
-            return SmallTalkResult(
-                is_smalltalk=False,
-                cleaned_query=remaining
-            )
+        if rem_norm:
+            # Check if the text after the stripped greeting is itself small talk (e.g. "hi, how are you")
+            matched_after = None
+            if rem_norm in HOW_ARE_YOU_PATTERNS:
+                matched_after = "how_are_you"
+            elif rem_norm in IDENTITY_HELP_PATTERNS:
+                matched_after = "identity"
+            elif rem_norm in THANKS_PATTERNS:
+                matched_after = "thanks"
+            elif rem_norm in GOODBYE_PATTERNS:
+                matched_after = "goodbye"
+            elif rem_norm in ACKNOWLEDGEMENT_PATTERNS:
+                matched_after = "acknowledgement"
+            elif rem_norm in COMPLIMENT_PATTERNS:
+                matched_after = "compliment"
+            elif rem_norm in COMPLAINT_PATTERNS:
+                matched_after = "complaint"
+            elif rem_norm in RUDE_PATTERNS:
+                matched_after = "rude"
+            elif rem_norm in GREETING_PATTERNS:
+                matched_after = "greeting"
+
+            if matched_after:
+                replies = WARM_REPLIES.get(matched_after, WARM_REPLIES["greeting"])
+                return SmallTalkResult(
+                    is_smalltalk=True,
+                    category=matched_after,
+                    reply=random.choice(replies),
+                    suggestions=DEFAULT_SUGGESTIONS,
+                    cleaned_query=query
+                )
+
+            # Check if remaining text contains actual inquiry / question
+            if (
+                len(rem_norm.split()) >= 2 or
+                any(k in rem_norm for k in ["cutoff", "fee", "rank", "college", "placement", "compare", "admissions", "btech", "course", "what", "which", "how", "can", "tell"])
+            ):
+                return SmallTalkResult(
+                    is_smalltalk=False,
+                    cleaned_query=remaining
+                )
 
     norm = normalize_text(query)
 
@@ -193,11 +226,10 @@ def handle_smalltalk(query: str, conversation_history: Optional[List[Any]] = Non
 
     if matched_cat:
         replies = WARM_REPLIES.get(matched_cat, ["Hello! How can I help you with your college admissions search today?"])
-        reply_idx = abs(hash(query)) % len(replies)
         return SmallTalkResult(
             is_smalltalk=True,
             category=matched_cat,
-            reply=replies[reply_idx],
+            reply=random.choice(replies),
             suggestions=DEFAULT_SUGGESTIONS,
             cleaned_query=query
         )

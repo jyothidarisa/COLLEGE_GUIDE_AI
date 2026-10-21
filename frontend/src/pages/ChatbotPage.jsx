@@ -14,6 +14,7 @@ import {
 } from 'lucide-react';
 import { useApp } from '../context/AppContext';
 import api from '../services/api';
+import MarkdownRenderer from '../components/MarkdownRenderer';
 
 export default function ChatbotPage() {
   const { studentProfile, compareList } = useApp();
@@ -217,9 +218,13 @@ I answer questions strictly using verified university brochures, fee schedules, 
                 }`}
               >
                 {/* Content */}
-                <div className="whitespace-pre-line prose prose-sm max-w-none">
-                  {msg.content}
-                </div>
+                {msg.role === 'user' ? (
+                  <div className="whitespace-pre-line font-medium">
+                    {msg.content}
+                  </div>
+                ) : (
+                  <MarkdownRenderer content={msg.content} />
+                )}
 
                 {/* NLP Metadata Pill */}
                 {msg.role === 'assistant' && msg.intent && (
