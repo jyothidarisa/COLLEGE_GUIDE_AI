@@ -17,11 +17,12 @@ Orchestrates Stages 1 through 12:
 """
 
 import logging
+import re
 from typing import Dict, List, Any, Optional, Tuple
 from dataclasses import dataclass, field
 from app.nlp.preprocessor import preprocess_query, analyze_linguistics
 from app.nlp.intent_classifier import get_intent_classifier, IntentResult
-from app.nlp.entity_extractor import extract_entities, ExtractedEntities
+from app.nlp.entity_extractor import extract_entities, ExtractedEntities, COLLEGE_ALIAS_REGISTRY
 from app.nlp.context_manager import get_state_manager, SessionContext, ConversationStateManager
 from app.nlp.representation import get_representation_service, TextRepresentationService
 from app.nlp.reranker import get_evidence_reranker, HybridEvidenceReranker
@@ -81,6 +82,56 @@ class NLPPipeline:
 
         # Stage 3: Entity Recognition & Information Extraction
         entities: ExtractedEntities = extract_entities(preprocessed)
+
+        # Ambiguity Check: Generic NIT / IIT / IIIT query with no specific campus
+        q_lower = raw_query.lower()
+        umbrella_match = re.search(r'\b(nit|nits|iit|iits|iiit|iiits)\b', q_lower)
+        if umbrella_match and not entities.colleges_mentioned:
+            umb_raw = umbrella_match.group(1).rstrip('s').upper()
+            matching_campuses = [
+                info["name"] for info in COLLEGE_ALIAS_REGISTRY.values()
+                if info.get("college_type") == umb_raw or info["name"].upper().startswith(
+                    "NATIONAL INSTITUTE OF TECHNOLOGY" if umb_raw == "NIT" else
+                    "INDIAN INSTITUTE OF TECHNOLOGY" if umb_raw == "IIT" else
+                    "INTERNATIONAL INSTITUTE OF INFORMATION TECHNOLOGY"
+                )
+            ]
+            if len(matching_campuses) > 1:
+                intent_res.intent = "clarification_request"
+                intent_res.confidence = 1.0
+                intent_res.is_fallback = False
+                ctx = self.state_manager.get_or_create_session(sid)
+                return NLPAnalysisBundle(
+                    raw_query=raw_query,
+                    preprocessed_query=preprocessed,
+                    intent=intent_res.intent,
+                    intent_confidence=intent_res.confidence,
+                    is_intent_fallback=intent_res.is_fallback,
+                    entities=entities,
+                    rewritten_query=raw_query,
+                    applied_rewrites=[f"Ambiguity detected for {umb_raw}"],
+                    session_context=ctx,
+                    linguistic_summary={
+                        "tokens": ling_analysis["tokens"],
+                        "pos_tags": ling_analysis["pos_tags"][:8],
+                        "lemmas": ling_analysis["lemmas"][:8],
+                        "negations": ling_analysis["negations_found"],
+                        "numeric_tokens": ling_analysis["numeric_tokens"]
+                    },
+                    target_colleges=matching_campuses[:5]
+                )
+
+        # Name-Only Overview Routing: strictly when query is college name + <= 2 extra words, with NO question words
+        question_words = {"what", "which", "how", "why", "when", "where", "who", "is", "can", "tell", "explain", "does", "do", "should", "good", "best", "worth", "better", "review", "fees", "fee", "cost", "cutoff", "cutoffs", "rank", "ranks", "placement", "placements", "salary", "package", "hostel", "hostels", "scholarship", "compare", "vs"}
+        q_tokens = set(re.findall(r'\b\w+\b', q_lower))
+        has_question_word = bool(q_tokens & question_words)
+        if len(entities.colleges_mentioned) == 1 and not has_question_word:
+            matched_alias = entities.colleges_mentioned[0].get("matched_alias", "")
+            extra_words = len(re.findall(r'\b\w+\b', q_lower)) - len(matched_alias.split())
+            if 0 <= extra_words <= 2:
+                intent_res.intent = "college_search"
+                intent_res.confidence = 0.95
+                intent_res.is_fallback = False
 
         # Stage 5: Conversational Memory Context Retrieval
         if conversation_history and len(conversation_history) > 0:

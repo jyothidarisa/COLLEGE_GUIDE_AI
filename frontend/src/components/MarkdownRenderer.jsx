@@ -34,7 +34,7 @@ function parseInline(text) {
             href={linkUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sky-600 dark:text-sky-400 underline hover:text-sky-800 dark:hover:text-sky-300 font-medium transition-colors"
+            className="underline underline-offset-2 font-medium decoration-current/50 hover:decoration-current hover:opacity-80 text-inherit transition-all"
           >
             {parseInline(linkText)}
           </a>
@@ -47,7 +47,7 @@ function parseInline(text) {
     // Check bold: **text**
     if (part.startsWith('**') && part.endsWith('**') && part.length >= 4) {
       return (
-        <strong key={index} className="font-semibold text-slate-900 dark:text-slate-100">
+        <strong key={index} className="font-semibold text-inherit underline-offset-2">
           {parseInline(part.slice(2, -2))}
         </strong>
       );
@@ -56,7 +56,7 @@ function parseInline(text) {
     // Check italic: *text*
     if (part.startsWith('*') && part.endsWith('*') && part.length >= 2) {
       return (
-        <em key={index} className="italic text-slate-800 dark:text-slate-200">
+        <em key={index} className="italic text-inherit opacity-90">
           {parseInline(part.slice(1, -1))}
         </em>
       );
@@ -67,7 +67,7 @@ function parseInline(text) {
       return (
         <code
           key={index}
-          className="px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-xs font-mono text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700"
+          className="px-1.5 py-0.5 rounded text-xs font-mono bg-black/10 dark:bg-white/10 text-inherit border border-current/20"
         >
           {part.slice(1, -1)}
         </code>
@@ -105,7 +105,7 @@ export default function MarkdownRenderer({ content, className = '' }) {
       elements.push(
         <h3
           key={`h3-${index}`}
-          className="text-sm font-bold text-slate-900 dark:text-slate-100 mt-3 mb-1"
+          className="text-sm font-bold text-inherit mt-3 mb-1 opacity-95"
         >
           {parseInline(trimmed.substring(4))}
         </h3>
@@ -117,7 +117,7 @@ export default function MarkdownRenderer({ content, className = '' }) {
       elements.push(
         <h2
           key={`h2-${index}`}
-          className="text-base font-bold text-slate-900 dark:text-slate-100 mt-3.5 mb-1.5"
+          className="text-base font-bold text-inherit mt-3.5 mb-1.5"
         >
           {parseInline(trimmed.substring(3))}
         </h2>
@@ -129,7 +129,7 @@ export default function MarkdownRenderer({ content, className = '' }) {
       elements.push(
         <h1
           key={`h1-${index}`}
-          className="text-lg font-bold text-slate-900 dark:text-slate-100 mt-4 mb-2"
+          className="text-lg font-bold text-inherit mt-4 mb-2"
         >
           {parseInline(trimmed.substring(2))}
         </h1>
@@ -161,17 +161,17 @@ export default function MarkdownRenderer({ content, className = '' }) {
 
         elements.push(
           <div key={`table-${index}`} className="overflow-x-auto my-2.5">
-            <table className="min-w-full text-xs text-left border border-slate-200 dark:border-slate-700 rounded-lg overflow-hidden">
-              <thead className="bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-semibold border-b border-slate-200 dark:border-slate-700">
+            <table className="min-w-full text-xs text-left border border-current/20 rounded-lg overflow-hidden">
+              <thead className="bg-black/5 dark:bg-white/10 text-inherit font-semibold border-b border-current/20">
                 <tr>
                   {headerCells.map((h, hi) => (
-                    <th key={hi} className="px-3 py-2 border-r last:border-r-0 border-slate-200 dark:border-slate-700">
+                    <th key={hi} className="px-3 py-2 border-r last:border-r-0 border-current/20 text-inherit">
                       {parseInline(h)}
                     </th>
                   ))}
                 </tr>
               </thead>
-              <tbody className="divide-y divide-slate-200 dark:divide-slate-700 bg-white dark:bg-slate-900">
+              <tbody className="divide-y divide-current/15">
                 {rowLines.map((rowStr, ri) => {
                   const cells = rowStr
                     .slice(1, -1)
@@ -180,12 +180,12 @@ export default function MarkdownRenderer({ content, className = '' }) {
                   return (
                     <tr
                       key={ri}
-                      className="even:bg-slate-50/60 dark:even:bg-slate-800/40 hover:bg-slate-100/50 dark:hover:bg-slate-800/60 transition-colors"
+                      className="even:bg-black/[0.03] dark:even:bg-white/[0.04]"
                     >
                       {cells.map((cell, ci) => (
                         <td
                           key={ci}
-                          className="px-3 py-1.5 border-r last:border-r-0 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300"
+                          className="px-3 py-1.5 border-r last:border-r-0 border-current/15 text-inherit"
                         >
                           {parseInline(cell)}
                         </td>
@@ -209,7 +209,7 @@ export default function MarkdownRenderer({ content, className = '' }) {
         index++;
       }
       elements.push(
-        <ul key={`ul-${index}`} className="list-disc pl-5 space-y-1 my-1.5 text-slate-700 dark:text-slate-300">
+        <ul key={`ul-${index}`} className="list-disc pl-5 space-y-1 my-1.5 text-inherit">
           {listItems.map((item, li) => (
             <li key={li}>{parseInline(item)}</li>
           ))}
@@ -226,7 +226,7 @@ export default function MarkdownRenderer({ content, className = '' }) {
         index++;
       }
       elements.push(
-        <ol key={`ol-${index}`} className="list-decimal pl-5 space-y-1 my-1.5 text-slate-700 dark:text-slate-300">
+        <ol key={`ol-${index}`} className="list-decimal pl-5 space-y-1 my-1.5 text-inherit">
           {listItems.map((item, li) => (
             <li key={li}>{parseInline(item)}</li>
           ))}
@@ -237,7 +237,7 @@ export default function MarkdownRenderer({ content, className = '' }) {
 
     // 6. Regular Paragraph
     elements.push(
-      <p key={`p-${index}`} className="text-slate-700 dark:text-slate-300 leading-relaxed">
+      <p key={`p-${index}`} className="leading-relaxed text-inherit">
         {parseInline(trimmed)}
       </p>
     );
@@ -245,7 +245,7 @@ export default function MarkdownRenderer({ content, className = '' }) {
   }
 
   return (
-    <div className={`prose prose-sm dark:prose-invert max-w-none space-y-1.5 ${className}`}>
+    <div className={`space-y-2 text-inherit text-xs sm:text-sm ${className}`}>
       {elements}
     </div>
   );

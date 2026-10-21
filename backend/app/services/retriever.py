@@ -8,102 +8,30 @@ from app.config import settings
 from app.models import College, Course, AdmissionCutoff, FeeDetail, PlacementStatistic, DocumentChunk, CollegeDocument
 from app.schemas import RetrievedEvidence
 from app.services.ingestion import get_embedding_model, get_faiss
+from app.nlp.entity_extractor import COLLEGE_ALIAS_REGISTRY, normalize_college_text
 
 logger = logging.getLogger(__name__)
 
-# Common college aliases, short-forms, and acronyms mapped to official codes
-COLLEGE_ALIASES: Dict[str, List[str]] = {
-    "IITM": ["iit madras", "iitm", "iit-m", "iit chennai"],
-    "IITD": ["iit delhi", "iitd", "iit-d"],
-    "IITB": ["iit bombay", "iitb", "iit mumbai", "iit-b", "iit powai"],
-    "IITK": ["iit kanpur", "iitk", "iit-k"],
-    "IITKGP": ["iit kharagpur", "iitkgp", "iit-kgp", "kharagpur"],
-    "IITR": ["iit roorkee", "iitr", "roorkee"],
-    "IITH": ["iit hyderabad", "iith", "iit-h"],
-    "IITG": ["iit guwahati", "iitg", "guwahati"],
-    "NITT": ["nit trichy", "nitt", "nit tiruchirappalli", "trichy"],
-    "IIT-BHU": ["iit bhu", "iit varanasi", "bhu varanasi"],
-    "BITS-P": ["bits pilani", "bits", "pilani", "bits-p"],
-    "IITI": ["iit indore", "iiti"],
-    "NITR": ["nit rourkela", "nitr", "rourkela"],
-    "SRMIST": ["srm", "srmist", "srm university"],
-    "IIT-ISM": ["iit ism", "iit dhanbad", "ism dhanbad"],
-    "VIT-001": ["vit vellore", "vit", "vellore institute"],
-    "NITK": ["nit surathkal", "nitk", "nit karnataka", "surathkal"],
-    "JU-KOL": ["jadavpur", "jadavpur university"],
-    "IITP": ["iit patna", "iitp"],
-    "CEG-0001": ["ceg", "anna university", "college of engineering guindy", "guindy"],
-    "NITC": ["nit calicut", "nitc", "nit kozhikode", "calicut"],
-    "SOA-BBSR": ["soa", "siksha 'o' anusandhan", "soa university"],
-    "AMRITA-CBE": ["amrita", "amrita vishwa vidyapeetham", "amrita coimbatore"],
-    "JMI-DEL": ["jamia millia", "jmi", "jamia"],
-    "IITGN": ["iit gandhinagar", "iitgn"],
-    "IIT-MANDI": ["iit mandi"],
-    "IITJ": ["iit jodhpur", "iitj"],
-    "NITW": ["nit warangal", "nitw", "warangal"],
-    "TIET": ["thapar", "tiet", "thapar institute"],
-    "DTU": ["dtu", "delhi technological university", "delhi college of engineering", "dce"],
-    "CU-PUNJAB": ["chandigarh university", "cu punjab"],
-    "IITRPR": ["iit ropar", "iitrpr"],
-    "KARE": ["kalasalingam", "kare"],
-    "AMU": ["amu", "aligarh muslim university"],
-    "KLEF": ["kl university", "klef", "koneru lakshmaiah"],
-    "KIIT": ["kiit", "kalinga institute"],
-    "AMITY": ["amity", "amity noida"],
-    "IIITH": ["iiit hyderabad", "iiith", "iiit-h"],
-    "IIT-BBS": ["iit bhubaneswar", "iit-bbs"],
-    "SASTRA": ["sastra", "sastra university"],
-    "ICT-MUM": ["ict mumbai", "institute of chemical technology", "ict"],
-    "MNIT-JPR": ["mnit jaipur", "mnit", "nit jaipur"],
-    "UPES": ["upes", "upes dehradun"],
-    "VNIT-NGP": ["vnit nagpur", "vnit", "nit nagpur"],
-    "SIMATS": ["saveetha", "simats"],
-    "SIU-PUNE": ["symbiosis", "siu pune"],
-    "SSN-1315": ["ssn", "ssn college of engineering"],
-    "LPU": ["lpu", "lovely professional university"],
-    "NIT-DGP": ["nit durgapur", "durgapur"],
-    "NIT-SIL": ["nit silchar", "silchar"],
-    "CHRIST-BLR": ["christ university", "christ"],
-    "IIT-DH": ["iit dharwad", "iit-dh"],
-    "RGIPT": ["rgipt", "rajiv gandhi institute of petroleum"],
-    "SLIET": ["sliet", "sant longowal"],
-    "VIGNAN": ["vignan", "vignan university"],
-    "MANIT-BPL": ["manit bhopal", "manit", "nit bhopal"],
-    "NIT-JSR": ["nit jamshedpur"],
-    "NIT-MEGH": ["nit meghalaya"],
-    "JAIN-BLR": ["jain university"],
-    "NIT-KKR": ["nit kurukshetra"],
-    "NIT-RPR": ["nit raipur"],
-    "VELTECH": ["vel tech", "veltech"],
-    "AUCE-VIZAG": ["andhra university", "auce", "andhra university college of engineering"],
-    "CHITKARA": ["chitkara", "chitkara university"],
-    "COEP": ["coep", "college of engineering pune", "coep technological university"],
-    "SRU": ["sr university", "sru"],
-    "DIAT-PUNE": ["diat pune", "diat"],
-    "UIET-PU": ["uiet", "panjab university"],
-    "JNTUH": ["jntuh", "jntu hyderabad"],
-    "CGU-BBSR": ["cgu odisha", "cv raman", "c.v. raman"],
-    "IIITM-GWL": ["iiitm gwalior", "abv-iiitm"],
-    "NIT-HMR": ["nit hamirpur"],
-    "PDEU": ["pdeu", "pandit deendayal"],
-    "NIT-PY": ["nit puducherry"],
-    "SKCET": ["skcet", "sri krishna college"]
-}
-
 
 def detect_colleges_in_query(db: Session, query_text: str) -> List[College]:
-    """Detects specific colleges mentioned in the user's message using aliases and codes."""
-    q_lower = query_text.lower()
+    """Detects specific colleges mentioned in the user's message using the unified 75-college registry."""
+    q_norm = normalize_college_text(query_text)
+    words = q_norm.split()
+    ngrams = []
+    for n in range(1, min(10, len(words) + 1)):
+        for i in range(len(words) - n + 1):
+            ngrams.append(" ".join(words[i:i+n]))
+
     all_colleges = {c.code: c for c in db.query(College).all()}
     detected = []
     seen_ids = set()
 
-    for code, aliases in COLLEGE_ALIASES.items():
+    for code, info in COLLEGE_ALIAS_REGISTRY.items():
         if code in all_colleges and all_colleges[code].id not in seen_ids:
-            for alias in aliases:
-                # Use word boundaries so that e.g. "vit" doesn't match inside "activity"
-                pattern = r"(?<!\w)" + re.escape(alias) + r"(?!\w)"
-                if re.search(pattern, q_lower):
+            for alias in info["aliases"]:
+                norm_alias = normalize_college_text(alias)
+                pattern = r"(?<!\w)" + re.escape(norm_alias) + r"(?!\w)"
+                if norm_alias in ngrams or re.search(pattern, q_norm):
                     detected.append(all_colleges[code])
                     seen_ids.add(all_colleges[code].id)
                     break
@@ -112,10 +40,10 @@ def detect_colleges_in_query(db: Session, query_text: str) -> List[College]:
     if not detected:
         for c in all_colleges.values():
             if c.id not in seen_ids:
-                code_lower = c.code.lower()
-                name_lower = c.name.lower()
-                if (re.search(r"(?<!\w)" + re.escape(code_lower) + r"(?!\w)", q_lower) or
-                    (len(name_lower) > 5 and name_lower in q_lower)):
+                code_norm = normalize_college_text(c.code)
+                name_norm = normalize_college_text(c.name)
+                if (re.search(r"(?<!\w)" + re.escape(code_norm) + r"(?!\w)", q_norm) or
+                    (len(name_norm) > 5 and name_norm in q_norm)):
                     detected.append(c)
                     seen_ids.add(c.id)
 

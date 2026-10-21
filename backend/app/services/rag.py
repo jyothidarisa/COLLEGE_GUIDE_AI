@@ -63,6 +63,34 @@ async def answer_student_query(
         conversation_history=chat_request.conversation_history
     )
 
+    if nlp_bundle.applied_rewrites and any("Ambiguity detected" in r for r in nlp_bundle.applied_rewrites):
+        targets = nlp_bundle.target_colleges or []
+        umb = "institution"
+        if targets:
+            umb = "NIT" if "National Institute" in targets[0] else ("IIT" if "Indian Institute" in targets[0] else "IIIT")
+        options_str = ", ".join(targets[:4])
+        reply = (
+            f"### 1. Clarification Needed\n"
+            f"We found **{len(targets)}** verified **{umb}** campuses in our official admissions archive (including {options_str}).\n\n"
+            f"### 2. Available Options\n"
+            + "\n".join([f"• **{t}**" for t in targets]) +
+            f"\n\n### 3. What to Do Next\n"
+            f"Please specify which particular {umb} campus you are interested in (for example, *\"What is the cutoff for {targets[0]}?\"*)."
+        )
+        return ChatResponse(
+            reply=reply,
+            citations=[],
+            evidence_used=[],
+            is_fallback=False,
+            warning=None,
+            suggested_follow_ups=[f"Cutoffs at {t[:25]}" for t in targets[:3]],
+            intent="clarification_request",
+            intent_confidence=1.0,
+            rewritten_query=None,
+            extracted_entities={},
+            model_used="Rule Engine"
+        )
+
     query_for_retrieval = nlp_bundle.rewritten_query or effective_query
 
     # 2. Target college resolution
