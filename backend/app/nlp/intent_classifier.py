@@ -430,6 +430,22 @@ class AdmissionIntentClassifier:
             )
 
         # --- Priority Domain Guards ---
+        # 0a. Fees and budget inquiries
+        if any(k in q_lower for k in [
+            "hostel charges", "included in tuition", "fees include", "does tuition include",
+            "tuition and hostel", "what are the fees", "fees for", "annual tuition fee",
+            "cost of study", "fee structure"
+        ]):
+            return IntentResult("fees_and_budget", 0.95, {"fees_and_budget": 0.95}, False, "Priority fees intent guard matched.")
+
+        # 0b. College recommendation inquiries
+        if any(k in q_lower for k in [
+            "suit my qualifications", "which colleges suit", "colleges for my rank",
+            "which colleges can i get", "colleges i can get", "suggest college", "recommend college",
+            "colleges for 20k", "best college for my rank", "options for my rank"
+        ]):
+            return IntentResult("college_recommendation", 0.95, {"college_recommendation": 0.95}, False, "Priority recommendation intent guard matched.")
+
         # 1. Package / placement inquiries (check before generic 'difference between')
         if any(k in q_lower for k in ["average and median", "average vs median", "median package", "placement percentage", "placement statistics"]):
             return IntentResult("placement_information", 0.95, {"placement_information": 0.95}, False, "Priority placement/salary intent guard matched.")

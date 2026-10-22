@@ -74,6 +74,9 @@ def query_mentions_unknown_institution(query_text: str, detected_colleges: List[
             ]
             if len(matched_name.split()) >= 2 and matched_name not in generic:
                 return True
+    # Explicit check for famous international / unindexed institutions
+    if any(k in q_lower for k in ["stanford", "harvard", "mit", "oxford", "cambridge", "berkeley", "princeton", "caltech", "columbia"]):
+        return True
     return False
 
 
@@ -136,12 +139,14 @@ def retrieve_structured_evidence(
         fee_records = q.order_by(FeeDetail.academic_year.desc()).limit(4).all()
         for f, c in fee_records:
             hostel_str = f"₹{f.hostel_fee_annual:,.0f}/year" if f.hostel_fee_annual else "Included/Standard"
+            mess_str = f" | Dining/Mess Fee: ₹{f.mess_fee_annual:,.0f}/year" if f.mess_fee_annual else ""
+            clean_notes = (f.fee_breakdown_notes or "Standard regulatory fee schedule").replace("86000.", "₹86,000").replace("..", ".")
             text = (
                 f"College: {c.name} ({c.code}) | Year: {f.academic_year} | "
                 f"Annual Tuition Fee: ₹{f.annual_tuition_fee:,.0f} | "
-                f"Hostel Living Cost: {hostel_str} | "
+                f"Hostel Living Cost: {hostel_str}{mess_str} | "
                 f"Total Estimated Annual Expense: ₹{f.total_annual_estimate:,.0f} | "
-                f"Breakdown Details: {f.fee_breakdown_notes or 'Standard regulatory fee schedule'}."
+                f"Breakdown Details: {clean_notes}."
             )
             structured_snippets.append({
                 "chunk_id": -f.id,

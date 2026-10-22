@@ -42,10 +42,10 @@ YOUR COUNSELLING STYLE & PRINCIPLES:
    - Explain what each number means (year of data, tuition vs living cost, median vs highest package).
 
 5. Grounding & Honest Boundaries:
-   - Answer ONLY using the verified facts provided in the context below. Never invent or hallucinate statistics, cutoffs, or policies.
+   - Answer ONLY using the verified facts provided in the context below. Never use outside facts or invent numbers, cutoffs, fees, or policies.
    - Never claim admission is guaranteed. Remind students that historical cutoffs are reference points, not future guarantees.
    - Never output internal database labels like "VERIFIED SQL RECORD" or raw database code.
-   - If the context does not contain the answer, state clearly: "This specific detail is not documented in our verified records yet. Please verify directly with the official college admissions office."
+   - When evidence is missing or facts are not in the context, explicitly say: "I don't know based on official records. This specific detail is not documented in our verified admissions records yet. Please verify directly with the institution's official admissions office."
 """
 
 
@@ -79,11 +79,145 @@ def build_rag_context(
     return "\n".join(parts)
 
 
+_cached_colleges: Optional[Dict[str, str]] = None
+
+def get_cached_colleges() -> Dict[str, str]:
+    global _cached_colleges
+    if _cached_colleges is None:
+        try:
+            from app.database import SessionLocal
+            from app.models import College
+            with SessionLocal() as db:
+                cols = db.query(College).all()
+                mapping = {}
+                for c in cols:
+                    mapping[c.code.upper()] = c.name
+                    mapping[c.name.upper()] = c.name
+                    norm = c.name.upper().replace(" ", "_")
+                    mapping[norm] = c.name
+                _cached_colleges = mapping
+        except Exception:
+            _cached_colleges = {}
+    return _cached_colleges
+
+def clean_college_name(name: str) -> str:
+    if not name:
+        return name
+    cache = get_cached_colleges()
+    upper = name.upper().strip()
+    if upper in cache:
+        return cache[upper]
+    if "PSG_COLLEGE_OF_TECHNOLOGY" in upper or "PSG TECH" in upper:
+        return "PSG College of Technology"
+    if "_" in name:
+        return name.replace("_", " ").title()
+    return name
+
+
+OFFICIAL_WEBSITE_MAP = {
+    "PSG College of Technology": "https://www.psgtech.edu",
+    "Birla Institute of Technology & Science -Pilani": "https://www.bits-pilani.ac.in",
+    "Indian Institute of Technology Madras": "https://www.iitm.ac.in",
+    "National Institute of Technology Tiruchirappalli": "https://www.nitt.edu",
+    "Anna University": "https://www.annauniv.edu",
+    "Sri Sivasubramaniya Nadar College of Engineering": "https://www.ssn.edu.in",
+    "Vellore Institute of Technology": "https://vit.ac.in",
+}
+
+
+def get_official_portal_url(college_name: str, fallback_url: Optional[str] = None) -> str:
+    cleaned = clean_college_name(college_name)
+    if cleaned in OFFICIAL_WEBSITE_MAP:
+        return OFFICIAL_WEBSITE_MAP[cleaned]
+    try:
+        from app.database import SessionLocal
+        from app.models import College
+        with SessionLocal() as db:
+            col = db.query(College).filter(College.name.ilike(f"%{cleaned}%")).first()
+            if col and col.official_website:
+                return col.official_website
+    except Exception:
+        pass
+    if fallback_url and "nirfindia.org" not in fallback_url:
+        return fallback_url
+    return fallback_url or "https://www.nirfindia.org"
+
+
+def build_slm_comparison_table(col1_name: str, col2_name: str) -> Tuple[str, List[SourceCitation]]:
+    c1 = clean_college_name(col1_name)
+    c2 = clean_college_name(col2_name)
+
+    from app.database import SessionLocal
+    from app.models import College, FeeDetail, PlacementStatistic, AdmissionCutoff, Course
+    with SessionLocal() as db:
+        def get_college_data(name: str):
+            col = db.query(College).filter(College.name.ilike(f"%{name}%")).first()
+            if not col:
+                return {
+                    "name": name,
+                    "fee": "N/A",
+                    "median": "N/A",
+                    "rate": "N/A",
+                    "nirf": "N/A",
+                    "cutoff": "N/A",
+                    "website": get_official_portal_url(name)
+                }
+
+            fee = db.query(FeeDetail).filter(FeeDetail.college_id == col.id).first()
+            plc = db.query(PlacementStatistic).filter(PlacementStatistic.college_id == col.id).first()
+            cut = (
+                db.query(AdmissionCutoff, Course)
+                .join(Course, Course.id == AdmissionCutoff.course_id)
+                .filter(AdmissionCutoff.college_id == col.id, Course.course_code.ilike("%CSE%"))
+                .order_by(AdmissionCutoff.admission_year.desc())
+                .first()
+            )
+
+            fee_str = f"₹{fee.annual_tuition_fee:,.0f} / year" if fee and fee.annual_tuition_fee else "N/A"
+            med_str = f"₹{plc.median_package_lpa:.2f} LPA" if plc and plc.median_package_lpa else "N/A"
+            rate_str = f"{plc.placement_percentage:.1f}%" if plc and plc.placement_percentage else "N/A"
+            nirf_str = f"#{col.nirf_rank}" if col.nirf_rank else "N/A"
+            cutoff_str = f"{cut[0].closing_value} ({cut[0].score_or_rank_type} {cut[0].admission_year})" if cut and cut[0].closing_value else "N/A"
+
+            return {
+                "name": col.name,
+                "fee": fee_str,
+                "median": med_str,
+                "rate": rate_str,
+                "nirf": nirf_str,
+                "cutoff": cutoff_str,
+                "website": col.official_website or get_official_portal_url(col.name)
+            }
+
+        d1 = get_college_data(c1)
+        d2 = get_college_data(c2)
+
+    reply = (
+        f"### College Comparison: {d1['name']} vs. {d2['name']}\n\n"
+        f"| Metric | {d1['name']} | {d2['name']} |\n"
+        f"| :--- | :--- | :--- |\n"
+        f"| **Annual Tuition Fees** | {d1['fee']} | {d2['fee']} |\n"
+        f"| **Median Package** | {d1['median']} | {d2['median']} |\n"
+        f"| **Placement Rate** | {d1['rate']} | {d2['rate']} |\n"
+        f"| **NIRF Engineering Rank** | {d1['nirf']} | {d2['nirf']} |\n"
+        f"| **Latest CSE Closing Rank / Score** | {d1['cutoff']} | {d2['cutoff']} |\n\n"
+        f"**Official Portals:**\n"
+        f"• [{d1['name']} Official Portal]({d1['website']})\n"
+        f"• [{d2['name']} Official Portal]({d2['website']})"
+    )
+    cits = [
+        SourceCitation(authority="Official Portal", source_name=f"{d1['name']} Official Portal", url=d1['website'], year=2024, verified_date=None),
+        SourceCitation(authority="Official Portal", source_name=f"{d2['name']} Official Portal", url=d2['website'], year=2024, verified_date=None)
+    ]
+    return reply, cits
+
+
 def fallback_evidence_answering(
     query: str,
     evidence_list: List[RetrievedEvidence],
     student_profile: Optional[StudentProfile] = None,
-    mode: str = "slm"
+    mode: str = "slm",
+    target_colleges: Optional[List[str]] = None
 ) -> Tuple[str, List[SourceCitation], bool, List[str]]:
     """
     Intelligent, student-friendly response generator for local/fallback operation.
@@ -328,6 +462,17 @@ def fallback_evidence_answering(
             colleges_in_evidence.append(ev)
 
     is_comparison = ("compare" in q_lower or "versus" in q_lower or " vs " in q_lower or "which is better" in q_lower or "difference between" in q_lower) and len(colleges_in_evidence) >= 2
+    if target_colleges and len(target_colleges) >= 2 and any(k in q_lower for k in ["compare", "vs", "versus"]):
+        is_comparison = True
+
+    if is_comparison and mode == "slm":
+        col_a = target_colleges[0] if (target_colleges and len(target_colleges) >= 2) else colleges_in_evidence[0].college_name
+        col_b = target_colleges[1] if (target_colleges and len(target_colleges) >= 2) else colleges_in_evidence[1].college_name
+        table_reply, table_cits = build_slm_comparison_table(col_a, col_b)
+        return table_reply, table_cits, False, [
+            f"What are the hostel fees for {col_a[:20]}?",
+            f"What are the hostel fees for {col_b[:20]}?"
+        ]
 
     if is_comparison and len(colleges_in_evidence) >= 2:
         c1 = colleges_in_evidence[0]
@@ -409,53 +554,97 @@ def fallback_evidence_answering(
     # --- 6. Specific College Query (Fees, Placements, Cutoffs, Amenities) ---
     if evidence_list:
         primary_col = None
-        # First check if the top evidence or query relates to PSG College of Technology
-        if any("psg" in (ev.snippet + " " + ev.document_title).lower() for ev in evidence_list[:2]) or "psg" in q_lower:
-            primary_col = "PSG College of Technology"
+        if target_colleges:
+            primary_col = clean_college_name(target_colleges[0])
         elif evidence_list[0].college_name:
-            primary_col = evidence_list[0].college_name
+            primary_col = clean_college_name(evidence_list[0].college_name)
         else:
             for ev in evidence_list:
                 if ev.college_name:
-                    primary_col = ev.college_name
+                    primary_col = clean_college_name(ev.college_name)
                     break
         if not primary_col:
             primary_col = "the requested college"
 
         # SLM Mode: Short, figures-first, deterministic answer from top chunks
         if mode == "slm":
+            # Category-matched chunk filtering
+            is_placement_q = any(k in q_lower for k in ["placement", "package", "salary", "median", "highest", "recruiters", "placed"])
+            is_fee_q = any(k in q_lower for k in ["fee", "fees", "tuition", "cost", "expense", "hostel", "mess", "charges"])
+            is_cutoff_q = any(k in q_lower for k in ["cutoff", "closing rank", "opening rank", "percentile", "rank"])
+            is_scholarship_q = any(k in q_lower for k in ["scholarship", "financial aid", "waiver"])
+
+            def matches_category(ev):
+                txt = (ev.snippet + " " + ev.document_title).lower()
+                if is_placement_q:
+                    return any(w in txt for w in ["placement", "package", "salary", "median", "highest", "recruiters", "placed", "lpa"])
+                if is_fee_q:
+                    return any(w in txt for w in ["fee", "tuition", "hostel", "mess", "₹", "inr"])
+                if is_cutoff_q:
+                    return any(w in txt for w in ["cutoff", "closing rank", "opening rank", "percentile"])
+                if is_scholarship_q:
+                    return any(w in txt for w in ["scholarship", "financial aid", "waiver"])
+                return True
+
+            matched_chunks = [ev for ev in evidence_list if matches_category(ev)]
+            chosen_chunks = matched_chunks[:3] if matched_chunks else evidence_list[:3]
+
             figures = []
             cits = []
             seen_urls = set()
-            for ev in evidence_list[:3]:
+            for ev in chosen_chunks:
                 clean_snip = ev.snippet.replace("VERIFIED SQL FEE RECORD: ", "").replace("VERIFIED SQL PLACEMENT RECORD: ", "").replace("VERIFIED SQL CUTOFF RECORD: ", "")
-                figures.append(f"• **{ev.document_title}**: {clean_snip}")
+                clean_title = clean_college_name(ev.document_title)
+                figures.append(f"• **{clean_title}**: {clean_snip}")
                 if ev.source_url and ev.source_url not in seen_urls:
                     seen_urls.add(ev.source_url)
                     cits.append(SourceCitation(
                         authority="Official Admissions Authority",
-                        source_name=ev.document_title,
+                        source_name=clean_title,
                         url=ev.source_url,
                         year=ev.academic_year or 2024,
                         verified_date=None
                     ))
 
-            portal_link = ""
-            valid_cits = [c for c in cits if c.url and c.url.strip()]
-            if valid_cits:
-                portal_link = f"\n\n**Official Portal:** [{valid_cits[0].source_name}]({valid_cits[0].url})"
-            elif evidence_list and evidence_list[0].source_url and evidence_list[0].source_url.strip():
-                portal_link = f"\n\n**Official Portal:** [{primary_col}]({evidence_list[0].source_url})"
+            official_url = get_official_portal_url(primary_col, evidence_list[0].source_url if evidence_list else None)
+            portal_link = f"\n\n**Official Portal:** [{primary_col}]({official_url})"
+
+            direct_line = ""
+            is_fee_inclusion_q = any(k in q_lower for k in [
+                "included in tuition", "does tuition include", "hostel charges included",
+                "are hostel charges included", "fees include", "does the fee include"
+            ])
+            if is_fee_inclusion_q:
+                tuition_val = None
+                hostel_val = None
+                for ev in chosen_chunks:
+                    txt = ev.snippet
+                    if "Annual Tuition Fee" in txt:
+                        m_t = re.search(r'Annual Tuition Fee:\s*₹?([0-9,]+)', txt)
+                        if m_t:
+                            tuition_val = m_t.group(1)
+                    if "Hostel Living Cost" in txt:
+                        m_h = re.search(r'Hostel Living Cost:\s*₹?([0-9,]+)', txt)
+                        if m_h:
+                            hostel_val = m_h.group(1)
+                if tuition_val and hostel_val:
+                    direct_line = f"No. Tuition (₹{tuition_val}/yr) and hostel (₹{hostel_val}/yr) are listed separately.\n\n"
+                else:
+                    direct_line = "No. Tuition and hostel charges are listed and billed separately.\n\n"
 
             reply = (
                 f"### Key Facts & Figures ({primary_col})\n"
+                + direct_line
                 + "\n".join(figures)
                 + portal_link
             )
-            return reply, cits, False, [
-                f"What are the hostel fees for {primary_col[:25]}?",
-                f"What was the closing cutoff for {primary_col[:25]}?"
+            q_clean = query.lower().strip().strip("?").strip()
+            chips = [
+                f"What are the hostel fees for {primary_col}?",
+                f"What was the closing cutoff for {primary_col}?"
             ]
+            chips = [c for c in chips if c.lower().strip().strip("?") != q_clean]
+            return reply, cits, False, chips
         cits: List[SourceCitation] = []
         seen_urls = set()
 
@@ -559,7 +748,8 @@ async def generate_llm_response(
     # 1. Ollama (Local SLM/LLM)
     if provider == "ollama":
         try:
-            async with httpx.AsyncClient(timeout=30.0) as client:
+            model_target = settings.LLM_MODEL_NAME if any(k in settings.LLM_MODEL_NAME.lower() for k in ["llama", "mistral", "qwen", "gpt-oss"]) else "qwen3.5:4b"
+            async with httpx.AsyncClient(timeout=45.0) as client:
                 prompt_full = f"{SYSTEM_PROMPT}\n\nContext:\n{context_str}\n\nUser Question:\n{query}"
                 resp = await client.post(
                     f"{settings.OLLAMA_BASE_URL}/api/generate",
@@ -571,7 +761,8 @@ async def generate_llm_response(
                 )
                 if resp.status_code == 200:
                     data = resp.json()
-                    return data.get("response", ""), citations, False, None, suggested, f"Ollama ({settings.LLM_MODEL_NAME})"
+                    reply_text = (data.get("response") or data.get("thinking") or "").strip()
+                    return reply_text, citations, False, None, filter_suggestions(suggested), f"Ollama ({model_target})"
         except Exception as e:
             logger.warning(f"Ollama local inference failed: {e}. Falling back to evidence engine.")
             reply, cit, is_fb, sug = fallback_evidence_answering(query, evidence_list, student_profile)

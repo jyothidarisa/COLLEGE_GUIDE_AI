@@ -35,3 +35,61 @@ def test_fallback_answering_no_hallucinations(db_session):
     # URLs must be official, not invented
     for c in citations:
         assert c.url.startswith("http")
+
+def test_recommendation_missing_profile_prompts_user():
+    # When student profile is missing, chat must ask for missing fields instead of searching documents
+    payload = {
+        "message": "Which colleges suit my qualifications?",
+        "student_profile": None,
+        "model_type": "slm",
+        "session_id": str(uuid.uuid4())
+    }
+    res = client.post("/api/chat", json=payload)
+    assert res.status_code == 200
+    data = res.json()
+    assert data["model_used"] == "Recommendation Engine"
+    assert data["is_fallback"] is False
+    assert "Entrance Exam" in data["reply"]
+    assert "Cutoff Score or Rank" in data["reply"]
+
+def test_recommendation_complete_profile_returns_matches():
+    # A complete profile must invoke recommendation engine and NOT prompt for missing fields
+    payload = {
+        "message": "Which colleges suit my qualifications?",
+        "student_profile": {
+            "entrance_exam": "JEE_MAIN",
+            "rank_or_score": 15000,
+            "preferred_course": "Computer Science and Engineering",
+            "category": "General",
+            "quota": "All India"
+        },
+        "model_type": "slm",
+        "session_id": str(uuid.uuid4())
+    }
+    res = client.post("/api/chat", json=payload)
+    assert res.status_code == 200
+    data = res.json()
+    assert data["model_used"] == "Recommendation Engine"
+    assert data["is_fallback"] is False
+    assert "To recommend colleges that suit your qualifications, please provide" not in data["reply"]
+    assert "Tailored College Recommendations" in data["reply"]
+    assert len(data["citations"]) > 0
+
+def test_recommendation_invalid_rank_validation():
+    # JEE Main rank > 1,500,000 must trigger rank validation check
+    payload = {
+        "message": "Which colleges suit my qualifications?",
+        "student_profile": {
+            "entrance_exam": "JEE_MAIN",
+            "rank_or_score": 2000000,
+            "preferred_course": "Computer Science and Engineering",
+            "category": "General",
+            "quota": "All India"
+        },
+        "model_type": "slm",
+        "session_id": str(uuid.uuid4())
+    }
+    res = client.post("/api/chat", json=payload)
+    assert res.status_code == 200
+    data = res.json()
+    assert "exceeds maximum possible candidates" in data["reply"]

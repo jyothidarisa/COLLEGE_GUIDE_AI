@@ -101,31 +101,155 @@ async def answer_student_query(
         selected_col_id = chat_request.selected_college_ids[0]
 
     # Page-context rewrite: only on /colleges/:id, and only for pronouns or college-specific intents.
-    # Do not append "at <college>" to generic questions.
+    # Canonical labels from INTENT_CLASSES in intent_classifier.py
     college_intents = {
         "college_search",
-        "cutoff_inquiry",
-        "fee_inquiry",
+        "cutoff_and_rank",
+        "fees_and_budget",
         "placement_information",
-        "hostel_inquiry",
+        "hostel_and_facilities",
         "scholarship_information",
-        "eligibility_check"
+        "admission_eligibility",
+        "admission_procedure",
+        "branch_selection"
     }
 
-    if selected_col_id and not nlp_bundle.target_colleges:
+    pronoun_pat = re.compile(r'\b(it|its|this college|the college|here|there)\b', re.IGNORECASE)
+    has_pronoun = bool(pronoun_pat.search(query_for_retrieval))
+
+    if selected_col_id:
         from app.models import College
         page_college = db.query(College).filter(College.id == selected_col_id).first()
         if page_college:
-            pronoun_pat = re.compile(r'\b(it|its|this college|the college|here)\b', re.IGNORECASE)
-            has_pronoun = bool(pronoun_pat.search(query_for_retrieval))
             is_college_intent = nlp_bundle.intent in college_intents
 
             if has_pronoun:
                 query_for_retrieval = pronoun_pat.sub(page_college.name, query_for_retrieval)
                 nlp_bundle.target_colleges = [page_college.name]
-            elif is_college_intent:
+            elif is_college_intent or not nlp_bundle.target_colleges:
                 query_for_retrieval = f"{query_for_retrieval} at {page_college.name}"
                 nlp_bundle.target_colleges = [page_college.name]
+    elif not nlp_bundle.target_colleges and has_pronoun:
+        # Pronoun without any college context in query, session, or page
+        return ChatResponse(
+            reply="Which college do you mean? Please specify the institution name (for example: *'What are the fees for NIT Trichy?'* or *'What is the placement at BITS Pilani?'*).",
+            citations=[],
+            evidence_used=[],
+            is_fallback=False,
+            warning=None,
+            suggested_follow_ups=[
+                "What are the fees for NIT Trichy?",
+                "What are the fees for PSG Tech?",
+                "What are the fees for SSN College?"
+            ],
+            intent=nlp_bundle.intent,
+            intent_confidence=nlp_bundle.intent_confidence,
+            rewritten_query=query_for_retrieval,
+            extracted_entities={},
+            model_used="Rule Engine"
+        )
+
+    # Direct Recommendation Engine Bypass for "suit my qualifications" queries
+    # Check if the query itself explicitly mentions a college; do not let old session history hijack a fresh recommendation inquiry
+    query_has_explicit_college = bool(nlp_bundle.entities.colleges_mentioned)
+    is_rec_phrase = any(k in chat_request.message.lower() for k in [
+        "suit my qualifications", "which colleges suit", "colleges for my rank",
+        "which colleges can i get", "colleges i can get", "colleges for 20k"
+    ])
+    if (nlp_bundle.intent == "college_recommendation" or is_rec_phrase) and not query_has_explicit_college:
+        profile = chat_request.student_profile
+        if not profile or not profile.entrance_exam or not profile.rank_or_score or not profile.preferred_course:
+            return ChatResponse(
+                reply=(
+                    "To recommend colleges that suit your qualifications, please provide your profile details:\n\n"
+                    "1. **Entrance Exam**: (e.g. JEE Main, TNEA, BITSAT)\n"
+                    "2. **Cutoff Score or Rank**: (e.g. JEE Rank 15,000 or TNEA Cutoff 195.00/200)\n"
+                    "3. **Preferred Course / Branch**: (e.g. Computer Science and Engineering, ECE)\n\n"
+                    "*You can enter these in the Student Profile tab or type them directly.*"
+                ),
+                citations=[],
+                evidence_used=[],
+                is_fallback=False,
+                warning=None,
+                suggested_follow_ups=[
+                    "Recommend colleges for JEE rank 15000",
+                    "Suggest colleges for TNEA 195 cutoff"
+                ],
+                intent="college_recommendation",
+                intent_confidence=0.95,
+                rewritten_query=query_for_retrieval,
+                extracted_entities={},
+                model_used="Recommendation Engine"
+            )
+
+        from app.services.recommendation import validate_student_profile, recommend_colleges
+        is_valid, err_msg = validate_student_profile(profile)
+        if not is_valid:
+            return ChatResponse(
+                reply=f"⚠️ {err_msg}",
+                citations=[],
+                evidence_used=[],
+                is_fallback=False,
+                warning=err_msg,
+                suggested_follow_ups=[
+                    "Recommend colleges for JEE rank 15000",
+                    "Suggest colleges for TNEA 195 cutoff"
+                ],
+                intent="college_recommendation",
+                intent_confidence=0.95,
+                rewritten_query=query_for_retrieval,
+                extracted_entities={},
+                model_used="Recommendation Engine"
+            )
+
+        rec_res = recommend_colleges(db, profile)
+
+        def format_rec_item(item, label: str) -> str:
+            fee_str = f"₹{item.annual_tuition_fee:,.0f}/yr" if item.annual_tuition_fee else "N/A"
+            cutoff_str = "N/A"
+            if item.historical_cutoff and "closing_value" in item.historical_cutoff:
+                val = item.historical_cutoff["closing_value"]
+                if "TNEA" in str(item.historical_cutoff.get("exam_route", "")).upper() or val <= 200:
+                    cutoff_str = f"{val:.2f}"
+                else:
+                    cutoff_str = f"{int(val):,}"
+            return f"• **{label}**: **{item.name}** ({item.matched_course}) — Closing: {cutoff_str} | Fee: {fee_str}"
+
+        reply_lines = ["### Tailored College Recommendations for Your Profile\n"]
+        if rec_res.reach:
+            reply_lines.append(format_rec_item(rec_res.reach[0], "Ambitious Match"))
+        if rec_res.target:
+            reply_lines.append(format_rec_item(rec_res.target[0], "Better-Matched Target"))
+        elif rec_res.better_matched:
+            reply_lines.append(format_rec_item(rec_res.better_matched[0], "Better-Matched Target"))
+        if rec_res.intelligent_alternatives:
+            reply_lines.append(format_rec_item(rec_res.intelligent_alternatives[0], "Intelligent Alternative"))
+
+        rec_cits = []
+        seen_c_urls = set()
+        all_candidates = (rec_res.reach or []) + (rec_res.target or []) + (rec_res.intelligent_alternatives or [])
+        for cand in all_candidates:
+            for s in (cand.sources or []):
+                if s.url and s.url not in seen_c_urls:
+                    seen_c_urls.add(s.url)
+                    rec_cits.append(s)
+
+        return ChatResponse(
+            reply="\n".join(reply_lines),
+            citations=rec_cits[:3],
+            evidence_used=[],
+            is_fallback=False,
+            warning=None,
+            suggested_follow_ups=[
+                "Compare these recommended colleges",
+                "Check fee details for target match"
+            ],
+            intent="college_recommendation",
+            intent_confidence=0.95,
+            rewritten_query=query_for_retrieval,
+            extracted_entities={},
+            model_used="Recommendation Engine"
+        )
 
     # For comparisons, expand short acronym queries (e.g. "Compare CEG and SSN") with resolved college names
     if len(nlp_bundle.target_colleges) >= 2 and any(k in query_for_retrieval.lower() for k in ["compare", "vs", "versus", "difference"]):
@@ -162,12 +286,13 @@ async def answer_student_query(
         warning_msg = "Notice: LLM API key not configured in .env. Response generated using deterministic Local SLM." if is_fallback_llm else None
         model_out = nlp.slm_runner.generate(
             query=query_for_retrieval,
-            evidence_list=reranked_evidence[:3],
+            evidence_list=reranked_evidence[:top_k],
             student_profile=chat_request.student_profile,
             context=nlp_bundle.session_context,
             conversation_history=chat_request.conversation_history,
             mode="slm" if not is_fallback_llm else "slm_fallback",
-            warning=warning_msg
+            warning=warning_msg,
+            target_colleges=nlp_bundle.target_colleges
         )
     else:
         model_out = await nlp.llm_runner.generate_async(

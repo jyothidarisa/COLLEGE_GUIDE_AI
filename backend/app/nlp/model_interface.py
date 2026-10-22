@@ -90,7 +90,8 @@ class SLMModelRunner:
         context: Optional[SessionContext] = None,
         conversation_history: Optional[List[ChatMessage]] = None,
         mode: str = "slm",
-        warning: Optional[str] = None
+        warning: Optional[str] = None,
+        target_colleges: Optional[List[str]] = None
     ) -> ModelOutput:
         start_time = time.time()
 
@@ -99,14 +100,15 @@ class SLMModelRunner:
             query=query,
             evidence_list=evidence_list,
             student_profile=student_profile,
-            mode=mode
+            mode=mode,
+            target_colleges=target_colleges
         )
 
         latency = (time.time() - start_time) * 1000.0
         faithfulness = calculate_faithfulness(reply, evidence_list)
         satisfied = check_constraint_satisfaction(reply, context or SessionContext(session_id="eval"))
 
-        badge = self.model_name if mode != "slm_fallback" else "Local SLM (Fallback)"
+        badge = self.model_name if mode != "slm_fallback" else "Rule-based Evidence Fallback"
         return ModelOutput(
             model_name=badge,
             model_type=self.model_type,
@@ -116,7 +118,7 @@ class SLMModelRunner:
             token_count_estimated=len(reply.split()),
             faithfulness_score=faithfulness,
             constraint_satisfied=satisfied,
-            is_fallback=is_fallback,
+            is_fallback=True if mode == "slm_fallback" else is_fallback,
             warning=warning,
             suggested_follow_ups=suggestions
         )

@@ -48,6 +48,10 @@ def validate_student_profile(profile: StudentProfile) -> Tuple[bool, Optional[st
     if exam in ["JEE_MAIN", "JEE_ADVANCED", "VITEEE", "WBJEE", "AP_EAPCET", "TS_EAMCET", "SRMJEEE", "COMEDK"]:
         if profile.rank_or_score < 1:
             return False, f"For {exam}, rank must be a positive integer >= 1."
+        if exam == "JEE_MAIN" and profile.rank_or_score > 1500000:
+            return False, "For JEE Main, rank exceeds maximum possible candidates (~1,500,000). Please check your rank."
+        if exam == "JEE_ADVANCED" and profile.rank_or_score > 300000:
+            return False, "For JEE Advanced, rank exceeds maximum qualified candidates (~300,000). Please check your rank."
             
     if profile.pcm_percentage is not None and (profile.pcm_percentage < 0 or profile.pcm_percentage > 100):
         return False, "Class 12 PCM percentage must be between 0 and 100."
@@ -366,12 +370,43 @@ def recommend_colleges(db: Session, profile: StudentProfile) -> RecommendationRe
 
     # Step 2: Query candidate colleges offering the preferred course for the exam route
     target_exam = profile.entrance_exam.upper()
-    target_course_code = profile.preferred_course.upper()
+    raw_course = (profile.preferred_course or "CSE").upper().strip()
 
-    # Query matching courses
+    course_aliases = {
+        "COMPUTER SCIENCE": "CSE",
+        "COMPUTER SCIENCE AND ENGINEERING": "CSE",
+        "COMPUTER SCIENCE & ENGINEERING": "CSE",
+        "CSE": "CSE",
+        "ELECTRONICS": "ECE",
+        "ELECTRONICS AND COMMUNICATION": "ECE",
+        "ELECTRONICS AND COMMUNICATION ENGINEERING": "ECE",
+        "ELECTRONICS & COMMUNICATION ENGINEERING": "ECE",
+        "ECE": "ECE",
+        "ELECTRICAL": "EEE",
+        "ELECTRICAL AND ELECTRONICS": "EEE",
+        "ELECTRICAL & ELECTRONICS ENGINEERING": "EEE",
+        "EEE": "EEE",
+        "MECHANICAL": "MECH",
+        "MECHANICAL ENGINEERING": "MECH",
+        "MECH": "MECH",
+        "CIVIL": "CIVIL",
+        "CIVIL ENGINEERING": "CIVIL",
+        "INFORMATION TECHNOLOGY": "IT",
+        "IT": "IT",
+        "ARTIFICIAL INTELLIGENCE": "AI_DS",
+        "DATA SCIENCE": "AI_DS",
+        "AI_DS": "AI_DS",
+        "AEROSPACE": "AERO",
+        "AEROSPACE ENGINEERING": "AERO",
+        "CHEMICAL": "CHEM",
+        "CHEMICAL ENGINEERING": "CHEM"
+    }
+    target_course_code = course_aliases.get(raw_course, raw_course)
+
+    # Query matching courses by code or name
     courses_query = db.query(Course).filter(
-        Course.course_code == target_course_code,
-        Course.primary_exam == target_exam
+        Course.primary_exam == target_exam,
+        (Course.course_code == target_course_code) | (Course.course_name.ilike(f"%{raw_course}%"))
     )
     matching_courses = courses_query.all()
 
