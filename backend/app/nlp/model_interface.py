@@ -127,11 +127,11 @@ class SLMModelRunner:
 class LLMModelRunner:
     """
     Large Language Model (LLM) Runner.
-    Routes queries to Google Gemini, OpenAI, Groq, or Ollama using identical
+    Routes queries to OpenRouter, Ollama, or deterministic fallback using identical
     prompt instructions and retrieval context.
     """
 
-    def __init__(self, model_name: str = "LLM-Gemini-1.5-Flash"):
+    def __init__(self, model_name: str = "LLM-OpenRouter"):
         self.model_name = settings.LLM_MODEL_NAME or model_name
         self.model_type = "llm"
 

@@ -277,13 +277,14 @@ async def answer_student_query(
     )
 
     # 5. Model Execution: SLM vs. LLM
-    api_key = (settings.LLM_API_KEY or "").strip()
-    provider = (settings.LLM_PROVIDER or "fallback").lower()
-    llm_configured = bool(api_key) or provider == "ollama"
+    openrouter_key = (settings.OPENROUTER_API_KEY or "").strip()
+    is_valid_openrouter = bool(openrouter_key and (openrouter_key.startswith("sk-or-") or len(openrouter_key) > 20))
+    provider = (settings.LLM_PROVIDER or "openrouter").lower()
+    llm_configured = (provider in ["openrouter", "groq", "openai"] and is_valid_openrouter) or (provider == "ollama")
 
     if requested_mode == "slm" or not llm_configured:
         is_fallback_llm = (requested_mode == "llm" and not llm_configured)
-        warning_msg = "Notice: LLM API key not configured in .env. Response generated using deterministic Local SLM." if is_fallback_llm else None
+        warning_msg = "Notice: OpenRouter API key not configured in .env. Response generated using rule-based evidence engine." if is_fallback_llm else None
         model_out = nlp.slm_runner.generate(
             query=query_for_retrieval,
             evidence_list=reranked_evidence[:top_k],

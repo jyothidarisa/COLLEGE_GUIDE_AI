@@ -3,7 +3,10 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
-load_dotenv(dotenv_path=BASE_DIR / ".env")
+# Check candidate locations for .env: project root, backend folder, parent directory, and current working directory
+for env_candidate in [BASE_DIR / ".env", BASE_DIR / "backend" / ".env", BASE_DIR.parent / ".env", Path.cwd() / ".env"]:
+    if env_candidate.exists():
+        load_dotenv(dotenv_path=env_candidate, override=True)
 
 class Settings:
     PROJECT_NAME: str = "College Guide AI"
@@ -27,11 +30,16 @@ class Settings:
     raw_docs_dir = os.getenv("DOCUMENTS_DIR", "data/documents")
     DOCUMENTS_DIR: str = str((BASE_DIR / raw_docs_dir).resolve()) if not os.path.isabs(raw_docs_dir) else raw_docs_dir
     
-    # LLM Provider Configuration
-    LLM_PROVIDER: str = os.getenv("LLM_PROVIDER", "fallback")  # gemini, openai, groq, ollama, fallback
-    LLM_API_KEY: str = os.getenv("LLM_API_KEY", "")
-    LLM_MODEL_NAME: str = os.getenv("LLM_MODEL_NAME", "gemini-1.5-flash")
-    OLLAMA_BASE_URL: str = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
+    # LLM Provider Configuration (OpenRouter cloud LLM + Ollama local SLM)
+    # Strictly require OPENROUTER_API_KEY for OpenRouter; do not implicitly fall back to placeholder keys
+    OPENROUTER_API_KEY: str = os.getenv("OPENROUTER_API_KEY", "").strip()
+    OPENROUTER_BASE_URL: str = os.getenv("OPENROUTER_BASE_URL", "https://openrouter.ai/api/v1").strip()
+    OPENROUTER_MODEL: str = os.getenv("OPENROUTER_MODEL", os.getenv("LLM_MODEL_NAME", "meta-llama/llama-3.3-70b-instruct")).strip()
+    
+    LLM_PROVIDER: str = os.getenv("LLM_PROVIDER", "openrouter").strip().lower()
+    LLM_API_KEY: str = OPENROUTER_API_KEY
+    LLM_MODEL_NAME: str = OPENROUTER_MODEL
+    OLLAMA_BASE_URL: str = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434").strip()
     
     # Security
     ADMIN_API_KEY: str = os.getenv("ADMIN_API_KEY", "admin-secret-key-change-in-production")

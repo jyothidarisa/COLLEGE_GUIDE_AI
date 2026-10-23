@@ -267,18 +267,11 @@ export default function FloatingChatWidget() {
             SLM (Fast)
           </button>
           <button
-            onClick={() => {
-              if (llmConfig?.llm_enabled) {
-                setModelType('llm');
-              }
-            }}
-            disabled={!llmConfig?.llm_enabled}
-            title={!llmConfig?.llm_enabled ? llmConfig?.message : "Large Language Model"}
+            onClick={() => setModelType('llm')}
+            title={!llmConfig?.llm_enabled ? "LLM mode: Rule-based Evidence Fallback active until OpenRouter API key is set" : "Large Language Model (OpenRouter)"}
             className={`px-2 py-0.5 rounded transition-all ${
               modelType === 'llm'
                 ? 'bg-indigo-50 text-indigo-700 font-bold shadow-2xs'
-                : !llmConfig?.llm_enabled
-                ? 'text-slate-300 cursor-not-allowed'
                 : 'text-slate-500 hover:text-slate-800'
             }`}
           >

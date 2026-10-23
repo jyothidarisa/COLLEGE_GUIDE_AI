@@ -516,7 +516,7 @@ export default function CollegeDetailPage() {
                 <div>
                   <div className="font-bold text-slate-900">{src.source_name}</div>
                   <div className="text-slate-500">
-                    Authority: {src.authority} • Academic Year: {src.year} • Verified: {src.verified_date}
+                    Authority: {src.authority} • Academic Year: {src.year} {src.verified_date ? `• Verified: ${src.verified_date}` : ''}
                   </div>
                 </div>
                 <a

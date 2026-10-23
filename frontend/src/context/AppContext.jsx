@@ -36,15 +36,23 @@ export const AppProvider = ({ children }) => {
     message: 'LLM mode disabled (no API key configured). Operating in Local SLM mode.'
   });
 
+  const refreshChatConfig = async () => {
+    try {
+      const cfg = await api.getChatConfig();
+      setLlmConfig(cfg);
+      return cfg;
+    } catch {
+      return null;
+    }
+  };
+
   useEffect(() => {
-    api.getChatConfig()
-      .then((cfg) => {
-        setLlmConfig(cfg);
-        if (!cfg.llm_enabled) {
-          setModelType('slm');
-        }
-      })
-      .catch(() => {});
+    refreshChatConfig();
+
+    // Auto-refresh config when user switches back to browser tab
+    const onFocus = () => refreshChatConfig();
+    window.addEventListener('focus', onFocus);
+    return () => window.removeEventListener('focus', onFocus);
   }, []);
 
   useEffect(() => {
@@ -97,7 +105,8 @@ export const AppProvider = ({ children }) => {
         messages,
         setMessages,
         llmConfig,
-        setLlmConfig
+        setLlmConfig,
+        refreshChatConfig
       }}
     >
       {children}

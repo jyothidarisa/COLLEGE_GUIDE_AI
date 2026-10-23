@@ -49,6 +49,11 @@ export const api = {
     return res.data;
   },
 
+  updateChatConfig: async (configPayload) => {
+    const res = await client.post('/api/chat/config', configPayload);
+    return res.data;
+  },
+
   sendMessage: async (
     message,
     studentProfile = null,

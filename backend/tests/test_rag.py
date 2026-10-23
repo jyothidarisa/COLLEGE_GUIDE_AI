@@ -1,7 +1,12 @@
+import uuid
 import pytest
+from fastapi.testclient import TestClient
 from app.database import SessionLocal, init_db
 from app.services.retriever import retrieve_structured_evidence, hybrid_retrieve
 from app.services.llm_service import fallback_evidence_answering
+from app.main import app
+
+client = TestClient(app)
 
 @pytest.fixture(scope="module")
 def db_session():
@@ -93,3 +98,19 @@ def test_recommendation_invalid_rank_validation():
     assert res.status_code == 200
     data = res.json()
     assert "exceeds maximum possible candidates" in data["reply"]
+
+def test_openrouter_missing_key_honest_fallback_attribution(monkeypatch):
+    # In LLM mode without valid key, must report Rule-based Evidence Fallback and is_fallback=True
+    from app.config import settings
+    monkeypatch.setattr(settings, "OPENROUTER_API_KEY", "")
+    payload = {
+        "message": "What are the fees for NIT Trichy?",
+        "model_type": "llm",
+        "session_id": str(uuid.uuid4())
+    }
+    res = client.post("/api/chat", json=payload)
+    assert res.status_code == 200
+    data = res.json()
+    assert data["is_fallback"] is True
+    assert data["model_used"] == "Rule-based Evidence Fallback"
+    assert "OpenRouter API key not configured" in (data["warning"] or "")

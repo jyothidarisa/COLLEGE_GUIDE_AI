@@ -23,6 +23,13 @@ async def lifespan(app: FastAPI):
         logger.info(f"Database initialized successfully ({engine.url.drivername}).")
     except Exception as e:
         logger.error(f"Error initializing database: {e}")
+
+    # Startup log: Active LLM provider and model (without printing the key)
+    provider = (settings.LLM_PROVIDER or "fallback").lower()
+    has_key = bool(settings.OPENROUTER_API_KEY and settings.OPENROUTER_API_KEY.strip())
+    model = settings.LLM_MODEL_NAME or "default"
+    logger.info(f"LLM Configuration: active_provider='{provider}', active_model='{model}', key_configured={has_key}")
+
     yield
     # Shutdown
     logger.info("Application shutting down.")

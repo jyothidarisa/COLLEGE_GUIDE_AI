@@ -712,12 +712,11 @@ async def generate_llm_response(
 ) -> Tuple[str, List[SourceCitation], bool, Optional[str], List[str], str]:
     """
     Routes the query and grounded evidence to the configured LLM provider
-    (Gemini, OpenAI, Groq, Ollama, or Fallback).
-    Returns (reply_text, citations, is_fallback, warning_message, suggested_follow_ups).
+    (OpenRouter, Ollama, or Rule-based Evidence Fallback).
+    Returns (reply_text, citations, is_fallback, warning_message, suggested_follow_ups, model_badge).
     """
     context_str = build_rag_context(evidence_list, student_profile)
-    provider = settings.LLM_PROVIDER.lower()
-    api_key = settings.LLM_API_KEY.strip()
+    provider = (settings.LLM_PROVIDER or "openrouter").lower()
 
     # Pre-build citations from evidence
     citations: List[SourceCitation] = []
@@ -727,7 +726,7 @@ async def generate_llm_response(
             seen_urls.add(ev.source_url)
             citations.append(SourceCitation(
                 authority="Admissions Authority / Institute",
-                source_name=ev.document_title,
+                source_name=clean_college_name(ev.document_title),
                 url=ev.source_url,
                 year=ev.academic_year or 2024,
                 verified_date=None
@@ -739,22 +738,110 @@ async def generate_llm_response(
         "What is the difference between average and median package?"
     ]
 
-    # Check if external credentials are unconfigured or local fallback is selected
-    if provider in ["fallback", "gemini", "openai", "groq"] and not api_key:
-        warning = f"Notice: {provider.upper()} API key not set in .env. Serving answers using student-friendly verified evidence engine." if provider != "fallback" else None
-        reply, cit, is_fb, sug = fallback_evidence_answering(query, evidence_list, student_profile)
-        return reply, cit or citations, is_fb, warning, sug, "Local SLM (Fallback)"
+    def filter_suggestions(sugs: List[str]) -> List[str]:
+        q_clean = query.lower().strip().strip("?").strip()
+        out = []
+        for s in sugs:
+            s_clean = s.strip()
+            if s_clean.lower().strip("?").strip() == q_clean:
+                continue
+            out.append(s_clean)
+        return out
 
-    # 1. Ollama (Local SLM/LLM)
+    # 1. OpenRouter Cloud LLM (Primary Cloud Provider via OpenAI-compatible Chat Completions)
+    if provider in ["openrouter", "groq", "openai"]:
+        openrouter_key = (settings.OPENROUTER_API_KEY or "").strip()
+        is_valid_openrouter_key = bool(openrouter_key and (openrouter_key.startswith("sk-or-") or len(openrouter_key) > 20))
+
+        if not is_valid_openrouter_key:
+            warning = "OpenRouter API key not configured. Set a valid OPENROUTER_API_KEY (starting with sk-or-) in .env to enable OpenRouter LLM."
+            logger.warning(warning)
+            reply, cit, is_fb, sug = fallback_evidence_answering(query, evidence_list, student_profile, mode="llm")
+            return reply, cit or citations, True, warning, filter_suggestions(sug), "Rule-based Evidence Fallback"
+
+        try:
+            url = f"{settings.OPENROUTER_BASE_URL.rstrip('/')}/chat/completions"
+            headers = {
+                "Authorization": f"Bearer {openrouter_key}",
+                "Content-Type": "application/json",
+                "HTTP-Referer": "https://college-guide-ai.local",
+                "X-Title": "College Guide AI"
+            }
+            messages = [{"role": "system", "content": SYSTEM_PROMPT}]
+            if conversation_history:
+                for m in conversation_history[-4:]:
+                    messages.append({"role": m.role, "content": m.content})
+            messages.append({"role": "user", "content": f"""Context:\n{context_str}\n\nStudent Query: {query}"""})
+
+            async with httpx.AsyncClient(timeout=30.0) as client:
+                resp = await client.post(
+                    url,
+                    headers=headers,
+                    json={
+                        "model": settings.OPENROUTER_MODEL,
+                        "messages": messages,
+                        "temperature": 0.2,
+                        "max_tokens": 1024
+                    }
+                )
+                if resp.status_code == 200:
+                    data = resp.json()
+                    choices = data.get("choices", [])
+                    if choices and "message" in choices[0]:
+                        msg = choices[0]["message"]
+                        reply_text = (msg.get("content") or msg.get("reasoning") or "").strip()
+                        active_model = settings.OPENROUTER_MODEL
+                        return reply_text, citations, False, None, filter_suggestions(suggested), f"OpenRouter ({active_model})"
+                else:
+                    err_msg = f"HTTP {resp.status_code}"
+                    try:
+                        err_data = resp.json().get("error", {})
+                        err_msg = err_data.get("message", err_msg) if isinstance(err_data, dict) else str(err_data)
+                    except Exception:
+                        pass
+                    if openrouter_key and openrouter_key in err_msg:
+                        err_msg = err_msg.replace(openrouter_key, "[REDACTED]")
+                    if resp.status_code == 401:
+                        warning = f"OpenRouter authentication error (401): Invalid or unauthorized API key."
+                    elif resp.status_code == 402:
+                        warning = f"OpenRouter error (402): Insufficient credits on account."
+                    elif resp.status_code == 429:
+                        warning = f"OpenRouter rate limit error (429): {err_msg}"
+                    else:
+                        warning = f"OpenRouter API error ({resp.status_code}): {err_msg}"
+                    logger.warning(warning)
+                    reply, cit, is_fb, sug = fallback_evidence_answering(query, evidence_list, student_profile, mode="llm")
+                    return reply, cit or citations, True, warning, filter_suggestions(sug), "Rule-based Evidence Fallback"
+        except httpx.TimeoutException:
+            warning = "OpenRouter request timed out after 30 seconds."
+            logger.warning(warning)
+            reply, cit, is_fb, sug = fallback_evidence_answering(query, evidence_list, student_profile, mode="llm")
+            return reply, cit or citations, True, warning, filter_suggestions(sug), "Rule-based Evidence Fallback"
+        except Exception as e:
+            err_msg = str(e)
+            if openrouter_key and openrouter_key in err_msg:
+                err_msg = err_msg.replace(openrouter_key, "[REDACTED]")
+            warning = f"OpenRouter connection error: {err_msg}"
+            logger.warning(warning)
+            reply, cit, is_fb, sug = fallback_evidence_answering(query, evidence_list, student_profile, mode="llm")
+            return reply, cit or citations, True, warning, filter_suggestions(sug), "Rule-based Evidence Fallback"
+
+    # 2. Ollama (Local SLM Provider)
     if provider == "ollama":
         try:
             model_target = settings.LLM_MODEL_NAME if any(k in settings.LLM_MODEL_NAME.lower() for k in ["llama", "mistral", "qwen", "gpt-oss"]) else "qwen3.5:4b"
-            async with httpx.AsyncClient(timeout=45.0) as client:
-                prompt_full = f"{SYSTEM_PROMPT}\n\nContext:\n{context_str}\n\nUser Question:\n{query}"
+            async with httpx.AsyncClient(timeout=30.0) as client:
+                prompt_full = f"""{SYSTEM_PROMPT}
+
+Context:
+{context_str}
+
+User Question:
+{query}"""
                 resp = await client.post(
-                    f"{settings.OLLAMA_BASE_URL}/api/generate",
+                    f"{settings.OLLAMA_BASE_URL.rstrip('/')}/api/generate",
                     json={
-                        "model": settings.LLM_MODEL_NAME,
+                        "model": model_target,
                         "prompt": prompt_full,
                         "stream": False
                     }
@@ -763,71 +850,15 @@ async def generate_llm_response(
                     data = resp.json()
                     reply_text = (data.get("response") or data.get("thinking") or "").strip()
                     return reply_text, citations, False, None, filter_suggestions(suggested), f"Ollama ({model_target})"
-        except Exception as e:
-            logger.warning(f"Ollama local inference failed: {e}. Falling back to evidence engine.")
-            reply, cit, is_fb, sug = fallback_evidence_answering(query, evidence_list, student_profile)
-            return reply, cit or citations, is_fb, f"Ollama connection error ({e}). Serving verified evidence.", sug, "Local SLM (Fallback)"
-
-    # 2. Google Gemini
-    if provider == "gemini":
-        try:
-            url = f"https://generativelanguage.googleapis.com/v1beta/models/{settings.LLM_MODEL_NAME}:generateContent?key={api_key}"
-            payload = {
-                "contents": [
-                    {
-                        "role": "user",
-                        "parts": [
-                            {"text": f"{SYSTEM_PROMPT}\n\nVerified Context:\n{context_str}\n\nUser Question: {query}"}
-                        ]
-                    }
-                ],
-                "generationConfig": {
-                    "temperature": 0.2,
-                    "maxOutputTokens": 1000
-                }
-            }
-            async with httpx.AsyncClient(timeout=25.0) as client:
-                resp = await client.post(url, json=payload)
-                if resp.status_code == 200:
-                    data = resp.json()
-                    candidates = data.get("candidates", [])
-                    if candidates:
-                        reply_text = candidates[0]["content"]["parts"][0]["text"]
-                        return reply_text, citations, False, None, suggested, settings.LLM_MODEL_NAME
                 else:
-                    logger.error(f"Gemini API returned status {resp.status_code}: {resp.text}")
+                    warning = f"Ollama error ({resp.status_code})"
         except Exception as e:
-            logger.warning(f"Gemini request failed: {e}. Falling back to evidence engine.")
+            warning = f"Ollama connection error: {e}"
+        logger.warning(warning)
+        reply, cit, is_fb, sug = fallback_evidence_answering(query, evidence_list, student_profile, mode="llm")
+        return reply, cit or citations, True, warning, filter_suggestions(sug), "Rule-based Evidence Fallback"
 
-    # 3. OpenAI / Groq / OpenAI-compatible API
-    if provider in ["openai", "groq"]:
-        try:
-            base_url = "https://api.groq.com/openai/v1" if provider == "groq" else "https://api.openai.com/v1"
-            headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"}
-            messages = [{"role": "system", "content": SYSTEM_PROMPT}]
-            if conversation_history:
-                for m in conversation_history[-4:]:
-                    messages.append({"role": m.role, "content": m.content})
-            messages.append({"role": "user", "content": f"Context:\n{context_str}\n\nQuestion:\n{query}"})
-
-            async with httpx.AsyncClient(timeout=25.0) as client:
-                resp = await client.post(
-                    f"{base_url}/chat/completions",
-                    headers=headers,
-                    json={
-                        "model": settings.LLM_MODEL_NAME if provider == "groq" else "gpt-4o-mini",
-                        "messages": messages,
-                        "temperature": 0.2
-                    }
-                )
-                if resp.status_code == 200:
-                    data = resp.json()
-                    reply_text = data["choices"][0]["message"]["content"]
-                    active_model = settings.LLM_MODEL_NAME if provider == "groq" else "gpt-4o-mini"
-                    return reply_text, citations, False, None, suggested, active_model
-        except Exception as e:
-            logger.warning(f"{provider.upper()} API request failed: {e}")
-
-    # Fallback to local verified evidence engine
+    # 3. Fallback / Unrecognized Provider
+    warning = "Notice: Running in fallback mode. Response generated using rule-based evidence engine."
     reply, cit, is_fb, sug = fallback_evidence_answering(query, evidence_list, student_profile, mode="llm")
-    return reply, cit or citations, is_fb, None, sug, "Local SLM (Fallback)"
+    return reply, cit or citations, True, warning, filter_suggestions(sug), "Rule-based Evidence Fallback"

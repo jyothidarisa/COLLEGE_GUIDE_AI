@@ -10,7 +10,8 @@ import {
   ChevronUp, 
   User, 
   RotateCcw,
-  BookOpen
+  BookOpen,
+  Key
 } from 'lucide-react';
 import { useApp } from '../context/AppContext';
 import api from '../services/api';
@@ -26,13 +27,38 @@ export default function ChatbotPage() {
     setModelType,
     messages,
     setMessages,
-    llmConfig
+    llmConfig,
+    refreshChatConfig
   } = useApp();
 
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
   const [activeEvidenceIndex, setActiveEvidenceIndex] = useState(null);
+  const [quickApiKey, setQuickApiKey] = useState('');
+  const [savingKey, setSavingKey] = useState(false);
+  const [showKeyModal, setShowKeyModal] = useState(false);
+  const [keySaveMessage, setKeySaveMessage] = useState(null);
   const messagesEndRef = useRef(null);
+
+  const handleSaveQuickKey = async () => {
+    if (!quickApiKey.trim()) return;
+    setSavingKey(true);
+    setKeySaveMessage(null);
+    try {
+      const res = await api.updateChatConfig({
+        api_key: quickApiKey.trim(),
+        provider: 'openrouter'
+      });
+      await refreshChatConfig();
+      setKeySaveMessage({ type: 'success', text: 'OpenRouter LLM successfully activated!' });
+      setQuickApiKey('');
+      setTimeout(() => setShowKeyModal(false), 2000);
+    } catch (err) {
+      setKeySaveMessage({ type: 'error', text: 'Failed to update key: ' + (err.message || 'Error') });
+    } finally {
+      setSavingKey(false);
+    }
+  };
 
   const starterQuestions = [
     'Which colleges suit my qualifications?',
@@ -158,22 +184,43 @@ export default function ChatbotPage() {
               SLM (Fast)
             </button>
             <button
-              onClick={() => {
-                if (llmConfig?.llm_enabled) {
-                  setModelType('llm');
-                }
-              }}
-              disabled={!llmConfig?.llm_enabled}
-              title={!llmConfig?.llm_enabled ? llmConfig?.message : "Large Language Model: Nuanced conversational reasoning"}
-              className={`px-2.5 py-1 rounded-md transition-all ${
+              onClick={() => setModelType('llm')}
+              title={
+                !llmConfig?.llm_enabled
+                  ? "LLM mode: Click to activate or use Local SLM Fallback"
+                  : "Large Language Model: Nuanced conversational reasoning"
+              }
+              className={`px-2.5 py-1 rounded-md transition-all flex items-center space-x-1 ${
                 modelType === 'llm'
                   ? 'bg-white text-indigo-700 shadow-xs font-bold'
-                  : !llmConfig?.llm_enabled
-                  ? 'text-slate-300 cursor-not-allowed'
                   : 'text-slate-500 hover:text-slate-800'
               }`}
             >
-              LLM (Detailed)
+              <span>LLM (Detailed)</span>
+              {!llmConfig?.llm_enabled && (
+                <span className="px-1 py-0.2 rounded text-[9px] bg-amber-100 text-amber-700 font-bold">
+                  Setup
+                </span>
+              )}
+            </button>
+            <button
+              onClick={() => refreshChatConfig()}
+              title="Refresh LLM configuration status from server"
+              className="px-1.5 py-1 text-slate-400 hover:text-slate-700 text-xs rounded transition-colors"
+            >
+              ↻
+            </button>
+            <button
+              onClick={() => setShowKeyModal(!showKeyModal)}
+              title="Configure / Update Gemini API Key"
+              className={`px-2 py-1 rounded-md text-xs font-semibold transition-all flex items-center space-x-1 ${
+                showKeyModal
+                  ? 'bg-amber-100 text-amber-800'
+                  : 'text-slate-500 hover:text-slate-800'
+              }`}
+            >
+              <Key className="w-3 h-3" />
+              <span>Key</span>
             </button>
           </div>
 
@@ -186,6 +233,45 @@ export default function ChatbotPage() {
           </button>
         </div>
       </div>
+
+      {/* LLM Mode Activation & Setup Banner */}
+      {(showKeyModal || (modelType === 'llm' && !llmConfig?.llm_enabled)) && (
+        <div className="p-3.5 rounded-xl bg-amber-50 border border-amber-200 text-xs text-amber-900 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-2xs">
+          <div className="flex items-start sm:items-center space-x-2">
+            <Sparkles className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5 sm:mt-0" />
+            <div>
+              <span className="font-bold">OpenRouter API Key Configuration:</span> Paste your OpenRouter API key (`sk-or-...`) below and click Activate to save it to <code className="bg-amber-100 px-1 py-0.5 rounded font-mono text-[11px]">.env</code> and activate LLM mode.
+              {keySaveMessage && (
+                <div className={`mt-1 font-semibold ${keySaveMessage.type === 'success' ? 'text-emerald-700' : 'text-red-600'}`}>
+                  {keySaveMessage.text}
+                </div>
+              )}
+            </div>
+          </div>
+          <div className="flex items-center space-x-1.5 w-full sm:w-auto">
+            <input
+              type="password"
+              placeholder="Paste OpenRouter API Key (sk-or-...)"
+              value={quickApiKey}
+              onChange={(e) => setQuickApiKey(e.target.value)}
+              className="px-2.5 py-1.5 text-xs rounded-lg border border-amber-300 bg-white text-slate-800 placeholder-slate-400 outline-none focus:ring-1 focus:ring-amber-500 w-full sm:w-56"
+            />
+            <button
+              onClick={handleSaveQuickKey}
+              disabled={!quickApiKey.trim() || savingKey}
+              className="px-3 py-1.5 rounded-lg bg-amber-600 hover:bg-amber-700 disabled:opacity-50 text-white font-bold text-xs whitespace-nowrap shadow-2xs transition-colors"
+            >
+              {savingKey ? 'Saving...' : 'Activate'}
+            </button>
+            <button
+              onClick={() => setShowKeyModal(false)}
+              className="px-2.5 py-1.5 rounded-lg bg-white border border-amber-300 text-amber-800 hover:bg-amber-100 font-semibold text-xs whitespace-nowrap"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* Chat Messages Container */}
       <div className="bg-white rounded-2xl border border-slate-200 shadow-sm flex flex-col h-[560px] overflow-hidden">
