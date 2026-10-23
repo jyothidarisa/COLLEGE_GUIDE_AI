@@ -88,6 +88,52 @@ app.include_router(chat.router, prefix="/api")
 app.include_router(admin.router, prefix="/api")
 app.include_router(models_performance.router, prefix="/api")
 
+# Serve built frontend and PWA static assets if frontend/dist exists (Full-stack container / Cloud Run mode)
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
+from fastapi import HTTPException
+
+candidate_dists = [
+    os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "frontend", "dist")),
+    os.path.abspath(os.path.join(os.getcwd(), "frontend", "dist")),
+    os.path.abspath("/app/frontend/dist")
+]
+
+frontend_dist = next((p for p in candidate_dists if os.path.exists(p)), None)
+
+if frontend_dist:
+    logger.info(f"Frontend production distribution found at: {frontend_dist}")
+    assets_dir = os.path.join(frontend_dist, "assets")
+    if os.path.exists(assets_dir):
+        app.mount("/assets", StaticFiles(directory=assets_dir), name="assets")
+
+    # Explicit routes for root PWA assets
+    pwa_files = [
+        "manifest.webmanifest", "sw.js", "icon.svg", "logo.svg",
+        "icon-192.png", "icon-512.png", "apple-touch-icon.png"
+    ]
+    for pwa_filename in pwa_files:
+        pwa_path = os.path.join(frontend_dist, pwa_filename)
+        if os.path.exists(pwa_path):
+            def make_pwa_handler(target_file=pwa_path):
+                async def pwa_handler():
+                    return FileResponse(target_file)
+                return pwa_handler
+            app.add_api_route(f"/{pwa_filename}", make_pwa_handler(), methods=["GET"], include_in_schema=False)
+
+    # SPA catch-all route for React Router navigation
+    @app.get("/{full_path:path}", include_in_schema=False)
+    async def serve_spa(full_path: str):
+        if full_path.startswith("api") or full_path in ["health", "docs", "openapi.json"]:
+            raise HTTPException(status_code=404, detail="Not Found")
+        file_path = os.path.join(frontend_dist, full_path)
+        if os.path.isfile(file_path):
+            return FileResponse(file_path)
+        index_file = os.path.join(frontend_dist, "index.html")
+        if os.path.exists(index_file):
+            return FileResponse(index_file)
+        raise HTTPException(status_code=404, detail="Index file not found")
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("app.main:app", host="0.0.0.0", port=8000, reload=True)
