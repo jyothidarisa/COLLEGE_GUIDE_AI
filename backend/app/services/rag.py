@@ -159,6 +159,23 @@ async def answer_student_query(
     if (nlp_bundle.intent == "college_recommendation" or is_rec_phrase) and not query_has_explicit_college:
         profile = chat_request.student_profile
         if not profile or not profile.entrance_exam or not profile.rank_or_score or not profile.preferred_course:
+            from app.schemas import StudentProfile
+            e_exam = (profile.entrance_exam if profile and profile.entrance_exam else None) or nlp_bundle.entities.entrance_exam or nlp_bundle.session_context.confirmed_exam
+            e_rank = (profile.rank_or_score if profile and profile.rank_or_score else None) or nlp_bundle.entities.rank or nlp_bundle.session_context.confirmed_rank
+            e_course = (profile.preferred_course if profile and profile.preferred_course else None) or nlp_bundle.entities.preferred_branch or nlp_bundle.session_context.confirmed_branch
+            if e_exam and e_rank and e_course:
+                profile = StudentProfile(
+                    entrance_exam=e_exam,
+                    rank_or_score=e_rank,
+                    preferred_course=e_course,
+                    category=(profile.category if profile and profile.category else None) or nlp_bundle.entities.category or nlp_bundle.session_context.confirmed_category or "OPEN",
+                    quota=(profile.quota if profile and profile.quota else None) or nlp_bundle.session_context.confirmed_quota or "AI",
+                    max_tuition_budget=(profile.max_tuition_budget if profile and profile.max_tuition_budget else None) or nlp_bundle.entities.max_tuition_budget or nlp_bundle.session_context.confirmed_budget,
+                    preferred_city=(profile.preferred_city if profile and profile.preferred_city else None) or nlp_bundle.entities.city or nlp_bundle.session_context.confirmed_city,
+                    preferred_state=(profile.preferred_state if profile and profile.preferred_state else None) or nlp_bundle.entities.state or nlp_bundle.session_context.confirmed_state,
+                    hostel_required=True
+                )
+        if not profile or not profile.entrance_exam or not profile.rank_or_score or not profile.preferred_course:
             return ChatResponse(
                 reply=(
                     "To recommend colleges that suit your qualifications, please provide your profile details:\n\n"
@@ -224,10 +241,12 @@ async def answer_student_query(
             reply_lines.append(format_rec_item(rec_res.better_matched[0], "Better-Matched Target"))
         if rec_res.intelligent_alternatives:
             reply_lines.append(format_rec_item(rec_res.intelligent_alternatives[0], "Intelligent Alternative"))
+        if rec_res.safer:
+            reply_lines.append(format_rec_item(rec_res.safer[0], "Safe / High Probability Option"))
 
         rec_cits = []
         seen_c_urls = set()
-        all_candidates = (rec_res.reach or []) + (rec_res.target or []) + (rec_res.intelligent_alternatives or [])
+        all_candidates = (rec_res.reach or []) + (rec_res.target or []) + (rec_res.better_matched or []) + (rec_res.safer or []) + (rec_res.intelligent_alternatives or [])
         for cand in all_candidates:
             for s in (cand.sources or []):
                 if s.url and s.url not in seen_c_urls:
