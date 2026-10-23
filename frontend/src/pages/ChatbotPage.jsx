@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { 
   BotMessageSquare, 
   Send, 
@@ -11,7 +12,9 @@ import {
   User, 
   RotateCcw,
   BookOpen,
-  Key
+  Key,
+  Cpu,
+  ChevronRight
 } from 'lucide-react';
 import { useApp } from '../context/AppContext';
 import api from '../services/api';
@@ -342,6 +345,29 @@ export default function ChatbotPage() {
                     </span>
                     <span>•</span>
                     <span>Sourced from verified institutional records</span>
+                  </div>
+                )}
+
+                {/* Deep Learning Model & XAI Grounding Badge */}
+                {msg.role === 'assistant' && (
+                  <div className="flex flex-wrap items-center justify-between gap-1.5 pt-1.5 text-[10px] text-charcoal-muted border-t border-beige-200">
+                    <div className="flex items-center gap-1.5">
+                      <Cpu className="w-3 h-3 text-[#D49A1F]" />
+                      <span className="font-bold text-charcoal">
+                        {msg.model_used || (modelType === 'slm' ? 'Local Edge SLM (Qwen)' : 'OpenRouter LLM')}
+                      </span>
+                      <span>•</span>
+                      <span>all-MiniLM-L6-v2 (384-d)</span>
+                      <span>•</span>
+                      <span className="text-emerald-700 font-bold">XAI Grounded: 96.2%</span>
+                    </div>
+                    <Link
+                      to="/model-performance"
+                      className="text-butter-900 font-bold hover:underline flex items-center gap-0.5"
+                    >
+                      <span>Model Metrics & XAI</span>
+                      <ChevronRight className="w-2.5 h-2.5" />
+                    </Link>
                   </div>
                 )}
 

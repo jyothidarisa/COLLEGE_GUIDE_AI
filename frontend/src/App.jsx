@@ -10,6 +10,7 @@ import CollegeDetailPage from './pages/CollegeDetailPage';
 import ComparePage from './pages/ComparePage';
 import ChatbotPage from './pages/ChatbotPage';
 import SourcesPage from './pages/SourcesPage';
+import ModelPerformancePage from './pages/ModelPerformancePage';
 import FloatingChatWidget from './components/FloatingChatWidget';
 
 export default function App() {
@@ -27,6 +28,8 @@ export default function App() {
             <Route path="/compare" element={<ComparePage />} />
             <Route path="/chat" element={<ChatbotPage />} />
             <Route path="/sources" element={<SourcesPage />} />
+            <Route path="/models" element={<ModelPerformancePage />} />
+            <Route path="/model-performance" element={<ModelPerformancePage />} />
           </Routes>
         </main>
         <Footer />

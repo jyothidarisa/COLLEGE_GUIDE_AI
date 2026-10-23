@@ -9,7 +9,8 @@ import {
   Database,
   Trash2,
   Menu,
-  X
+  X,
+  Cpu
 } from 'lucide-react';
 import { useApp } from '../context/AppContext';
 
@@ -30,6 +31,7 @@ export default function Navbar() {
       badge: compareList.length > 0 ? compareList.length : null 
     },
     { name: 'Ask Questions', path: '/chat', icon: BotMessageSquare },
+    { name: 'AI Models & XAI', path: '/model-performance', icon: Cpu, badge: '3 Models' },
     { name: 'College Sources', path: '/sources', icon: Database },
   ];
 

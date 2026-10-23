@@ -5,7 +5,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.config import settings
 from app.database import init_db, engine
-from app.routers import colleges, recommendations, chat, admin
+from app.routers import colleges, recommendations, chat, admin, models_performance
 
 # Configure logging
 logging.basicConfig(
@@ -86,6 +86,7 @@ app.include_router(colleges.router, prefix="/api")
 app.include_router(recommendations.router, prefix="/api")
 app.include_router(chat.router, prefix="/api")
 app.include_router(admin.router, prefix="/api")
+app.include_router(models_performance.router, prefix="/api")
 
 if __name__ == "__main__":
     import uvicorn

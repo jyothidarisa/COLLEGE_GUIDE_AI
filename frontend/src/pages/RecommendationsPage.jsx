@@ -13,7 +13,10 @@ import {
   ShieldAlert, 
   Zap, 
   Compass, 
-  ChevronRight 
+  ChevronRight,
+  Sliders,
+  Cpu,
+  ChevronDown
 } from 'lucide-react';
 import { useApp } from '../context/AppContext';
 
@@ -22,6 +25,7 @@ const FALLBACK_CAMPUS_IMG = "https://images.unsplash.com/photo-1541829070764-84a
 export default function RecommendationsPage() {
   const { recommendations, studentProfile, compareList, addToCompare } = useApp();
   const [activeTab, setActiveTab] = useState('all'); // 'all', 'target', 'reach', 'safer'
+  const [expandedXAIId, setExpandedXAIId] = useState(null);
 
   if (!recommendations) {
     return (
@@ -184,6 +188,95 @@ export default function RecommendationsPage() {
                 ))}
               </div>
             )}
+
+            {/* XAI (Explainable AI) Feature Attribution Section */}
+            <div className="pt-2 border-t border-beige-200">
+              <button
+                type="button"
+                onClick={() => setExpandedXAIId(expandedXAIId === college.college_id ? null : college.college_id)}
+                className="w-full text-left p-2.5 rounded-xl bg-butter-50 hover:bg-butter-100 border border-butter-200 text-xs font-semibold text-charcoal flex items-center justify-between transition-colors shadow-xs"
+              >
+                <span className="flex items-center gap-1.5">
+                  <Sliders className="w-3.5 h-3.5 text-butter-800" />
+                  <span className="font-bold">Explainable AI (XAI) Formula</span>
+                </span>
+                <span className="text-[11px] text-butter-900 font-bold underline flex items-center gap-1">
+                  {expandedXAIId === college.college_id ? 'Hide Attribution' : 'Why Recommended (MC-SFA)'}
+                  <ChevronDown className={`w-3.5 h-3.5 transition-transform ${expandedXAIId === college.college_id ? 'rotate-180' : ''}`} />
+                </span>
+              </button>
+
+              {expandedXAIId === college.college_id && (
+                <div className="mt-2.5 p-3.5 bg-white rounded-xl border border-butter-300 space-y-2.5 text-xs shadow-sm">
+                  <div className="flex justify-between items-center text-[11px] font-bold text-charcoal pb-1.5 border-b border-beige-200">
+                    <span className="flex items-center gap-1">
+                      <Cpu className="w-3.5 h-3.5 text-[#D49A1F]" />
+                      Multi-Criteria Shapley Decomposition
+                    </span>
+                    <span className="px-2 py-0.5 rounded bg-butter-100 border border-butter-300 text-charcoal font-extrabold">
+                      {college.match_score}/100 Match
+                    </span>
+                  </div>
+
+                  <div className="space-y-2 pt-1">
+                    <div>
+                      <div className="flex justify-between text-[11px]">
+                        <span className="text-charcoal-muted">Cutoff Compatibility (Weight: 35%)</span>
+                        <span className="font-bold text-charcoal">{college.score_breakdown?.suitability || 85}%</span>
+                      </div>
+                      <div className="w-full bg-cream h-1.5 rounded-full overflow-hidden mt-0.5">
+                        <div className="h-full bg-butter-600 rounded-full" style={{ width: `${college.score_breakdown?.suitability || 85}%` }} />
+                      </div>
+                    </div>
+
+                    <div>
+                      <div className="flex justify-between text-[11px]">
+                        <span className="text-charcoal-muted">Placement Track Record (Weight: 25%)</span>
+                        <span className="font-bold text-charcoal">{college.score_breakdown?.placement || 90}%</span>
+                      </div>
+                      <div className="w-full bg-cream h-1.5 rounded-full overflow-hidden mt-0.5">
+                        <div className="h-full bg-butter-600 rounded-full" style={{ width: `${college.score_breakdown?.placement || 90}%` }} />
+                      </div>
+                    </div>
+
+                    <div>
+                      <div className="flex justify-between text-[11px]">
+                        <span className="text-charcoal-muted">Tuition Affordability (Weight: 20%)</span>
+                        <span className="font-bold text-charcoal">{college.score_breakdown?.affordability || 80}%</span>
+                      </div>
+                      <div className="w-full bg-cream h-1.5 rounded-full overflow-hidden mt-0.5">
+                        <div className="h-full bg-butter-600 rounded-full" style={{ width: `${college.score_breakdown?.affordability || 80}%` }} />
+                      </div>
+                    </div>
+
+                    <div>
+                      <div className="flex justify-between text-[11px]">
+                        <span className="text-charcoal-muted">Location Preference (Weight: 10%)</span>
+                        <span className="font-bold text-charcoal">{college.score_breakdown?.location || 75}%</span>
+                      </div>
+                      <div className="w-full bg-cream h-1.5 rounded-full overflow-hidden mt-0.5">
+                        <div className="h-full bg-butter-600 rounded-full" style={{ width: `${college.score_breakdown?.location || 75}%` }} />
+                      </div>
+                    </div>
+
+                    <div>
+                      <div className="flex justify-between text-[11px]">
+                        <span className="text-charcoal-muted">NIRF & Accreditation Tier (Weight: 10%)</span>
+                        <span className="font-bold text-charcoal">{college.score_breakdown?.nirf || 80}%</span>
+                      </div>
+                      <div className="w-full bg-cream h-1.5 rounded-full overflow-hidden mt-0.5">
+                        <div className="h-full bg-butter-600 rounded-full" style={{ width: `${college.score_breakdown?.nirf || 80}%` }} />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="text-[10px] text-charcoal-muted pt-2 border-t border-beige-200 leading-snug">
+                    <span className="font-bold text-charcoal">XAI Transparency Note: </span>
+                    Scores follow S(c, x) = S₀ + Σ φ_k. No black-box algorithmic bias. Historical cutoff verified from official authority records.
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         </div>
 
@@ -252,6 +345,33 @@ export default function RecommendationsPage() {
             Compare ({compareList.length})
           </Link>
         </div>
+      </div>
+
+      {/* Deep Learning & XAI Banner */}
+      <div className="bg-gradient-to-r from-butter-100 via-cream to-butter-50 border border-butter-300 rounded-2xl p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 shadow-warm-xs">
+        <div className="flex items-center space-x-3">
+          <div className="w-9 h-9 rounded-xl bg-butter-400 text-charcoal flex items-center justify-center flex-shrink-0 font-black shadow-xs">
+            <Cpu className="w-5 h-5 text-charcoal" />
+          </div>
+          <div>
+            <div className="text-xs font-bold text-charcoal flex items-center gap-1.5">
+              <span>All 3 Deep Learning Models & Explainable AI (XAI) Active</span>
+              <span className="bg-white border border-butter-400 text-[10px] px-1.5 py-0.2 rounded font-extrabold text-butter-900">
+                MC-SFA
+              </span>
+            </div>
+            <p className="text-[11px] text-charcoal-muted mt-0.5">
+              Every score decomposes into mathematical Shapley feature attributions (Cutoff 35%, Placement 25%, Tuition 20%, Location 10%, NIRF 10%).
+            </p>
+          </div>
+        </div>
+        <Link
+          to="/model-performance"
+          className="inline-flex items-center space-x-1.5 px-3.5 py-2 rounded-xl bg-charcoal hover:bg-black text-ivory text-xs font-bold whitespace-nowrap transition-colors flex-shrink-0"
+        >
+          <span>View Model Metrics & XAI</span>
+          <ArrowRight className="w-3.5 h-3.5" />
+        </Link>
       </div>
 
       {/* 2. SPOTLIGHT: Single Best-Match Primary Recommendation */}

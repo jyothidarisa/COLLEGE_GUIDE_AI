@@ -107,6 +107,22 @@ export const api = {
     });
     return res.data;
   },
+
+  // Deep Learning Models & XAI Performance
+  getModelsPerformance: async () => {
+    const res = await client.get('/api/models/performance');
+    return res.data;
+  },
+
+  getXAIExplanation: async (payload) => {
+    const res = await client.post('/api/models/xai-explain', payload);
+    return res.data;
+  },
+
+  compareModels: async () => {
+    const res = await client.post('/api/chat/compare-models');
+    return res.data;
+  },
 };
 
 export default api;
