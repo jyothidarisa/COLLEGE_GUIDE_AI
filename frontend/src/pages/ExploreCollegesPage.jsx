@@ -4,11 +4,9 @@ import {
   Search, 
   MapPin, 
   Award, 
-  ShieldCheck, 
   ArrowRight, 
   PlusCircle, 
   Check, 
-  ExternalLink,
   SlidersHorizontal
 } from 'lucide-react';
 import api from '../services/api';
@@ -50,45 +48,45 @@ export default function ExploreCollegesPage() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
       {/* Header */}
       <div>
-        <h1 className="text-3xl font-extrabold text-slate-900">
-          Explore Verified Engineering Colleges
+        <h1 className="text-2xl sm:text-3xl font-extrabold text-charcoal tracking-tight">
+          Explore Engineering Colleges
         </h1>
-        <p className="text-sm text-slate-500 mt-1">
-          Browse verified government, autonomous, and central institutions with official cutoffs and audited fees.
+        <p className="text-sm text-charcoal-muted mt-1.5 font-medium">
+          Browse central, state government, and autonomous institutions with official cutoffs and audited fee structures.
         </p>
       </div>
 
       {/* Filter and Search Bar */}
-      <div className="bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-sm space-y-4">
-        <form onSubmit={handleSearchSubmit} className="flex flex-col sm:flex-row gap-3">
+      <div className="bg-white p-4 sm:p-5 rounded-2xl border border-beige-200 shadow-warm-sm space-y-4">
+        <form onSubmit={handleSearchSubmit} className="flex flex-col sm:flex-row gap-2.5">
           <div className="relative flex-1">
-            <Search className="w-4 h-4 text-slate-400 absolute left-3.5 top-3" />
+            <Search className="w-4 h-4 text-charcoal-muted absolute left-3.5 top-3.5" />
             <input
               type="text"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               placeholder="Search by college name, city (e.g. CEG, Chennai, Trichy)..."
-              className="w-full pl-10 pr-4 py-2 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-sky-500 outline-none"
+              className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-beige-300 bg-ivory/50 text-sm text-charcoal placeholder-charcoal-muted/70 focus:outline-none focus:ring-2 focus:ring-butter-400 focus:border-butter-500 transition-all font-medium"
             />
           </div>
           <button
             type="submit"
-            className="px-6 py-2 rounded-xl bg-sky-600 hover:bg-sky-700 text-white font-semibold text-sm transition-colors shadow-sm"
+            className="px-6 py-2.5 rounded-xl bg-butter-500 hover:bg-butter-600 text-charcoal font-bold text-sm transition-all shadow-warm-sm active:scale-[0.99] whitespace-nowrap"
           >
             Search
           </button>
         </form>
 
-        <div className="flex flex-wrap items-center gap-3 pt-2 border-t border-slate-100 text-xs">
-          <span className="font-bold text-slate-700 flex items-center space-x-1">
-            <SlidersHorizontal className="w-3.5 h-3.5" />
+        <div className="flex flex-wrap items-center gap-3 pt-3 border-t border-beige-200 text-xs">
+          <span className="font-bold text-charcoal flex items-center space-x-1.5">
+            <SlidersHorizontal className="w-3.5 h-3.5 text-butter-700" />
             <span>Filter By:</span>
           </span>
 
           <select
             value={selectedType}
             onChange={(e) => setSelectedType(e.target.value)}
-            className="px-3 py-1.5 rounded-lg border border-slate-300 bg-white text-slate-700 outline-none"
+            className="px-3 py-1.5 rounded-xl border border-beige-300 bg-white text-charcoal font-medium outline-none focus:ring-2 focus:ring-butter-400"
           >
             <option value="All">All College Types</option>
             <option value="Central Government">Central Government</option>
@@ -101,15 +99,15 @@ export default function ExploreCollegesPage() {
           <select
             value={selectedState}
             onChange={(e) => setSelectedState(e.target.value)}
-            className="px-3 py-1.5 rounded-lg border border-slate-300 bg-white text-slate-700 outline-none"
+            className="px-3 py-1.5 rounded-xl border border-beige-300 bg-white text-charcoal font-medium outline-none focus:ring-2 focus:ring-butter-400"
           >
             <option value="All">All States</option>
             <option value="Tamil Nadu">Tamil Nadu</option>
             <option value="Karnataka">Karnataka</option>
           </select>
 
-          <span className="text-slate-400 ml-auto">
-            Showing <strong className="text-slate-700">{colleges.length}</strong> verified institutions
+          <span className="text-charcoal-muted ml-auto font-medium">
+            Showing <strong className="text-charcoal font-bold">{colleges.length}</strong> institutions
           </span>
         </div>
       </div>
@@ -117,12 +115,12 @@ export default function ExploreCollegesPage() {
       {/* Colleges Grid */}
       {loading ? (
         <div className="py-20 text-center">
-          <div className="w-8 h-8 border-3 border-sky-600 border-t-transparent rounded-full animate-spin mx-auto mb-2"></div>
-          <p className="text-xs text-slate-500">Loading verified colleges...</p>
+          <div className="w-8 h-8 border-3 border-butter-500 border-t-transparent rounded-full animate-spin mx-auto mb-2"></div>
+          <p className="text-xs text-charcoal-muted font-medium">Loading colleges...</p>
         </div>
       ) : colleges.length === 0 ? (
-        <div className="bg-white p-12 rounded-2xl border border-slate-200 text-center text-slate-500 text-sm">
-          No colleges found matching the selected search criteria.
+        <div className="bg-white p-12 rounded-2xl border border-beige-200 text-center text-charcoal-muted text-sm shadow-warm-sm font-medium">
+          No colleges found matching the selected search criteria. Try adjusting your search term or filters.
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -132,89 +130,90 @@ export default function ExploreCollegesPage() {
             return (
               <div
                 key={col.id}
-                className="group bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between overflow-hidden"
+                className="group bg-white rounded-2xl border border-beige-200 shadow-warm-sm hover:shadow-warm transition-all flex flex-col justify-between overflow-hidden"
               >
-                {/* Campus Image Header */}
-                <div className="relative h-44 w-full bg-slate-100 overflow-hidden">
-                  <img
-                    src={col.image_url || "https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&w=800&q=80"}
-                    alt={col.name}
-                    onError={(e) => {
-                      e.currentTarget.onerror = null;
-                      e.currentTarget.src = "https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&w=800&q=80";
-                    }}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
-                  <div className="absolute top-3 left-3 flex flex-wrap gap-1.5">
-                    <span className="px-2.5 py-0.5 rounded-md bg-white/90 backdrop-blur-sm text-slate-800 text-xs font-bold shadow-sm">
-                      {col.college_type}
-                    </span>
-                    {col.nirf_rank && (
-                      <span className="px-2 py-0.5 rounded-md bg-amber-500 text-white text-[11px] font-bold shadow-sm flex items-center space-x-1">
-                        <Award className="w-3 h-3" />
-                        <span>NIRF #{col.nirf_rank}</span>
+                <div>
+                  {/* Campus Image Header */}
+                  <div className="relative h-44 w-full bg-cream overflow-hidden">
+                    <img
+                      src={col.image_url || "https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&w=800&q=80"}
+                      alt={col.name}
+                      onError={(e) => {
+                        e.currentTarget.onerror = null;
+                        e.currentTarget.src = "https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&w=800&q=80";
+                      }}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-charcoal/20 to-transparent"></div>
+                    <div className="absolute top-3 left-3 flex flex-wrap gap-1.5">
+                      <span className="px-2.5 py-0.5 rounded-md bg-white/95 backdrop-blur-sm text-charcoal text-xs font-bold shadow-sm border border-beige-200">
+                        {col.college_type}
                       </span>
-                    )}
-                  </div>
-                </div>
-
-                <div className="p-5 space-y-4">
-
-                  <div>
-                    <h3 className="text-base font-bold text-slate-900 leading-snug">
-                      {col.name}
-                    </h3>
-                    <div className="flex items-center text-xs text-slate-500 mt-1 space-x-2">
-                      <span className="flex items-center space-x-1">
-                        <MapPin className="w-3.5 h-3.5 text-slate-400" />
-                        <span>{col.city}, {col.state}</span>
-                      </span>
-                      <span>•</span>
-                      <span className="font-semibold text-slate-700">{col.code}</span>
+                      {col.nirf_rank && (
+                        <span className="px-2 py-0.5 rounded-md bg-butter-400 text-charcoal text-[11px] font-bold shadow-sm flex items-center space-x-1 border border-butter-500/50">
+                          <Award className="w-3 h-3 text-butter-900" />
+                          <span>NIRF #{col.nirf_rank}</span>
+                        </span>
+                      )}
                     </div>
                   </div>
 
-                  {/* Summary Metric Stats */}
-                  <div className="grid grid-cols-2 gap-2 text-xs pt-2 border-t border-slate-100">
-                    <div className="p-2 rounded-lg bg-slate-50 border border-slate-100">
-                      <div className="text-[10px] text-slate-400 font-medium">Tuition (Annual)</div>
-                      <div className="font-bold text-slate-900 mt-0.5">
-                        {col.annual_tuition_fee ? `₹${col.annual_tuition_fee.toLocaleString()}` : 'Pending'}
+                  <div className="p-5 space-y-4">
+                    <div>
+                      <h3 className="text-base font-bold text-charcoal leading-snug line-clamp-2 min-h-[2.5rem] group-hover:text-butter-800 transition-colors">
+                        {col.name}
+                      </h3>
+                      <div className="flex items-center text-xs text-charcoal-muted mt-1.5 space-x-2 font-medium">
+                        <span className="flex items-center space-x-1">
+                          <MapPin className="w-3.5 h-3.5 text-butter-700 flex-shrink-0" />
+                          <span>{col.city}, {col.state}</span>
+                        </span>
+                        <span>•</span>
+                        <span className="font-semibold text-charcoal">Code: {col.code}</span>
                       </div>
                     </div>
-                    <div className="p-2 rounded-lg bg-slate-50 border border-slate-100">
-                      <div className="text-[10px] text-slate-400 font-medium">Median CTC</div>
-                      <div className="font-bold text-emerald-600 mt-0.5">
-                        {col.median_package_lpa ? `₹${col.median_package_lpa} LPA` : 'Pending'}
+
+                    {/* Summary Metric Stats */}
+                    <div className="grid grid-cols-2 gap-2 text-xs pt-2 border-t border-beige-200">
+                      <div className="p-2.5 rounded-xl bg-cream/70 border border-beige-200">
+                        <div className="text-[10px] text-charcoal-muted font-medium">Annual Tuition</div>
+                        <div className="font-bold text-charcoal mt-0.5">
+                          {col.annual_tuition_fee ? `₹${col.annual_tuition_fee.toLocaleString()}` : 'Subsidized'}
+                        </div>
+                      </div>
+                      <div className="p-2.5 rounded-xl bg-cream/70 border border-beige-200">
+                        <div className="text-[10px] text-charcoal-muted font-medium">Median CTC</div>
+                        <div className="font-bold text-charcoal mt-0.5">
+                          {col.median_package_lpa ? `₹${col.median_package_lpa} LPA` : 'Verified'}
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div className="text-xs text-slate-500">
-                    Verified Programs: <strong className="text-slate-800">{col.course_count} B.Tech/B.E. Specializations</strong>
+                    <div className="text-xs text-charcoal-muted font-medium">
+                      Verified Programs: <strong className="text-charcoal font-bold">{col.course_count} B.Tech/B.E. Specializations</strong>
+                    </div>
                   </div>
                 </div>
 
                 {/* Card Actions */}
-                <div className="p-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs">
+                <div className="p-4 bg-cream/40 border-t border-beige-200 flex items-center justify-between text-xs">
                   <button
                     onClick={() => addToCompare({ id: col.id, name: col.name, code: col.code })}
                     disabled={isCompared}
-                    className={`px-3 py-1.5 rounded-lg font-semibold flex items-center space-x-1 transition-colors ${
+                    className={`px-3 py-1.5 rounded-xl font-bold flex items-center space-x-1.5 transition-all ${
                       isCompared
-                        ? 'bg-emerald-100 text-emerald-800 cursor-default'
-                        : 'bg-white border border-slate-300 text-slate-700 hover:bg-slate-100'
+                        ? 'bg-butter-200 text-charcoal border border-butter-400/60 cursor-default shadow-xs'
+                        : 'bg-white border border-beige-300 text-charcoal hover:bg-cream'
                     }`}
                   >
                     {isCompared ? (
                       <>
-                        <Check className="w-3.5 h-3.5" />
+                        <Check className="w-3.5 h-3.5 text-charcoal" />
                         <span>Added</span>
                       </>
                     ) : (
                       <>
-                        <PlusCircle className="w-3.5 h-3.5" />
+                        <PlusCircle className="w-3.5 h-3.5 text-butter-700" />
                         <span>Compare</span>
                       </>
                     )}
@@ -222,7 +221,7 @@ export default function ExploreCollegesPage() {
 
                   <Link
                     to={`/colleges/${col.id}`}
-                    className="px-3.5 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-700 text-white font-semibold flex items-center space-x-1 transition-colors shadow-sm"
+                    className="px-3.5 py-1.5 rounded-xl bg-butter-500 hover:bg-butter-600 text-charcoal font-bold flex items-center space-x-1.5 transition-all shadow-warm-sm hover:shadow"
                   >
                     <span>View Profile</span>
                     <ArrowRight className="w-3.5 h-3.5" />

@@ -4,12 +4,7 @@ import {
   Compass, 
   Sparkles, 
   RotateCcw, 
-  HelpCircle, 
-  AlertCircle, 
-  Check, 
-  IndianRupee,
-  Building,
-  GraduationCap
+  AlertCircle 
 } from 'lucide-react';
 import { useApp } from '../context/AppContext';
 import api from '../services/api';
@@ -78,7 +73,6 @@ export default function ProfilePage() {
     e.preventDefault();
     setError(null);
 
-    // Validation
     const score = parseFloat(formData.rank_or_score);
     if (isNaN(score)) {
       setError('Please provide a valid entrance exam score or rank.');
@@ -141,41 +135,41 @@ export default function ProfilePage() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8">
       {/* Header */}
       <div className="mb-8 text-center sm:text-left">
-        <div className="inline-flex items-center space-x-2 text-sky-600 font-semibold text-xs tracking-wider uppercase mb-2">
-          <Compass className="w-4 h-4" />
-          <span>Step 1: Student Eligibility Assessment</span>
+        <div className="inline-flex items-center space-x-2 text-butter-800 font-bold text-xs tracking-wider uppercase mb-2">
+          <Compass className="w-4 h-4 text-butter-700" />
+          <span>Step 1: Your Academic Profile & Preferences</span>
         </div>
-        <h1 className="text-3xl font-extrabold text-slate-900">
-          Enter Your Academic Profile & Preferences
+        <h1 className="text-2xl sm:text-3xl font-extrabold text-charcoal tracking-tight">
+          Enter Your Academic Information & Preferences
         </h1>
-        <p className="mt-1 text-slate-600 text-sm">
-          Fields adapt automatically to your chosen admission route (TNEA, JEE Main, JEE Advanced).
+        <p className="mt-1.5 text-charcoal-muted text-sm font-medium">
+          Fields adapt automatically to your chosen admission route (TNEA, JEE Main, JEE Advanced, BITSAT, etc.).
         </p>
       </div>
 
       {error && (
-        <div className="mb-6 p-4 rounded-xl bg-red-50 border border-red-200 text-red-700 flex items-start space-x-3 text-sm">
-          <AlertCircle className="w-5 h-5 flex-shrink-0 mt-0.5 text-red-500" />
+        <div className="mb-6 p-4 rounded-2xl bg-cream border border-beige-300 text-charcoal flex items-start space-x-3 text-sm shadow-warm-sm">
+          <AlertCircle className="w-5 h-5 flex-shrink-0 mt-0.5 text-butter-800" />
           <div>
-            <span className="font-bold">Validation Alert: </span>
-            <span>{error}</span>
+            <span className="font-bold">Please check your inputs: </span>
+            <span className="font-medium text-charcoal-muted">{error}</span>
           </div>
         </div>
       )}
 
-      <form onSubmit={handleSubmit} className="space-y-8 bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
+      <form onSubmit={handleSubmit} className="space-y-8 bg-white p-5 sm:p-8 rounded-2xl border border-beige-200 shadow-warm-sm">
         {/* Section 1: Basic Information */}
         <div>
-          <h2 className="text-base font-bold text-slate-900 border-b border-slate-100 pb-2 mb-4 flex items-center space-x-2">
-            <span className="w-6 h-6 rounded-full bg-sky-100 text-sky-700 text-xs font-black flex items-center justify-center">1</span>
-            <span>Student & Location Preferences</span>
+          <h2 className="text-base font-bold text-charcoal border-b border-beige-200 pb-2.5 mb-4 flex items-center space-x-2">
+            <span className="w-6 h-6 rounded-full bg-butter-300 text-charcoal text-xs font-black flex items-center justify-center border border-butter-400">1</span>
+            <span>Location & Student Details</span>
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div>
-              <label className="block text-xs font-semibold text-slate-700 mb-1">
+              <label className="block text-xs font-bold text-charcoal mb-1.5">
                 Student Name (Optional)
               </label>
               <input
@@ -184,18 +178,18 @@ export default function ProfilePage() {
                 value={formData.student_name}
                 onChange={handleChange}
                 placeholder="e.g. John Doe"
-                className="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none"
+                className="w-full px-3.5 py-2.5 rounded-xl border border-beige-300 bg-ivory/40 text-sm text-charcoal focus:ring-2 focus:ring-butter-400 focus:border-butter-500 outline-none font-medium"
               />
             </div>
             <div>
-              <label className="block text-xs font-semibold text-slate-700 mb-1">
+              <label className="block text-xs font-bold text-charcoal mb-1.5">
                 Home State
               </label>
               <select
                 name="state"
                 value={formData.state}
                 onChange={handleChange}
-                className="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none"
+                className="w-full px-3.5 py-2.5 rounded-xl border border-beige-300 bg-white text-sm text-charcoal focus:ring-2 focus:ring-butter-400 focus:border-butter-500 outline-none font-medium"
               >
                 <option value="Tamil Nadu">Tamil Nadu</option>
                 <option value="Karnataka">Karnataka</option>
@@ -206,7 +200,7 @@ export default function ProfilePage() {
               </select>
             </div>
             <div>
-              <label className="block text-xs font-semibold text-slate-700 mb-1">
+              <label className="block text-xs font-bold text-charcoal mb-1.5">
                 Preferred City (Optional)
               </label>
               <input
@@ -215,7 +209,7 @@ export default function ProfilePage() {
                 value={formData.preferred_city}
                 onChange={handleChange}
                 placeholder="e.g. Chennai, Coimbatore, Trichy"
-                className="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none"
+                className="w-full px-3.5 py-2.5 rounded-xl border border-beige-300 bg-ivory/40 text-sm text-charcoal focus:ring-2 focus:ring-butter-400 focus:border-butter-500 outline-none font-medium"
               />
             </div>
           </div>
@@ -223,34 +217,34 @@ export default function ProfilePage() {
 
         {/* Section 2: Target Specialization & Degree */}
         <div>
-          <h2 className="text-base font-bold text-slate-900 border-b border-slate-100 pb-2 mb-4 flex items-center space-x-2">
-            <span className="w-6 h-6 rounded-full bg-sky-100 text-sky-700 text-xs font-black flex items-center justify-center">2</span>
-            <span>Program & Specialization</span>
+          <h2 className="text-base font-bold text-charcoal border-b border-beige-200 pb-2.5 mb-4 flex items-center space-x-2">
+            <span className="w-6 h-6 rounded-full bg-butter-300 text-charcoal text-xs font-black flex items-center justify-center border border-butter-400">2</span>
+            <span>Program & Branch of Interest</span>
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label className="block text-xs font-semibold text-slate-700 mb-1">
+              <label className="block text-xs font-bold text-charcoal mb-1.5">
                 Preferred Degree
               </label>
               <select
                 name="preferred_degree"
                 value={formData.preferred_degree}
                 onChange={handleChange}
-                className="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none"
+                className="w-full px-3.5 py-2.5 rounded-xl border border-beige-300 bg-white text-sm text-charcoal focus:ring-2 focus:ring-butter-400 focus:border-butter-500 outline-none font-medium"
               >
                 <option value="B.Tech">B.Tech (Bachelor of Technology)</option>
                 <option value="B.E.">B.E. (Bachelor of Engineering)</option>
               </select>
             </div>
             <div>
-              <label className="block text-xs font-semibold text-slate-700 mb-1">
-                Preferred Branch / Specialization *
+              <label className="block text-xs font-bold text-charcoal mb-1.5">
+                Preferred Specialization / Branch *
               </label>
               <select
                 name="preferred_course"
                 value={formData.preferred_course}
                 onChange={handleChange}
-                className="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm font-semibold text-slate-800 focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none"
+                className="w-full px-3.5 py-2.5 rounded-xl border border-beige-300 bg-white text-sm font-bold text-charcoal focus:ring-2 focus:ring-butter-400 focus:border-butter-500 outline-none"
               >
                 <option value="CSE">Computer Science and Engineering (CSE)</option>
                 <option value="IT">Information Technology (IT)</option>
@@ -265,13 +259,13 @@ export default function ProfilePage() {
 
         {/* Section 3: Academic Qualifications */}
         <div>
-          <h2 className="text-base font-bold text-slate-900 border-b border-slate-100 pb-2 mb-4 flex items-center space-x-2">
-            <span className="w-6 h-6 rounded-full bg-sky-100 text-sky-700 text-xs font-black flex items-center justify-center">3</span>
+          <h2 className="text-base font-bold text-charcoal border-b border-beige-200 pb-2.5 mb-4 flex items-center space-x-2">
+            <span className="w-6 h-6 rounded-full bg-butter-300 text-charcoal text-xs font-black flex items-center justify-center border border-butter-400">3</span>
             <span>Board Examination Marks</span>
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div>
-              <label className="block text-xs font-semibold text-slate-700 mb-1">
+              <label className="block text-xs font-bold text-charcoal mb-1.5">
                 Class 10 Percentage
               </label>
               <input
@@ -283,12 +277,12 @@ export default function ProfilePage() {
                 value={formData.class10_percentage}
                 onChange={handleChange}
                 placeholder="e.g. 92.5"
-                className="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none"
+                className="w-full px-3.5 py-2.5 rounded-xl border border-beige-300 bg-ivory/40 text-sm text-charcoal focus:ring-2 focus:ring-butter-400 focus:border-butter-500 outline-none font-medium"
               />
             </div>
             <div>
-              <label className="block text-xs font-semibold text-slate-700 mb-1">
-                Class 12 Total Percentage
+              <label className="block text-xs font-bold text-charcoal mb-1.5">
+                Class 12 Overall Percentage
               </label>
               <input
                 type="number"
@@ -299,11 +293,11 @@ export default function ProfilePage() {
                 value={formData.class12_percentage}
                 onChange={handleChange}
                 placeholder="e.g. 94.0"
-                className="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none"
+                className="w-full px-3.5 py-2.5 rounded-xl border border-beige-300 bg-ivory/40 text-sm text-charcoal focus:ring-2 focus:ring-butter-400 focus:border-butter-500 outline-none font-medium"
               />
             </div>
             <div>
-              <label className="block text-xs font-semibold text-slate-700 mb-1">
+              <label className="block text-xs font-bold text-charcoal mb-1.5">
                 Class 12 PCM % (Physics, Chem, Math)
               </label>
               <input
@@ -315,52 +309,52 @@ export default function ProfilePage() {
                 value={formData.pcm_percentage}
                 onChange={handleChange}
                 placeholder="e.g. 96.0"
-                className="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none"
+                className="w-full px-3.5 py-2.5 rounded-xl border border-beige-300 bg-ivory/40 text-sm text-charcoal focus:ring-2 focus:ring-butter-400 focus:border-butter-500 outline-none font-medium"
               />
-              <span className="text-[11px] text-slate-400">Used for hard eligibility verification</span>
+              <span className="text-[11px] text-charcoal-muted font-medium">Used for mandatory minimum eligibility</span>
             </div>
           </div>
         </div>
 
-        {/* Section 4: Entrance Examination (Conditional Form Fields) */}
-        <div className="p-4 rounded-xl bg-sky-50/60 border border-sky-100">
-          <h2 className="text-base font-bold text-slate-900 border-b border-sky-200/60 pb-2 mb-4 flex items-center space-x-2">
-            <span className="w-6 h-6 rounded-full bg-sky-600 text-white text-xs font-black flex items-center justify-center">4</span>
-            <span>Entrance Examination & Score (Route-Specific)</span>
+        {/* Section 4: Entrance Examination */}
+        <div className="p-5 rounded-2xl bg-cream/70 border border-beige-200 shadow-warm-sm">
+          <h2 className="text-base font-bold text-charcoal border-b border-beige-200 pb-2.5 mb-4 flex items-center space-x-2">
+            <span className="w-6 h-6 rounded-full bg-butter-500 text-charcoal text-xs font-black flex items-center justify-center border border-butter-600/30">4</span>
+            <span>Entrance Exam & Score Details</span>
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div>
-              <label className="block text-xs font-semibold text-slate-800 mb-1">
+              <label className="block text-xs font-bold text-charcoal mb-1.5">
                 Admission Route / Exam *
               </label>
               <select
                 name="entrance_exam"
                 value={formData.entrance_exam}
                 onChange={handleChange}
-                className="w-full px-3 py-2 rounded-lg border border-sky-300 bg-white text-sm font-bold text-sky-800 focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none"
+                className="w-full px-3.5 py-2.5 rounded-xl border border-beige-300 bg-white text-sm font-bold text-charcoal focus:ring-2 focus:ring-butter-400 focus:border-butter-500 outline-none"
               >
                 <option value="TNEA">TNEA (Tamil Nadu Engineering Admissions)</option>
-                <option value="JEE_MAIN">JEE Main (JoSAA / CSAB / NITs / IIITs)</option>
+                <option value="JEE_MAIN">JEE Main (NITs / IIITs / JoSAA)</option>
                 <option value="JEE_ADVANCED">JEE Advanced (IIT Admissions)</option>
                 <option value="BITSAT">BITSAT (BITS Pilani Admissions)</option>
                 <option value="VITEEE">VITEEE (VIT Deemed University)</option>
-                <option value="MHT_CET">MHT-CET (Maharashtra State Admissions)</option>
+                <option value="MHT_CET">MHT-CET (Maharashtra Admissions)</option>
                 <option value="WBJEE">WBJEE (West Bengal Joint Entrance)</option>
                 <option value="AP_EAPCET">AP EAPCET (Andhra Pradesh Admissions)</option>
-                <option value="TS_EAMCET">TS EAMCET (Telangana State Admissions)</option>
+                <option value="TS_EAMCET">TS EAMCET (Telangana Admissions)</option>
                 <option value="SRMJEEE">SRMJEEE (SRM Engineering Entrance)</option>
               </select>
             </div>
 
             <div>
-              <label className="block text-xs font-semibold text-slate-800 mb-1">
+              <label className="block text-xs font-bold text-charcoal mb-1.5">
                 {formData.entrance_exam === 'TNEA'
                   ? 'Normalized Cutoff Mark (Out of 200) *'
                   : formData.entrance_exam === 'BITSAT'
                   ? 'BITSAT Score (Out of 390) *'
                   : formData.entrance_exam === 'MHT_CET'
                   ? 'MHT-CET Percentile (0 to 100) *'
-                  : 'All India / State Rank *'}
+                  : 'All India / Category Rank *'}
               </label>
               <input
                 type="number"
@@ -376,26 +370,26 @@ export default function ProfilePage() {
                     : 'e.g. 1450'
                 }
                 required
-                className="w-full px-3 py-2 rounded-lg border border-sky-300 bg-white text-sm font-bold text-slate-900 focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none"
+                className="w-full px-3.5 py-2.5 rounded-xl border border-beige-300 bg-white text-sm font-bold text-charcoal focus:ring-2 focus:ring-butter-400 focus:border-butter-500 outline-none"
               />
-              <span className="text-[11px] text-sky-700">
+              <span className="text-[11px] text-charcoal-muted font-medium">
                 {formData.entrance_exam === 'TNEA'
                   ? 'Calculate: Maths(100) + Phy(50) + Chem(50)'
                   : formData.entrance_exam === 'BITSAT'
-                  ? 'Score out of 390 in BITSAT computer test'
+                  ? 'Score out of 390 in BITSAT online test'
                   : 'Enter positive integer rank'}
               </span>
             </div>
 
             <div>
-              <label className="block text-xs font-semibold text-slate-800 mb-1">
-                Category
+              <label className="block text-xs font-bold text-charcoal mb-1.5">
+                Reservation Category
               </label>
               <select
                 name="category"
                 value={formData.category}
                 onChange={handleChange}
-                className="w-full px-3 py-2 rounded-lg border border-sky-300 bg-white text-sm focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none"
+                className="w-full px-3.5 py-2.5 rounded-xl border border-beige-300 bg-white text-sm text-charcoal font-medium focus:ring-2 focus:ring-butter-400 focus:border-butter-500 outline-none"
               >
                 {formData.entrance_exam === 'TNEA' ? (
                   <>
@@ -419,14 +413,14 @@ export default function ProfilePage() {
 
             {formData.entrance_exam === 'JEE_MAIN' && (
               <div>
-                <label className="block text-xs font-semibold text-slate-800 mb-1">
-                  NIT Quota
+                <label className="block text-xs font-bold text-charcoal mb-1.5">
+                  Home State Quota
                 </label>
                 <select
                   name="quota"
                   value={formData.quota}
                   onChange={handleChange}
-                  className="w-full px-3 py-2 rounded-lg border border-sky-300 bg-white text-sm"
+                  className="w-full px-3.5 py-2.5 rounded-xl border border-beige-300 bg-white text-sm text-charcoal font-medium"
                 >
                   <option value="Home State">Home State (Tamil Nadu)</option>
                   <option value="Other State">Other State (All India)</option>
@@ -438,13 +432,13 @@ export default function ProfilePage() {
 
         {/* Section 5: Budget & Hostel Constraints */}
         <div>
-          <h2 className="text-base font-bold text-slate-900 border-b border-slate-100 pb-2 mb-4 flex items-center space-x-2">
-            <span className="w-6 h-6 rounded-full bg-sky-100 text-sky-700 text-xs font-black flex items-center justify-center">5</span>
+          <h2 className="text-base font-bold text-charcoal border-b border-beige-200 pb-2.5 mb-4 flex items-center space-x-2">
+            <span className="w-6 h-6 rounded-full bg-butter-300 text-charcoal text-xs font-black flex items-center justify-center border border-butter-400">5</span>
             <span>Budget & Accommodation Preferences</span>
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div>
-              <label className="block text-xs font-semibold text-slate-700 mb-1">
+              <label className="block text-xs font-bold text-charcoal mb-1.5">
                 Max Annual Tuition Budget (₹)
               </label>
               <input
@@ -453,23 +447,23 @@ export default function ProfilePage() {
                 value={formData.max_tuition_budget}
                 onChange={handleChange}
                 placeholder="e.g. 150000"
-                className="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none"
+                className="w-full px-3.5 py-2.5 rounded-xl border border-beige-300 bg-ivory/40 text-sm text-charcoal focus:ring-2 focus:ring-butter-400 focus:border-butter-500 outline-none font-medium"
               />
-              <span className="text-[11px] text-slate-400">Leave blank for no tuition limit</span>
+              <span className="text-[11px] text-charcoal-muted font-medium">Leave blank for no tuition limit</span>
             </div>
 
             <div>
-              <label className="block text-xs font-semibold text-slate-700 mb-1">
+              <label className="block text-xs font-bold text-charcoal mb-1.5">
                 Preferred College Type
               </label>
               <select
                 name="preferred_college_type"
                 value={formData.preferred_college_type}
                 onChange={handleChange}
-                className="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none"
+                className="w-full px-3.5 py-2.5 rounded-xl border border-beige-300 bg-white text-sm text-charcoal font-medium focus:ring-2 focus:ring-butter-400 focus:border-butter-500 outline-none"
               >
                 <option value="All">All Types (Govt, Aided, Private)</option>
-                <option value="Central Government">Central Government (IIT/NIT)</option>
+                <option value="Central Government">Central Government (IIT / NIT)</option>
                 <option value="State Government">State Government (CEG Anna Univ)</option>
                 <option value="Government Aided">Government Aided (PSG Tech, TCE)</option>
                 <option value="Private Autonomous">Private Autonomous (SSN)</option>
@@ -477,19 +471,19 @@ export default function ProfilePage() {
             </div>
 
             <div className="flex flex-col justify-center">
-              <label className="flex items-center space-x-2 cursor-pointer mt-2">
+              <label className="flex items-center space-x-2.5 cursor-pointer mt-2">
                 <input
                   type="checkbox"
                   name="hostel_required"
                   checked={formData.hostel_required}
                   onChange={handleChange}
-                  className="w-4 h-4 text-sky-600 rounded border-slate-300 focus:ring-sky-500"
+                  className="w-4 h-4 text-butter-600 rounded border-beige-300 focus:ring-butter-400"
                 />
-                <span className="text-xs font-semibold text-slate-800">
+                <span className="text-xs font-bold text-charcoal">
                   On-Campus Hostel Required
                 </span>
               </label>
-              <span className="text-[11px] text-slate-400 mt-1 pl-6">
+              <span className="text-[11px] text-charcoal-muted mt-1 pl-6 font-medium">
                 Filters out institutions with no hostel availability
               </span>
             </div>
@@ -497,11 +491,11 @@ export default function ProfilePage() {
         </div>
 
         {/* Buttons */}
-        <div className="pt-6 border-t border-slate-200 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div className="pt-6 border-t border-beige-200 flex flex-col sm:flex-row justify-between items-center gap-4">
           <button
             type="button"
             onClick={handleClear}
-            className="w-full sm:w-auto px-5 py-2.5 rounded-xl border border-slate-300 hover:bg-slate-100 text-slate-700 text-sm font-semibold flex items-center justify-center space-x-2 transition-colors"
+            className="w-full sm:w-auto px-5 py-2.5 rounded-xl border border-beige-300 hover:bg-cream text-charcoal text-sm font-bold flex items-center justify-center space-x-2 transition-all shadow-xs"
           >
             <RotateCcw className="w-4 h-4" />
             <span>Clear Form</span>
@@ -510,12 +504,12 @@ export default function ProfilePage() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full sm:w-auto px-8 py-3 rounded-xl bg-sky-600 hover:bg-sky-700 text-white text-base font-bold shadow-md shadow-sky-600/30 flex items-center justify-center space-x-2 transition-all disabled:opacity-70 hover:scale-105"
+            className="w-full sm:w-auto px-8 py-3 rounded-xl bg-butter-500 hover:bg-butter-600 text-charcoal text-base font-bold shadow-warm-sm flex items-center justify-center space-x-2 transition-all disabled:opacity-70 hover:scale-105 active:scale-[0.99]"
           >
             {loading ? (
               <>
-                <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                <span>Evaluating Historical Evidence...</span>
+                <div className="w-4 h-4 border-2 border-charcoal border-t-transparent rounded-full animate-spin"></div>
+                <span>Evaluating Official Records...</span>
               </>
             ) : (
               <>

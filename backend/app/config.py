@@ -45,12 +45,16 @@ class Settings:
     ADMIN_API_KEY: str = os.getenv("ADMIN_API_KEY", "admin-secret-key-change-in-production")
     
     # CORS
-    CORS_ORIGINS: list = [
-        "http://localhost:5173",
-        "http://127.0.0.1:5173",
-        "http://localhost:3000",
-        "http://127.0.0.1:3000",
-        "*"
-    ]
+    raw_cors = os.getenv("CORS_ORIGINS", "").strip()
+    if raw_cors:
+        CORS_ORIGINS: list = [orig.strip() for orig in raw_cors.split(",") if orig.strip()]
+    else:
+        CORS_ORIGINS: list = [
+            "http://localhost:5173",
+            "http://127.0.0.1:5173",
+            "http://localhost:3000",
+            "http://127.0.0.1:3000",
+            "*"
+        ]
 
 settings = Settings()

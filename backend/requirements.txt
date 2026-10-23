@@ -3,6 +3,7 @@ uvicorn[standard]>=0.28.0
 pydantic>=2.6.0
 sqlalchemy>=2.0.28
 pymysql>=1.1.0
+psycopg2-binary>=2.9.9
 pypdf>=4.1.0
 sentence-transformers>=3.0.0
 faiss-cpu>=1.8.0

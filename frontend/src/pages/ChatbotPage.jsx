@@ -17,6 +17,30 @@ import { useApp } from '../context/AppContext';
 import api from '../services/api';
 import MarkdownRenderer from '../components/MarkdownRenderer';
 
+function getFriendlyTopicLabel(intent) {
+  if (!intent) return 'College Guidance';
+  switch (intent.toLowerCase()) {
+    case 'college_comparison':
+      return 'College Comparison';
+    case 'cutoff_query':
+      return 'Cutoff Trends & Ranks';
+    case 'fee_inquiry':
+      return 'Tuition & Living Fees';
+    case 'placement_inquiry':
+      return 'Placement Statistics';
+    case 'eligibility_inquiry':
+      return 'Eligibility Criteria';
+    case 'scholarship_inquiry':
+      return 'Scholarships & Aid';
+    case 'college_recommendation':
+      return 'College Recommendations';
+    case 'college_details':
+      return 'College Overview';
+    default:
+      return intent.replace(/_/g, ' ').replace(/\b\w/g, (l) => l.toUpperCase());
+  }
+}
+
 export default function ChatbotPage() {
   const { 
     studentProfile, 
@@ -45,12 +69,12 @@ export default function ChatbotPage() {
     setSavingKey(true);
     setKeySaveMessage(null);
     try {
-      const res = await api.updateChatConfig({
+      await api.updateChatConfig({
         api_key: quickApiKey.trim(),
         provider: 'openrouter'
       });
       await refreshChatConfig();
-      setKeySaveMessage({ type: 'success', text: 'OpenRouter LLM successfully activated!' });
+      setKeySaveMessage({ type: 'success', text: 'OpenRouter service successfully connected!' });
       setQuickApiKey('');
       setTimeout(() => setShowKeyModal(false), 2000);
     } catch (err) {
@@ -80,7 +104,6 @@ export default function ChatbotPage() {
     const text = textToSend.trim();
     if (!text || loading) return;
 
-    // Add user message
     const newMessages = [...messages, { role: 'user', content: text }];
     setMessages(newMessages);
     setInput('');
@@ -124,7 +147,7 @@ export default function ChatbotPage() {
         ...prev,
         {
           role: 'assistant',
-          content: 'Sorry, I encountered an error connecting to the admissions evidence engine. Please try again.',
+          content: 'Sorry, I encountered an issue retrieving the official admissions information. Please try again.',
           citations: [],
           evidence_used: [],
         },
@@ -139,7 +162,7 @@ export default function ChatbotPage() {
     setMessages([
       {
         role: 'assistant',
-        content: 'Chat session reset. Feel free to ask about cutoffs, fees, placements, and eligibility requirements.',
+        content: 'Chat session reset. Feel free to ask any question about cutoffs, fees, placements, scholarships, or college eligibility.',
         citations: [],
         evidence_used: [],
       },
@@ -147,76 +170,76 @@ export default function ChatbotPage() {
   };
 
   return (
-    <div className="max-w-5xl mx-auto px-4 py-8 space-y-6">
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 py-6 sm:py-8 space-y-6">
       {/* Header Bar */}
-      <div className="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+      <div className="bg-white p-4 sm:p-5 rounded-2xl border border-beige-200 shadow-warm-sm flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
         <div className="flex items-center space-x-3">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-600 to-indigo-600 flex items-center justify-center text-white shadow-md shadow-sky-600/20">
-            <BotMessageSquare className="w-6 h-6" />
+          <div className="w-10 h-10 rounded-xl bg-butter-400 text-charcoal flex items-center justify-center border border-butter-500/50 shadow-warm-sm flex-shrink-0">
+            <BotMessageSquare className="w-6 h-6 text-charcoal" />
           </div>
           <div>
-            <h1 className="text-xl font-black text-slate-900 flex items-center space-x-2">
-              <span>College Guide AI Assistant</span>
-              <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
-                Grounded RAG
+            <h1 className="text-lg sm:text-xl font-black text-charcoal flex items-center space-x-2">
+              <span>College Admission Guide</span>
+              <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-cream text-charcoal border border-beige-300">
+                Official Sources
               </span>
             </h1>
-            <p className="text-xs text-slate-500">
+            <p className="text-xs text-charcoal-muted font-medium mt-0.5">
               {studentProfile
-                ? `Context Active: ${studentProfile.entrance_exam} (${studentProfile.rank_or_score}) • Course: ${studentProfile.preferred_course}`
-                : 'General Admissions Mode • Set profile to personalize guidance'}
+                ? `Active Profile: ${studentProfile.entrance_exam} (${studentProfile.rank_or_score}) • Branch: ${studentProfile.preferred_course}`
+                : 'General Inquiry Mode • Fill your profile for personalized answers'}
             </p>
           </div>
         </div>
 
-        <div className="flex items-center space-x-2">
-          {/* SLM / LLM Selector */}
-          <div className="flex items-center bg-slate-100 p-0.5 rounded-lg border border-slate-200 text-xs font-semibold">
+        <div className="flex items-center space-x-2 self-stretch sm:self-auto justify-between sm:justify-start">
+          {/* Answer Mode Selector */}
+          <div className="flex items-center bg-cream p-1 rounded-xl border border-beige-200 text-xs font-semibold shadow-xs">
             <button
               onClick={() => setModelType('slm')}
-              title="Small Language Model: Fast, deterministic, sub-second latency"
-              className={`px-2.5 py-1 rounded-md transition-all ${
+              title="Fast Mode: Direct, instant facts from official archives"
+              className={`px-3 py-1.5 rounded-lg transition-all ${
                 modelType === 'slm'
-                  ? 'bg-white text-sky-700 shadow-xs font-bold'
-                  : 'text-slate-500 hover:text-slate-800'
+                  ? 'bg-butter-400 text-charcoal shadow-warm-sm font-bold'
+                  : 'text-charcoal-muted hover:text-charcoal'
               }`}
             >
-              SLM (Fast)
+              Fast Answers
             </button>
             <button
               onClick={() => setModelType('llm')}
               title={
                 !llmConfig?.llm_enabled
-                  ? "LLM mode: Click to activate or use Local SLM Fallback"
-                  : "Large Language Model: Nuanced conversational reasoning"
+                  ? "Detailed Guidance: Setup key or use fast mode"
+                  : "Detailed Guidance: In-depth explanations with step-by-step guidance"
               }
-              className={`px-2.5 py-1 rounded-md transition-all flex items-center space-x-1 ${
+              className={`px-3 py-1.5 rounded-lg transition-all flex items-center space-x-1.5 ${
                 modelType === 'llm'
-                  ? 'bg-white text-indigo-700 shadow-xs font-bold'
-                  : 'text-slate-500 hover:text-slate-800'
+                  ? 'bg-butter-400 text-charcoal shadow-warm-sm font-bold'
+                  : 'text-charcoal-muted hover:text-charcoal'
               }`}
             >
-              <span>LLM (Detailed)</span>
+              <span>Detailed Guidance</span>
               {!llmConfig?.llm_enabled && (
-                <span className="px-1 py-0.2 rounded text-[9px] bg-amber-100 text-amber-700 font-bold">
+                <span className="px-1.5 py-0.2 rounded text-[9px] bg-butter-200 text-charcoal font-bold border border-butter-400">
                   Setup
                 </span>
               )}
             </button>
             <button
               onClick={() => refreshChatConfig()}
-              title="Refresh LLM configuration status from server"
-              className="px-1.5 py-1 text-slate-400 hover:text-slate-700 text-xs rounded transition-colors"
+              title="Refresh configuration status"
+              className="px-2 py-1 text-charcoal-muted hover:text-charcoal text-xs rounded transition-colors"
             >
               ↻
             </button>
             <button
               onClick={() => setShowKeyModal(!showKeyModal)}
-              title="Configure / Update Gemini API Key"
-              className={`px-2 py-1 rounded-md text-xs font-semibold transition-all flex items-center space-x-1 ${
+              title="Configure API Key"
+              className={`px-2.5 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center space-x-1 ${
                 showKeyModal
-                  ? 'bg-amber-100 text-amber-800'
-                  : 'text-slate-500 hover:text-slate-800'
+                  ? 'bg-butter-300 text-charcoal'
+                  : 'text-charcoal-muted hover:text-charcoal'
               }`}
             >
               <Key className="w-3 h-3" />
@@ -226,7 +249,7 @@ export default function ChatbotPage() {
 
           <button
             onClick={handleClearChat}
-            className="px-3 py-1.5 rounded-lg border border-slate-200 text-xs font-semibold text-slate-600 hover:bg-slate-50 flex items-center space-x-1"
+            className="px-3 py-1.5 rounded-xl border border-beige-300 text-xs font-bold text-charcoal hover:bg-cream flex items-center space-x-1.5 transition-all shadow-xs"
           >
             <RotateCcw className="w-3.5 h-3.5" />
             <span>Reset</span>
@@ -234,38 +257,38 @@ export default function ChatbotPage() {
         </div>
       </div>
 
-      {/* LLM Mode Activation & Setup Banner */}
+      {/* API Key Modal / Banner */}
       {(showKeyModal || (modelType === 'llm' && !llmConfig?.llm_enabled)) && (
-        <div className="p-3.5 rounded-xl bg-amber-50 border border-amber-200 text-xs text-amber-900 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-2xs">
-          <div className="flex items-start sm:items-center space-x-2">
-            <Sparkles className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5 sm:mt-0" />
+        <div className="p-4 rounded-2xl bg-cream border border-butter-400 text-xs text-charcoal flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-warm-sm">
+          <div className="flex items-start sm:items-center space-x-2.5">
+            <Sparkles className="w-4 h-4 text-butter-700 flex-shrink-0 mt-0.5 sm:mt-0" />
             <div>
-              <span className="font-bold">OpenRouter API Key Configuration:</span> Paste your OpenRouter API key (`sk-or-...`) below and click Activate to save it to <code className="bg-amber-100 px-1 py-0.5 rounded font-mono text-[11px]">.env</code> and activate LLM mode.
+              <span className="font-bold">OpenRouter Key Configuration:</span> Paste your OpenRouter API key (<code className="bg-butter-200/80 px-1 py-0.5 rounded font-mono text-[11px]">sk-or-...</code>) below and click Activate to enable Detailed Guidance mode.
               {keySaveMessage && (
-                <div className={`mt-1 font-semibold ${keySaveMessage.type === 'success' ? 'text-emerald-700' : 'text-red-600'}`}>
+                <div className={`mt-1 font-bold ${keySaveMessage.type === 'success' ? 'text-charcoal' : 'text-red-600'}`}>
                   {keySaveMessage.text}
                 </div>
               )}
             </div>
           </div>
-          <div className="flex items-center space-x-1.5 w-full sm:w-auto">
+          <div className="flex items-center space-x-2 w-full sm:w-auto">
             <input
               type="password"
-              placeholder="Paste OpenRouter API Key (sk-or-...)"
+              placeholder="Paste Key (sk-or-...)"
               value={quickApiKey}
               onChange={(e) => setQuickApiKey(e.target.value)}
-              className="px-2.5 py-1.5 text-xs rounded-lg border border-amber-300 bg-white text-slate-800 placeholder-slate-400 outline-none focus:ring-1 focus:ring-amber-500 w-full sm:w-56"
+              className="px-3 py-1.5 text-xs rounded-xl border border-beige-300 bg-white text-charcoal placeholder-charcoal-muted/70 outline-none focus:ring-2 focus:ring-butter-400 w-full sm:w-56"
             />
             <button
               onClick={handleSaveQuickKey}
               disabled={!quickApiKey.trim() || savingKey}
-              className="px-3 py-1.5 rounded-lg bg-amber-600 hover:bg-amber-700 disabled:opacity-50 text-white font-bold text-xs whitespace-nowrap shadow-2xs transition-colors"
+              className="px-3.5 py-1.5 rounded-xl bg-butter-500 hover:bg-butter-600 disabled:opacity-50 text-charcoal font-bold text-xs whitespace-nowrap shadow-warm-sm transition-all"
             >
               {savingKey ? 'Saving...' : 'Activate'}
             </button>
             <button
               onClick={() => setShowKeyModal(false)}
-              className="px-2.5 py-1.5 rounded-lg bg-white border border-amber-300 text-amber-800 hover:bg-amber-100 font-semibold text-xs whitespace-nowrap"
+              className="px-3 py-1.5 rounded-xl bg-white border border-beige-300 text-charcoal hover:bg-cream font-bold text-xs whitespace-nowrap"
             >
               Close
             </button>
@@ -274,8 +297,8 @@ export default function ChatbotPage() {
       )}
 
       {/* Chat Messages Container */}
-      <div className="bg-white rounded-2xl border border-slate-200 shadow-sm flex flex-col h-[560px] overflow-hidden">
-        <div className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-6">
+      <div className="bg-ivory rounded-2xl border border-beige-200 shadow-warm-sm flex flex-col min-h-[460px] h-[600px] max-h-[calc(100vh-210px)] overflow-hidden">
+        <div className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-5">
           {messages.map((msg, index) => (
             <div
               key={index}
@@ -287,8 +310,8 @@ export default function ChatbotPage() {
               <div
                 className={`w-8 h-8 rounded-xl flex items-center justify-center flex-shrink-0 text-white ${
                   msg.role === 'user'
-                    ? 'bg-slate-800'
-                    : 'bg-sky-600 shadow-sm shadow-sky-500/30'
+                    ? 'bg-charcoal text-cream shadow-xs'
+                    : 'bg-butter-400 text-charcoal border border-butter-500/50 shadow-warm-sm'
                 }`}
               >
                 {msg.role === 'user' ? <User className="w-4 h-4" /> : <BotMessageSquare className="w-4 h-4" />}
@@ -298,52 +321,44 @@ export default function ChatbotPage() {
               <div
                 className={`max-w-[85%] rounded-2xl p-4 text-xs sm:text-sm leading-relaxed space-y-3 ${
                   msg.role === 'user'
-                    ? 'bg-sky-600 text-white font-medium rounded-tr-none'
-                    : 'bg-slate-50 text-slate-800 border border-slate-200/80 rounded-tl-none'
+                    ? 'bg-butter-300 text-charcoal font-medium rounded-tr-none border border-butter-400/60 shadow-warm-sm'
+                    : 'bg-white text-charcoal border border-beige-200 rounded-tl-none shadow-warm-sm'
                 }`}
               >
                 {/* Content */}
                 {msg.role === 'user' ? (
-                  <div className="whitespace-pre-line font-medium">
+                  <div className="whitespace-pre-line font-medium text-charcoal">
                     {msg.content}
                   </div>
                 ) : (
                   <MarkdownRenderer content={msg.content} />
                 )}
 
-                {/* NLP Metadata Pill */}
+                {/* Student-Friendly Topic Tag */}
                 {msg.role === 'assistant' && msg.intent && (
-                  <div className="flex flex-wrap items-center gap-1.5 pt-1 text-[10px] text-slate-500 border-t border-slate-200/50">
-                    <span className="px-1.5 py-0.5 rounded bg-slate-200/80 text-slate-700 font-mono font-semibold">
-                      {msg.model_used?.toUpperCase() || 'SLM'}
+                  <div className="flex flex-wrap items-center gap-1.5 pt-2 text-[11px] text-charcoal-muted border-t border-beige-200 font-medium">
+                    <span className="font-bold text-charcoal">
+                      Topic: {getFriendlyTopicLabel(msg.intent)}
                     </span>
                     <span>•</span>
-                    <span className="px-1.5 py-0.5 rounded bg-sky-50 text-sky-700 font-semibold border border-sky-100">
-                      Intent: {msg.intent.replace(/_/g, ' ')}
-                      {msg.intent_confidence ? ` (${Math.round(msg.intent_confidence * 100)}%)` : ''}
-                    </span>
-                    {msg.rewritten_query && (
-                      <span className="italic text-slate-500 truncate max-w-xs" title={msg.rewritten_query}>
-                        &bull; Context resolved: &ldquo;{msg.rewritten_query}&rdquo;
-                      </span>
-                    )}
+                    <span>Sourced from verified institutional records</span>
                   </div>
                 )}
 
                 {/* Warning notice if in fallback mode */}
                 {msg.warning && (
-                  <div className="p-2 rounded-lg bg-amber-50 border border-amber-200 text-amber-800 text-xs flex items-center space-x-1.5">
-                    <AlertCircle className="w-4 h-4 text-amber-600 flex-shrink-0" />
-                    <span>{msg.warning}</span>
+                  <div className="p-2.5 rounded-xl bg-butter-100 border border-butter-300 text-charcoal text-xs flex items-center space-x-1.5">
+                    <AlertCircle className="w-4 h-4 text-butter-800 flex-shrink-0" />
+                    <span className="font-medium">{msg.warning}</span>
                   </div>
                 )}
 
                 {/* Clickable Citations */}
                 {msg.citations && msg.citations.length > 0 && (
-                  <div className="pt-2 border-t border-slate-200/60 space-y-1">
-                    <div className="text-[11px] font-bold text-slate-700 flex items-center space-x-1">
-                      <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
-                      <span>Verified Citations & Sources:</span>
+                  <div className="pt-2 border-t border-beige-200 space-y-1.5">
+                    <div className="text-[11px] font-bold text-charcoal flex items-center space-x-1.5">
+                      <ShieldCheck className="w-3.5 h-3.5 text-butter-700" />
+                      <span>Official Sources:</span>
                     </div>
                     <div className="flex flex-wrap gap-1.5">
                       {msg.citations.map((c, i) => (
@@ -352,10 +367,10 @@ export default function ChatbotPage() {
                           href={c.url}
                           target="_blank"
                           rel="noreferrer"
-                          className="inline-flex items-center space-x-1 px-2.5 py-1 rounded-md bg-white border border-slate-200 text-sky-700 hover:text-sky-900 hover:bg-sky-50 text-xs font-semibold shadow-2xs transition-colors"
+                          className="inline-flex items-center space-x-1 px-2.5 py-1 rounded-lg bg-cream border border-beige-300 text-charcoal hover:bg-butter-200 text-xs font-bold shadow-xs transition-colors"
                         >
                           <span>{c.source_name} ({c.year})</span>
-                          <ExternalLink className="w-3 h-3" />
+                          <ExternalLink className="w-3 h-3 text-butter-700" />
                         </a>
                       ))}
                     </div>
@@ -369,11 +384,11 @@ export default function ChatbotPage() {
                       onClick={() =>
                         setActiveEvidenceIndex(activeEvidenceIndex === index ? null : index)
                       }
-                      className="text-[11px] font-semibold text-slate-500 hover:text-slate-800 flex items-center space-x-1"
+                      className="text-[11px] font-bold text-charcoal-muted hover:text-charcoal flex items-center space-x-1"
                     >
-                      <BookOpen className="w-3 h-3 text-sky-600" />
+                      <BookOpen className="w-3 h-3 text-butter-700" />
                       <span>
-                        {activeEvidenceIndex === index ? 'Hide' : 'Inspect'} Retrieved Evidence ({msg.evidence_used.length} sources)
+                        {activeEvidenceIndex === index ? 'Hide' : 'View'} Reference Excerpts ({msg.evidence_used.length} sources)
                       </span>
                       {activeEvidenceIndex === index ? (
                         <ChevronUp className="w-3 h-3" />
@@ -383,14 +398,14 @@ export default function ChatbotPage() {
                     </button>
 
                     {activeEvidenceIndex === index && (
-                      <div className="mt-2 space-y-2 p-3 rounded-xl bg-slate-100 border border-slate-200 text-xs">
+                      <div className="mt-2 space-y-2 p-3 rounded-xl bg-cream/70 border border-beige-200 text-xs">
                         {msg.evidence_used.map((ev, ei) => (
-                          <div key={ei} className="p-2 rounded-lg bg-white border border-slate-200 space-y-1">
-                            <div className="flex justify-between items-center text-[10px] text-slate-500">
-                              <span className="font-bold text-sky-700">{ev.document_title}</span>
-                              <span>Score: {ev.relevance_score}</span>
+                          <div key={ei} className="p-2.5 rounded-lg bg-white border border-beige-200 space-y-1">
+                            <div className="flex justify-between items-center text-[10px] text-charcoal-muted">
+                              <span className="font-bold text-charcoal">{ev.document_title}</span>
+                              <span className="font-medium">Score: {ev.relevance_score}</span>
                             </div>
-                            <p className="text-slate-700 italic">"{ev.snippet}"</p>
+                            <p className="text-charcoal-muted italic font-medium">"{ev.snippet}"</p>
                           </div>
                         ))}
                       </div>
@@ -405,7 +420,7 @@ export default function ChatbotPage() {
                       <button
                         key={si}
                         onClick={() => handleSend(sug)}
-                        className="px-2 py-0.5 rounded-full bg-sky-50 hover:bg-sky-100 text-sky-700 text-[11px] font-medium border border-sky-200 transition-colors"
+                        className="px-2.5 py-1 rounded-full bg-cream hover:bg-butter-200 text-charcoal text-[11px] font-bold border border-beige-300 transition-colors"
                       >
                         {sug}
                       </button>
@@ -418,26 +433,26 @@ export default function ChatbotPage() {
 
           {loading && (
             <div className="flex items-start space-x-3">
-              <div className="w-8 h-8 rounded-xl bg-sky-600 flex items-center justify-center text-white">
+              <div className="w-8 h-8 rounded-xl bg-butter-400 text-charcoal border border-butter-500/50 flex items-center justify-center">
                 <BotMessageSquare className="w-4 h-4" />
               </div>
-              <div className="bg-slate-50 border border-slate-200 rounded-2xl rounded-tl-none p-4 text-xs text-slate-500 flex items-center space-x-2">
-                <div className="w-3.5 h-3.5 border-2 border-sky-600 border-t-transparent rounded-full animate-spin"></div>
-                <span>Retrieving verified document excerpts & generating response...</span>
+              <div className="bg-white border border-beige-200 rounded-2xl rounded-tl-none p-4 text-xs text-charcoal-muted flex items-center space-x-2.5 shadow-warm-sm">
+                <div className="w-3.5 h-3.5 border-2 border-butter-500 border-t-transparent rounded-full animate-spin"></div>
+                <span className="font-medium">Looking up verified documents and preparing your answer...</span>
               </div>
             </div>
           )}
           <div ref={messagesEndRef} />
         </div>
 
-        {/* Suggested Starter Pills */}
-        <div className="px-4 py-2 bg-slate-50 border-t border-slate-100 flex items-center space-x-2 overflow-x-auto text-xs">
-          <span className="font-bold text-slate-400 text-[10px] uppercase flex-shrink-0">Suggestions:</span>
+        {/* Suggested Starter Questions Tray */}
+        <div className="px-4 py-2.5 bg-cream/70 border-t border-beige-200 flex items-center space-x-2 overflow-x-auto text-xs scrollbar-none">
+          <span className="font-bold text-charcoal-muted text-[10px] uppercase flex-shrink-0 tracking-wider">Suggested:</span>
           {starterQuestions.map((sq, i) => (
             <button
               key={i}
               onClick={() => handleSend(sq)}
-              className="px-2.5 py-1 rounded-lg bg-white border border-slate-200 hover:border-sky-300 text-slate-600 hover:text-sky-700 font-medium whitespace-nowrap transition-colors"
+              className="px-3 py-1 rounded-xl bg-white border border-beige-300 hover:bg-butter-200 text-charcoal font-medium whitespace-nowrap transition-colors shadow-xs"
             >
               {sq}
             </button>
@@ -445,7 +460,7 @@ export default function ChatbotPage() {
         </div>
 
         {/* Chat Input Field */}
-        <div className="p-3 bg-white border-t border-slate-200">
+        <div className="p-3.5 bg-white border-t border-beige-200">
           <form
             onSubmit={(e) => {
               e.preventDefault();
@@ -457,14 +472,14 @@ export default function ChatbotPage() {
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder="Ask about admissions, cutoffs, tuition fees, scholarships, or comparisons..."
-              className="flex-1 px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none"
+              placeholder="Ask about admissions, cutoffs, tuition fees, scholarships, or college comparisons..."
+              className="flex-1 px-4 py-2.5 rounded-xl border border-beige-300 bg-ivory/50 text-sm text-charcoal placeholder-charcoal-muted/70 focus:outline-none focus:ring-2 focus:ring-butter-400 focus:border-butter-500 transition-all font-medium"
               disabled={loading}
             />
             <button
               type="submit"
               disabled={loading || !input.trim()}
-              className="px-5 py-2.5 rounded-xl bg-sky-600 hover:bg-sky-700 disabled:opacity-50 text-white font-bold text-sm shadow-sm transition-all flex items-center space-x-1.5"
+              className="px-5 py-2.5 rounded-xl bg-butter-500 hover:bg-butter-600 disabled:opacity-50 text-charcoal font-bold text-sm shadow-warm-sm transition-all flex items-center space-x-1.5 active:scale-[0.99] whitespace-nowrap"
             >
               <span>Send</span>
               <Send className="w-4 h-4" />
